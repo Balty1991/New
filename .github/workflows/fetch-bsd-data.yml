@@ -1,0 +1,96 @@
+name: Fetch BSD data
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '*/30 * * * *'
+
+permissions:
+  contents: write
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Fetch data from BSD API
+        env:
+          BSD_API_TOKEN: ${{ secrets.BSD_API_TOKEN }}
+          BSD_API_BASE: https://sports.bzzoiro.com/api
+        run: |
+          python <<'PY'
+          import json
+          import os
+          import urllib.request
+          import urllib.parse
+          from datetime import datetime, timezone
+
+          token = os.environ.get('BSD_API_TOKEN', '').strip()
+          if not token:
+              raise SystemExit('Missing BSD_API_TOKEN secret')
+
+          base = os.environ.get('BSD_API_BASE', 'https://sports.bzzoiro.com/api').rstrip('/')
+          today = datetime.now(timezone.utc).strftime('%Y-%m-%d')
+
+          def get_json(path, params):
+              url = f"{base}{path}?{urllib.parse.urlencode(params)}"
+              req = urllib.request.Request(url, headers={
+                  'Authorization': f'Token {token}',
+                  'Content-Type': 'application/json'
+              })
+              with urllib.request.urlopen(req) as response:
+                  return json.loads(response.read().decode('utf-8'))
+
+          events = get_json('/events/', {'date_from': today, 'date_to': today, 'limit': 20})
+          try:
+              predictions = get_json('/predictions/', {'date_from': today, 'date_to': today, 'limit': 300, 'upcoming': 'true'})
+          except Exception:
+              predictions = {'results': []}
+
+          prediction_rows = predictions.get('results') or []
+
+          def normalize_prediction(event):
+              ids = {str(v) for v in [event.get('id'), event.get('event_id'), event.get('match_id')] if v is not None}
+              for pred in prediction_rows:
+                  candidate = {str(v) for v in [
+                      (pred.get('event') or {}).get('id'),
+                      pred.get('event_id'),
+                      pred.get('id'),
+                      pred.get('match_id')
+                  ] if v is not None}
+                  if ids & candidate:
+                      return pred
+              return None
+
+          rows = []
+          for event in (events.get('results') or [])[:12]:
+              rows.append({
+                  'id': event.get('id'),
+                  'home': event.get('home_team') or event.get('home_team_name') or 'Home',
+                  'away': event.get('away_team') or event.get('away_team_name') or 'Away',
+                  'league': ((event.get('league') or {}).get('name')) or event.get('league_name') or '',
+                  'date': event.get('event_date'),
+                  'prediction': normalize_prediction(event),
+                  'source': 'GitHub Actions cache'
+              })
+
+          payload = {
+              'generated_at': datetime.now(timezone.utc).isoformat(),
+              'date': today,
+              'matches': rows
+          }
+
+          os.makedirs('data', exist_ok=True)
+          with open('data/latest.json', 'w', encoding='utf-8') as f:
+              json.dump(payload, f, ensure_ascii=False, indent=2)
+          PY
+
+      - name: Commit updated data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/latest.json
+          git diff --cached --quiet || git commit -m "Update BSD cached data"
+          git push

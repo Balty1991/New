@@ -1,20 +1,172 @@
-const K='bet_cfg_v1';
-const D='https://sports.bzzoiro.com/api';
-const s={filter:'all',rows:[]};
-const $=id=>document.getElementById(id);
-const el={d:$('dateInput'),r:$('refreshBtn'),t:$('toggleSettingsBtn'),p:$('settingsPanel'),b:$('apiBaseInput'),k:$('apiTokenInput'),sv:$('saveSettingsBtn'),m:$('messageBox'),out:$('results'),st:$('statTotal'),sp:$('statTop'),svl:$('statValue'),sr:$('statRisky')};
-function cfg(){try{return JSON.parse(localStorage.getItem(K)||'{}')}catch{return {}}}
-function save(v){localStorage.setItem(K,JSON.stringify(v))}
-function show(msg,type='info'){el.m.textContent=msg;el.m.className='message '+type}
-function hide(){el.m.className='message hidden';el.m.textContent=''}
-function getCfg(){return{apiBase:(el.b.value||D).trim().replace(/\/$/,''),token:(el.k.value||'').trim()}}
-async function api(path,params={}){const c=getCfg();if(!c.token)throw new Error('Introdu tokenul API.');const u=new URL(c.apiBase+path);Object.entries(params).forEach(([k,v])=>{if(v!==undefined&&v!==null&&v!=='')u.searchParams.set(k,v)});const res=await fetch(u.toString(),{headers:{Authorization:`Token ${c.token}`,'Content-Type':'application/json'}});if(!res.ok){if(res.status===401)throw new Error('Token invalid sau expirat.');throw new Error('API Error '+res.status)}return res.json()}
-function score(p){if(!p)return 38;const c=Number(p.confidence||0);let x=30;if(c>=0.8)x+=40;else if(c>=0.7)x+=32;else if(c>=0.6)x+=24;else if(c>=0.5)x+=16;const mp=Math.max(Number(p.prob_home_win||0),Number(p.prob_draw||0),Number(p.prob_away_win||0),Number(p.prob_over_25||0),Number(p.prob_btts_yes||0));if(mp>=75)x+=18;else if(mp>=65)x+=12;else if(mp>=55)x+=6;return Math.max(0,Math.min(100,Math.round(x)))}
-function tag(v){if(v>=80)return['TOP','#16a34a'];if(v>=65)return['VALUE','#15803d'];if(v>=50)return['RISKY','#d97706'];return['LOW','#dc2626']}
-function best(p){if(!p)return[{l:'Fără prediction disponibil',v:'-'}];return[{l:'1',v:Number(p.prob_home_win||0)},{l:'X',v:Number(p.prob_draw||0)},{l:'2',v:Number(p.prob_away_win||0)},{l:'Over 2.5',v:Number(p.prob_over_25||0)},{l:'BTTS Da',v:Number(p.prob_btts_yes||0)}].filter(x=>x.v>0).sort((a,b)=>b.v-a.v).slice(0,3).map(x=>({l:x.l,v:x.v.toFixed(1)+'%'}))}
-function esc(v){return String(v??'').replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;').replaceAll('"','&quot;').replaceAll("'",'&#39;')}
-function dt(v){try{return new Date(v).toLocaleString('ro-RO',{year:'numeric',month:'2-digit',day:'2-digit',hour:'2-digit',minute:'2-digit'})}catch{return v||'-'}}
-function matchPred(e,preds){const ids=[e.id,e.event_id,e.match_id].filter(Boolean).map(String);return preds.find(p=>[p?.event?.id,p?.event_id,p?.id,p?.match_id].filter(Boolean).map(String).some(id=>ids.includes(id)))||null}
-function render(){const arr=s.rows.filter(x=>s.filter==='all'||(s.filter==='top'&&x.score>=80)||(s.filter==='value'&&x.score>=65&&x.score<80)||(s.filter==='risky'&&x.score>=50&&x.score<65));el.st.textContent=s.rows.length;el.sp.textContent=s.rows.filter(x=>x.score>=80).length;el.svl.textContent=s.rows.filter(x=>x.score>=65&&x.score<80).length;el.sr.textContent=s.rows.filter(x=>x.score>=50&&x.score<65).length;if(!arr.length){el.out.innerHTML='<div class="card empty">Nu există rezultate pentru filtrul selectat.</div>';return}el.out.innerHTML=arr.map(x=>{const [lab,col]=tag(x.score);const tips=best(x.pred).map(t=>`<div class="prob-row"><strong>${esc(t.l)}</strong><span>${esc(t.v)}</span></div>`).join('');return `<article class="card match-card" style="border-left-color:${col}"><div class="match-head"><div><h3>${esc(x.home)} vs ${esc(x.away)}</h3><div class="league">${esc(x.league||'Necunoscut')} • ${dt(x.date)}</div></div><div class="badge" style="background:${col}"><span class="score">${x.score}</span>${lab}</div></div><div class="prob-list"><div class="subtle">Probabilități principale</div>${tips}</div><div class="tips"><div class="subtle">Observații</div><div class="tip-row"><span>Confidence model</span><strong>${x.pred?((Number(x.pred.confidence||0)*100).toFixed(1)+'%'):'Lipsește'}</strong></div><div class="tip-row"><span>Status</span><strong>${x.pred?'Prediction găsit':'Analiză bazată doar pe eveniment'}</strong></div></div></article>`}).join('')}
-async function load(){hide();el.out.innerHTML='<div class="card empty">Se încarcă meciurile...</div>';try{const date=el.d.value;const [ev,pr]=await Promise.all([api('/events/',{date_from:date,date_to:date,limit:20}),api('/predictions/',{date_from:date,date_to:date,limit:300,upcoming:true}).catch(()=>({results:[]}))]);const events=Array.isArray(ev?.results)?ev.results:[];const preds=Array.isArray(pr?.results)?pr.results:[];s.rows=events.slice(0,12).map(e=>{const p=matchPred(e,preds);return{id:e.id,home:e.home_team||e.home_team_name||'Home',away:e.away_team||e.away_team_name||'Away',league:e.league?.name||e.league_name||'',date:e.event_date,pred:p,score:score(p)}}).sort((a,b)=>b.score-a.score);if(!s.rows.length)show('Nu am găsit meciuri pentru data selectată.','info');render()}catch(err){s.rows=[];show(err.message||'Eroare la încărcare.','error');render()}}
-(function init(){const c=cfg();el.b.value=(c.apiBase||D);el.k.value=(c.token||'');el.d.value=new Date().toISOString().split('T')[0];if(!c.token){el.p.classList.remove('hidden');show('Introdu tokenul API și apasă „Salvează și încarcă”.','info')}document.querySelectorAll('.filter-btn').forEach(b=>b.onclick=()=>{document.querySelectorAll('.filter-btn').forEach(x=>x.classList.remove('active'));b.classList.add('active');s.filter=b.dataset.filter;render()});el.t.onclick=()=>el.p.classList.toggle('hidden');el.sv.onclick=()=>{save(getCfg());hide();el.p.classList.add('hidden');load()};el.r.onclick=load;if(c.token)load();else render()})();
+const s = { filter: 'all', rows: [] };
+const $ = (id) => document.getElementById(id);
+const el = {
+  refresh: $('refreshBtn'),
+  msg: $('messageBox'),
+  out: $('results'),
+  total: $('statTotal'),
+  top: $('statTop'),
+  value: $('statValue'),
+  risky: $('statRisky')
+};
+
+function show(msg, type = 'info') {
+  el.msg.textContent = msg;
+  el.msg.className = `message ${type}`;
+}
+
+function hide() {
+  el.msg.className = 'message hidden';
+  el.msg.textContent = '';
+}
+
+function verdict(score) {
+  if (score >= 80) return ['TOP', '#16a34a'];
+  if (score >= 65) return ['VALUE', '#15803d'];
+  if (score >= 50) return ['RISKY', '#d97706'];
+  return ['LOW', '#dc2626'];
+}
+
+function score(prediction) {
+  if (!prediction) return 38;
+  const conf = Number(prediction.confidence || 0);
+  let value = 30;
+  if (conf >= 0.8) value += 40;
+  else if (conf >= 0.7) value += 32;
+  else if (conf >= 0.6) value += 24;
+  else if (conf >= 0.5) value += 16;
+
+  const maxProb = Math.max(
+    Number(prediction.prob_home_win || 0),
+    Number(prediction.prob_draw || 0),
+    Number(prediction.prob_away_win || 0),
+    Number(prediction.prob_over_25 || 0),
+    Number(prediction.prob_btts_yes || 0)
+  );
+
+  if (maxProb >= 75) value += 18;
+  else if (maxProb >= 65) value += 12;
+  else if (maxProb >= 55) value += 6;
+
+  return Math.max(0, Math.min(100, Math.round(value)));
+}
+
+function best(prediction) {
+  if (!prediction) return [{ label: 'Fără prediction disponibil', value: '-' }];
+
+  return [
+    { label: '1', value: Number(prediction.prob_home_win || 0) },
+    { label: 'X', value: Number(prediction.prob_draw || 0) },
+    { label: '2', value: Number(prediction.prob_away_win || 0) },
+    { label: 'Over 2.5', value: Number(prediction.prob_over_25 || 0) },
+    { label: 'BTTS Da', value: Number(prediction.prob_btts_yes || 0) }
+  ]
+    .filter((item) => item.value > 0)
+    .sort((a, b) => b.value - a.value)
+    .slice(0, 3)
+    .map((item) => ({ label: item.label, value: `${item.value.toFixed(1)}%` }));
+}
+
+function esc(v) {
+  return String(v ?? '')
+    .replaceAll('&', '&amp;')
+    .replaceAll('<', '&lt;')
+    .replaceAll('>', '&gt;')
+    .replaceAll('"', '&quot;')
+    .replaceAll("'", '&#39;');
+}
+
+function dt(v) {
+  try {
+    return new Date(v).toLocaleString('ro-RO', {
+      year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit'
+    });
+  } catch {
+    return v || '-';
+  }
+}
+
+function render() {
+  const rows = s.rows.filter((row) => {
+    if (s.filter === 'top') return row.score >= 80;
+    if (s.filter === 'value') return row.score >= 65 && row.score < 80;
+    if (s.filter === 'risky') return row.score >= 50 && row.score < 65;
+    return true;
+  });
+
+  el.total.textContent = s.rows.length;
+  el.top.textContent = s.rows.filter((x) => x.score >= 80).length;
+  el.value.textContent = s.rows.filter((x) => x.score >= 65 && x.score < 80).length;
+  el.risky.textContent = s.rows.filter((x) => x.score >= 50 && x.score < 65).length;
+
+  if (!rows.length) {
+    el.out.innerHTML = '<div class="card empty">Nu există date. Rulează workflow-ul din Actions.</div>';
+    return;
+  }
+
+  el.out.innerHTML = rows.map((row) => {
+    const [label, color] = verdict(row.score);
+    const tips = best(row.prediction)
+      .map((tip) => `<div class="prob-row"><strong>${esc(tip.label)}</strong><span>${esc(tip.value)}</span></div>`)
+      .join('');
+
+    return `
+      <article class="card match-card" style="border-left-color:${color}">
+        <div class="match-head">
+          <div>
+            <h3>${esc(row.home)} vs ${esc(row.away)}</h3>
+            <div class="league">${esc(row.league || 'Necunoscut')} • ${dt(row.date)}</div>
+          </div>
+          <div class="badge" style="background:${color}"><span class="score">${row.score}</span>${label}</div>
+        </div>
+        <div class="prob-list">
+          <div class="subtle">Probabilități principale</div>
+          ${tips}
+        </div>
+        <div class="tips">
+          <div class="subtle">Observații</div>
+          <div class="tip-row"><span>Confidence model</span><strong>${row.prediction ? `${(Number(row.prediction.confidence || 0) * 100).toFixed(1)}%` : 'Lipsește'}</strong></div>
+          <div class="tip-row"><span>Sursă</span><strong>${esc(row.source || 'repo data')}</strong></div>
+        </div>
+      </article>`;
+  }).join('');
+}
+
+async function loadData() {
+  hide();
+  el.out.innerHTML = '<div class="card empty">Se încarcă datele locale din repo...</div>';
+
+  try {
+    const res = await fetch(`data/latest.json?t=${Date.now()}`);
+    if (!res.ok) throw new Error('Fișierul data/latest.json nu este încă generat.');
+    const data = await res.json();
+    s.rows = Array.isArray(data?.matches) ? data.matches.map((row) => ({ ...row, score: score(row.prediction) })) : [];
+
+    if (!s.rows.length) {
+      show('Workflow-ul a rulat, dar nu a generat meciuri.', 'info');
+    } else if (data.generated_at) {
+      show(`Date generate la: ${dt(data.generated_at)}`, 'info');
+    }
+
+    s.rows.sort((a, b) => b.score - a.score);
+    render();
+  } catch (error) {
+    s.rows = [];
+    show(error.message || 'Nu am putut încărca datele locale.', 'error');
+    render();
+  }
+}
+
+(function init() {
+  document.querySelectorAll('.filter-btn').forEach((button) => {
+    button.onclick = () => {
+      document.querySelectorAll('.filter-btn').forEach((x) => x.classList.remove('active'));
+      button.classList.add('active');
+      s.filter = button.dataset.filter;
+      render();
+    };
+  });
+
+  el.refresh.onclick = loadData;
+  loadData();
+})();

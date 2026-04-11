@@ -11,31 +11,12 @@
     <header class="topbar card">
       <div>
         <h1>⚽ BetAnalytics Fixed</h1>
-        <p class="muted">Variantă stabilă pentru GitHub Pages. Tokenul se salvează local în browser.</p>
+        <p class="muted">Varianta funcțională pentru GitHub Pages. Datele sunt aduse prin GitHub Actions și salvate local în repo.</p>
       </div>
       <div class="toolbar">
-        <input type="date" id="dateInput" />
-        <button id="refreshBtn">Refresh</button>
-        <button id="toggleSettingsBtn" class="secondary">API</button>
+        <button id="refreshBtn">Reîncarcă datele</button>
       </div>
     </header>
-
-    <section id="settingsPanel" class="card settings hidden">
-      <div class="field-grid">
-        <label>
-          <span>API Base URL</span>
-          <input type="text" id="apiBaseInput" placeholder="https://sports.bzzoiro.com/api" />
-        </label>
-        <label>
-          <span>API Token</span>
-          <input type="password" id="apiTokenInput" placeholder="Introdu tokenul tău" />
-        </label>
-      </div>
-      <div class="settings-actions">
-        <button id="saveSettingsBtn">Salvează și încarcă</button>
-        <small>Cheia nu este urcată în repo. Rămâne doar în browserul tău.</small>
-      </div>
-    </section>
 
     <section id="messageBox" class="message hidden"></section>
 
@@ -44,6 +25,10 @@
       <div class="card stat"><strong id="statTop">0</strong><span>Top</span></div>
       <div class="card stat"><strong id="statValue">0</strong><span>Value</span></div>
       <div class="card stat"><strong id="statRisky">0</strong><span>Risky</span></div>
+    </section>
+
+    <section class="card helper">
+      <strong>Important:</strong> după upload, adaugă în repo secretul <code>BSD_API_TOKEN</code> și rulează workflow-ul <code>Fetch BSD data</code> din tabul Actions.
     </section>
 
     <section class="card filters">
