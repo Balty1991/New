@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>BetAnalytics Fixed</title>
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles.css?v=3" />
 </head>
 <body>
   <div class="app">
@@ -28,7 +28,7 @@
     </section>
 
     <section class="card helper">
-      <strong>Important:</strong> după upload, adaugă în repo secretul <code>BSD_API_TOKEN</code> și rulează workflow-ul <code>Fetch BSD data</code> din tabul Actions.
+      <strong>Important:</strong> dacă vezi încă zerouri după refresh, deschide pagina cu <code>?v=3</code> la finalul URL-ului sau șterge cache-ul site-ului din browser.
     </section>
 
     <section class="card filters">
@@ -41,6 +41,6 @@
     <main id="results" class="results"></main>
   </div>
 
-  <script src="app.js"></script>
+  <script src="app.js?v=3"></script>
 </body>
 </html>
