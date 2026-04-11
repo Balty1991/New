@@ -20,6 +20,12 @@ function hide() {
   el.msg.textContent = '';
 }
 
+function confidencePct(prediction) {
+  const raw = Number(prediction?.confidence || 0);
+  if (!Number.isFinite(raw)) return 0;
+  return raw <= 1 ? raw * 100 : raw;
+}
+
 function verdict(score) {
   if (score >= 80) return ['TOP', '#16a34a'];
   if (score >= 65) return ['VALUE', '#15803d'];
@@ -28,13 +34,17 @@ function verdict(score) {
 }
 
 function score(prediction) {
-  if (!prediction) return 38;
-  const conf = Number(prediction.confidence || 0);
-  let value = 30;
-  if (conf >= 0.8) value += 40;
-  else if (conf >= 0.7) value += 32;
-  else if (conf >= 0.6) value += 24;
-  else if (conf >= 0.5) value += 16;
+  if (!prediction) return 25;
+
+  const conf = confidencePct(prediction);
+  let value = 20;
+
+  if (conf >= 70) value += 38;
+  else if (conf >= 60) value += 30;
+  else if (conf >= 50) value += 22;
+  else if (conf >= 40) value += 14;
+  else if (conf >= 30) value += 8;
+  else value += 4;
 
   const maxProb = Math.max(
     Number(prediction.prob_home_win || 0),
@@ -44,9 +54,10 @@ function score(prediction) {
     Number(prediction.prob_btts_yes || 0)
   );
 
-  if (maxProb >= 75) value += 18;
-  else if (maxProb >= 65) value += 12;
-  else if (maxProb >= 55) value += 6;
+  if (maxProb >= 75) value += 20;
+  else if (maxProb >= 65) value += 14;
+  else if (maxProb >= 55) value += 8;
+  else if (maxProb >= 45) value += 4;
 
   return Math.max(0, Math.min(100, Math.round(value)));
 }
@@ -125,7 +136,7 @@ function render() {
         </div>
         <div class="tips">
           <div class="subtle">Observații</div>
-          <div class="tip-row"><span>Confidence model</span><strong>${row.prediction ? `${(Number(row.prediction.confidence || 0) * 100).toFixed(1)}%` : 'Lipsește'}</strong></div>
+          <div class="tip-row"><span>Confidence model</span><strong>${row.prediction ? `${confidencePct(row.prediction).toFixed(1)}%` : 'Lipsește'}</strong></div>
           <div class="tip-row"><span>Sursă</span><strong>${esc(row.source || 'repo data')}</strong></div>
         </div>
       </article>`;

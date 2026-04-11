@@ -25,14 +25,16 @@ jobs:
           import os
           import urllib.request
           import urllib.parse
-          from datetime import datetime, timezone
+          from datetime import datetime, timezone, timedelta
 
           token = os.environ.get('BSD_API_TOKEN', '').strip()
           if not token:
               raise SystemExit('Missing BSD_API_TOKEN secret')
 
           base = os.environ.get('BSD_API_BASE', 'https://sports.bzzoiro.com/api').rstrip('/')
-          today = datetime.now(timezone.utc).strftime('%Y-%m-%d')
+          now = datetime.now(timezone.utc)
+          start_date = now.strftime('%Y-%m-%d')
+          end_date = (now + timedelta(days=3)).strftime('%Y-%m-%d')
 
           def get_json(path, params):
               url = f"{base}{path}?{urllib.parse.urlencode(params)}"
@@ -43,9 +45,9 @@ jobs:
               with urllib.request.urlopen(req) as response:
                   return json.loads(response.read().decode('utf-8'))
 
-          events = get_json('/events/', {'date_from': today, 'date_to': today, 'limit': 20})
+          events = get_json('/events/', {'date_from': start_date, 'date_to': end_date, 'limit': 100})
           try:
-              predictions = get_json('/predictions/', {'date_from': today, 'date_to': today, 'limit': 300, 'upcoming': 'true'})
+              predictions = get_json('/predictions/', {'date_from': start_date, 'date_to': end_date, 'limit': 300, 'upcoming': 'true'})
           except Exception:
               predictions = {'results': []}
 
@@ -65,7 +67,7 @@ jobs:
               return None
 
           rows = []
-          for event in (events.get('results') or [])[:12]:
+          for event in sorted((events.get('results') or []), key=lambda x: x.get('event_date') or '')[:60]:
               rows.append({
                   'id': event.get('id'),
                   'home': event.get('home_team') or event.get('home_team_name') or 'Home',
@@ -78,7 +80,8 @@ jobs:
 
           payload = {
               'generated_at': datetime.now(timezone.utc).isoformat(),
-              'date': today,
+              'date_from': start_date,
+              'date_to': end_date,
               'matches': rows
           }
 
