@@ -3,7 +3,7 @@ const state = {
   visibleRows: [],
   interval: 'all',
   type: 'all',
-  minProb: 55,
+  probBand: '70-80',
   sort: 'prob'
 };
 
@@ -126,9 +126,14 @@ function timeBucket(value) {
   return 'later';
 }
 
+function matchProbBand(value) {
+  if (state.probBand === 'all') return true;
+  const [min, max] = state.probBand.split('-').map(Number);
+  return value >= min && value < max;
+}
+
 function applyFilters() {
   const type = state.type;
-  const minProb = Number(state.minProb);
 
   let rows = state.allRows.filter((row) => {
     const bucket = timeBucket(row.date);
@@ -141,7 +146,7 @@ function applyFilters() {
     }
 
     const best = bestMarket(row.prediction, type);
-    return best && best.value >= minProb;
+    return best && matchProbBand(best.value);
   });
 
   rows = rows.map((row) => {
@@ -280,7 +285,7 @@ function bindFilters() {
     render();
   };
   el.minProb.onchange = () => {
-    state.minProb = Number(el.minProb.value);
+    state.probBand = el.minProb.value;
     applyFilters();
     render();
   };

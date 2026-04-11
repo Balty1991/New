@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>BetAnalytics Pro Dark</title>
-  <link rel="stylesheet" href="styles.css?v=7" />
+  <link rel="stylesheet" href="styles.css?v=8" />
 </head>
 <body>
   <div class="app-shell">
@@ -12,7 +12,7 @@
       <div>
         <div class="eyebrow">BET ANALYTICS • DARK EDITION</div>
         <h1>Pronosticuri ordonate, filtrabile și mai ușor de citit</h1>
-        <p>Interfață modernă, dark theme, filtrare după interval, tip de piață, probabilitate minimă și sortare.</p>
+        <p>Interfață modernă, dark theme, filtrare după interval, tip de piață, interval de probabilitate și sortare.</p>
       </div>
       <button id="refreshBtn">Reîncarcă datele</button>
     </header>
@@ -40,13 +40,14 @@
           </select>
         </label>
         <label>
-          <span>Probabilitate minimă</span>
+          <span>Interval probabilitate</span>
           <select id="minProbSelect">
-            <option value="45">45%+</option>
-            <option value="55" selected>55%+</option>
-            <option value="60">60%+</option>
-            <option value="65">65%+</option>
-            <option value="70">70%+</option>
+            <option value="all">Toate</option>
+            <option value="45-60">45% - 60%</option>
+            <option value="60-70">60% - 70%</option>
+            <option value="70-80" selected>70% - 80%</option>
+            <option value="80-90">80% - 90%</option>
+            <option value="90-101">90%+</option>
           </select>
         </label>
         <label>
@@ -70,6 +71,6 @@
     <main id="results" class="results-stack"></main>
   </div>
 
-  <script src="app.js?v=6"></script>
+  <script src="app.js?v=8"></script>
 </body>
 </html>
