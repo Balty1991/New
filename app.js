@@ -20,62 +20,50 @@ function hide() {
   el.msg.textContent = '';
 }
 
-function confidencePct(prediction) {
-  const raw = Number(prediction?.confidence || 0);
-  if (!Number.isFinite(raw)) return 0;
+function toPct(value) {
+  const raw = Number(value);
+  if (!Number.isFinite(raw)) return null;
   return raw <= 1 ? raw * 100 : raw;
 }
 
-function verdict(score) {
-  if (score >= 80) return ['TOP', '#16a34a'];
-  if (score >= 65) return ['VALUE', '#15803d'];
-  if (score >= 50) return ['RISKY', '#d97706'];
-  return ['LOW', '#dc2626'];
+function confidencePct(prediction) {
+  return toPct(prediction?.confidence) ?? 0;
 }
 
-function score(prediction) {
-  if (!prediction) return 25;
+function marketList(prediction) {
+  if (!prediction) return [];
 
-  const conf = confidencePct(prediction);
-  let value = 20;
-
-  if (conf >= 70) value += 38;
-  else if (conf >= 60) value += 30;
-  else if (conf >= 50) value += 22;
-  else if (conf >= 40) value += 14;
-  else if (conf >= 30) value += 8;
-  else value += 4;
-
-  const maxProb = Math.max(
-    Number(prediction.prob_home_win || 0),
-    Number(prediction.prob_draw || 0),
-    Number(prediction.prob_away_win || 0),
-    Number(prediction.prob_over_25 || 0),
-    Number(prediction.prob_btts_yes || 0)
-  );
-
-  if (maxProb >= 75) value += 20;
-  else if (maxProb >= 65) value += 14;
-  else if (maxProb >= 55) value += 8;
-  else if (maxProb >= 45) value += 4;
-
-  return Math.max(0, Math.min(100, Math.round(value)));
-}
-
-function best(prediction) {
-  if (!prediction) return [{ label: 'Fără prediction disponibil', value: '-' }];
+  const over15 = toPct(prediction.prob_over_15);
+  const over25 = toPct(prediction.prob_over_25);
+  const over35 = toPct(prediction.prob_over_35);
+  const bttsYes = toPct(prediction.prob_btts_yes);
 
   return [
-    { label: '1', value: Number(prediction.prob_home_win || 0) },
-    { label: 'X', value: Number(prediction.prob_draw || 0) },
-    { label: '2', value: Number(prediction.prob_away_win || 0) },
-    { label: 'Over 2.5', value: Number(prediction.prob_over_25 || 0) },
-    { label: 'BTTS Da', value: Number(prediction.prob_btts_yes || 0) }
-  ]
-    .filter((item) => item.value > 0)
-    .sort((a, b) => b.value - a.value)
-    .slice(0, 3)
-    .map((item) => ({ label: item.label, value: `${item.value.toFixed(1)}%` }));
+    { label: '1', value: toPct(prediction.prob_home_win) },
+    { label: 'X', value: toPct(prediction.prob_draw) },
+    { label: '2', value: toPct(prediction.prob_away_win) },
+    { label: 'Over 1.5', value: over15 },
+    { label: 'Over 2.5', value: over25 },
+    { label: 'Under 3.5', value: over35 == null ? null : 100 - over35 },
+    { label: 'BTTS Da', value: bttsYes },
+    { label: 'BTTS Nu', value: bttsYes == null ? null : 100 - bttsYes }
+  ].filter((item) => item.value != null && item.value >= 0 && item.value <= 100);
+}
+
+function computeScore(prediction) {
+  if (!prediction) return null;
+  const conf = confidencePct(prediction);
+  const best = marketList(prediction).sort((a, b) => b.value - a.value)[0]?.value ?? 0;
+  let score = Math.round((conf * 0.35) + (best * 0.65));
+  if (conf >= 60 && best >= 70) score += 4;
+  return Math.max(0, Math.min(100, score));
+}
+
+function level(score) {
+  if (score >= 80) return ['RIDICAT', '#16a34a'];
+  if (score >= 65) return ['BUN', '#15803d'];
+  if (score >= 50) return ['MEDIU', '#d97706'];
+  return ['SCĂZUT', '#dc2626'];
 }
 
 function esc(v) {
@@ -111,14 +99,16 @@ function render() {
   el.risky.textContent = s.rows.filter((x) => x.score >= 50 && x.score < 65).length;
 
   if (!rows.length) {
-    el.out.innerHTML = '<div class="card empty">Nu există date. Rulează workflow-ul din Actions.</div>';
+    el.out.innerHTML = '<div class="card empty">Nu există meciuri cu prediction valid în setul curent de date.</div>';
     return;
   }
 
   el.out.innerHTML = rows.map((row) => {
-    const [label, color] = verdict(row.score);
-    const tips = best(row.prediction)
-      .map((tip) => `<div class="prob-row"><strong>${esc(tip.label)}</strong><span>${esc(tip.value)}</span></div>`)
+    const [label, color] = level(row.score);
+    const topMarkets = marketList(row.prediction)
+      .sort((a, b) => b.value - a.value)
+      .slice(0, 4)
+      .map((item) => `<div class="prob-row"><strong>${esc(item.label)}</strong><span>${item.value.toFixed(1)}%</span></div>`)
       .join('');
 
     return `
@@ -131,12 +121,13 @@ function render() {
           <div class="badge" style="background:${color}"><span class="score">${row.score}</span>${label}</div>
         </div>
         <div class="prob-list">
-          <div class="subtle">Probabilități principale</div>
-          ${tips}
+          <div class="subtle">Piețe principale</div>
+          ${topMarkets}
         </div>
         <div class="tips">
           <div class="subtle">Observații</div>
-          <div class="tip-row"><span>Confidence model</span><strong>${row.prediction ? `${confidencePct(row.prediction).toFixed(1)}%` : 'Lipsește'}</strong></div>
+          <div class="tip-row"><span>Confidence model</span><strong>${confidencePct(row.prediction).toFixed(1)}%</strong></div>
+          <div class="tip-row"><span>Nivel intern</span><strong>${label}</strong></div>
           <div class="tip-row"><span>Sursă</span><strong>${esc(row.source || 'repo data')}</strong></div>
         </div>
       </article>`;
@@ -151,15 +142,19 @@ async function loadData() {
     const res = await fetch(`data/latest.json?t=${Date.now()}`);
     if (!res.ok) throw new Error('Fișierul data/latest.json nu este încă generat.');
     const data = await res.json();
-    s.rows = Array.isArray(data?.matches) ? data.matches.map((row) => ({ ...row, score: score(row.prediction) })) : [];
+
+    const rows = Array.isArray(data?.matches) ? data.matches : [];
+    s.rows = rows
+      .map((row) => ({ ...row, score: computeScore(row.prediction) }))
+      .filter((row) => row.score != null)
+      .sort((a, b) => b.score - a.score);
 
     if (!s.rows.length) {
-      show('Workflow-ul a rulat, dar nu a generat meciuri.', 'info');
+      show('Nu există predictions valide în fișierul curent.', 'info');
     } else if (data.generated_at) {
       show(`Date generate la: ${dt(data.generated_at)}`, 'info');
     }
 
-    s.rows.sort((a, b) => b.score - a.score);
     render();
   } catch (error) {
     s.rows = [];
