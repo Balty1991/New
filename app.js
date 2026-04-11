@@ -1,13 +1,25 @@
-const s = { filter: 'all', rows: [] };
+const state = {
+  allRows: [],
+  visibleRows: [],
+  interval: 'all',
+  type: 'all',
+  minProb: 55,
+  sort: 'prob'
+};
+
 const $ = (id) => document.getElementById(id);
 const el = {
   refresh: $('refreshBtn'),
   msg: $('messageBox'),
   out: $('results'),
   total: $('statTotal'),
-  top: $('statTop'),
-  value: $('statValue'),
-  risky: $('statRisky')
+  high: $('statHigh'),
+  avg: $('statAverage'),
+  topProb: $('statTopProb'),
+  interval: $('intervalSelect'),
+  type: $('typeSelect'),
+  minProb: $('minProbSelect'),
+  sort: $('sortSelect')
 };
 
 function show(msg, type = 'info') {
@@ -16,8 +28,8 @@ function show(msg, type = 'info') {
 }
 
 function hide() {
-  el.msg.className = 'message hidden';
   el.msg.textContent = '';
+  el.msg.className = 'message hidden';
 }
 
 function toPct(value) {
@@ -30,40 +42,58 @@ function confidencePct(prediction) {
   return toPct(prediction?.confidence) ?? 0;
 }
 
-function marketList(prediction) {
-  if (!prediction) return [];
+function markets(prediction) {
+  if (!prediction) return { winner: [], goals: [], btts: [] };
 
   const over15 = toPct(prediction.prob_over_15);
   const over25 = toPct(prediction.prob_over_25);
   const over35 = toPct(prediction.prob_over_35);
   const bttsYes = toPct(prediction.prob_btts_yes);
 
-  return [
-    { label: '1', value: toPct(prediction.prob_home_win) },
-    { label: 'X', value: toPct(prediction.prob_draw) },
-    { label: '2', value: toPct(prediction.prob_away_win) },
-    { label: 'Over 1.5', value: over15 },
-    { label: 'Over 2.5', value: over25 },
-    { label: 'Under 3.5', value: over35 == null ? null : 100 - over35 },
-    { label: 'BTTS Da', value: bttsYes },
-    { label: 'BTTS Nu', value: bttsYes == null ? null : 100 - bttsYes }
-  ].filter((item) => item.value != null && item.value >= 0 && item.value <= 100);
+  const winner = [
+    { label: '1', value: toPct(prediction.prob_home_win), kind: 'winner' },
+    { label: 'X', value: toPct(prediction.prob_draw), kind: 'winner' },
+    { label: '2', value: toPct(prediction.prob_away_win), kind: 'winner' }
+  ].filter((m) => m.value != null);
+
+  const goals = [
+    { label: 'Over 1.5', value: over15, kind: 'goals' },
+    { label: 'Over 2.5', value: over25, kind: 'goals' },
+    { label: 'Under 3.5', value: over35 == null ? null : 100 - over35, kind: 'goals' }
+  ].filter((m) => m.value != null);
+
+  const btts = [
+    { label: 'BTTS Da', value: bttsYes, kind: 'btts' },
+    { label: 'BTTS Nu', value: bttsYes == null ? null : 100 - bttsYes, kind: 'btts' }
+  ].filter((m) => m.value != null);
+
+  return { winner, goals, btts };
+}
+
+function flattenMarkets(prediction) {
+  const group = markets(prediction);
+  return [...group.winner, ...group.goals, ...group.btts].filter((m) => m.value >= 0 && m.value <= 100);
+}
+
+function bestMarket(prediction, type = 'all') {
+  const group = markets(prediction);
+  const pool = type === 'winner' ? group.winner : type === 'goals' ? group.goals : type === 'btts' ? group.btts : flattenMarkets(prediction);
+  return [...pool].sort((a, b) => b.value - a.value)[0] || null;
 }
 
 function computeScore(prediction) {
   if (!prediction) return null;
   const conf = confidencePct(prediction);
-  const best = marketList(prediction).sort((a, b) => b.value - a.value)[0]?.value ?? 0;
-  let score = Math.round((conf * 0.35) + (best * 0.65));
-  if (conf >= 60 && best >= 70) score += 4;
-  return Math.max(0, Math.min(100, score));
+  const best = bestMarket(prediction)?.value ?? 0;
+  const raw = Math.round(conf * 0.35 + best * 0.65 + (best >= 75 && conf >= 50 ? 4 : 0));
+  return Math.max(0, Math.min(100, raw));
 }
 
 function level(score) {
-  if (score >= 80) return ['RIDICAT', '#16a34a'];
-  if (score >= 65) return ['BUN', '#15803d'];
-  if (score >= 50) return ['MEDIU', '#d97706'];
-  return ['SCĂZUT', '#dc2626'];
+  if (score >= 80) return ['RIDICAT', 'badge-high'];
+  if (score >= 65) return ['BUN', 'badge-good'];
+  if (score >= 50) return ['MEDIU', 'badge-mid'];
+  return ['SCĂZUT', 'badge-low'];
 }
 
 function esc(v) {
@@ -75,104 +105,194 @@ function esc(v) {
     .replaceAll("'", '&#39;');
 }
 
-function dt(v) {
+function formatDate(value) {
   try {
-    return new Date(v).toLocaleString('ro-RO', {
-      year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit'
+    return new Date(value).toLocaleString('ro-RO', {
+      day: '2-digit', month: '2-digit', year: 'numeric', hour: '2-digit', minute: '2-digit'
     });
   } catch {
-    return v || '-';
+    return value || '-';
   }
 }
 
-function render() {
-  const rows = s.rows.filter((row) => {
-    if (s.filter === 'top') return row.score >= 80;
-    if (s.filter === 'value') return row.score >= 65 && row.score < 80;
-    if (s.filter === 'risky') return row.score >= 50 && row.score < 65;
-    return true;
+function timeBucket(value) {
+  const now = new Date();
+  const eventDate = new Date(value);
+  const diff = eventDate - now;
+  const oneDay = 24 * 60 * 60 * 1000;
+  if (diff < 0) return 'past';
+  if (diff <= oneDay) return '24h';
+  if (diff <= oneDay * 3) return '3d';
+  return 'later';
+}
+
+function applyFilters() {
+  const type = state.type;
+  const minProb = Number(state.minProb);
+
+  let rows = state.allRows.filter((row) => {
+    const bucket = timeBucket(row.date);
+    if (state.interval === '24h' && bucket !== '24h') return false;
+    if (state.interval === '3d' && !['24h', '3d'].includes(bucket)) return false;
+    if (state.interval === 'today') {
+      const d = new Date(row.date);
+      const now = new Date();
+      if (d.toDateString() !== now.toDateString()) return false;
+    }
+
+    const best = bestMarket(row.prediction, type);
+    return best && best.value >= minProb;
   });
 
-  el.total.textContent = s.rows.length;
-  el.top.textContent = s.rows.filter((x) => x.score >= 80).length;
-  el.value.textContent = s.rows.filter((x) => x.score >= 65 && x.score < 80).length;
-  el.risky.textContent = s.rows.filter((x) => x.score >= 50 && x.score < 65).length;
+  rows = rows.map((row) => {
+    const best = bestMarket(row.prediction, type);
+    return { ...row, bestFiltered: best };
+  });
 
-  if (!rows.length) {
-    el.out.innerHTML = '<div class="card empty">Nu există meciuri cu prediction valid în setul curent de date.</div>';
+  rows.sort((a, b) => {
+    if (state.sort === 'date') return new Date(a.date) - new Date(b.date);
+    if (state.sort === 'score') return b.score - a.score;
+    return (b.bestFiltered?.value ?? 0) - (a.bestFiltered?.value ?? 0);
+  });
+
+  state.visibleRows = rows;
+}
+
+function updateStats() {
+  const rows = state.visibleRows;
+  el.total.textContent = rows.length;
+  el.high.textContent = rows.filter((r) => r.score >= 80).length;
+  el.avg.textContent = rows.length ? `${Math.round(rows.reduce((a, r) => a + r.score, 0) / rows.length)}` : '0';
+  el.topProb.textContent = rows.length ? `${Math.round(Math.max(...rows.map((r) => r.bestFiltered?.value ?? 0)))}%` : '0%';
+}
+
+function sectionHtml(title, items) {
+  if (!items.length) return '';
+  return `
+    <div class="market-section">
+      <div class="section-title">${title}</div>
+      <div class="market-grid">
+        ${items.sort((a, b) => b.value - a.value).map((m) => `
+          <div class="market-chip ${m.value >= 70 ? 'strong' : ''}">
+            <span>${esc(m.label)}</span>
+            <strong>${m.value.toFixed(1)}%</strong>
+          </div>`).join('')}
+      </div>
+    </div>`;
+}
+
+function render() {
+  updateStats();
+
+  if (!state.visibleRows.length) {
+    el.out.innerHTML = '<div class="empty-card">Nu există meciuri care să corespundă filtrului ales.</div>';
     return;
   }
 
-  el.out.innerHTML = rows.map((row) => {
-    const [label, color] = level(row.score);
-    const topMarkets = marketList(row.prediction)
-      .sort((a, b) => b.value - a.value)
-      .slice(0, 4)
-      .map((item) => `<div class="prob-row"><strong>${esc(item.label)}</strong><span>${item.value.toFixed(1)}%</span></div>`)
-      .join('');
+  const grouped = state.visibleRows.reduce((acc, row) => {
+    const day = new Date(row.date).toLocaleDateString('ro-RO', { weekday: 'long', day: '2-digit', month: '2-digit' });
+    acc[day] = acc[day] || [];
+    acc[day].push(row);
+    return acc;
+  }, {});
 
-    return `
-      <article class="card match-card" style="border-left-color:${color}">
-        <div class="match-head">
-          <div>
-            <h3>${esc(row.home)} vs ${esc(row.away)}</h3>
-            <div class="league">${esc(row.league || 'Necunoscut')} • ${dt(row.date)}</div>
-          </div>
-          <div class="badge" style="background:${color}"><span class="score">${row.score}</span>${label}</div>
-        </div>
-        <div class="prob-list">
-          <div class="subtle">Piețe principale</div>
-          ${topMarkets}
-        </div>
-        <div class="tips">
-          <div class="subtle">Observații</div>
-          <div class="tip-row"><span>Confidence model</span><strong>${confidencePct(row.prediction).toFixed(1)}%</strong></div>
-          <div class="tip-row"><span>Nivel intern</span><strong>${label}</strong></div>
-          <div class="tip-row"><span>Sursă</span><strong>${esc(row.source || 'repo data')}</strong></div>
-        </div>
-      </article>`;
-  }).join('');
+  el.out.innerHTML = Object.entries(grouped).map(([day, rows]) => `
+    <section class="day-block">
+      <div class="day-heading">${esc(day)}</div>
+      <div class="cards-grid">
+        ${rows.map((row) => {
+          const [label, badgeClass] = level(row.score);
+          const groupedMarkets = markets(row.prediction);
+          return `
+            <article class="match-card ${badgeClass}">
+              <div class="card-top">
+                <div>
+                  <h3>${esc(row.home)} <span>vs</span> ${esc(row.away)}</h3>
+                  <div class="meta">${esc(row.league || 'Necunoscut')} • ${formatDate(row.date)}</div>
+                </div>
+                <div class="score-box">
+                  <span class="score-number">${row.score}</span>
+                  <span class="score-label">${label}</span>
+                </div>
+              </div>
+
+              <div class="summary-grid">
+                <div class="summary-card">
+                  <span>Pronostic principal</span>
+                  <strong>${esc(row.bestFiltered?.label || '-')}</strong>
+                </div>
+                <div class="summary-card">
+                  <span>Probabilitate</span>
+                  <strong>${row.bestFiltered ? row.bestFiltered.value.toFixed(1) + '%' : '-'}</strong>
+                </div>
+                <div class="summary-card">
+                  <span>Confidence model</span>
+                  <strong>${confidencePct(row.prediction).toFixed(1)}%</strong>
+                </div>
+              </div>
+
+              ${sectionHtml('1X2', groupedMarkets.winner)}
+              ${sectionHtml('Goluri', groupedMarkets.goals)}
+              ${sectionHtml('BTTS', groupedMarkets.btts)}
+            </article>`;
+        }).join('')}
+      </div>
+    </section>`).join('');
 }
 
 async function loadData() {
   hide();
-  el.out.innerHTML = '<div class="card empty">Se încarcă datele locale din repo...</div>';
+  el.out.innerHTML = '<div class="empty-card">Se încarcă datele locale din repo...</div>';
 
   try {
     const res = await fetch(`data/latest.json?t=${Date.now()}`);
     if (!res.ok) throw new Error('Fișierul data/latest.json nu este încă generat.');
     const data = await res.json();
 
-    const rows = Array.isArray(data?.matches) ? data.matches : [];
-    s.rows = rows
+    state.allRows = (Array.isArray(data?.matches) ? data.matches : [])
       .map((row) => ({ ...row, score: computeScore(row.prediction) }))
-      .filter((row) => row.score != null)
-      .sort((a, b) => b.score - a.score);
+      .filter((row) => row.score != null);
 
-    if (!s.rows.length) {
-      show('Nu există predictions valide în fișierul curent.', 'info');
-    } else if (data.generated_at) {
-      show(`Date generate la: ${dt(data.generated_at)}`, 'info');
+    applyFilters();
+
+    if (data.generated_at) {
+      show(`Date generate la: ${formatDate(data.generated_at)} • interval: ${data.date_from || '-'} → ${data.date_to || '-'}`, 'info');
     }
 
     render();
   } catch (error) {
-    s.rows = [];
+    state.allRows = [];
+    state.visibleRows = [];
     show(error.message || 'Nu am putut încărca datele locale.', 'error');
     render();
   }
 }
 
-(function init() {
-  document.querySelectorAll('.filter-btn').forEach((button) => {
-    button.onclick = () => {
-      document.querySelectorAll('.filter-btn').forEach((x) => x.classList.remove('active'));
-      button.classList.add('active');
-      s.filter = button.dataset.filter;
-      render();
-    };
-  });
+function bindFilters() {
+  el.interval.onchange = () => {
+    state.interval = el.interval.value;
+    applyFilters();
+    render();
+  };
+  el.type.onchange = () => {
+    state.type = el.type.value;
+    applyFilters();
+    render();
+  };
+  el.minProb.onchange = () => {
+    state.minProb = Number(el.minProb.value);
+    applyFilters();
+    render();
+  };
+  el.sort.onchange = () => {
+    state.sort = el.sort.value;
+    applyFilters();
+    render();
+  };
+}
 
+(function init() {
+  bindFilters();
   el.refresh.onclick = loadData;
   loadData();
 })();

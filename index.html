@@ -3,44 +3,73 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>BetAnalytics Fixed</title>
-  <link rel="stylesheet" href="styles.css?v=5" />
+  <title>BetAnalytics Pro Dark</title>
+  <link rel="stylesheet" href="styles.css?v=6" />
 </head>
 <body>
-  <div class="app">
-    <header class="topbar card">
+  <div class="app-shell">
+    <header class="hero-panel">
       <div>
-        <h1>⚽ BetAnalytics Fixed</h1>
-        <p class="muted">Varianta funcțională pentru GitHub Pages. Datele sunt aduse prin GitHub Actions și salvate local în repo.</p>
+        <div class="eyebrow">BET ANALYTICS • DARK EDITION</div>
+        <h1>Pronosticuri ordonate, filtrabile și mai ușor de citit</h1>
+        <p>Interfață modernă, dark theme, filtrare după interval, tip de piață, probabilitate minimă și sortare.</p>
       </div>
-      <div class="toolbar">
-        <button id="refreshBtn">Reîncarcă datele</button>
-      </div>
+      <button id="refreshBtn">Reîncarcă datele</button>
     </header>
 
     <section id="messageBox" class="message hidden"></section>
 
-    <section class="stats">
-      <div class="card stat"><strong id="statTotal">0</strong><span>Total</span></div>
-      <div class="card stat"><strong id="statTop">0</strong><span>Top</span></div>
-      <div class="card stat"><strong id="statValue">0</strong><span>Value</span></div>
-      <div class="card stat"><strong id="statRisky">0</strong><span>Risky</span></div>
+    <section class="toolbar-panel">
+      <div class="toolbar-grid">
+        <label>
+          <span>Interval</span>
+          <select id="intervalSelect">
+            <option value="all">Toate zilele din fișier</option>
+            <option value="today">Doar azi</option>
+            <option value="24h">Următoarele 24h</option>
+            <option value="3d">Următoarele 3 zile</option>
+          </select>
+        </label>
+        <label>
+          <span>Tip pronostic</span>
+          <select id="typeSelect">
+            <option value="all">Toate</option>
+            <option value="winner">1X2</option>
+            <option value="goals">Goluri</option>
+            <option value="btts">BTTS</option>
+          </select>
+        </label>
+        <label>
+          <span>Probabilitate minimă</span>
+          <select id="minProbSelect">
+            <option value="45">45%+</option>
+            <option value="55" selected>55%+</option>
+            <option value="60">60%+</option>
+            <option value="65">65%+</option>
+            <option value="70">70%+</option>
+          </select>
+        </label>
+        <label>
+          <span>Sortare</span>
+          <select id="sortSelect">
+            <option value="prob">Probabilitate</option>
+            <option value="score">Scor intern</option>
+            <option value="date">Dată eveniment</option>
+          </select>
+        </label>
+      </div>
     </section>
 
-    <section class="card helper">
-      <strong>Important:</strong> pagina afișează doar meciurile care au prediction valid în setul curent de date. Pentru mai multe meciuri, rulează din nou workflow-ul din <code>Actions</code>.
+    <section class="stats-grid">
+      <div class="stat-card"><span>Total</span><strong id="statTotal">0</strong></div>
+      <div class="stat-card"><span>Scor ridicat</span><strong id="statHigh">0</strong></div>
+      <div class="stat-card"><span>Scor mediu</span><strong id="statAverage">0</strong></div>
+      <div class="stat-card"><span>Cea mai mare probabilitate</span><strong id="statTopProb">0%</strong></div>
     </section>
 
-    <section class="card filters">
-      <button class="filter-btn active" data-filter="all">Toate</button>
-      <button class="filter-btn" data-filter="top">Top</button>
-      <button class="filter-btn" data-filter="value">Value</button>
-      <button class="filter-btn" data-filter="risky">Risky</button>
-    </section>
-
-    <main id="results" class="results"></main>
+    <main id="results" class="results-stack"></main>
   </div>
 
-  <script src="app.js?v=5"></script>
+  <script src="app.js?v=6"></script>
 </body>
 </html>
