@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BetAnalytics Fixed</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app">
+    <header class="topbar card">
+      <div>
+        <h1>⚽ BetAnalytics Fixed</h1>
+        <p class="muted">Variantă stabilă pentru GitHub Pages. Tokenul se salvează local în browser.</p>
+      </div>
+      <div class="toolbar">
+        <input type="date" id="dateInput" />
+        <button id="refreshBtn">Refresh</button>
+        <button id="toggleSettingsBtn" class="secondary">API</button>
+      </div>
+    </header>
+
+    <section id="settingsPanel" class="card settings hidden">
+      <div class="field-grid">
+        <label>
+          <span>API Base URL</span>
+          <input type="text" id="apiBaseInput" placeholder="https://sports.bzzoiro.com/api" />
+        </label>
+        <label>
+          <span>API Token</span>
+          <input type="password" id="apiTokenInput" placeholder="Introdu tokenul tău" />
+        </label>
+      </div>
+      <div class="settings-actions">
+        <button id="saveSettingsBtn">Salvează și încarcă</button>
+        <small>Cheia nu este urcată în repo. Rămâne doar în browserul tău.</small>
+      </div>
+    </section>
+
+    <section id="messageBox" class="message hidden"></section>
+
+    <section class="stats">
+      <div class="card stat"><strong id="statTotal">0</strong><span>Total</span></div>
+      <div class="card stat"><strong id="statTop">0</strong><span>Top</span></div>
+      <div class="card stat"><strong id="statValue">0</strong><span>Value</span></div>
+      <div class="card stat"><strong id="statRisky">0</strong><span>Risky</span></div>
+    </section>
+
+    <section class="card filters">
+      <button class="filter-btn active" data-filter="all">Toate</button>
+      <button class="filter-btn" data-filter="top">Top</button>
+      <button class="filter-btn" data-filter="value">Value</button>
+      <button class="filter-btn" data-filter="risky">Risky</button>
+    </section>
+
+    <main id="results" class="results"></main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
