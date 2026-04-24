@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-24T15:58:23.228784+00:00",
+  "generated_at": "2026-04-24T16:54:45.585148+00:00",
   "date_from": "2026-04-24",
   "date_to": "2026-04-27",
   "matches": [
@@ -4788,13 +4788,13 @@
           "event_date": "2026-04-24T19:45:00+04:00",
           "round_number": 29,
           "group_name": null,
-          "status": "1st_half",
+          "status": "2nd_half",
           "home_score": 0,
           "away_score": 0,
-          "home_score_ht": null,
-          "away_score_ht": null,
-          "current_minute": 12,
-          "period": "1T",
+          "home_score_ht": 0,
+          "away_score_ht": 0,
+          "current_minute": 50,
+          "period": "2T",
           "odds_home": 2.25,
           "odds_draw": 3.5,
           "odds_away": 2.55,
@@ -4809,8 +4809,8 @@
           "odds_dc_12": null,
           "actual_home_xg": null,
           "actual_away_xg": null,
-          "home_xg_live": 0.12,
-          "away_xg_live": 0.14,
+          "home_xg_live": 0.31,
+          "away_xg_live": 0.64,
           "penalty_shootout": null,
           "referee": null,
           "home_coach": {
@@ -4851,13 +4851,43 @@
           },
           "incidents": [
             {
-              "text": "First half",
+              "text": "Second half",
               "type": "period",
-              "minute": 45,
+              "minute": 90,
               "is_live": true,
               "added_time": 999,
               "away_score": 0,
               "home_score": 0
+            },
+            {
+              "text": "HT",
+              "type": "period",
+              "minute": 45,
+              "is_live": false,
+              "added_time": 999,
+              "away_score": 0,
+              "home_score": 0
+            },
+            {
+              "type": "injuryTime",
+              "length": 1,
+              "minute": 45
+            },
+            {
+              "type": "card",
+              "minute": 36,
+              "player": "S. Baattia",
+              "is_home": true,
+              "card_type": "yellow",
+              "player_id": 1521953
+            },
+            {
+              "type": "card",
+              "minute": 33,
+              "player": "M. O. Kanabah",
+              "is_home": false,
+              "card_type": "yellow",
+              "player_id": 828444
             }
           ],
           "lineups": {
@@ -5559,16 +5589,219 @@
             {
               "gm": {
                 "x": 0,
+                "y": 49.5,
+                "z": 19
+              },
+              "xg": 0.0351,
+              "gml": "low-centre",
+              "min": 41,
+              "pid": 115577,
+              "pos": {
+                "x": 19.7,
+                "y": 46.2,
+                "z": 0
+              },
+              "sit": "assisted",
+              "body": "right-foot",
+              "home": false,
+              "type": "block",
+              "xgot": null,
+              "block": {
+                "x": 18,
+                "y": 46.6,
+                "z": 0
+              }
+            },
+            {
+              "gm": {
+                "x": 0,
+                "y": 50,
+                "z": 19
+              },
+              "xg": 0.0449,
+              "gml": "low-centre",
+              "min": 39,
+              "pid": 880790,
+              "pos": {
+                "x": 17.9,
+                "y": 65.4,
+                "z": 0
+              },
+              "sit": "assisted",
+              "body": "left-foot",
+              "home": true,
+              "type": "block",
+              "xgot": null,
+              "block": {
+                "x": 14.5,
+                "y": 62.5,
+                "z": 0
+              }
+            },
+            {
+              "gm": {
+                "x": 0,
+                "y": 51.9,
+                "z": 19
+              },
+              "xg": 0.1847,
+              "gml": "low-left",
+              "min": 32,
+              "pid": 592560,
+              "pos": {
+                "x": 12.6,
+                "y": 49.4,
+                "z": 0
+              },
+              "sit": "assisted",
+              "body": "right-foot",
+              "home": false,
+              "type": "block",
+              "xgot": null,
+              "block": {
+                "x": 7.9,
+                "y": 48.9,
+                "z": 0
+              }
+            },
+            {
+              "gm": {
+                "x": 0,
+                "y": 50.2,
+                "z": 19
+              },
+              "xg": 0.1278,
+              "gml": "low-centre",
+              "min": 31,
+              "pid": 100621,
+              "pos": {
+                "x": 8.3,
+                "y": 56.4,
+                "z": 0
+              },
+              "sit": "assisted",
+              "body": "right-foot",
+              "home": false,
+              "type": "block",
+              "xgot": null,
+              "block": {
+                "x": 6.8,
+                "y": 55.2,
+                "z": 0
+              }
+            },
+            {
+              "gm": {
+                "x": 0,
+                "y": 51.9,
+                "z": 16.5
+              },
+              "xg": 0.0812,
+              "gml": "low-left",
+              "min": 31,
+              "pid": 851099,
+              "pos": {
+                "x": 12.5,
+                "y": 33.3,
+                "z": 0
+              },
+              "sit": "regular",
+              "body": "left-foot",
+              "home": false,
+              "type": "save",
+              "xgot": 0.0599,
+              "block": {
+                "x": 0.90000000000001,
+                "y": 46.9,
+                "z": 0
+              }
+            },
+            {
+              "gm": {
+                "x": 0,
+                "y": 47.4,
+                "z": 56.9
+              },
+              "xg": 0.0969,
+              "gml": "close-high",
+              "min": 24,
+              "pid": 796723,
+              "pos": {
+                "x": 15.2,
+                "y": 43,
+                "z": 0
+              },
+              "sit": "assisted",
+              "body": "right-foot",
+              "home": true,
+              "type": "miss",
+              "xgot": null
+            },
+            {
+              "gm": {
+                "x": 0,
+                "y": 51.5,
+                "z": 19
+              },
+              "xg": 0.0185,
+              "gml": "low-centre",
+              "min": 21,
+              "pid": 880790,
+              "pos": {
+                "x": 24.8,
+                "y": 66.7,
+                "z": 0
+              },
+              "sit": "assisted",
+              "body": "left-foot",
+              "home": true,
+              "type": "block",
+              "xgot": null,
+              "block": {
+                "x": 21.2,
+                "y": 64.1,
+                "z": 0
+              }
+            },
+            {
+              "gm": {
+                "x": 0,
+                "y": 49.8,
+                "z": 7.6
+              },
+              "xg": 0.1336,
+              "gml": "low-centre",
+              "min": 13,
+              "pid": 592560,
+              "pos": {
+                "x": 18,
+                "y": 51.7,
+                "z": 0
+              },
+              "sit": "fast-break",
+              "body": "left-foot",
+              "home": false,
+              "type": "save",
+              "xgot": 0.0364,
+              "block": {
+                "x": 2.4,
+                "y": 50.2,
+                "z": 0
+              }
+            },
+            {
+              "gm": {
+                "x": 0,
                 "y": 100,
                 "z": 5.6
               },
-              "xg": 0.0621,
+              "xg": 0.0924,
               "gml": "left",
               "min": 8,
-              "pid": 845609,
+              "pid": 1445997,
               "pos": {
-                "x": 9.3,
-                "y": 45.7,
+                "x": 8,
+                "y": 48.3,
                 "z": 0
               },
               "sit": "assisted",
@@ -5585,16 +5818,16 @@
             {
               "gm": {
                 "x": 0,
-                "y": 49.3,
+                "y": 48.6,
                 "z": 19
               },
-              "xg": 0.0218,
+              "xg": 0.0286,
               "gml": "low-centre",
               "min": 8,
               "pid": 880790,
               "pos": {
-                "x": 13.4,
-                "y": 76.2,
+                "x": 10.7,
+                "y": 73.8,
                 "z": 0
               },
               "sit": "assisted",
@@ -5603,8 +5836,8 @@
               "type": "block",
               "xgot": null,
               "block": {
-                "x": 9.7,
-                "y": 69.1,
+                "x": 8.4,
+                "y": 69,
                 "z": 0
               }
             },
@@ -5614,7 +5847,7 @@
                 "y": 46.8,
                 "z": 19
               },
-              "xg": 0.1422,
+              "xg": 0.077,
               "gml": "low-right",
               "min": 2,
               "pid": 851099,
@@ -5712,7 +5945,155 @@
             },
             {
               "m": 13,
-              "v": 16
+              "v": 14
+            },
+            {
+              "m": 14,
+              "v": 13
+            },
+            {
+              "m": 15,
+              "v": -16
+            },
+            {
+              "m": 16,
+              "v": 15
+            },
+            {
+              "m": 17,
+              "v": 14
+            },
+            {
+              "m": 18,
+              "v": 29
+            },
+            {
+              "m": 19,
+              "v": 14
+            },
+            {
+              "m": 20,
+              "v": 12
+            },
+            {
+              "m": 21,
+              "v": 14
+            },
+            {
+              "m": 22,
+              "v": 13
+            },
+            {
+              "m": 23,
+              "v": 15
+            },
+            {
+              "m": 24,
+              "v": 6
+            },
+            {
+              "m": 25,
+              "v": -20
+            },
+            {
+              "m": 26,
+              "v": 19
+            },
+            {
+              "m": 27,
+              "v": 22
+            },
+            {
+              "m": 28,
+              "v": 32
+            },
+            {
+              "m": 29,
+              "v": 22
+            },
+            {
+              "m": 30,
+              "v": 17
+            },
+            {
+              "m": 31,
+              "v": 4
+            },
+            {
+              "m": 32,
+              "v": -2
+            },
+            {
+              "m": 33,
+              "v": -50
+            },
+            {
+              "m": 34,
+              "v": -39
+            },
+            {
+              "m": 35,
+              "v": -14
+            },
+            {
+              "m": 36,
+              "v": -26
+            },
+            {
+              "m": 37,
+              "v": -19
+            },
+            {
+              "m": 38,
+              "v": -41
+            },
+            {
+              "m": 39,
+              "v": -18
+            },
+            {
+              "m": 40,
+              "v": -16
+            },
+            {
+              "m": 41,
+              "v": -28
+            },
+            {
+              "m": 42,
+              "v": -16
+            },
+            {
+              "m": 43,
+              "v": -2
+            },
+            {
+              "m": 44,
+              "v": -10
+            },
+            {
+              "m": 45,
+              "v": -29
+            },
+            {
+              "m": 45.5,
+              "v": 13
+            },
+            {
+              "m": 46,
+              "v": 5
+            },
+            {
+              "m": 47,
+              "v": 15
+            },
+            {
+              "m": 48,
+              "v": 22
+            },
+            {
+              "m": 49,
+              "v": 5
             }
           ],
           "average_positions": null
@@ -5809,13 +6190,13 @@
           "event_date": "2026-04-24T20:00:00+04:00",
           "round_number": 30,
           "group_name": null,
-          "status": "notstarted",
-          "home_score": null,
-          "away_score": null,
-          "home_score_ht": null,
-          "away_score_ht": null,
-          "current_minute": null,
-          "period": "",
+          "status": "halftime",
+          "home_score": 1,
+          "away_score": 0,
+          "home_score_ht": 1,
+          "away_score_ht": 0,
+          "current_minute": 45,
+          "period": "HT",
           "odds_home": 1.83,
           "odds_draw": 3.5,
           "odds_away": 3.8,
@@ -5830,8 +6211,8 @@
           "odds_dc_12": null,
           "actual_home_xg": null,
           "actual_away_xg": null,
-          "home_xg_live": null,
-          "away_xg_live": null,
+          "home_xg_live": 0.51,
+          "away_xg_live": 0.17,
           "penalty_shootout": null,
           "referee": null,
           "home_coach": {
@@ -5864,7 +6245,154 @@
             "country": "Poland",
             "capacity": 16068
           },
-          "incidents": null,
+          "incidents": [
+            {
+              "text": "HT",
+              "type": "period",
+              "minute": 45,
+              "is_live": false,
+              "added_time": 999,
+              "away_score": 0,
+              "home_score": 1
+            },
+            {
+              "type": "card",
+              "minute": 42,
+              "player": "A. Radwanski",
+              "is_home": true,
+              "card_type": "yellow",
+              "player_id": 796980
+            },
+            {
+              "type": "card",
+              "minute": 37,
+              "player": "M. Grzybek",
+              "is_home": true,
+              "card_type": "yellow",
+              "player_id": 286091
+            },
+            {
+              "type": "goal",
+              "assist": "I. Orlikowski",
+              "minute": 20,
+              "player": "M. Regula",
+              "is_home": true,
+              "sequence": [
+                {
+                  "end": {
+                    "x": 46.4,
+                    "y": 25.9
+                  },
+                  "pid": 286091,
+                  "pos": {
+                    "x": 58.8,
+                    "y": 6.4
+                  },
+                  "event": "pass",
+                  "player": "M. Grzybek"
+                },
+                {
+                  "end": {
+                    "x": 47.2,
+                    "y": 80
+                  },
+                  "pid": 1405599,
+                  "pos": {
+                    "x": 45.6,
+                    "y": 30.3
+                  },
+                  "event": "pass",
+                  "player": "I. Orlikowski"
+                },
+                {
+                  "end": {
+                    "x": 38,
+                    "y": 51.8
+                  },
+                  "pid": 841409,
+                  "pos": {
+                    "x": 43.6,
+                    "y": 73.5
+                  },
+                  "event": "pass",
+                  "player": "D. Michalski"
+                },
+                {
+                  "end": {
+                    "x": 49.6,
+                    "y": 19.4
+                  },
+                  "pid": 95351,
+                  "pos": {
+                    "x": 39.6,
+                    "y": 48.2
+                  },
+                  "event": "pass",
+                  "player": "M. Nalepa"
+                },
+                {
+                  "end": {
+                    "x": 86.2,
+                    "y": 39.2
+                  },
+                  "pid": 1405599,
+                  "pos": {
+                    "x": 58,
+                    "y": 24.4
+                  },
+                  "event": "pass",
+                  "assist": true,
+                  "player": "I. Orlikowski"
+                },
+                {
+                  "gk": {
+                    "x": 94.2,
+                    "y": 46.4
+                  },
+                  "gm": {
+                    "x": 69.35,
+                    "y": 82
+                  },
+                  "pid": 1528249,
+                  "pos": {
+                    "x": 86.2,
+                    "y": 39.2
+                  },
+                  "body": "head",
+                  "event": "goal",
+                  "player": "M. Regula"
+                }
+              ],
+              "goal_type": "regular",
+              "player_id": 1528249,
+              "away_score": 0,
+              "home_score": 1
+            },
+            {
+              "type": "card",
+              "minute": 15,
+              "player": "K. Zapolnik",
+              "is_home": false,
+              "card_type": "yellow",
+              "player_id": 787734
+            },
+            {
+              "type": "card",
+              "minute": 12,
+              "player": "D. Hilbrycht",
+              "is_home": false,
+              "card_type": "yellow",
+              "player_id": 979023
+            },
+            {
+              "type": "card",
+              "minute": 10,
+              "player": "M. Nalepa",
+              "is_home": true,
+              "card_type": "yellow",
+              "player_id": 95351
+            }
+          ],
           "lineups": {
             "away": {
               "players": [
@@ -6499,8 +7027,447 @@
             },
             "confirmed": true
           },
-          "shotmap": null,
-          "momentum": null,
+          "shotmap": [
+            {
+              "gm": {
+                "x": 0,
+                "y": 51.8,
+                "z": 19
+              },
+              "xg": 0.0131,
+              "gml": "low-centre",
+              "min": 38,
+              "pid": 846753,
+              "pos": {
+                "x": 24.8,
+                "y": 68.7,
+                "z": 0
+              },
+              "sit": "assisted",
+              "body": "right-foot",
+              "home": false,
+              "type": "block",
+              "xgot": null,
+              "block": {
+                "x": 11.1,
+                "y": 57.4,
+                "z": 0
+              }
+            },
+            {
+              "gm": {
+                "x": 0,
+                "y": 39.2,
+                "z": 75
+              },
+              "xg": 0.0893,
+              "gml": "high-right",
+              "min": 34,
+              "pid": 846753,
+              "pos": {
+                "x": 17.2,
+                "y": 46.2,
+                "z": 0
+              },
+              "sit": "assisted",
+              "body": "right-foot",
+              "home": false,
+              "type": "miss",
+              "xgot": null
+            },
+            {
+              "gm": {
+                "x": 0,
+                "y": 50.5,
+                "z": 29.7
+              },
+              "xg": 0.0193,
+              "gml": "high-centre",
+              "min": 33,
+              "pid": 1133054,
+              "pos": {
+                "x": 29.1,
+                "y": 41.5,
+                "z": 0
+              },
+              "sit": "regular",
+              "body": "right-foot",
+              "home": false,
+              "type": "save",
+              "xgot": 0.0276,
+              "block": {
+                "x": 2,
+                "y": 49.8,
+                "z": 0
+              }
+            },
+            {
+              "gm": {
+                "x": 0,
+                "y": 48.6,
+                "z": 19
+              },
+              "xg": 0.0141,
+              "gml": "low-centre",
+              "min": 33,
+              "pid": 846753,
+              "pos": {
+                "x": 30,
+                "y": 42.2,
+                "z": 0
+              },
+              "sit": "regular",
+              "body": "right-foot",
+              "home": false,
+              "type": "block",
+              "xgot": null,
+              "block": {
+                "x": 15.8,
+                "y": 46.6,
+                "z": 0
+              }
+            },
+            {
+              "gm": {
+                "x": 0,
+                "y": 30.4,
+                "z": 15.3
+              },
+              "xg": 0.103,
+              "gml": "right",
+              "min": 30,
+              "pid": 790864,
+              "pos": {
+                "x": 10.1,
+                "y": 35,
+                "z": 0
+              },
+              "sit": "throw-in-set-piece",
+              "body": "left-foot",
+              "home": true,
+              "type": "miss",
+              "xgot": null
+            },
+            {
+              "gm": {
+                "x": 0,
+                "y": 54.3,
+                "z": 12.7
+              },
+              "xg": 0.0272,
+              "gml": "low-left",
+              "min": 28,
+              "pid": 95351,
+              "pos": {
+                "x": 10.7,
+                "y": 44.2,
+                "z": 0
+              },
+              "sit": "corner",
+              "body": "head",
+              "home": true,
+              "type": "save",
+              "xgot": 0.5507,
+              "block": {
+                "x": 0,
+                "y": 49.8,
+                "z": 0
+              }
+            },
+            {
+              "gm": {
+                "x": 0,
+                "y": 43.2,
+                "z": 31.9
+              },
+              "xg": 0.0309,
+              "gml": "close-right",
+              "min": 26,
+              "pid": 979023,
+              "pos": {
+                "x": 27.9,
+                "y": 69.6,
+                "z": 0
+              },
+              "sit": "free-kick",
+              "body": "left-foot",
+              "home": false,
+              "type": "miss",
+              "xgot": null
+            },
+            {
+              "gm": {
+                "x": 0,
+                "y": 46.4,
+                "z": 10.8
+              },
+              "xg": 0.0617,
+              "gml": "low-right",
+              "min": 20,
+              "pid": 1528249,
+              "pos": {
+                "x": 13.8,
+                "y": 60.8,
+                "z": 0
+              },
+              "sit": "assisted",
+              "body": "head",
+              "home": true,
+              "type": "goal",
+              "xgot": 0.4438,
+              "gtype": "regular"
+            },
+            {
+              "gm": {
+                "x": 0,
+                "y": 60.3,
+                "z": 9.7
+              },
+              "xg": 0.1759,
+              "gml": "left",
+              "min": 16,
+              "pid": 95351,
+              "pos": {
+                "x": 3,
+                "y": 59.1,
+                "z": 0
+              },
+              "sit": "corner",
+              "body": "head",
+              "home": true,
+              "type": "miss",
+              "xgot": null,
+              "block": {
+                "x": 2.7,
+                "y": 48.9,
+                "z": 0
+              }
+            },
+            {
+              "gm": {
+                "x": 0,
+                "y": 75.8,
+                "z": 58.3
+              },
+              "xg": 0.0877,
+              "gml": "high-left",
+              "min": 10,
+              "pid": 1528249,
+              "pos": {
+                "x": 9.3,
+                "y": 52.4,
+                "z": 0
+              },
+              "sit": "assisted",
+              "body": "head",
+              "home": true,
+              "type": "miss",
+              "xgot": null
+            },
+            {
+              "gm": {
+                "x": 0,
+                "y": 48.9,
+                "z": 95.8
+              },
+              "xg": 0.0551,
+              "gml": "high",
+              "min": 5,
+              "pid": 1405599,
+              "pos": {
+                "x": 7.7,
+                "y": 57.3,
+                "z": 0
+              },
+              "sit": "corner",
+              "body": "left-foot",
+              "home": true,
+              "type": "miss",
+              "xgot": null
+            }
+          ],
+          "momentum": [
+            {
+              "m": 1,
+              "v": 1
+            },
+            {
+              "m": 2,
+              "v": 12
+            },
+            {
+              "m": 3,
+              "v": 4
+            },
+            {
+              "m": 4,
+              "v": 13
+            },
+            {
+              "m": 5,
+              "v": 52
+            },
+            {
+              "m": 6,
+              "v": 24
+            },
+            {
+              "m": 7,
+              "v": 36
+            },
+            {
+              "m": 8,
+              "v": 25
+            },
+            {
+              "m": 9,
+              "v": 48
+            },
+            {
+              "m": 10,
+              "v": 46
+            },
+            {
+              "m": 11,
+              "v": 12
+            },
+            {
+              "m": 12,
+              "v": 7
+            },
+            {
+              "m": 13,
+              "v": 2
+            },
+            {
+              "m": 14,
+              "v": 24
+            },
+            {
+              "m": 15,
+              "v": 18
+            },
+            {
+              "m": 16,
+              "v": 17
+            },
+            {
+              "m": 17,
+              "v": 31
+            },
+            {
+              "m": 18,
+              "v": 29
+            },
+            {
+              "m": 19,
+              "v": 26
+            },
+            {
+              "m": 20,
+              "v": 50
+            },
+            {
+              "m": 21,
+              "v": 23
+            },
+            {
+              "m": 22,
+              "v": 8
+            },
+            {
+              "m": 23,
+              "v": 28
+            },
+            {
+              "m": 24,
+              "v": 13
+            },
+            {
+              "m": 25,
+              "v": 17
+            },
+            {
+              "m": 26,
+              "v": 2
+            },
+            {
+              "m": 27,
+              "v": -4
+            },
+            {
+              "m": 28,
+              "v": 6
+            },
+            {
+              "m": 29,
+              "v": 65
+            },
+            {
+              "m": 30,
+              "v": 38
+            },
+            {
+              "m": 31,
+              "v": 54
+            },
+            {
+              "m": 32,
+              "v": 34
+            },
+            {
+              "m": 33,
+              "v": -25
+            },
+            {
+              "m": 34,
+              "v": -57
+            },
+            {
+              "m": 35,
+              "v": -36
+            },
+            {
+              "m": 36,
+              "v": -14
+            },
+            {
+              "m": 37,
+              "v": -22
+            },
+            {
+              "m": 38,
+              "v": -33
+            },
+            {
+              "m": 39,
+              "v": -19
+            },
+            {
+              "m": 40,
+              "v": -12
+            },
+            {
+              "m": 41,
+              "v": -15
+            },
+            {
+              "m": 42,
+              "v": -16
+            },
+            {
+              "m": 43,
+              "v": -22
+            },
+            {
+              "m": 44,
+              "v": 20
+            },
+            {
+              "m": 45,
+              "v": 27
+            }
+          ],
           "average_positions": null
         },
         "created_at": "2026-04-18T06:20:06.060383+04:00",
@@ -6595,13 +7562,13 @@
           "event_date": "2026-04-24T20:10:00+04:00",
           "round_number": 29,
           "group_name": null,
-          "status": "notstarted",
-          "home_score": null,
-          "away_score": null,
+          "status": "1st_half",
+          "home_score": 0,
+          "away_score": 1,
           "home_score_ht": null,
           "away_score_ht": null,
-          "current_minute": null,
-          "period": "",
+          "current_minute": 42,
+          "period": "1T",
           "odds_home": 2.5,
           "odds_draw": 3.25,
           "odds_away": 2.5,
@@ -6616,8 +7583,8 @@
           "odds_dc_12": null,
           "actual_home_xg": null,
           "actual_away_xg": null,
-          "home_xg_live": null,
-          "away_xg_live": null,
+          "home_xg_live": 0.24,
+          "away_xg_live": 1.06,
           "penalty_shootout": null,
           "referee": null,
           "home_coach": {
@@ -6656,7 +7623,80 @@
             "country": "Saudi Arabia",
             "capacity": 8000
           },
-          "incidents": null,
+          "incidents": [
+            {
+              "text": "First half",
+              "type": "period",
+              "minute": 45,
+              "is_live": true,
+              "added_time": 999,
+              "away_score": 1,
+              "home_score": 0
+            },
+            {
+              "type": "goal",
+              "minute": 41,
+              "player": "Tozé",
+              "is_home": false,
+              "sequence": [
+                {
+                  "gk": {
+                    "x": 0.2,
+                    "y": 49.8
+                  },
+                  "gm": {
+                    "x": 69.89,
+                    "y": 96.83
+                  },
+                  "pid": 1089231,
+                  "pos": {
+                    "x": 11.5,
+                    "y": 50
+                  },
+                  "body": "right-foot",
+                  "event": "goal",
+                  "player": "Tozé"
+                }
+              ],
+              "goal_type": "penalty",
+              "player_id": 1089231,
+              "away_score": 1,
+              "home_score": 0
+            },
+            {
+              "type": "card",
+              "minute": 34,
+              "player": "A. Al-Shamrani",
+              "is_home": true,
+              "card_type": "yellow",
+              "player_id": 1134206
+            },
+            {
+              "type": "card",
+              "minute": 28,
+              "player": "T. Okou",
+              "is_home": false,
+              "card_type": "yellow",
+              "player_id": 878821
+            },
+            {
+              "type": "varDecision",
+              "minute": 11,
+              "player": "F. Martins",
+              "is_home": true,
+              "decision": "goalAwarded",
+              "confirmed": false,
+              "player_id": 193064
+            },
+            {
+              "type": "card",
+              "minute": 2,
+              "player": "A. Bah",
+              "is_home": true,
+              "card_type": "yellow",
+              "player_id": 2018134
+            }
+          ],
           "lineups": {
             "away": {
               "players": [
@@ -7347,8 +8387,425 @@
             },
             "confirmed": true
           },
-          "shotmap": null,
-          "momentum": null,
+          "shotmap": [
+            {
+              "gm": {
+                "x": 0,
+                "y": 46.3,
+                "z": 1.9
+              },
+              "xg": 0.7884,
+              "gml": "low-right",
+              "min": 41,
+              "pid": 1089231,
+              "pos": {
+                "x": 11.5,
+                "y": 50,
+                "z": 0
+              },
+              "sit": "penalty",
+              "body": "right-foot",
+              "home": false,
+              "type": "goal",
+              "xgot": 0.8556,
+              "gtype": "penalty"
+            },
+            {
+              "gm": {
+                "x": 0,
+                "y": 49.3,
+                "z": 19
+              },
+              "xg": 0.0471,
+              "gml": "low-centre",
+              "min": 39,
+              "pid": 369544,
+              "pos": {
+                "x": 24.8,
+                "y": 35.1,
+                "z": 0
+              },
+              "sit": "free-kick",
+              "body": "left-foot",
+              "home": false,
+              "type": "block",
+              "xgot": null,
+              "block": {
+                "x": 14.9,
+                "y": 41.3,
+                "z": 0
+              }
+            },
+            {
+              "gm": {
+                "x": 0,
+                "y": 42.2,
+                "z": 62.5
+              },
+              "xg": 0.0428,
+              "gml": "high-right",
+              "min": 33,
+              "pid": 193064,
+              "pos": {
+                "x": 18.5,
+                "y": 52.9,
+                "z": 0
+              },
+              "sit": "regular",
+              "body": "right-foot",
+              "home": true,
+              "type": "miss",
+              "xgot": null
+            },
+            {
+              "gm": {
+                "x": 0,
+                "y": 39.8,
+                "z": 48.6
+              },
+              "xg": 0.0155,
+              "gml": "high-right",
+              "min": 31,
+              "pid": 845793,
+              "pos": {
+                "x": 9.7,
+                "y": 74.8,
+                "z": 0
+              },
+              "sit": "fast-break",
+              "body": "right-foot",
+              "home": false,
+              "type": "miss",
+              "xgot": null
+            },
+            {
+              "gm": {
+                "x": 0,
+                "y": 50.6,
+                "z": 55.6
+              },
+              "xg": 0.0963,
+              "gml": "close-high",
+              "min": 29,
+              "pid": 791575,
+              "pos": {
+                "x": 8.2,
+                "y": 42.1,
+                "z": 0
+              },
+              "sit": "assisted",
+              "body": "head",
+              "home": true,
+              "type": "miss",
+              "xgot": null
+            },
+            {
+              "gm": {
+                "x": 0,
+                "y": 42.5,
+                "z": 2.8
+              },
+              "xg": 0.0269,
+              "gml": "close-right",
+              "min": 24,
+              "pid": 878821,
+              "pos": {
+                "x": 9.6,
+                "y": 72.7,
+                "z": 0
+              },
+              "sit": "assisted",
+              "body": "left-foot",
+              "home": false,
+              "type": "miss",
+              "xgot": null
+            },
+            {
+              "gm": {
+                "x": 0,
+                "y": 41.2,
+                "z": 16.7
+              },
+              "xg": 0.0091,
+              "gml": "close-right",
+              "min": 20,
+              "pid": 2449685,
+              "pos": {
+                "x": 11.5,
+                "y": 61,
+                "z": 0
+              },
+              "sit": "corner",
+              "body": "head",
+              "home": false,
+              "type": "miss",
+              "xgot": null
+            },
+            {
+              "gm": {
+                "x": 0,
+                "y": 48.3,
+                "z": 19
+              },
+              "xg": 0.0573,
+              "gml": "low-centre",
+              "min": 19,
+              "pid": 845793,
+              "pos": {
+                "x": 6.4,
+                "y": 32.1,
+                "z": 0
+              },
+              "sit": "assisted",
+              "body": "left-foot",
+              "home": false,
+              "type": "block",
+              "xgot": null,
+              "block": {
+                "x": 5.3,
+                "y": 35.6,
+                "z": 0
+              }
+            },
+            {
+              "gm": {
+                "x": 0,
+                "y": 51.3,
+                "z": 84.7
+              },
+              "xg": 0.0962,
+              "gml": "high",
+              "min": 18,
+              "pid": 948601,
+              "pos": {
+                "x": 6.7,
+                "y": 46,
+                "z": 0
+              },
+              "sit": "corner",
+              "body": "head",
+              "home": true,
+              "type": "miss",
+              "xgot": null
+            },
+            {
+              "gm": {
+                "x": 0,
+                "y": 44.4,
+                "z": 26.6
+              },
+              "xg": 0.0327,
+              "gml": "right",
+              "min": 16,
+              "pid": 321625,
+              "pos": {
+                "x": 12.1,
+                "y": 70.8,
+                "z": 0
+              },
+              "sit": "corner",
+              "body": "right-foot",
+              "home": false,
+              "type": "post",
+              "xgot": null
+            },
+            {
+              "gm": {
+                "x": 0,
+                "y": 49.6,
+                "z": 19
+              },
+              "xg": 0.0868,
+              "gml": "low-centre",
+              "min": 16,
+              "pid": 1089231,
+              "pos": {
+                "x": 9.3,
+                "y": 33.6,
+                "z": 0
+              },
+              "sit": "assisted",
+              "body": "right-foot",
+              "home": false,
+              "type": "block",
+              "xgot": null,
+              "block": {
+                "x": 7.2,
+                "y": 37.4,
+                "z": 0
+              }
+            }
+          ],
+          "momentum": [
+            {
+              "m": 1,
+              "v": -6
+            },
+            {
+              "m": 2,
+              "v": -17
+            },
+            {
+              "m": 3,
+              "v": -16
+            },
+            {
+              "m": 4,
+              "v": -14
+            },
+            {
+              "m": 5,
+              "v": -12
+            },
+            {
+              "m": 6,
+              "v": -20
+            },
+            {
+              "m": 7,
+              "v": -19
+            },
+            {
+              "m": 8,
+              "v": -40
+            },
+            {
+              "m": 9,
+              "v": 24
+            },
+            {
+              "m": 10,
+              "v": 52
+            },
+            {
+              "m": 11,
+              "v": -36
+            },
+            {
+              "m": 12,
+              "v": -9
+            },
+            {
+              "m": 13,
+              "v": 27
+            },
+            {
+              "m": 14,
+              "v": 13
+            },
+            {
+              "m": 15,
+              "v": 4
+            },
+            {
+              "m": 16,
+              "v": -7
+            },
+            {
+              "m": 17,
+              "v": -54
+            },
+            {
+              "m": 18,
+              "v": -1
+            },
+            {
+              "m": 19,
+              "v": -5
+            },
+            {
+              "m": 20,
+              "v": -50
+            },
+            {
+              "m": 21,
+              "v": -26
+            },
+            {
+              "m": 22,
+              "v": 18
+            },
+            {
+              "m": 23,
+              "v": -5
+            },
+            {
+              "m": 24,
+              "v": -26
+            },
+            {
+              "m": 25,
+              "v": -10
+            },
+            {
+              "m": 26,
+              "v": 13
+            },
+            {
+              "m": 27,
+              "v": 7
+            },
+            {
+              "m": 28,
+              "v": 11
+            },
+            {
+              "m": 29,
+              "v": 47
+            },
+            {
+              "m": 30,
+              "v": 30
+            },
+            {
+              "m": 31,
+              "v": 7
+            },
+            {
+              "m": 32,
+              "v": 13
+            },
+            {
+              "m": 33,
+              "v": 46
+            },
+            {
+              "m": 34,
+              "v": 22
+            },
+            {
+              "m": 35,
+              "v": -17
+            },
+            {
+              "m": 36,
+              "v": -30
+            },
+            {
+              "m": 37,
+              "v": -23
+            },
+            {
+              "m": 38,
+              "v": -41
+            },
+            {
+              "m": 39,
+              "v": -36
+            },
+            {
+              "m": 40,
+              "v": -19
+            },
+            {
+              "m": 41,
+              "v": -34
+            },
+            {
+              "m": 42,
+              "v": -10
+            }
+          ],
           "average_positions": null
         },
         "created_at": "2026-04-18T06:20:07.150233+04:00",
@@ -7439,13 +8896,13 @@
           "event_date": "2026-04-24T20:30:00+04:00",
           "round_number": null,
           "group_name": null,
-          "status": "notstarted",
-          "home_score": null,
-          "away_score": null,
+          "status": "1st_half",
+          "home_score": 1,
+          "away_score": 0,
           "home_score_ht": null,
           "away_score_ht": null,
-          "current_minute": null,
-          "period": "",
+          "current_minute": 22,
+          "period": "1T",
           "odds_home": 2.25,
           "odds_draw": 3.1,
           "odds_away": 3.2,
@@ -7500,7 +8957,35 @@
             "country": "Bulgaria",
             "capacity": 8000
           },
-          "incidents": null,
+          "incidents": [
+            {
+              "text": "First half",
+              "type": "period",
+              "minute": 45,
+              "is_live": true,
+              "added_time": 999,
+              "away_score": 0,
+              "home_score": 1
+            },
+            {
+              "type": "goal",
+              "minute": 14,
+              "player": "J. Lopes",
+              "is_home": true,
+              "goal_type": "regular",
+              "player_id": 2456633,
+              "away_score": 0,
+              "home_score": 1
+            },
+            {
+              "type": "card",
+              "minute": 4,
+              "player": "B. Ivanov",
+              "is_home": true,
+              "card_type": "red",
+              "player_id": 1132805
+            }
+          ],
           "lineups": {
             "away": {
               "players": [
@@ -7697,7 +9182,156 @@
                 }
               ],
               "formation": "3-5-2",
-              "substitutes": []
+              "substitutes": [
+                {
+                  "name": "V. Quintero",
+                  "goals": 0,
+                  "api_id": 1117120,
+                  "rating": null,
+                  "sub_in": null,
+                  "sub_out": null,
+                  "position": "G",
+                  "red_card": false,
+                  "player_id": 11403,
+                  "yellow_card": false,
+                  "jersey_number": "99",
+                  "specific_position": "GK",
+                  "positions_detailed": [
+                    "GK"
+                  ]
+                },
+                {
+                  "name": "A. Dabo",
+                  "goals": 0,
+                  "api_id": 1394721,
+                  "rating": null,
+                  "sub_in": null,
+                  "sub_out": null,
+                  "position": "D",
+                  "red_card": false,
+                  "player_id": 10962,
+                  "yellow_card": false,
+                  "jersey_number": "27",
+                  "specific_position": "LB",
+                  "positions_detailed": [
+                    "LB"
+                  ]
+                },
+                {
+                  "name": "J. Sérgio",
+                  "goals": 0,
+                  "api_id": 1402991,
+                  "rating": null,
+                  "sub_in": null,
+                  "sub_out": null,
+                  "position": "D",
+                  "red_card": false,
+                  "player_id": 10956,
+                  "yellow_card": false,
+                  "jersey_number": "25",
+                  "specific_position": "RB",
+                  "positions_detailed": [
+                    "RB"
+                  ]
+                },
+                {
+                  "name": "I. Mitev",
+                  "goals": 0,
+                  "api_id": 1991009,
+                  "rating": null,
+                  "sub_in": null,
+                  "sub_out": null,
+                  "position": "D",
+                  "red_card": false,
+                  "player_id": 11606,
+                  "yellow_card": false,
+                  "jersey_number": "6",
+                  "specific_position": null,
+                  "positions_detailed": []
+                },
+                {
+                  "name": "C. Lopes",
+                  "goals": 0,
+                  "api_id": 981732,
+                  "rating": null,
+                  "sub_in": null,
+                  "sub_out": null,
+                  "position": "M",
+                  "red_card": false,
+                  "player_id": 10957,
+                  "yellow_card": false,
+                  "jersey_number": "5",
+                  "specific_position": "CM",
+                  "positions_detailed": [
+                    "CM",
+                    "DM"
+                  ]
+                },
+                {
+                  "name": "W. Dual",
+                  "goals": 0,
+                  "api_id": 2057319,
+                  "rating": null,
+                  "sub_in": null,
+                  "sub_out": null,
+                  "position": "M",
+                  "red_card": false,
+                  "player_id": 10969,
+                  "yellow_card": false,
+                  "jersey_number": "17",
+                  "specific_position": null,
+                  "positions_detailed": []
+                },
+                {
+                  "name": "S. Rusenov",
+                  "goals": 0,
+                  "api_id": 1585554,
+                  "rating": null,
+                  "sub_in": null,
+                  "sub_out": null,
+                  "position": "M",
+                  "red_card": false,
+                  "player_id": 11407,
+                  "yellow_card": false,
+                  "jersey_number": "18",
+                  "specific_position": "CM",
+                  "positions_detailed": [
+                    "CM"
+                  ]
+                },
+                {
+                  "name": "F. Alarcón",
+                  "goals": 0,
+                  "api_id": 2019081,
+                  "rating": null,
+                  "sub_in": null,
+                  "sub_out": null,
+                  "position": "F",
+                  "red_card": false,
+                  "player_id": 10972,
+                  "yellow_card": false,
+                  "jersey_number": "15",
+                  "specific_position": "ST",
+                  "positions_detailed": [
+                    "ST"
+                  ]
+                },
+                {
+                  "name": "M. Georgiev",
+                  "goals": 0,
+                  "api_id": 1865412,
+                  "rating": null,
+                  "sub_in": null,
+                  "sub_out": null,
+                  "position": "F",
+                  "red_card": false,
+                  "player_id": 11409,
+                  "yellow_card": false,
+                  "jersey_number": "22",
+                  "specific_position": null,
+                  "positions_detailed": []
+                }
+              ]
             },
             "home": {
               "players": [
@@ -7888,7 +9522,159 @@
                 }
               ],
               "formation": "4-1-3-2",
-              "substitutes": []
+              "substitutes": [
+                {
+                  "name": "M. Kovalyov",
+                  "goals": 0,
+                  "api_id": 962125,
+                  "rating": null,
+                  "sub_in": null,
+                  "sub_out": null,
+                  "position": "G",
+                  "red_card": false,
+                  "player_id": 11371,
+                  "yellow_card": false,
+                  "jersey_number": "23",
+                  "specific_position": "GK",
+                  "positions_detailed": [
+                    "GK"
+                  ]
+                },
+                {
+                  "name": "M. Georgiev",
+                  "goals": 0,
+                  "api_id": 2172134,
+                  "rating": null,
+                  "sub_in": null,
+                  "sub_out": null,
+                  "position": "D",
+                  "red_card": false,
+                  "player_id": 11372,
+                  "yellow_card": false,
+                  "jersey_number": "50",
+                  "specific_position": "RB",
+                  "positions_detailed": [
+                    "RB"
+                  ]
+                },
+                {
+                  "name": "M. Jurić-Petrašilo",
+                  "goals": 0,
+                  "api_id": 1146482,
+                  "rating": null,
+                  "sub_in": null,
+                  "sub_out": null,
+                  "position": "D",
+                  "red_card": false,
+                  "player_id": 10806,
+                  "yellow_card": false,
+                  "jersey_number": "3",
+                  "specific_position": "CB",
+                  "positions_detailed": [
+                    "CB",
+                    "RB"
+                  ]
+                },
+                {
+                  "name": "K. Kurbanov",
+                  "goals": 0,
+                  "api_id": 1892173,
+                  "rating": null,
+                  "sub_in": null,
+                  "sub_out": null,
+                  "position": "D",
+                  "red_card": false,
+                  "player_id": 13701,
+                  "yellow_card": false,
+                  "jersey_number": "39",
+                  "specific_position": null,
+                  "positions_detailed": []
+                },
+                {
+                  "name": "D. Ivanov",
+                  "goals": 0,
+                  "api_id": 1035281,
+                  "rating": null,
+                  "sub_in": null,
+                  "sub_out": null,
+                  "position": "M",
+                  "red_card": false,
+                  "player_id": 10830,
+                  "yellow_card": false,
+                  "jersey_number": "8",
+                  "specific_position": "RW",
+                  "positions_detailed": [
+                    "RW"
+                  ]
+                },
+                {
+                  "name": "E. John",
+                  "goals": 0,
+                  "api_id": 1863199,
+                  "rating": null,
+                  "sub_in": null,
+                  "sub_out": null,
+                  "position": "M",
+                  "red_card": false,
+                  "player_id": 10834,
+                  "yellow_card": false,
+                  "jersey_number": "6",
+                  "specific_position": "CM",
+                  "positions_detailed": [
+                    "CM"
+                  ]
+                },
+                {
+                  "name": "S. Moukachar",
+                  "goals": 0,
+                  "api_id": 1488897,
+                  "rating": null,
+                  "sub_in": null,
+                  "sub_out": null,
+                  "position": "M",
+                  "red_card": false,
+                  "player_id": 10843,
+                  "yellow_card": false,
+                  "jersey_number": "18",
+                  "specific_position": "CM",
+                  "positions_detailed": [
+                    "CM",
+                    "DM"
+                  ]
+                },
+                {
+                  "name": "Tales",
+                  "goals": 0,
+                  "api_id": 1107629,
+                  "rating": null,
+                  "sub_in": null,
+                  "sub_out": null,
+                  "position": "F",
+                  "red_card": false,
+                  "player_id": 10848,
+                  "yellow_card": false,
+                  "jersey_number": "10",
+                  "specific_position": "RW",
+                  "positions_detailed": [
+                    "RW"
+                  ]
+                },
+                {
+                  "name": "P. Prindzhev",
+                  "goals": 0,
+                  "api_id": 2456634,
+                  "rating": null,
+                  "sub_in": null,
+                  "sub_out": null,
+                  "position": "F",
+                  "red_card": false,
+                  "player_id": 10828,
+                  "yellow_card": false,
+                  "jersey_number": "7",
+                  "specific_position": null,
+                  "positions_detailed": []
+                }
+              ]
             },
             "confirmed": true
           },
@@ -8098,6 +9884,143 @@
       "source": "GitHub Actions cache"
     },
     {
+      "id": 204228,
+      "home": "Albacete Balompié",
+      "away": "Eibar",
+      "league": "Segunda División",
+      "date": "2026-04-24T22:30:00+04:00",
+      "prediction": {
+        "id": 3191,
+        "event": {
+          "id": 204228,
+          "league": {
+            "id": 38,
+            "name": "Segunda División",
+            "country": "Spain",
+            "is_women": false,
+            "current_season": null
+          },
+          "season": null,
+          "home_team": "Albacete Balompié",
+          "away_team": "Eibar",
+          "home_team_obj": {
+            "id": 1395,
+            "name": "Albacete Balompié",
+            "short_name": "Albacete",
+            "country": "Spain",
+            "coach": {
+              "name": "Alberto Gonzalez Fernandez",
+              "shortName": "A. G. Fernandez"
+            },
+            "venue": null
+          },
+          "away_team_obj": {
+            "id": 1397,
+            "name": "Eibar",
+            "short_name": "Eibar",
+            "country": "Spain",
+            "coach": {
+              "name": "Benat San Jose",
+              "shortName": "B. S. Jose"
+            },
+            "venue": {
+              "id": 849,
+              "name": "Ipurua Municipal Stadium",
+              "city": "Eibar",
+              "country": "Spain",
+              "capacity": 8164
+            }
+          },
+          "event_date": "2026-04-24T22:30:00+04:00",
+          "round_number": 37,
+          "group_name": null,
+          "status": "notstarted",
+          "home_score": null,
+          "away_score": null,
+          "home_score_ht": null,
+          "away_score_ht": null,
+          "current_minute": null,
+          "period": "",
+          "odds_home": 3.0,
+          "odds_draw": 3.1,
+          "odds_away": 2.32,
+          "odds_over_15": 1.4,
+          "odds_over_25": 2.25,
+          "odds_over_35": 4.0,
+          "odds_under_15": 2.75,
+          "odds_under_25": 1.62,
+          "odds_under_35": 1.22,
+          "odds_btts_yes": 1.91,
+          "odds_btts_no": 1.8,
+          "odds_dc_12": null,
+          "actual_home_xg": null,
+          "actual_away_xg": null,
+          "home_xg_live": null,
+          "away_xg_live": null,
+          "penalty_shootout": null,
+          "referee": null,
+          "home_coach": {
+            "id": 812,
+            "name": "Alberto Gonzalez Fernandez",
+            "short_name": "A. G. Fernandez",
+            "country": "Spain",
+            "profile": "balanced",
+            "preferred_formation": "",
+            "pressing_intensity": null,
+            "defensive_line": "",
+            "top_styles": []
+          },
+          "away_coach": {
+            "id": 817,
+            "name": "Benat San Jose",
+            "short_name": "B. S. Jose",
+            "country": "Spain",
+            "profile": "balanced",
+            "preferred_formation": "",
+            "pressing_intensity": null,
+            "defensive_line": "",
+            "top_styles": []
+          },
+          "unavailable_players": null,
+          "venue": {
+            "id": 845,
+            "name": "Carlos Belmonte",
+            "city": "Albacete",
+            "country": "Spain",
+            "capacity": 17524
+          },
+          "incidents": null,
+          "lineups": null,
+          "shotmap": null,
+          "momentum": null,
+          "average_positions": null
+        },
+        "created_at": "2026-04-23T06:20:06.899403+04:00",
+        "prob_home_win": 23.661757086574994,
+        "prob_draw": 25.006640061145173,
+        "prob_away_win": 51.331602852279836,
+        "predicted_result": "A",
+        "expected_home_goals": 1.0,
+        "expected_away_goals": 1.6,
+        "prob_over_15": 68.29109364574647,
+        "prob_over_25": 49.37334401310356,
+        "prob_over_35": 25.878070574897787,
+        "prob_btts_yes": 56.45588563135222,
+        "confidence": 51.331602852279836,
+        "model_version": "v5.0",
+        "most_likely_score": "0-1",
+        "favorite": "A",
+        "favorite_prob": 51.331602852279836,
+        "favorite_recommend": false,
+        "over_15_recommend": false,
+        "over_25_recommend": false,
+        "over_35_recommend": false,
+        "btts_recommend": false,
+        "winner_recommend": false
+      },
+      "source": "GitHub Actions cache"
+    },
+    {
       "id": 8000,
       "home": "Jagiellonia Białystok",
       "away": "Górnik Zabrze",
@@ -8251,143 +10174,6 @@
       "source": "GitHub Actions cache"
     },
     {
-      "id": 204228,
-      "home": "Albacete Balompié",
-      "away": "Eibar",
-      "league": "Segunda División",
-      "date": "2026-04-24T22:30:00+04:00",
-      "prediction": {
-        "id": 3191,
-        "event": {
-          "id": 204228,
-          "league": {
-            "id": 38,
-            "name": "Segunda División",
-            "country": "Spain",
-            "is_women": false,
-            "current_season": null
-          },
-          "season": null,
-          "home_team": "Albacete Balompié",
-          "away_team": "Eibar",
-          "home_team_obj": {
-            "id": 1395,
-            "name": "Albacete Balompié",
-            "short_name": "Albacete",
-            "country": "Spain",
-            "coach": {
-              "name": "Alberto Gonzalez Fernandez",
-              "shortName": "A. G. Fernandez"
-            },
-            "venue": null
-          },
-          "away_team_obj": {
-            "id": 1397,
-            "name": "Eibar",
-            "short_name": "Eibar",
-            "country": "Spain",
-            "coach": {
-              "name": "Benat San Jose",
-              "shortName": "B. S. Jose"
-            },
-            "venue": {
-              "id": 849,
-              "name": "Ipurua Municipal Stadium",
-              "city": "Eibar",
-              "country": "Spain",
-              "capacity": 8164
-            }
-          },
-          "event_date": "2026-04-24T22:30:00+04:00",
-          "round_number": 37,
-          "group_name": null,
-          "status": "notstarted",
-          "home_score": null,
-          "away_score": null,
-          "home_score_ht": null,
-          "away_score_ht": null,
-          "current_minute": null,
-          "period": "",
-          "odds_home": 3.0,
-          "odds_draw": 3.1,
-          "odds_away": 2.32,
-          "odds_over_15": 1.4,
-          "odds_over_25": 2.25,
-          "odds_over_35": 4.0,
-          "odds_under_15": 2.75,
-          "odds_under_25": 1.62,
-          "odds_under_35": 1.22,
-          "odds_btts_yes": 1.91,
-          "odds_btts_no": 1.8,
-          "odds_dc_12": null,
-          "actual_home_xg": null,
-          "actual_away_xg": null,
-          "home_xg_live": null,
-          "away_xg_live": null,
-          "penalty_shootout": null,
-          "referee": null,
-          "home_coach": {
-            "id": 812,
-            "name": "Alberto Gonzalez Fernandez",
-            "short_name": "A. G. Fernandez",
-            "country": "Spain",
-            "profile": "balanced",
-            "preferred_formation": "",
-            "pressing_intensity": null,
-            "defensive_line": "",
-            "top_styles": []
-          },
-          "away_coach": {
-            "id": 817,
-            "name": "Benat San Jose",
-            "short_name": "B. S. Jose",
-            "country": "Spain",
-            "profile": "balanced",
-            "preferred_formation": "",
-            "pressing_intensity": null,
-            "defensive_line": "",
-            "top_styles": []
-          },
-          "unavailable_players": null,
-          "venue": {
-            "id": 845,
-            "name": "Carlos Belmonte",
-            "city": "Albacete",
-            "country": "Spain",
-            "capacity": 17524
-          },
-          "incidents": null,
-          "lineups": null,
-          "shotmap": null,
-          "momentum": null,
-          "average_positions": null
-        },
-        "created_at": "2026-04-23T06:20:06.899403+04:00",
-        "prob_home_win": 23.661757086574994,
-        "prob_draw": 25.006640061145173,
-        "prob_away_win": 51.331602852279836,
-        "predicted_result": "A",
-        "expected_home_goals": 1.0,
-        "expected_away_goals": 1.6,
-        "prob_over_15": 68.29109364574647,
-        "prob_over_25": 49.37334401310356,
-        "prob_over_35": 25.878070574897787,
-        "prob_btts_yes": 56.45588563135222,
-        "confidence": 51.331602852279836,
-        "model_version": "v5.0",
-        "most_likely_score": "0-1",
-        "favorite": "A",
-        "favorite_prob": 51.331602852279836,
-        "favorite_recommend": false,
-        "over_15_recommend": false,
-        "over_25_recommend": false,
-        "over_35_recommend": false,
-        "btts_recommend": false,
-        "winner_recommend": false
-      },
-      "source": "GitHub Actions cache"
-    },
-    {
       "id": 1733,
       "home": "RB Leipzig",
       "away": "1. FC Union Berlin",
@@ -8461,17 +10247,17 @@
           "away_score_ht": null,
           "current_minute": null,
           "period": "",
-          "odds_home": 1.5,
-          "odds_draw": 4.7,
-          "odds_away": 6.75,
+          "odds_home": 1.48,
+          "odds_draw": 4.75,
+          "odds_away": 6.8,
           "odds_over_15": 1.19,
           "odds_over_25": 1.59,
           "odds_over_35": 2.45,
           "odds_under_15": 5.2,
           "odds_under_25": 2.5,
           "odds_under_35": 1.61,
-          "odds_btts_yes": 1.73,
-          "odds_btts_no": 2.08,
+          "odds_btts_yes": 1.75,
+          "odds_btts_no": 2.05,
           "odds_dc_12": 1.21,
           "actual_home_xg": null,
           "actual_away_xg": null,
@@ -8812,6 +10598,212 @@
       "source": "GitHub Actions cache"
     },
     {
+      "id": 1414,
+      "home": "Napoli",
+      "away": "Cremonese",
+      "league": "Serie A",
+      "date": "2026-04-24T22:45:00+04:00",
+      "prediction": {
+        "id": 2971,
+        "event": {
+          "id": 1414,
+          "league": {
+            "id": 4,
+            "name": "Serie A",
+            "country": "Italy",
+            "is_women": false,
+            "current_season": {
+              "id": 358,
+              "name": "Serie A 25/26",
+              "year": 2025,
+              "start_date": "2025-07-01",
+              "end_date": "2026-06-30"
+            }
+          },
+          "season": {
+            "id": 358,
+            "name": "Serie A 25/26",
+            "year": 2025
+          },
+          "home_team": "Napoli",
+          "away_team": "Cremonese",
+          "home_team_obj": {
+            "id": 62,
+            "name": "Napoli",
+            "short_name": "Napoli",
+            "country": "Italy",
+            "coach": {
+              "name": "Antonio Conte",
+              "shortName": "A. Conte"
+            },
+            "venue": {
+              "id": 62,
+              "name": "Stadio Diego Armando Maradona",
+              "city": "Naples",
+              "country": "Italy",
+              "capacity": 54726
+            }
+          },
+          "away_team_obj": {
+            "id": 64,
+            "name": "Cremonese",
+            "short_name": "Cremonese",
+            "country": "Italy",
+            "coach": {
+              "name": "Marco Giampaolo",
+              "shortName": "M. Giampaolo"
+            },
+            "venue": {
+              "id": 64,
+              "name": "Stadio Giovanni Zini",
+              "city": "Cremona",
+              "country": "Italy",
+              "capacity": 16003
+            }
+          },
+          "event_date": "2026-04-24T22:45:00+04:00",
+          "round_number": 34,
+          "group_name": null,
+          "status": "notstarted",
+          "home_score": null,
+          "away_score": null,
+          "home_score_ht": null,
+          "away_score_ht": null,
+          "current_minute": null,
+          "period": "",
+          "odds_home": 1.39,
+          "odds_draw": 5.1,
+          "odds_away": 8.75,
+          "odds_over_15": 1.31,
+          "odds_over_25": 1.92,
+          "odds_over_35": 3.35,
+          "odds_under_15": 3.75,
+          "odds_under_25": 1.96,
+          "odds_under_35": 1.37,
+          "odds_btts_yes": 2.26,
+          "odds_btts_no": 1.62,
+          "odds_dc_12": 1.2,
+          "actual_home_xg": null,
+          "actual_away_xg": null,
+          "home_xg_live": null,
+          "away_xg_live": null,
+          "penalty_shootout": null,
+          "referee": null,
+          "home_coach": {
+            "id": 482,
+            "name": "Antonio Conte",
+            "short_name": "A. Conte",
+            "country": "Italy",
+            "profile": "balanced",
+            "preferred_formation": "3-4-2-1",
+            "pressing_intensity": 0.2888292040917103,
+            "defensive_line": "high",
+            "top_styles": [
+              "ball_dominant",
+              "positional"
+            ]
+          },
+          "away_coach": {
+            "id": 381,
+            "name": "Marco Giampaolo",
+            "short_name": "M. Giampaolo",
+            "country": "Italy",
+            "profile": "defensive",
+            "preferred_formation": "3-5-2",
+            "pressing_intensity": 0.2949353793920516,
+            "defensive_line": "low",
+            "top_styles": [
+              "park_the_bus",
+              "terrorist_fb"
+            ]
+          },
+          "unavailable_players": {
+            "home": [
+              {
+                "name": "Amir Rrahmani",
+                "status": "doubtful",
+                "reason": "Thigh Injury",
+                "expected_return": "2026-04-29"
+              },
+              {
+                "name": "Antonio Vergara",
+                "status": "doubtful",
+                "reason": "Foot Injury",
+                "expected_return": "2026-05-09"
+              },
+              {
+                "name": "David Neres",
+                "status": "doubtful",
+                "reason": "Hamstring Injury",
+                "expected_return": "2026-04-30"
+              },
+              {
+                "name": "Giovanni Di Lorenzo",
+                "status": "doubtful",
+                "reason": "Knee Injury",
+                "expected_return": "2026-04-29"
+              },
+              {
+                "name": "Romelu Lukaku",
+                "status": "doubtful",
+                "reason": "Muscle Injury",
+                "expected_return": "2026-05-09"
+              }
+            ],
+            "away": [
+              {
+                "name": "Faris Moumbagna",
+                "status": "doubtful",
+                "reason": "Physical Discomfort",
+                "expected_return": "2026-05-08"
+              },
+              {
+                "name": "Jamie Vardy",
+                "status": "injured",
+                "reason": "Muscle Injury",
+                "expected_return": "2026-05-10"
+              }
+            ]
+          },
+          "venue": {
+            "id": 62,
+            "name": "Stadio Diego Armando Maradona",
+            "city": "Naples",
+            "country": "Italy",
+            "capacity": 54726
+          },
+          "incidents": null,
+          "lineups": null,
+          "shotmap": null,
+          "momentum": null,
+          "average_positions": null
+        },
+        "created_at": "2026-04-18T06:20:08.389539+04:00",
+        "prob_home_win": 44.09003204821223,
+        "prob_draw": 27.723576073543544,
+        "prob_away_win": 28.186391878244233,
+        "predicted_result": "H",
+        "expected_home_goals": 1.32444,
+        "expected_away_goals": 0.99944,
+        "prob_over_15": 81.03315938648767,
+        "prob_over_25": 63.244076453310015,
+        "prob_over_35": 28.90918640031588,
+        "prob_btts_yes": 51.813952286758344,
+        "confidence": 44.09003204821223,
+        "model_version": "v5.0",
+        "most_likely_score": "1-0",
+        "favorite": "H",
+        "favorite_prob": 44.09003204821223,
+        "favorite_recommend": false,
+        "over_15_recommend": false,
+        "over_25_recommend": false,
+        "over_35_recommend": false,
+        "btts_recommend": false,
+        "winner_recommend": true
+      },
+      "source": "GitHub Actions cache"
+    },
+    {
       "id": 2040,
       "home": "Stade Brestois",
       "away": "RC Lens",
@@ -8885,18 +10877,18 @@
           "away_score_ht": null,
           "current_minute": null,
           "period": "",
-          "odds_home": 5.75,
-          "odds_draw": 4.2,
-          "odds_away": 1.61,
+          "odds_home": 5.9,
+          "odds_draw": 4.25,
+          "odds_away": 1.6,
           "odds_over_15": 1.21,
           "odds_over_25": 1.65,
           "odds_over_35": 2.6,
           "odds_under_15": 4.9,
           "odds_under_25": 2.36,
-          "odds_under_35": 1.56,
+          "odds_under_35": 1.55,
           "odds_btts_yes": 1.71,
-          "odds_btts_no": 2.11,
-          "odds_dc_12": 1.25,
+          "odds_btts_no": 2.1,
+          "odds_dc_12": 1.24,
           "actual_home_xg": null,
           "actual_away_xg": null,
           "home_xg_live": null,
@@ -9030,212 +11022,6 @@
       "source": "GitHub Actions cache"
     },
     {
-      "id": 1414,
-      "home": "Napoli",
-      "away": "Cremonese",
-      "league": "Serie A",
-      "date": "2026-04-24T22:45:00+04:00",
-      "prediction": {
-        "id": 2971,
-        "event": {
-          "id": 1414,
-          "league": {
-            "id": 4,
-            "name": "Serie A",
-            "country": "Italy",
-            "is_women": false,
-            "current_season": {
-              "id": 358,
-              "name": "Serie A 25/26",
-              "year": 2025,
-              "start_date": "2025-07-01",
-              "end_date": "2026-06-30"
-            }
-          },
-          "season": {
-            "id": 358,
-            "name": "Serie A 25/26",
-            "year": 2025
-          },
-          "home_team": "Napoli",
-          "away_team": "Cremonese",
-          "home_team_obj": {
-            "id": 62,
-            "name": "Napoli",
-            "short_name": "Napoli",
-            "country": "Italy",
-            "coach": {
-              "name": "Antonio Conte",
-              "shortName": "A. Conte"
-            },
-            "venue": {
-              "id": 62,
-              "name": "Stadio Diego Armando Maradona",
-              "city": "Naples",
-              "country": "Italy",
-              "capacity": 54726
-            }
-          },
-          "away_team_obj": {
-            "id": 64,
-            "name": "Cremonese",
-            "short_name": "Cremonese",
-            "country": "Italy",
-            "coach": {
-              "name": "Marco Giampaolo",
-              "shortName": "M. Giampaolo"
-            },
-            "venue": {
-              "id": 64,
-              "name": "Stadio Giovanni Zini",
-              "city": "Cremona",
-              "country": "Italy",
-              "capacity": 16003
-            }
-          },
-          "event_date": "2026-04-24T22:45:00+04:00",
-          "round_number": 34,
-          "group_name": null,
-          "status": "notstarted",
-          "home_score": null,
-          "away_score": null,
-          "home_score_ht": null,
-          "away_score_ht": null,
-          "current_minute": null,
-          "period": "",
-          "odds_home": 1.39,
-          "odds_draw": 5.0,
-          "odds_away": 9.0,
-          "odds_over_15": 1.31,
-          "odds_over_25": 1.92,
-          "odds_over_35": 3.3,
-          "odds_under_15": 3.75,
-          "odds_under_25": 1.96,
-          "odds_under_35": 1.37,
-          "odds_btts_yes": 2.25,
-          "odds_btts_no": 1.63,
-          "odds_dc_12": 1.21,
-          "actual_home_xg": null,
-          "actual_away_xg": null,
-          "home_xg_live": null,
-          "away_xg_live": null,
-          "penalty_shootout": null,
-          "referee": null,
-          "home_coach": {
-            "id": 482,
-            "name": "Antonio Conte",
-            "short_name": "A. Conte",
-            "country": "Italy",
-            "profile": "balanced",
-            "preferred_formation": "3-4-2-1",
-            "pressing_intensity": 0.2888292040917103,
-            "defensive_line": "high",
-            "top_styles": [
-              "ball_dominant",
-              "positional"
-            ]
-          },
-          "away_coach": {
-            "id": 381,
-            "name": "Marco Giampaolo",
-            "short_name": "M. Giampaolo",
-            "country": "Italy",
-            "profile": "defensive",
-            "preferred_formation": "3-5-2",
-            "pressing_intensity": 0.2949353793920516,
-            "defensive_line": "low",
-            "top_styles": [
-              "park_the_bus",
-              "terrorist_fb"
-            ]
-          },
-          "unavailable_players": {
-            "home": [
-              {
-                "name": "Amir Rrahmani",
-                "status": "doubtful",
-                "reason": "Thigh Injury",
-                "expected_return": "2026-04-29"
-              },
-              {
-                "name": "Antonio Vergara",
-                "status": "doubtful",
-                "reason": "Foot Injury",
-                "expected_return": "2026-05-09"
-              },
-              {
-                "name": "David Neres",
-                "status": "doubtful",
-                "reason": "Hamstring Injury",
-                "expected_return": "2026-04-30"
-              },
-              {
-                "name": "Giovanni Di Lorenzo",
-                "status": "doubtful",
-                "reason": "Knee Injury",
-                "expected_return": "2026-04-29"
-              },
-              {
-                "name": "Romelu Lukaku",
-                "status": "doubtful",
-                "reason": "Muscle Injury",
-                "expected_return": "2026-05-09"
-              }
-            ],
-            "away": [
-              {
-                "name": "Faris Moumbagna",
-                "status": "doubtful",
-                "reason": "Physical Discomfort",
-                "expected_return": "2026-05-08"
-              },
-              {
-                "name": "Jamie Vardy",
-                "status": "injured",
-                "reason": "Muscle Injury",
-                "expected_return": "2026-05-10"
-              }
-            ]
-          },
-          "venue": {
-            "id": 62,
-            "name": "Stadio Diego Armando Maradona",
-            "city": "Naples",
-            "country": "Italy",
-            "capacity": 54726
-          },
-          "incidents": null,
-          "lineups": null,
-          "shotmap": null,
-          "momentum": null,
-          "average_positions": null
-        },
-        "created_at": "2026-04-18T06:20:08.389539+04:00",
-        "prob_home_win": 44.09003204821223,
-        "prob_draw": 27.723576073543544,
-        "prob_away_win": 28.186391878244233,
-        "predicted_result": "H",
-        "expected_home_goals": 1.32444,
-        "expected_away_goals": 0.99944,
-        "prob_over_15": 81.03315938648767,
-        "prob_over_25": 63.244076453310015,
-        "prob_over_35": 28.90918640031588,
-        "prob_btts_yes": 51.813952286758344,
-        "confidence": 44.09003204821223,
-        "model_version": "v5.0",
-        "most_likely_score": "1-0",
-        "favorite": "H",
-        "favorite_prob": 44.09003204821223,
-        "favorite_recommend": false,
-        "over_15_recommend": false,
-        "over_25_recommend": false,
-        "over_35_recommend": false,
-        "btts_recommend": false,
-        "winner_recommend": true
-      },
-      "source": "GitHub Actions cache"
-    },
-    {
       "id": 3908,
       "home": "Leicester City",
       "away": "Millwall",
@@ -9309,17 +11095,17 @@
           "away_score_ht": null,
           "current_minute": null,
           "period": "",
-          "odds_home": 4.6,
+          "odds_home": 4.8,
           "odds_draw": 4.1,
-          "odds_away": 1.75,
-          "odds_over_15": 1.25,
-          "odds_over_25": 1.76,
-          "odds_over_35": 2.85,
-          "odds_under_15": 4.2,
-          "odds_under_25": 2.12,
-          "odds_under_35": 1.45,
-          "odds_btts_yes": 1.72,
-          "odds_btts_no": 2.04,
+          "odds_away": 1.72,
+          "odds_over_15": 1.23,
+          "odds_over_25": 1.71,
+          "odds_over_35": 2.75,
+          "odds_under_15": 4.4,
+          "odds_under_25": 2.19,
+          "odds_under_35": 1.48,
+          "odds_btts_yes": 1.69,
+          "odds_btts_no": 2.09,
           "odds_dc_12": 1.25,
           "actual_home_xg": null,
           "actual_away_xg": null,
@@ -9781,18 +11567,18 @@
           "away_score_ht": null,
           "current_minute": null,
           "period": "",
-          "odds_home": 2.8,
-          "odds_draw": 3.25,
+          "odds_home": 2.87,
+          "odds_draw": 3.2,
           "odds_away": 2.72,
-          "odds_over_15": 1.4,
-          "odds_over_25": 2.22,
-          "odds_over_35": 4.0,
-          "odds_under_15": 3.2,
-          "odds_under_25": 1.73,
-          "odds_under_35": 1.28,
-          "odds_btts_yes": 1.87,
-          "odds_btts_no": 1.9,
-          "odds_dc_12": 1.39,
+          "odds_over_15": 1.41,
+          "odds_over_25": 2.27,
+          "odds_over_35": 4.2,
+          "odds_under_15": 3.1,
+          "odds_under_25": 1.7,
+          "odds_under_35": 1.26,
+          "odds_btts_yes": 1.89,
+          "odds_btts_no": 1.88,
+          "odds_dc_12": 1.4,
           "actual_home_xg": null,
           "actual_away_xg": null,
           "home_xg_live": null,
@@ -10280,6 +12066,268 @@
       "source": "GitHub Actions cache"
     },
     {
+      "id": 204835,
+      "home": "Urawa Red Diamonds",
+      "away": "Yokohama F. Marinos",
+      "league": "J1 League",
+      "date": "2026-04-25T09:00:00+04:00",
+      "prediction": {
+        "id": 3219,
+        "event": {
+          "id": 204835,
+          "league": {
+            "id": 49,
+            "name": "J1 League",
+            "country": "Japan",
+            "is_women": false,
+            "current_season": null
+          },
+          "season": null,
+          "home_team": "Urawa Red Diamonds",
+          "away_team": "Yokohama F. Marinos",
+          "home_team_obj": {
+            "id": 1935,
+            "name": "Urawa Red Diamonds",
+            "short_name": "Urawa Reds",
+            "country": "Japan",
+            "coach": {
+              "name": "Maciej Skorza",
+              "shortName": "M. Skorza"
+            },
+            "venue": null
+          },
+          "away_team_obj": {
+            "id": 1928,
+            "name": "Yokohama F. Marinos",
+            "short_name": "Yokohama FM",
+            "country": "Japan",
+            "coach": {
+              "name": "Hideo Oshima",
+              "shortName": "H. Oshima"
+            },
+            "venue": null
+          },
+          "event_date": "2026-04-25T09:00:00+04:00",
+          "round_number": 12,
+          "group_name": null,
+          "status": "notstarted",
+          "home_score": null,
+          "away_score": null,
+          "home_score_ht": null,
+          "away_score_ht": null,
+          "current_minute": null,
+          "period": "",
+          "odds_home": 1.81,
+          "odds_draw": 3.6,
+          "odds_away": 4.0,
+          "odds_over_15": 1.25,
+          "odds_over_25": 1.85,
+          "odds_over_35": 3.0,
+          "odds_under_15": 3.75,
+          "odds_under_25": 1.95,
+          "odds_under_35": 1.36,
+          "odds_btts_yes": 1.75,
+          "odds_btts_no": 2.0,
+          "odds_dc_12": null,
+          "actual_home_xg": null,
+          "actual_away_xg": null,
+          "home_xg_live": null,
+          "away_xg_live": null,
+          "penalty_shootout": null,
+          "referee": null,
+          "home_coach": {
+            "id": 1292,
+            "name": "Maciej Skorza",
+            "short_name": "M. Skorza",
+            "country": "Poland",
+            "profile": "",
+            "preferred_formation": "",
+            "pressing_intensity": null,
+            "defensive_line": "",
+            "top_styles": []
+          },
+          "away_coach": {
+            "id": 1285,
+            "name": "Hideo Oshima",
+            "short_name": "H. Oshima",
+            "country": "Japan",
+            "profile": "",
+            "preferred_formation": "",
+            "pressing_intensity": null,
+            "defensive_line": "",
+            "top_styles": []
+          },
+          "unavailable_players": null,
+          "venue": {
+            "id": 1119,
+            "name": "Saitama Stadium 2002",
+            "city": "Saitama",
+            "country": "Japan",
+            "capacity": 63700
+          },
+          "incidents": null,
+          "lineups": null,
+          "shotmap": null,
+          "momentum": null,
+          "average_positions": null
+        },
+        "created_at": "2026-04-24T06:20:10.478186+04:00",
+        "prob_home_win": 34.80583442569198,
+        "prob_draw": 25.784897955946818,
+        "prob_away_win": 39.40926761836119,
+        "predicted_result": "A",
+        "expected_home_goals": 1.3,
+        "expected_away_goals": 1.4,
+        "prob_over_15": 81.40350685341706,
+        "prob_over_25": 55.77127694572629,
+        "prob_over_35": 27.682209095744508,
+        "prob_btts_yes": 70.52168795324843,
+        "confidence": 39.40926761836119,
+        "model_version": "v5.0",
+        "most_likely_score": "1-1",
+        "favorite": "A",
+        "favorite_prob": 39.40926761836119,
+        "favorite_recommend": false,
+        "over_15_recommend": false,
+        "over_25_recommend": false,
+        "over_35_recommend": false,
+        "btts_recommend": true,
+        "winner_recommend": false
+      },
+      "source": "GitHub Actions cache"
+    },
+    {
+      "id": 205029,
+      "home": "Gangwon FC",
+      "away": "FC Seoul",
+      "league": "K League 1",
+      "date": "2026-04-25T09:00:00+04:00",
+      "prediction": {
+        "id": 3222,
+        "event": {
+          "id": 205029,
+          "league": {
+            "id": 50,
+            "name": "K League 1",
+            "country": "South Korea",
+            "is_women": false,
+            "current_season": null
+          },
+          "season": null,
+          "home_team": "Gangwon FC",
+          "away_team": "FC Seoul",
+          "home_team_obj": {
+            "id": 1951,
+            "name": "Gangwon FC",
+            "short_name": "Gangwon",
+            "country": "South Korea",
+            "coach": {
+              "name": "Kyung-ho Chung",
+              "shortName": "K. Chung"
+            },
+            "venue": null
+          },
+          "away_team_obj": {
+            "id": 1949,
+            "name": "FC Seoul",
+            "short_name": "FC Seoul",
+            "country": "South Korea",
+            "coach": {
+              "name": "Gi Dong Kim",
+              "shortName": "G. D. Kim"
+            },
+            "venue": null
+          },
+          "event_date": "2026-04-25T09:00:00+04:00",
+          "round_number": 10,
+          "group_name": null,
+          "status": "notstarted",
+          "home_score": null,
+          "away_score": null,
+          "home_score_ht": null,
+          "away_score_ht": null,
+          "current_minute": null,
+          "period": "",
+          "odds_home": 2.5,
+          "odds_draw": 2.9,
+          "odds_away": 2.75,
+          "odds_over_15": 1.4,
+          "odds_over_25": 2.3,
+          "odds_over_35": 4.33,
+          "odds_under_15": 2.75,
+          "odds_under_25": 1.6,
+          "odds_under_35": 1.2,
+          "odds_btts_yes": 1.91,
+          "odds_btts_no": 1.8,
+          "odds_dc_12": null,
+          "actual_home_xg": null,
+          "actual_away_xg": null,
+          "home_xg_live": null,
+          "away_xg_live": null,
+          "penalty_shootout": null,
+          "referee": null,
+          "home_coach": {
+            "id": 1308,
+            "name": "Kyung-ho Chung",
+            "short_name": "K. Chung",
+            "country": "South Korea",
+            "profile": "",
+            "preferred_formation": "",
+            "pressing_intensity": null,
+            "defensive_line": "",
+            "top_styles": []
+          },
+          "away_coach": {
+            "id": 1306,
+            "name": "Gi Dong Kim",
+            "short_name": "G. D. Kim",
+            "country": "South Korea",
+            "profile": "",
+            "preferred_formation": "",
+            "pressing_intensity": null,
+            "defensive_line": "",
+            "top_styles": []
+          },
+          "unavailable_players": null,
+          "venue": {
+            "id": 1133,
+            "name": "Chuncheon Songam Sports Town",
+            "city": "Chuncheon",
+            "country": "South Korea",
+            "capacity": 20000
+          },
+          "incidents": null,
+          "lineups": null,
+          "shotmap": null,
+          "momentum": null,
+          "average_positions": null
+        },
+        "created_at": "2026-04-24T06:20:12.361621+04:00",
+        "prob_home_win": 37.317077030056836,
+        "prob_draw": 26.541517897333044,
+        "prob_away_win": 36.14140507261012,
+        "predicted_result": "H",
+        "expected_home_goals": 1.3,
+        "expected_away_goals": 1.275,
+        "prob_over_15": 64.05652110985265,
+        "prob_over_25": 38.06825761483537,
+        "prob_over_35": 18.708562100683814,
+        "prob_btts_yes": 51.76579182769224,
+        "confidence": 37.317077030056836,
+        "model_version": "v5.0",
+        "most_likely_score": "1-1",
+        "favorite": "H",
+        "favorite_prob": 37.317077030056836,
+        "favorite_recommend": false,
+        "over_15_recommend": false,
+        "over_25_recommend": false,
+        "over_35_recommend": false,
+        "btts_recommend": false,
+        "winner_recommend": false
+      },
+      "source": "GitHub Actions cache"
+    },
+    {
       "id": 204837,
       "home": "Shimizu S-Pulse",
       "away": "Nagoya Grampus",
@@ -10537,268 +12585,6 @@
         "over_25_recommend": false,
         "over_35_recommend": false,
         "btts_recommend": false,
-        "winner_recommend": false
-      },
-      "source": "GitHub Actions cache"
-    },
-    {
-      "id": 205029,
-      "home": "Gangwon FC",
-      "away": "FC Seoul",
-      "league": "K League 1",
-      "date": "2026-04-25T09:00:00+04:00",
-      "prediction": {
-        "id": 3222,
-        "event": {
-          "id": 205029,
-          "league": {
-            "id": 50,
-            "name": "K League 1",
-            "country": "South Korea",
-            "is_women": false,
-            "current_season": null
-          },
-          "season": null,
-          "home_team": "Gangwon FC",
-          "away_team": "FC Seoul",
-          "home_team_obj": {
-            "id": 1951,
-            "name": "Gangwon FC",
-            "short_name": "Gangwon",
-            "country": "South Korea",
-            "coach": {
-              "name": "Kyung-ho Chung",
-              "shortName": "K. Chung"
-            },
-            "venue": null
-          },
-          "away_team_obj": {
-            "id": 1949,
-            "name": "FC Seoul",
-            "short_name": "FC Seoul",
-            "country": "South Korea",
-            "coach": {
-              "name": "Gi Dong Kim",
-              "shortName": "G. D. Kim"
-            },
-            "venue": null
-          },
-          "event_date": "2026-04-25T09:00:00+04:00",
-          "round_number": 10,
-          "group_name": null,
-          "status": "notstarted",
-          "home_score": null,
-          "away_score": null,
-          "home_score_ht": null,
-          "away_score_ht": null,
-          "current_minute": null,
-          "period": "",
-          "odds_home": 2.5,
-          "odds_draw": 2.9,
-          "odds_away": 2.75,
-          "odds_over_15": 1.4,
-          "odds_over_25": 2.3,
-          "odds_over_35": 4.33,
-          "odds_under_15": 2.75,
-          "odds_under_25": 1.6,
-          "odds_under_35": 1.2,
-          "odds_btts_yes": 1.91,
-          "odds_btts_no": 1.8,
-          "odds_dc_12": null,
-          "actual_home_xg": null,
-          "actual_away_xg": null,
-          "home_xg_live": null,
-          "away_xg_live": null,
-          "penalty_shootout": null,
-          "referee": null,
-          "home_coach": {
-            "id": 1308,
-            "name": "Kyung-ho Chung",
-            "short_name": "K. Chung",
-            "country": "South Korea",
-            "profile": "",
-            "preferred_formation": "",
-            "pressing_intensity": null,
-            "defensive_line": "",
-            "top_styles": []
-          },
-          "away_coach": {
-            "id": 1306,
-            "name": "Gi Dong Kim",
-            "short_name": "G. D. Kim",
-            "country": "South Korea",
-            "profile": "",
-            "preferred_formation": "",
-            "pressing_intensity": null,
-            "defensive_line": "",
-            "top_styles": []
-          },
-          "unavailable_players": null,
-          "venue": {
-            "id": 1133,
-            "name": "Chuncheon Songam Sports Town",
-            "city": "Chuncheon",
-            "country": "South Korea",
-            "capacity": 20000
-          },
-          "incidents": null,
-          "lineups": null,
-          "shotmap": null,
-          "momentum": null,
-          "average_positions": null
-        },
-        "created_at": "2026-04-24T06:20:12.361621+04:00",
-        "prob_home_win": 37.317077030056836,
-        "prob_draw": 26.541517897333044,
-        "prob_away_win": 36.14140507261012,
-        "predicted_result": "H",
-        "expected_home_goals": 1.3,
-        "expected_away_goals": 1.275,
-        "prob_over_15": 64.05652110985265,
-        "prob_over_25": 38.06825761483537,
-        "prob_over_35": 18.708562100683814,
-        "prob_btts_yes": 51.76579182769224,
-        "confidence": 37.317077030056836,
-        "model_version": "v5.0",
-        "most_likely_score": "1-1",
-        "favorite": "H",
-        "favorite_prob": 37.317077030056836,
-        "favorite_recommend": false,
-        "over_15_recommend": false,
-        "over_25_recommend": false,
-        "over_35_recommend": false,
-        "btts_recommend": false,
-        "winner_recommend": false
-      },
-      "source": "GitHub Actions cache"
-    },
-    {
-      "id": 204835,
-      "home": "Urawa Red Diamonds",
-      "away": "Yokohama F. Marinos",
-      "league": "J1 League",
-      "date": "2026-04-25T09:00:00+04:00",
-      "prediction": {
-        "id": 3219,
-        "event": {
-          "id": 204835,
-          "league": {
-            "id": 49,
-            "name": "J1 League",
-            "country": "Japan",
-            "is_women": false,
-            "current_season": null
-          },
-          "season": null,
-          "home_team": "Urawa Red Diamonds",
-          "away_team": "Yokohama F. Marinos",
-          "home_team_obj": {
-            "id": 1935,
-            "name": "Urawa Red Diamonds",
-            "short_name": "Urawa Reds",
-            "country": "Japan",
-            "coach": {
-              "name": "Maciej Skorza",
-              "shortName": "M. Skorza"
-            },
-            "venue": null
-          },
-          "away_team_obj": {
-            "id": 1928,
-            "name": "Yokohama F. Marinos",
-            "short_name": "Yokohama FM",
-            "country": "Japan",
-            "coach": {
-              "name": "Hideo Oshima",
-              "shortName": "H. Oshima"
-            },
-            "venue": null
-          },
-          "event_date": "2026-04-25T09:00:00+04:00",
-          "round_number": 12,
-          "group_name": null,
-          "status": "notstarted",
-          "home_score": null,
-          "away_score": null,
-          "home_score_ht": null,
-          "away_score_ht": null,
-          "current_minute": null,
-          "period": "",
-          "odds_home": 1.81,
-          "odds_draw": 3.6,
-          "odds_away": 4.0,
-          "odds_over_15": 1.25,
-          "odds_over_25": 1.85,
-          "odds_over_35": 3.0,
-          "odds_under_15": 3.75,
-          "odds_under_25": 1.95,
-          "odds_under_35": 1.36,
-          "odds_btts_yes": 1.75,
-          "odds_btts_no": 2.0,
-          "odds_dc_12": null,
-          "actual_home_xg": null,
-          "actual_away_xg": null,
-          "home_xg_live": null,
-          "away_xg_live": null,
-          "penalty_shootout": null,
-          "referee": null,
-          "home_coach": {
-            "id": 1292,
-            "name": "Maciej Skorza",
-            "short_name": "M. Skorza",
-            "country": "Poland",
-            "profile": "",
-            "preferred_formation": "",
-            "pressing_intensity": null,
-            "defensive_line": "",
-            "top_styles": []
-          },
-          "away_coach": {
-            "id": 1285,
-            "name": "Hideo Oshima",
-            "short_name": "H. Oshima",
-            "country": "Japan",
-            "profile": "",
-            "preferred_formation": "",
-            "pressing_intensity": null,
-            "defensive_line": "",
-            "top_styles": []
-          },
-          "unavailable_players": null,
-          "venue": {
-            "id": 1119,
-            "name": "Saitama Stadium 2002",
-            "city": "Saitama",
-            "country": "Japan",
-            "capacity": 63700
-          },
-          "incidents": null,
-          "lineups": null,
-          "shotmap": null,
-          "momentum": null,
-          "average_positions": null
-        },
-        "created_at": "2026-04-24T06:20:10.478186+04:00",
-        "prob_home_win": 34.80583442569198,
-        "prob_draw": 25.784897955946818,
-        "prob_away_win": 39.40926761836119,
-        "predicted_result": "A",
-        "expected_home_goals": 1.3,
-        "expected_away_goals": 1.4,
-        "prob_over_15": 81.40350685341706,
-        "prob_over_25": 55.77127694572629,
-        "prob_over_35": 27.682209095744508,
-        "prob_btts_yes": 70.52168795324843,
-        "confidence": 39.40926761836119,
-        "model_version": "v5.0",
-        "most_likely_score": "1-1",
-        "favorite": "A",
-        "favorite_prob": 39.40926761836119,
-        "favorite_recommend": false,
-        "over_15_recommend": false,
-        "over_25_recommend": false,
-        "over_35_recommend": false,
-        "btts_recommend": true,
         "winner_recommend": false
       },
       "source": "GitHub Actions cache"
@@ -11459,159 +13245,6 @@
       "source": "GitHub Actions cache"
     },
     {
-      "id": 9816,
-      "home": "FC Badalona",
-      "away": "Club Atlético de Madrid",
-      "league": "Liga F",
-      "date": "2026-04-25T14:00:00+04:00",
-      "prediction": {
-        "id": 2995,
-        "event": {
-          "id": 9816,
-          "league": {
-            "id": 36,
-            "name": "Liga F",
-            "country": "Spain",
-            "is_women": true,
-            "current_season": {
-              "id": 295,
-              "name": "Liga F Moeve 25/26",
-              "year": 2025,
-              "start_date": "2025-07-01",
-              "end_date": "2026-06-30"
-            }
-          },
-          "season": {
-            "id": 295,
-            "name": "Liga F Moeve 25/26",
-            "year": 2025
-          },
-          "home_team": "FC Badalona",
-          "away_team": "Club Atlético de Madrid",
-          "home_team_obj": {
-            "id": 916,
-            "name": "FC Badalona",
-            "short_name": "FC Badalona",
-            "country": "Spain",
-            "coach": {
-              "name": "Marc Ballester",
-              "shortName": "M. Ballester"
-            },
-            "venue": {
-              "id": 697,
-              "name": "Municipal Les Planes",
-              "city": "Sant Joan Despi",
-              "country": "Spain",
-              "capacity": null
-            }
-          },
-          "away_team_obj": {
-            "id": 920,
-            "name": "Club Atlético de Madrid",
-            "short_name": "Atlético de Madrid",
-            "country": "Spain",
-            "coach": {
-              "name": "José Ángel Herrera",
-              "shortName": "J. Á. Herrera"
-            },
-            "venue": {
-              "id": 700,
-              "name": "Centro Deportivo Wanda",
-              "city": "Alcala de Henares",
-              "country": "Spain",
-              "capacity": null
-            }
-          },
-          "event_date": "2026-04-25T14:00:00+04:00",
-          "round_number": 26,
-          "group_name": null,
-          "status": "notstarted",
-          "home_score": null,
-          "away_score": null,
-          "home_score_ht": null,
-          "away_score_ht": null,
-          "current_minute": null,
-          "period": "",
-          "odds_home": 4.33,
-          "odds_draw": 3.6,
-          "odds_away": 1.65,
-          "odds_over_15": null,
-          "odds_over_25": null,
-          "odds_over_35": null,
-          "odds_under_15": null,
-          "odds_under_25": null,
-          "odds_under_35": null,
-          "odds_btts_yes": null,
-          "odds_btts_no": null,
-          "odds_dc_12": null,
-          "actual_home_xg": null,
-          "actual_away_xg": null,
-          "home_xg_live": null,
-          "away_xg_live": null,
-          "penalty_shootout": null,
-          "referee": null,
-          "home_coach": {
-            "id": 477,
-            "name": "Marc Ballester",
-            "short_name": "M. Ballester",
-            "country": "Spain",
-            "profile": "defensive",
-            "preferred_formation": "4-2-3-1",
-            "pressing_intensity": null,
-            "defensive_line": "",
-            "top_styles": []
-          },
-          "away_coach": {
-            "id": 22,
-            "name": "José Ángel Herrera",
-            "short_name": "J. Á. Herrera",
-            "country": "Spain",
-            "profile": "attacking",
-            "preferred_formation": "4-2-3-1",
-            "pressing_intensity": null,
-            "defensive_line": "",
-            "top_styles": []
-          },
-          "unavailable_players": null,
-          "venue": {
-            "id": 697,
-            "name": "Municipal Les Planes",
-            "city": "Sant Joan Despi",
-            "country": "Spain",
-            "capacity": null
-          },
-          "incidents": null,
-          "lineups": null,
-          "shotmap": null,
-          "momentum": null,
-          "average_positions": null
-        },
-        "created_at": "2026-04-19T06:20:09.110399+04:00",
-        "prob_home_win": 37.88111202171012,
-        "prob_draw": 20.454552519923485,
-        "prob_away_win": 41.664335458366395,
-        "predicted_result": "A",
-        "expected_home_goals": 2.0,
-        "expected_away_goals": 2.1,
-        "prob_over_15": 85.07130900977872,
-        "prob_over_25": 66.5002255065592,
-        "prob_over_35": 45.695560530699815,
-        "prob_btts_yes": 59.38345277822441,
-        "confidence": 41.664335458366395,
-        "model_version": "v5.0",
-        "most_likely_score": "1-2",
-        "favorite": "A",
-        "favorite_prob": 41.664335458366395,
-        "favorite_recommend": false,
-        "over_15_recommend": false,
-        "over_25_recommend": false,
-        "over_35_recommend": false,
-        "btts_recommend": false,
-        "winner_recommend": false
-      },
-      "source": "GitHub Actions cache"
-    },
-    {
       "id": 9814,
       "home": "Athletic Club",
       "away": "Granada Club de Fútbol",
@@ -11755,6 +13388,159 @@
         "most_likely_score": "0-1",
         "favorite": "A",
         "favorite_prob": 48.58472933462113,
+        "favorite_recommend": false,
+        "over_15_recommend": false,
+        "over_25_recommend": false,
+        "over_35_recommend": false,
+        "btts_recommend": false,
+        "winner_recommend": false
+      },
+      "source": "GitHub Actions cache"
+    },
+    {
+      "id": 9816,
+      "home": "FC Badalona",
+      "away": "Club Atlético de Madrid",
+      "league": "Liga F",
+      "date": "2026-04-25T14:00:00+04:00",
+      "prediction": {
+        "id": 2995,
+        "event": {
+          "id": 9816,
+          "league": {
+            "id": 36,
+            "name": "Liga F",
+            "country": "Spain",
+            "is_women": true,
+            "current_season": {
+              "id": 295,
+              "name": "Liga F Moeve 25/26",
+              "year": 2025,
+              "start_date": "2025-07-01",
+              "end_date": "2026-06-30"
+            }
+          },
+          "season": {
+            "id": 295,
+            "name": "Liga F Moeve 25/26",
+            "year": 2025
+          },
+          "home_team": "FC Badalona",
+          "away_team": "Club Atlético de Madrid",
+          "home_team_obj": {
+            "id": 916,
+            "name": "FC Badalona",
+            "short_name": "FC Badalona",
+            "country": "Spain",
+            "coach": {
+              "name": "Marc Ballester",
+              "shortName": "M. Ballester"
+            },
+            "venue": {
+              "id": 697,
+              "name": "Municipal Les Planes",
+              "city": "Sant Joan Despi",
+              "country": "Spain",
+              "capacity": null
+            }
+          },
+          "away_team_obj": {
+            "id": 920,
+            "name": "Club Atlético de Madrid",
+            "short_name": "Atlético de Madrid",
+            "country": "Spain",
+            "coach": {
+              "name": "José Ángel Herrera",
+              "shortName": "J. Á. Herrera"
+            },
+            "venue": {
+              "id": 700,
+              "name": "Centro Deportivo Wanda",
+              "city": "Alcala de Henares",
+              "country": "Spain",
+              "capacity": null
+            }
+          },
+          "event_date": "2026-04-25T14:00:00+04:00",
+          "round_number": 26,
+          "group_name": null,
+          "status": "notstarted",
+          "home_score": null,
+          "away_score": null,
+          "home_score_ht": null,
+          "away_score_ht": null,
+          "current_minute": null,
+          "period": "",
+          "odds_home": 4.33,
+          "odds_draw": 3.6,
+          "odds_away": 1.65,
+          "odds_over_15": null,
+          "odds_over_25": null,
+          "odds_over_35": null,
+          "odds_under_15": null,
+          "odds_under_25": null,
+          "odds_under_35": null,
+          "odds_btts_yes": null,
+          "odds_btts_no": null,
+          "odds_dc_12": null,
+          "actual_home_xg": null,
+          "actual_away_xg": null,
+          "home_xg_live": null,
+          "away_xg_live": null,
+          "penalty_shootout": null,
+          "referee": null,
+          "home_coach": {
+            "id": 477,
+            "name": "Marc Ballester",
+            "short_name": "M. Ballester",
+            "country": "Spain",
+            "profile": "defensive",
+            "preferred_formation": "4-2-3-1",
+            "pressing_intensity": null,
+            "defensive_line": "",
+            "top_styles": []
+          },
+          "away_coach": {
+            "id": 22,
+            "name": "José Ángel Herrera",
+            "short_name": "J. Á. Herrera",
+            "country": "Spain",
+            "profile": "attacking",
+            "preferred_formation": "4-2-3-1",
+            "pressing_intensity": null,
+            "defensive_line": "",
+            "top_styles": []
+          },
+          "unavailable_players": null,
+          "venue": {
+            "id": 697,
+            "name": "Municipal Les Planes",
+            "city": "Sant Joan Despi",
+            "country": "Spain",
+            "capacity": null
+          },
+          "incidents": null,
+          "lineups": null,
+          "shotmap": null,
+          "momentum": null,
+          "average_positions": null
+        },
+        "created_at": "2026-04-19T06:20:09.110399+04:00",
+        "prob_home_win": 37.88111202171012,
+        "prob_draw": 20.454552519923485,
+        "prob_away_win": 41.664335458366395,
+        "predicted_result": "A",
+        "expected_home_goals": 2.0,
+        "expected_away_goals": 2.1,
+        "prob_over_15": 85.07130900977872,
+        "prob_over_25": 66.5002255065592,
+        "prob_over_35": 45.695560530699815,
+        "prob_btts_yes": 59.38345277822441,
+        "confidence": 41.664335458366395,
+        "model_version": "v5.0",
+        "most_likely_score": "1-2",
+        "favorite": "A",
+        "favorite_prob": 41.664335458366395,
         "favorite_recommend": false,
         "over_15_recommend": false,
         "over_25_recommend": false,
@@ -12069,6 +13855,165 @@
         "most_likely_score": "1-1",
         "favorite": "H",
         "favorite_prob": 41.69821787252494,
+        "favorite_recommend": false,
+        "over_15_recommend": false,
+        "over_25_recommend": false,
+        "over_35_recommend": false,
+        "btts_recommend": false,
+        "winner_recommend": false
+      },
+      "source": "GitHub Actions cache"
+    },
+    {
+      "id": 657,
+      "home": "Estoril Praia",
+      "away": "Famalicão",
+      "league": "Liga Portugal Betclic",
+      "date": "2026-04-25T15:00:00+04:00",
+      "prediction": {
+        "id": 2998,
+        "event": {
+          "id": 657,
+          "league": {
+            "id": 2,
+            "name": "Liga Portugal Betclic",
+            "country": "Portugal",
+            "is_women": false,
+            "current_season": {
+              "id": 305,
+              "name": "Liga Portugal 25/26",
+              "year": 2025,
+              "start_date": "2025-07-01",
+              "end_date": "2026-06-30"
+            }
+          },
+          "season": {
+            "id": 305,
+            "name": "Liga Portugal 25/26",
+            "year": 2025
+          },
+          "home_team": "Estoril Praia",
+          "away_team": "Famalicão",
+          "home_team_obj": {
+            "id": 33,
+            "name": "Estoril Praia",
+            "short_name": "Estoril",
+            "country": "Portugal",
+            "coach": {
+              "name": "Ian Cathro",
+              "shortName": "I. Cathro"
+            },
+            "venue": {
+              "id": 33,
+              "name": "Estadio Antonio Coimbra da Mota",
+              "city": "Estoril",
+              "country": "Portugal",
+              "capacity": 8000
+            }
+          },
+          "away_team_obj": {
+            "id": 27,
+            "name": "Famalicão",
+            "short_name": "Famalicão",
+            "country": "Portugal",
+            "coach": {
+              "name": "Hugo Oliveira",
+              "shortName": "H. F. C. Oliveira"
+            },
+            "venue": {
+              "id": 27,
+              "name": "Estádio Municipal de Famalicão",
+              "city": "Vila Nova de Famalicao",
+              "country": "Portugal",
+              "capacity": 5186
+            }
+          },
+          "event_date": "2026-04-25T15:00:00+04:00",
+          "round_number": 31,
+          "group_name": null,
+          "status": "notstarted",
+          "home_score": null,
+          "away_score": null,
+          "home_score_ht": null,
+          "away_score_ht": null,
+          "current_minute": null,
+          "period": "",
+          "odds_home": 3.0,
+          "odds_draw": 3.5,
+          "odds_away": 2.2,
+          "odds_over_15": 1.2,
+          "odds_over_25": 1.7,
+          "odds_over_35": 2.62,
+          "odds_under_15": 4.33,
+          "odds_under_25": 2.1,
+          "odds_under_35": 1.44,
+          "odds_btts_yes": 1.57,
+          "odds_btts_no": 2.25,
+          "odds_dc_12": null,
+          "actual_home_xg": null,
+          "actual_away_xg": null,
+          "home_xg_live": null,
+          "away_xg_live": null,
+          "penalty_shootout": null,
+          "referee": null,
+          "home_coach": {
+            "id": 13,
+            "name": "Ian Cathro",
+            "short_name": "I. Cathro",
+            "country": "Scotland",
+            "profile": "attacking",
+            "preferred_formation": "3-4-3",
+            "pressing_intensity": 0.5525071871547619,
+            "defensive_line": "mid",
+            "top_styles": [
+              "chaos_ball",
+              "chaos_football"
+            ]
+          },
+          "away_coach": {
+            "id": 7,
+            "name": "Hugo Oliveira",
+            "short_name": "H. F. C. Oliveira",
+            "country": "Portugal",
+            "profile": "balanced",
+            "preferred_formation": "4-2-3-1",
+            "pressing_intensity": 0.6052649883200839,
+            "defensive_line": "mid",
+            "top_styles": [
+              "anti_football",
+              "set_piece"
+            ]
+          },
+          "unavailable_players": null,
+          "venue": {
+            "id": 33,
+            "name": "Estadio Antonio Coimbra da Mota",
+            "city": "Estoril",
+            "country": "Portugal",
+            "capacity": 8000
+          },
+          "incidents": null,
+          "lineups": null,
+          "shotmap": null,
+          "momentum": null,
+          "average_positions": null
+        },
+        "created_at": "2026-04-19T06:20:09.910434+04:00",
+        "prob_home_win": 24.50855207300997,
+        "prob_draw": 23.686830159683268,
+        "prob_away_win": 51.80461776730677,
+        "predicted_result": "A",
+        "expected_home_goals": 1.12047,
+        "expected_away_goals": 1.73786,
+        "prob_over_15": 79.83395639398452,
+        "prob_over_25": 58.13845631785413,
+        "prob_over_35": 32.735519635959434,
+        "prob_btts_yes": 48.13592787494567,
+        "confidence": 51.80461776730677,
+        "model_version": "v5.0",
+        "most_likely_score": "1-1",
+        "favorite": "A",
+        "favorite_prob": 51.80461776730677,
         "favorite_recommend": false,
         "over_15_recommend": false,
         "over_25_recommend": false,
@@ -12425,324 +14370,6 @@
       "source": "GitHub Actions cache"
     },
     {
-      "id": 661,
-      "home": "Tondela",
-      "away": "CD Nacional",
-      "league": "Liga Portugal Betclic",
-      "date": "2026-04-25T15:00:00+04:00",
-      "prediction": {
-        "id": 3005,
-        "event": {
-          "id": 661,
-          "league": {
-            "id": 2,
-            "name": "Liga Portugal Betclic",
-            "country": "Portugal",
-            "is_women": false,
-            "current_season": {
-              "id": 305,
-              "name": "Liga Portugal 25/26",
-              "year": 2025,
-              "start_date": "2025-07-01",
-              "end_date": "2026-06-30"
-            }
-          },
-          "season": {
-            "id": 305,
-            "name": "Liga Portugal 25/26",
-            "year": 2025
-          },
-          "home_team": "Tondela",
-          "away_team": "CD Nacional",
-          "home_team_obj": {
-            "id": 32,
-            "name": "Tondela",
-            "short_name": "Tondela",
-            "country": "Portugal",
-            "coach": {
-              "name": "Gonçalo Feio",
-              "shortName": "G. Feio"
-            },
-            "venue": {
-              "id": 32,
-              "name": "Estádio João Cardoso",
-              "city": "Tondela",
-              "country": "Portugal",
-              "capacity": 5000
-            }
-          },
-          "away_team_obj": {
-            "id": 23,
-            "name": "CD Nacional",
-            "short_name": "Nacional",
-            "country": "Portugal",
-            "coach": {
-              "name": "Tiago Margarido",
-              "shortName": "T. Margarido"
-            },
-            "venue": {
-              "id": 23,
-              "name": "Estádio da Madeira",
-              "city": "Funchal",
-              "country": "Portugal",
-              "capacity": 5200
-            }
-          },
-          "event_date": "2026-04-25T15:00:00+04:00",
-          "round_number": 31,
-          "group_name": null,
-          "status": "notstarted",
-          "home_score": null,
-          "away_score": null,
-          "home_score_ht": null,
-          "away_score_ht": null,
-          "current_minute": null,
-          "period": "",
-          "odds_home": 2.85,
-          "odds_draw": 3.4,
-          "odds_away": 2.3,
-          "odds_over_15": 1.25,
-          "odds_over_25": 1.9,
-          "odds_over_35": 3.25,
-          "odds_under_15": 3.75,
-          "odds_under_25": 1.9,
-          "odds_under_35": 1.33,
-          "odds_btts_yes": 1.7,
-          "odds_btts_no": 2.05,
-          "odds_dc_12": null,
-          "actual_home_xg": null,
-          "actual_away_xg": null,
-          "home_xg_live": null,
-          "away_xg_live": null,
-          "penalty_shootout": null,
-          "referee": null,
-          "home_coach": {
-            "id": 12,
-            "name": "Gonçalo Feio",
-            "short_name": "G. Feio",
-            "country": "Portugal",
-            "profile": "defensive",
-            "preferred_formation": "4-2-3-1",
-            "pressing_intensity": 0.5538780248715206,
-            "defensive_line": "high",
-            "top_styles": [
-              "terrorist_fb",
-              "anti_football"
-            ]
-          },
-          "away_coach": {
-            "id": 3,
-            "name": "Tiago Margarido",
-            "short_name": "T. Margarido",
-            "country": "Portugal",
-            "profile": "balanced",
-            "preferred_formation": "4-3-3",
-            "pressing_intensity": 0.6076019099538467,
-            "defensive_line": "high",
-            "top_styles": [
-              "anti_football",
-              "terrorist_fb"
-            ]
-          },
-          "unavailable_players": null,
-          "venue": {
-            "id": 32,
-            "name": "Estádio João Cardoso",
-            "city": "Tondela",
-            "country": "Portugal",
-            "capacity": 5000
-          },
-          "incidents": null,
-          "lineups": null,
-          "shotmap": null,
-          "momentum": null,
-          "average_positions": null
-        },
-        "created_at": "2026-04-19T06:20:11.533834+04:00",
-        "prob_home_win": 48.354442610878856,
-        "prob_draw": 26.608087063399978,
-        "prob_away_win": 25.037470325721173,
-        "predicted_result": "H",
-        "expected_home_goals": 1.4466200000000002,
-        "expected_away_goals": 0.9601,
-        "prob_over_15": 66.62145207096313,
-        "prob_over_25": 34.6047630390003,
-        "prob_over_35": 19.417188588458046,
-        "prob_btts_yes": 39.4331866212619,
-        "confidence": 48.354442610878856,
-        "model_version": "v5.0",
-        "most_likely_score": "1-0",
-        "favorite": "H",
-        "favorite_prob": 48.354442610878856,
-        "favorite_recommend": false,
-        "over_15_recommend": false,
-        "over_25_recommend": false,
-        "over_35_recommend": false,
-        "btts_recommend": false,
-        "winner_recommend": false
-      },
-      "source": "GitHub Actions cache"
-    },
-    {
-      "id": 657,
-      "home": "Estoril Praia",
-      "away": "Famalicão",
-      "league": "Liga Portugal Betclic",
-      "date": "2026-04-25T15:00:00+04:00",
-      "prediction": {
-        "id": 2998,
-        "event": {
-          "id": 657,
-          "league": {
-            "id": 2,
-            "name": "Liga Portugal Betclic",
-            "country": "Portugal",
-            "is_women": false,
-            "current_season": {
-              "id": 305,
-              "name": "Liga Portugal 25/26",
-              "year": 2025,
-              "start_date": "2025-07-01",
-              "end_date": "2026-06-30"
-            }
-          },
-          "season": {
-            "id": 305,
-            "name": "Liga Portugal 25/26",
-            "year": 2025
-          },
-          "home_team": "Estoril Praia",
-          "away_team": "Famalicão",
-          "home_team_obj": {
-            "id": 33,
-            "name": "Estoril Praia",
-            "short_name": "Estoril",
-            "country": "Portugal",
-            "coach": {
-              "name": "Ian Cathro",
-              "shortName": "I. Cathro"
-            },
-            "venue": {
-              "id": 33,
-              "name": "Estadio Antonio Coimbra da Mota",
-              "city": "Estoril",
-              "country": "Portugal",
-              "capacity": 8000
-            }
-          },
-          "away_team_obj": {
-            "id": 27,
-            "name": "Famalicão",
-            "short_name": "Famalicão",
-            "country": "Portugal",
-            "coach": {
-              "name": "Hugo Oliveira",
-              "shortName": "H. F. C. Oliveira"
-            },
-            "venue": {
-              "id": 27,
-              "name": "Estádio Municipal de Famalicão",
-              "city": "Vila Nova de Famalicao",
-              "country": "Portugal",
-              "capacity": 5186
-            }
-          },
-          "event_date": "2026-04-25T15:00:00+04:00",
-          "round_number": 31,
-          "group_name": null,
-          "status": "notstarted",
-          "home_score": null,
-          "away_score": null,
-          "home_score_ht": null,
-          "away_score_ht": null,
-          "current_minute": null,
-          "period": "",
-          "odds_home": 3.0,
-          "odds_draw": 3.5,
-          "odds_away": 2.2,
-          "odds_over_15": 1.2,
-          "odds_over_25": 1.7,
-          "odds_over_35": 2.62,
-          "odds_under_15": 4.33,
-          "odds_under_25": 2.1,
-          "odds_under_35": 1.44,
-          "odds_btts_yes": 1.57,
-          "odds_btts_no": 2.25,
-          "odds_dc_12": null,
-          "actual_home_xg": null,
-          "actual_away_xg": null,
-          "home_xg_live": null,
-          "away_xg_live": null,
-          "penalty_shootout": null,
-          "referee": null,
-          "home_coach": {
-            "id": 13,
-            "name": "Ian Cathro",
-            "short_name": "I. Cathro",
-            "country": "Scotland",
-            "profile": "attacking",
-            "preferred_formation": "3-4-3",
-            "pressing_intensity": 0.5525071871547619,
-            "defensive_line": "mid",
-            "top_styles": [
-              "chaos_ball",
-              "chaos_football"
-            ]
-          },
-          "away_coach": {
-            "id": 7,
-            "name": "Hugo Oliveira",
-            "short_name": "H. F. C. Oliveira",
-            "country": "Portugal",
-            "profile": "balanced",
-            "preferred_formation": "4-2-3-1",
-            "pressing_intensity": 0.6052649883200839,
-            "defensive_line": "mid",
-            "top_styles": [
-              "anti_football",
-              "set_piece"
-            ]
-          },
-          "unavailable_players": null,
-          "venue": {
-            "id": 33,
-            "name": "Estadio Antonio Coimbra da Mota",
-            "city": "Estoril",
-            "country": "Portugal",
-            "capacity": 8000
-          },
-          "incidents": null,
-          "lineups": null,
-          "shotmap": null,
-          "momentum": null,
-          "average_positions": null
-        },
-        "created_at": "2026-04-19T06:20:09.910434+04:00",
-        "prob_home_win": 24.50855207300997,
-        "prob_draw": 23.686830159683268,
-        "prob_away_win": 51.80461776730677,
-        "predicted_result": "A",
-        "expected_home_goals": 1.12047,
-        "expected_away_goals": 1.73786,
-        "prob_over_15": 79.83395639398452,
-        "prob_over_25": 58.13845631785413,
-        "prob_over_35": 32.735519635959434,
-        "prob_btts_yes": 48.13592787494567,
-        "confidence": 51.80461776730677,
-        "model_version": "v5.0",
-        "most_likely_score": "1-1",
-        "favorite": "A",
-        "favorite_prob": 51.80461776730677,
-        "favorite_recommend": false,
-        "over_15_recommend": false,
-        "over_25_recommend": false,
-        "over_35_recommend": false,
-        "btts_recommend": false,
-        "winner_recommend": false
-      },
-      "source": "GitHub Actions cache"
-    },
-    {
       "id": 662,
       "home": "Vitória SC",
       "away": "Rio Ave",
@@ -13067,6 +14694,165 @@
         "most_likely_score": "0-1",
         "favorite": "A",
         "favorite_prob": 56.91471617546363,
+        "favorite_recommend": false,
+        "over_15_recommend": false,
+        "over_25_recommend": false,
+        "over_35_recommend": false,
+        "btts_recommend": false,
+        "winner_recommend": false
+      },
+      "source": "GitHub Actions cache"
+    },
+    {
+      "id": 661,
+      "home": "Tondela",
+      "away": "CD Nacional",
+      "league": "Liga Portugal Betclic",
+      "date": "2026-04-25T15:00:00+04:00",
+      "prediction": {
+        "id": 3005,
+        "event": {
+          "id": 661,
+          "league": {
+            "id": 2,
+            "name": "Liga Portugal Betclic",
+            "country": "Portugal",
+            "is_women": false,
+            "current_season": {
+              "id": 305,
+              "name": "Liga Portugal 25/26",
+              "year": 2025,
+              "start_date": "2025-07-01",
+              "end_date": "2026-06-30"
+            }
+          },
+          "season": {
+            "id": 305,
+            "name": "Liga Portugal 25/26",
+            "year": 2025
+          },
+          "home_team": "Tondela",
+          "away_team": "CD Nacional",
+          "home_team_obj": {
+            "id": 32,
+            "name": "Tondela",
+            "short_name": "Tondela",
+            "country": "Portugal",
+            "coach": {
+              "name": "Gonçalo Feio",
+              "shortName": "G. Feio"
+            },
+            "venue": {
+              "id": 32,
+              "name": "Estádio João Cardoso",
+              "city": "Tondela",
+              "country": "Portugal",
+              "capacity": 5000
+            }
+          },
+          "away_team_obj": {
+            "id": 23,
+            "name": "CD Nacional",
+            "short_name": "Nacional",
+            "country": "Portugal",
+            "coach": {
+              "name": "Tiago Margarido",
+              "shortName": "T. Margarido"
+            },
+            "venue": {
+              "id": 23,
+              "name": "Estádio da Madeira",
+              "city": "Funchal",
+              "country": "Portugal",
+              "capacity": 5200
+            }
+          },
+          "event_date": "2026-04-25T15:00:00+04:00",
+          "round_number": 31,
+          "group_name": null,
+          "status": "notstarted",
+          "home_score": null,
+          "away_score": null,
+          "home_score_ht": null,
+          "away_score_ht": null,
+          "current_minute": null,
+          "period": "",
+          "odds_home": 2.85,
+          "odds_draw": 3.4,
+          "odds_away": 2.3,
+          "odds_over_15": 1.25,
+          "odds_over_25": 1.9,
+          "odds_over_35": 3.25,
+          "odds_under_15": 3.75,
+          "odds_under_25": 1.9,
+          "odds_under_35": 1.33,
+          "odds_btts_yes": 1.7,
+          "odds_btts_no": 2.05,
+          "odds_dc_12": null,
+          "actual_home_xg": null,
+          "actual_away_xg": null,
+          "home_xg_live": null,
+          "away_xg_live": null,
+          "penalty_shootout": null,
+          "referee": null,
+          "home_coach": {
+            "id": 12,
+            "name": "Gonçalo Feio",
+            "short_name": "G. Feio",
+            "country": "Portugal",
+            "profile": "defensive",
+            "preferred_formation": "4-2-3-1",
+            "pressing_intensity": 0.5538780248715206,
+            "defensive_line": "high",
+            "top_styles": [
+              "terrorist_fb",
+              "anti_football"
+            ]
+          },
+          "away_coach": {
+            "id": 3,
+            "name": "Tiago Margarido",
+            "short_name": "T. Margarido",
+            "country": "Portugal",
+            "profile": "balanced",
+            "preferred_formation": "4-3-3",
+            "pressing_intensity": 0.6076019099538467,
+            "defensive_line": "high",
+            "top_styles": [
+              "anti_football",
+              "terrorist_fb"
+            ]
+          },
+          "unavailable_players": null,
+          "venue": {
+            "id": 32,
+            "name": "Estádio João Cardoso",
+            "city": "Tondela",
+            "country": "Portugal",
+            "capacity": 5000
+          },
+          "incidents": null,
+          "lineups": null,
+          "shotmap": null,
+          "momentum": null,
+          "average_positions": null
+        },
+        "created_at": "2026-04-19T06:20:11.533834+04:00",
+        "prob_home_win": 48.354442610878856,
+        "prob_draw": 26.608087063399978,
+        "prob_away_win": 25.037470325721173,
+        "predicted_result": "H",
+        "expected_home_goals": 1.4466200000000002,
+        "expected_away_goals": 0.9601,
+        "prob_over_15": 66.62145207096313,
+        "prob_over_25": 34.6047630390003,
+        "prob_over_35": 19.417188588458046,
+        "prob_btts_yes": 39.4331866212619,
+        "confidence": 48.354442610878856,
+        "model_version": "v5.0",
+        "most_likely_score": "1-0",
+        "favorite": "H",
+        "favorite_prob": 48.354442610878856,
         "favorite_recommend": false,
         "over_15_recommend": false,
         "over_25_recommend": false,
@@ -13423,6 +15209,230 @@
       "source": "GitHub Actions cache"
     },
     {
+      "id": 3916,
+      "home": "West Bromwich Albion",
+      "away": "Ipswich Town",
+      "league": "Championship",
+      "date": "2026-04-25T15:30:00+04:00",
+      "prediction": {
+        "id": 3008,
+        "event": {
+          "id": 3916,
+          "league": {
+            "id": 12,
+            "name": "Championship",
+            "country": "England",
+            "is_women": false,
+            "current_season": {
+              "id": 243,
+              "name": "Championship 25/26",
+              "year": 2025,
+              "start_date": "2025-07-01",
+              "end_date": "2026-06-30"
+            }
+          },
+          "season": {
+            "id": 243,
+            "name": "Championship 25/26",
+            "year": 2025
+          },
+          "home_team": "West Bromwich Albion",
+          "away_team": "Ipswich Town",
+          "home_team_obj": {
+            "id": 217,
+            "name": "West Bromwich Albion",
+            "short_name": "West Brom",
+            "country": "England",
+            "coach": {
+              "name": "James Morrison",
+              "shortName": "J. Morrison"
+            },
+            "venue": {
+              "id": 209,
+              "name": "The Hawthorns",
+              "city": "West Bromwich",
+              "country": "England",
+              "capacity": 26445
+            }
+          },
+          "away_team_obj": {
+            "id": 200,
+            "name": "Ipswich Town",
+            "short_name": "Ipswich",
+            "country": "England",
+            "coach": {
+              "name": "Kieran McKenna",
+              "shortName": "K. McKenna"
+            },
+            "venue": {
+              "id": 195,
+              "name": "Portman Road Stadium",
+              "city": "Ipswich",
+              "country": "England",
+              "capacity": 29673
+            }
+          },
+          "event_date": "2026-04-25T15:30:00+04:00",
+          "round_number": 45,
+          "group_name": null,
+          "status": "notstarted",
+          "home_score": null,
+          "away_score": null,
+          "home_score_ht": null,
+          "away_score_ht": null,
+          "current_minute": null,
+          "period": "",
+          "odds_home": 3.9,
+          "odds_draw": 3.75,
+          "odds_away": 1.94,
+          "odds_over_15": 1.31,
+          "odds_over_25": 1.95,
+          "odds_over_35": 3.35,
+          "odds_under_15": 3.25,
+          "odds_under_25": 1.8,
+          "odds_under_35": 1.3,
+          "odds_btts_yes": 1.84,
+          "odds_btts_no": 1.9,
+          "odds_dc_12": 1.29,
+          "actual_home_xg": null,
+          "actual_away_xg": null,
+          "home_xg_live": null,
+          "away_xg_live": null,
+          "penalty_shootout": null,
+          "referee": null,
+          "home_coach": {
+            "id": 174,
+            "name": "James Morrison",
+            "short_name": "J. Morrison",
+            "country": "England",
+            "profile": "balanced",
+            "preferred_formation": "4-2-3-1",
+            "pressing_intensity": 0.41181667000125016,
+            "defensive_line": "high",
+            "top_styles": [
+              "ball_dominant",
+              "cross_pray"
+            ]
+          },
+          "away_coach": {
+            "id": 192,
+            "name": "Kieran McKenna",
+            "short_name": "K. McKenna",
+            "country": "Northern Ireland",
+            "profile": "attacking",
+            "preferred_formation": "4-2-3-1",
+            "pressing_intensity": 0.5078940103659799,
+            "defensive_line": "high",
+            "top_styles": [
+              "high_press",
+              "gegenpressing"
+            ]
+          },
+          "unavailable_players": {
+            "home": [
+              {
+                "name": "Harry Whitwell",
+                "status": "injured",
+                "reason": "Knock",
+                "expected_return": "2026-04-26"
+              },
+              {
+                "name": "Jed Wallace",
+                "status": "injured",
+                "reason": "Calf Injury",
+                "expected_return": "2026-05-03"
+              },
+              {
+                "name": "Krystian Bielik",
+                "status": "injured",
+                "reason": "Shoulder Injury",
+                "expected_return": "2026-05-03"
+              },
+              {
+                "name": "Michael Johnston",
+                "status": "injured",
+                "reason": "Ankle Injury",
+                "expected_return": "2026-05-03"
+              },
+              {
+                "name": "Tammer Bany",
+                "status": "injured",
+                "reason": "Thigh Injury",
+                "expected_return": "2026-04-26"
+              }
+            ],
+            "away": [
+              {
+                "name": "Ashley Young",
+                "status": "injured",
+                "reason": "Hip Injury",
+                "expected_return": "2026-05-03"
+              },
+              {
+                "name": "Conor Townsend",
+                "status": "injured",
+                "reason": "ACL Knee Injury",
+                "expected_return": "2026-05-03"
+              },
+              {
+                "name": "David Button",
+                "status": "injured",
+                "reason": "Calf Injury",
+                "expected_return": "2026-05-03"
+              },
+              {
+                "name": "Leif Davis",
+                "status": "doubtful",
+                "reason": "Hamstring",
+                "expected_return": "2026-04-29"
+              },
+              {
+                "name": "Wes Burns",
+                "status": "injured",
+                "reason": "Calf Injury",
+                "expected_return": "2026-04-26"
+              }
+            ]
+          },
+          "venue": {
+            "id": 209,
+            "name": "The Hawthorns",
+            "city": "West Bromwich",
+            "country": "England",
+            "capacity": 26445
+          },
+          "incidents": null,
+          "lineups": null,
+          "shotmap": null,
+          "momentum": null,
+          "average_positions": null
+        },
+        "created_at": "2026-04-19T06:20:12.316184+04:00",
+        "prob_home_win": 42.79330516001984,
+        "prob_draw": 24.93876374395942,
+        "prob_away_win": 32.26793109602074,
+        "predicted_result": "H",
+        "expected_home_goals": 1.53201,
+        "expected_away_goals": 1.29809,
+        "prob_over_15": 74.51517389439383,
+        "prob_over_25": 45.765132285154536,
+        "prob_over_35": 23.271456887982133,
+        "prob_btts_yes": 48.694685134878185,
+        "confidence": 42.79330516001984,
+        "model_version": "v5.0",
+        "most_likely_score": "1-1",
+        "favorite": "H",
+        "favorite_prob": 42.79330516001984,
+        "favorite_recommend": false,
+        "over_15_recommend": false,
+        "over_25_recommend": false,
+        "over_35_recommend": false,
+        "btts_recommend": false,
+        "winner_recommend": false
+      },
+      "source": "GitHub Actions cache"
+    },
+    {
       "id": 3906,
       "home": "Charlton Athletic",
       "away": "Hull City",
@@ -13649,442 +15659,6 @@
         "most_likely_score": "1-1",
         "favorite": "H",
         "favorite_prob": 49.969452294295436,
-        "favorite_recommend": false,
-        "over_15_recommend": false,
-        "over_25_recommend": false,
-        "over_35_recommend": false,
-        "btts_recommend": false,
-        "winner_recommend": false
-      },
-      "source": "GitHub Actions cache"
-    },
-    {
-      "id": 3916,
-      "home": "West Bromwich Albion",
-      "away": "Ipswich Town",
-      "league": "Championship",
-      "date": "2026-04-25T15:30:00+04:00",
-      "prediction": {
-        "id": 3008,
-        "event": {
-          "id": 3916,
-          "league": {
-            "id": 12,
-            "name": "Championship",
-            "country": "England",
-            "is_women": false,
-            "current_season": {
-              "id": 243,
-              "name": "Championship 25/26",
-              "year": 2025,
-              "start_date": "2025-07-01",
-              "end_date": "2026-06-30"
-            }
-          },
-          "season": {
-            "id": 243,
-            "name": "Championship 25/26",
-            "year": 2025
-          },
-          "home_team": "West Bromwich Albion",
-          "away_team": "Ipswich Town",
-          "home_team_obj": {
-            "id": 217,
-            "name": "West Bromwich Albion",
-            "short_name": "West Brom",
-            "country": "England",
-            "coach": {
-              "name": "James Morrison",
-              "shortName": "J. Morrison"
-            },
-            "venue": {
-              "id": 209,
-              "name": "The Hawthorns",
-              "city": "West Bromwich",
-              "country": "England",
-              "capacity": 26445
-            }
-          },
-          "away_team_obj": {
-            "id": 200,
-            "name": "Ipswich Town",
-            "short_name": "Ipswich",
-            "country": "England",
-            "coach": {
-              "name": "Kieran McKenna",
-              "shortName": "K. McKenna"
-            },
-            "venue": {
-              "id": 195,
-              "name": "Portman Road Stadium",
-              "city": "Ipswich",
-              "country": "England",
-              "capacity": 29673
-            }
-          },
-          "event_date": "2026-04-25T15:30:00+04:00",
-          "round_number": 45,
-          "group_name": null,
-          "status": "notstarted",
-          "home_score": null,
-          "away_score": null,
-          "home_score_ht": null,
-          "away_score_ht": null,
-          "current_minute": null,
-          "period": "",
-          "odds_home": 3.9,
-          "odds_draw": 3.75,
-          "odds_away": 1.94,
-          "odds_over_15": 1.31,
-          "odds_over_25": 1.95,
-          "odds_over_35": 3.35,
-          "odds_under_15": 3.25,
-          "odds_under_25": 1.8,
-          "odds_under_35": 1.3,
-          "odds_btts_yes": 1.84,
-          "odds_btts_no": 1.9,
-          "odds_dc_12": 1.29,
-          "actual_home_xg": null,
-          "actual_away_xg": null,
-          "home_xg_live": null,
-          "away_xg_live": null,
-          "penalty_shootout": null,
-          "referee": null,
-          "home_coach": {
-            "id": 174,
-            "name": "James Morrison",
-            "short_name": "J. Morrison",
-            "country": "England",
-            "profile": "balanced",
-            "preferred_formation": "4-2-3-1",
-            "pressing_intensity": 0.41181667000125016,
-            "defensive_line": "high",
-            "top_styles": [
-              "ball_dominant",
-              "cross_pray"
-            ]
-          },
-          "away_coach": {
-            "id": 192,
-            "name": "Kieran McKenna",
-            "short_name": "K. McKenna",
-            "country": "Northern Ireland",
-            "profile": "attacking",
-            "preferred_formation": "4-2-3-1",
-            "pressing_intensity": 0.5078940103659799,
-            "defensive_line": "high",
-            "top_styles": [
-              "high_press",
-              "gegenpressing"
-            ]
-          },
-          "unavailable_players": {
-            "home": [
-              {
-                "name": "Harry Whitwell",
-                "status": "injured",
-                "reason": "Knock",
-                "expected_return": "2026-04-26"
-              },
-              {
-                "name": "Jed Wallace",
-                "status": "injured",
-                "reason": "Calf Injury",
-                "expected_return": "2026-05-03"
-              },
-              {
-                "name": "Krystian Bielik",
-                "status": "injured",
-                "reason": "Shoulder Injury",
-                "expected_return": "2026-05-03"
-              },
-              {
-                "name": "Michael Johnston",
-                "status": "injured",
-                "reason": "Ankle Injury",
-                "expected_return": "2026-05-03"
-              },
-              {
-                "name": "Tammer Bany",
-                "status": "injured",
-                "reason": "Thigh Injury",
-                "expected_return": "2026-04-26"
-              }
-            ],
-            "away": [
-              {
-                "name": "Ashley Young",
-                "status": "injured",
-                "reason": "Hip Injury",
-                "expected_return": "2026-05-03"
-              },
-              {
-                "name": "Conor Townsend",
-                "status": "injured",
-                "reason": "ACL Knee Injury",
-                "expected_return": "2026-05-03"
-              },
-              {
-                "name": "David Button",
-                "status": "injured",
-                "reason": "Calf Injury",
-                "expected_return": "2026-05-03"
-              },
-              {
-                "name": "Leif Davis",
-                "status": "doubtful",
-                "reason": "Hamstring",
-                "expected_return": "2026-04-29"
-              },
-              {
-                "name": "Wes Burns",
-                "status": "injured",
-                "reason": "Calf Injury",
-                "expected_return": "2026-04-26"
-              }
-            ]
-          },
-          "venue": {
-            "id": 209,
-            "name": "The Hawthorns",
-            "city": "West Bromwich",
-            "country": "England",
-            "capacity": 26445
-          },
-          "incidents": null,
-          "lineups": null,
-          "shotmap": null,
-          "momentum": null,
-          "average_positions": null
-        },
-        "created_at": "2026-04-19T06:20:12.316184+04:00",
-        "prob_home_win": 42.79330516001984,
-        "prob_draw": 24.93876374395942,
-        "prob_away_win": 32.26793109602074,
-        "predicted_result": "H",
-        "expected_home_goals": 1.53201,
-        "expected_away_goals": 1.29809,
-        "prob_over_15": 74.51517389439383,
-        "prob_over_25": 45.765132285154536,
-        "prob_over_35": 23.271456887982133,
-        "prob_btts_yes": 48.694685134878185,
-        "confidence": 42.79330516001984,
-        "model_version": "v5.0",
-        "most_likely_score": "1-1",
-        "favorite": "H",
-        "favorite_prob": 42.79330516001984,
-        "favorite_recommend": false,
-        "over_15_recommend": false,
-        "over_25_recommend": false,
-        "over_35_recommend": false,
-        "btts_recommend": false,
-        "winner_recommend": false
-      },
-      "source": "GitHub Actions cache"
-    },
-    {
-      "id": 3909,
-      "home": "Middlesbrough",
-      "away": "Watford",
-      "league": "Championship",
-      "date": "2026-04-25T15:30:00+04:00",
-      "prediction": {
-        "id": 3007,
-        "event": {
-          "id": 3909,
-          "league": {
-            "id": 12,
-            "name": "Championship",
-            "country": "England",
-            "is_women": false,
-            "current_season": {
-              "id": 243,
-              "name": "Championship 25/26",
-              "year": 2025,
-              "start_date": "2025-07-01",
-              "end_date": "2026-06-30"
-            }
-          },
-          "season": {
-            "id": 243,
-            "name": "Championship 25/26",
-            "year": 2025
-          },
-          "home_team": "Middlesbrough",
-          "away_team": "Watford",
-          "home_team_obj": {
-            "id": 207,
-            "name": "Middlesbrough",
-            "short_name": "Middlesbrough",
-            "country": "England",
-            "coach": {
-              "name": "Kim Hellberg",
-              "shortName": "K. Hellberg"
-            },
-            "venue": {
-              "id": 202,
-              "name": "Riverside",
-              "city": "Middlesbrough",
-              "country": "England",
-              "capacity": 34742
-            }
-          },
-          "away_team_obj": {
-            "id": 202,
-            "name": "Watford",
-            "short_name": "Watford",
-            "country": "England",
-            "coach": {
-              "name": "Edward Still",
-              "shortName": "E. Still"
-            },
-            "venue": {
-              "id": 197,
-              "name": "Vicarage Road",
-              "city": "Watford",
-              "country": "England",
-              "capacity": 22200
-            }
-          },
-          "event_date": "2026-04-25T15:30:00+04:00",
-          "round_number": 45,
-          "group_name": null,
-          "status": "notstarted",
-          "home_score": null,
-          "away_score": null,
-          "home_score_ht": null,
-          "away_score_ht": null,
-          "current_minute": null,
-          "period": "",
-          "odds_home": 1.43,
-          "odds_draw": 5.0,
-          "odds_away": 7.0,
-          "odds_over_15": 1.17,
-          "odds_over_25": 1.57,
-          "odds_over_35": 2.4,
-          "odds_under_15": 5.0,
-          "odds_under_25": 2.32,
-          "odds_under_35": 1.53,
-          "odds_btts_yes": 1.79,
-          "odds_btts_no": 1.96,
-          "odds_dc_12": 1.18,
-          "actual_home_xg": null,
-          "actual_away_xg": null,
-          "home_xg_live": null,
-          "away_xg_live": null,
-          "penalty_shootout": null,
-          "referee": null,
-          "home_coach": {
-            "id": 168,
-            "name": "Kim Hellberg",
-            "short_name": "K. Hellberg",
-            "country": "Sweden",
-            "profile": "balanced",
-            "preferred_formation": "3-4-2-1",
-            "pressing_intensity": 0.7195521983285322,
-            "defensive_line": "mid",
-            "top_styles": [
-              "tiki_taka",
-              "gegenpressing"
-            ]
-          },
-          "away_coach": {
-            "id": 180,
-            "name": "Edward Still",
-            "short_name": "E. Still",
-            "country": "Belgium",
-            "profile": "balanced",
-            "preferred_formation": "4-4-2",
-            "pressing_intensity": 0.5208634183439992,
-            "defensive_line": "mid",
-            "top_styles": [
-              "high_press",
-              "gegenpressing"
-            ]
-          },
-          "unavailable_players": {
-            "home": [
-              {
-                "name": "Alfie Jones",
-                "status": "injured",
-                "reason": "Ankle Injury",
-                "expected_return": "2026-05-03"
-              },
-              {
-                "name": "Darragh Lenihan",
-                "status": "injured",
-                "reason": "Achilles Strain",
-                "expected_return": "2026-05-03"
-              },
-              {
-                "name": "Hayden Hackney",
-                "status": "injured",
-                "reason": "Calf Injury",
-                "expected_return": "2026-05-03"
-              },
-              {
-                "name": "Leo Castledine",
-                "status": "doubtful",
-                "reason": "Knee Injury",
-                "expected_return": "2026-04-26"
-              },
-              {
-                "name": "Riley McGree",
-                "status": "injured",
-                "reason": "Knock",
-                "expected_return": "2026-04-26"
-              }
-            ],
-            "away": [
-              {
-                "name": "Hector Kyprianou",
-                "status": "injured",
-                "reason": "Ankle Injury",
-                "expected_return": "2026-05-03"
-              },
-              {
-                "name": "Pierre Dwomoh",
-                "status": "injured",
-                "reason": "Thigh Injury",
-                "expected_return": "2026-04-26"
-              },
-              {
-                "name": "Rocco Vata",
-                "status": "injured",
-                "reason": "Hamstring",
-                "expected_return": "2026-05-03"
-              }
-            ]
-          },
-          "venue": {
-            "id": 202,
-            "name": "Riverside",
-            "city": "Middlesbrough",
-            "country": "England",
-            "capacity": 34742
-          },
-          "incidents": null,
-          "lineups": null,
-          "shotmap": null,
-          "momentum": null,
-          "average_positions": null
-        },
-        "created_at": "2026-04-19T06:20:12.105720+04:00",
-        "prob_home_win": 68.27032976532053,
-        "prob_draw": 20.053202831620588,
-        "prob_away_win": 11.676467403058881,
-        "predicted_result": "H",
-        "expected_home_goals": 1.9820700000000002,
-        "expected_away_goals": 0.6720999999999999,
-        "prob_over_15": 73.93521194401856,
-        "prob_over_25": 48.10083578240237,
-        "prob_over_35": 27.137191026692246,
-        "prob_btts_yes": 53.91869089473097,
-        "confidence": 68.27032976532053,
-        "model_version": "v5.0",
-        "most_likely_score": "1-0",
-        "favorite": "H",
-        "favorite_prob": 68.27032976532053,
         "favorite_recommend": false,
         "over_15_recommend": false,
         "over_25_recommend": false,
@@ -14346,15 +15920,15 @@
           "period": "",
           "odds_home": 2.77,
           "odds_draw": 3.6,
-          "odds_away": 2.55,
-          "odds_over_15": 1.25,
-          "odds_over_25": 1.79,
+          "odds_away": 2.57,
+          "odds_over_15": 1.26,
+          "odds_over_25": 1.8,
           "odds_over_35": 2.95,
           "odds_under_15": 3.95,
-          "odds_under_25": 2.03,
+          "odds_under_25": 2.02,
           "odds_under_35": 1.41,
           "odds_btts_yes": 1.65,
-          "odds_btts_no": 2.21,
+          "odds_btts_no": 2.2,
           "odds_dc_12": 1.33,
           "actual_home_xg": null,
           "actual_away_xg": null,
@@ -14467,6 +16041,218 @@
         "most_likely_score": "1-1",
         "favorite": "H",
         "favorite_prob": 42.70212370219858,
+        "favorite_recommend": false,
+        "over_15_recommend": false,
+        "over_25_recommend": false,
+        "over_35_recommend": false,
+        "btts_recommend": false,
+        "winner_recommend": false
+      },
+      "source": "GitHub Actions cache"
+    },
+    {
+      "id": 3909,
+      "home": "Middlesbrough",
+      "away": "Watford",
+      "league": "Championship",
+      "date": "2026-04-25T15:30:00+04:00",
+      "prediction": {
+        "id": 3007,
+        "event": {
+          "id": 3909,
+          "league": {
+            "id": 12,
+            "name": "Championship",
+            "country": "England",
+            "is_women": false,
+            "current_season": {
+              "id": 243,
+              "name": "Championship 25/26",
+              "year": 2025,
+              "start_date": "2025-07-01",
+              "end_date": "2026-06-30"
+            }
+          },
+          "season": {
+            "id": 243,
+            "name": "Championship 25/26",
+            "year": 2025
+          },
+          "home_team": "Middlesbrough",
+          "away_team": "Watford",
+          "home_team_obj": {
+            "id": 207,
+            "name": "Middlesbrough",
+            "short_name": "Middlesbrough",
+            "country": "England",
+            "coach": {
+              "name": "Kim Hellberg",
+              "shortName": "K. Hellberg"
+            },
+            "venue": {
+              "id": 202,
+              "name": "Riverside",
+              "city": "Middlesbrough",
+              "country": "England",
+              "capacity": 34742
+            }
+          },
+          "away_team_obj": {
+            "id": 202,
+            "name": "Watford",
+            "short_name": "Watford",
+            "country": "England",
+            "coach": {
+              "name": "Edward Still",
+              "shortName": "E. Still"
+            },
+            "venue": {
+              "id": 197,
+              "name": "Vicarage Road",
+              "city": "Watford",
+              "country": "England",
+              "capacity": 22200
+            }
+          },
+          "event_date": "2026-04-25T15:30:00+04:00",
+          "round_number": 45,
+          "group_name": null,
+          "status": "notstarted",
+          "home_score": null,
+          "away_score": null,
+          "home_score_ht": null,
+          "away_score_ht": null,
+          "current_minute": null,
+          "period": "",
+          "odds_home": 1.43,
+          "odds_draw": 5.0,
+          "odds_away": 7.0,
+          "odds_over_15": 1.17,
+          "odds_over_25": 1.57,
+          "odds_over_35": 2.4,
+          "odds_under_15": 5.0,
+          "odds_under_25": 2.32,
+          "odds_under_35": 1.53,
+          "odds_btts_yes": 1.79,
+          "odds_btts_no": 1.96,
+          "odds_dc_12": 1.18,
+          "actual_home_xg": null,
+          "actual_away_xg": null,
+          "home_xg_live": null,
+          "away_xg_live": null,
+          "penalty_shootout": null,
+          "referee": null,
+          "home_coach": {
+            "id": 168,
+            "name": "Kim Hellberg",
+            "short_name": "K. Hellberg",
+            "country": "Sweden",
+            "profile": "balanced",
+            "preferred_formation": "3-4-2-1",
+            "pressing_intensity": 0.7195521983285322,
+            "defensive_line": "mid",
+            "top_styles": [
+              "tiki_taka",
+              "gegenpressing"
+            ]
+          },
+          "away_coach": {
+            "id": 180,
+            "name": "Edward Still",
+            "short_name": "E. Still",
+            "country": "Belgium",
+            "profile": "balanced",
+            "preferred_formation": "4-4-2",
+            "pressing_intensity": 0.5208634183439992,
+            "defensive_line": "mid",
+            "top_styles": [
+              "high_press",
+              "gegenpressing"
+            ]
+          },
+          "unavailable_players": {
+            "home": [
+              {
+                "name": "Alfie Jones",
+                "status": "injured",
+                "reason": "Ankle Injury",
+                "expected_return": "2026-05-03"
+              },
+              {
+                "name": "Darragh Lenihan",
+                "status": "injured",
+                "reason": "Achilles Strain",
+                "expected_return": "2026-05-03"
+              },
+              {
+                "name": "Hayden Hackney",
+                "status": "injured",
+                "reason": "Calf Injury",
+                "expected_return": "2026-05-03"
+              },
+              {
+                "name": "Leo Castledine",
+                "status": "doubtful",
+                "reason": "Knee Injury",
+                "expected_return": "2026-04-26"
+              },
+              {
+                "name": "Riley McGree",
+                "status": "injured",
+                "reason": "Knock",
+                "expected_return": "2026-04-26"
+              }
+            ],
+            "away": [
+              {
+                "name": "Hector Kyprianou",
+                "status": "injured",
+                "reason": "Ankle Injury",
+                "expected_return": "2026-05-03"
+              },
+              {
+                "name": "Pierre Dwomoh",
+                "status": "injured",
+                "reason": "Thigh Injury",
+                "expected_return": "2026-04-26"
+              },
+              {
+                "name": "Rocco Vata",
+                "status": "injured",
+                "reason": "Hamstring",
+                "expected_return": "2026-05-03"
+              }
+            ]
+          },
+          "venue": {
+            "id": 202,
+            "name": "Riverside",
+            "city": "Middlesbrough",
+            "country": "England",
+            "capacity": 34742
+          },
+          "incidents": null,
+          "lineups": null,
+          "shotmap": null,
+          "momentum": null,
+          "average_positions": null
+        },
+        "created_at": "2026-04-19T06:20:12.105720+04:00",
+        "prob_home_win": 68.27032976532053,
+        "prob_draw": 20.053202831620588,
+        "prob_away_win": 11.676467403058881,
+        "predicted_result": "H",
+        "expected_home_goals": 1.9820700000000002,
+        "expected_away_goals": 0.6720999999999999,
+        "prob_over_15": 73.93521194401856,
+        "prob_over_25": 48.10083578240237,
+        "prob_over_35": 27.137191026692246,
+        "prob_btts_yes": 53.91869089473097,
+        "confidence": 68.27032976532053,
+        "model_version": "v5.0",
+        "most_likely_score": "1-0",
+        "favorite": "H",
+        "favorite_prob": 68.27032976532053,
         "favorite_recommend": false,
         "over_15_recommend": false,
         "over_25_recommend": false,
@@ -14824,373 +16610,6 @@
       "source": "GitHub Actions cache"
     },
     {
-      "id": 1415,
-      "home": "Parma",
-      "away": "Pisa",
-      "league": "Serie A",
-      "date": "2026-04-25T17:00:00+04:00",
-      "prediction": {
-        "id": 3015,
-        "event": {
-          "id": 1415,
-          "league": {
-            "id": 4,
-            "name": "Serie A",
-            "country": "Italy",
-            "is_women": false,
-            "current_season": {
-              "id": 358,
-              "name": "Serie A 25/26",
-              "year": 2025,
-              "start_date": "2025-07-01",
-              "end_date": "2026-06-30"
-            }
-          },
-          "season": {
-            "id": 358,
-            "name": "Serie A 25/26",
-            "year": 2025
-          },
-          "home_team": "Parma",
-          "away_team": "Pisa",
-          "home_team_obj": {
-            "id": 74,
-            "name": "Parma",
-            "short_name": "Parma",
-            "country": "Italy",
-            "coach": {
-              "name": "Carlos Cuesta",
-              "shortName": "C. Cuesta"
-            },
-            "venue": {
-              "id": 73,
-              "name": "Ennio Tardini",
-              "city": "Parma",
-              "country": "Italy",
-              "capacity": 27906
-            }
-          },
-          "away_team_obj": {
-            "id": 72,
-            "name": "Pisa",
-            "short_name": "Pisa",
-            "country": "Italy",
-            "coach": {
-              "name": "Oscar Hiljemark",
-              "shortName": "O. Hiljemark"
-            },
-            "venue": {
-              "id": 71,
-              "name": "Arena Garibaldi-Romeo Anconetani",
-              "city": "Pisa",
-              "country": "Italy",
-              "capacity": 10442
-            }
-          },
-          "event_date": "2026-04-25T17:00:00+04:00",
-          "round_number": 34,
-          "group_name": null,
-          "status": "notstarted",
-          "home_score": null,
-          "away_score": null,
-          "home_score_ht": null,
-          "away_score_ht": null,
-          "current_minute": null,
-          "period": "",
-          "odds_home": 2.15,
-          "odds_draw": 3.25,
-          "odds_away": 3.85,
-          "odds_over_15": 1.4,
-          "odds_over_25": 2.24,
-          "odds_over_35": 4.0,
-          "odds_under_15": 3.0,
-          "odds_under_25": 1.66,
-          "odds_under_35": 1.25,
-          "odds_btts_yes": 1.95,
-          "odds_btts_no": 1.82,
-          "odds_dc_12": 1.37,
-          "actual_home_xg": null,
-          "actual_away_xg": null,
-          "home_xg_live": null,
-          "away_xg_live": null,
-          "penalty_shootout": null,
-          "referee": null,
-          "home_coach": {
-            "id": 314,
-            "name": "Carlos Cuesta",
-            "short_name": "C. Cuesta",
-            "country": "Spain",
-            "profile": "defensive",
-            "preferred_formation": "3-5-2",
-            "pressing_intensity": 0.2570379707196726,
-            "defensive_line": "low",
-            "top_styles": [
-              "set_piece",
-              "park_the_bus"
-            ]
-          },
-          "away_coach": {
-            "id": 418,
-            "name": "Oscar Hiljemark",
-            "short_name": "O. Hiljemark",
-            "country": "Sweden",
-            "profile": "defensive",
-            "preferred_formation": "3-5-2",
-            "pressing_intensity": 0.35642774748767225,
-            "defensive_line": "low",
-            "top_styles": [
-              "park_the_bus",
-              "terrorist_fb"
-            ]
-          },
-          "unavailable_players": {
-            "home": [
-              {
-                "name": "Benjamin Cremaschi",
-                "status": "injured",
-                "reason": "Meniscus Injury",
-                "expected_return": null
-              },
-              {
-                "name": "Botond Balogh",
-                "status": "injured",
-                "reason": "Hamstring",
-                "expected_return": null
-              },
-              {
-                "name": "Mateo Pellegrino",
-                "status": "doubtful",
-                "reason": "Head Injury",
-                "expected_return": "2026-05-08"
-              },
-              {
-                "name": "Matija Frigan",
-                "status": "injured",
-                "reason": "Cruciate Ligament Injury",
-                "expected_return": "2026-05-20"
-              },
-              {
-                "name": "Pontus Almqvist",
-                "status": "injured",
-                "reason": "Hamstring",
-                "expected_return": "2026-05-18"
-              }
-            ],
-            "away": [
-              {
-                "name": "Daniel Denoon",
-                "status": "doubtful",
-                "reason": "Muscle Injury",
-                "expected_return": "2026-04-30"
-              },
-              {
-                "name": "Marius Marin",
-                "status": "doubtful",
-                "reason": "Muscle Injury",
-                "expected_return": "2026-05-09"
-              },
-              {
-                "name": "Mehdi Léris",
-                "status": "injured",
-                "reason": "Thigh Injury",
-                "expected_return": "2026-05-10"
-              }
-            ]
-          },
-          "venue": {
-            "id": 73,
-            "name": "Ennio Tardini",
-            "city": "Parma",
-            "country": "Italy",
-            "capacity": 27906
-          },
-          "incidents": null,
-          "lineups": null,
-          "shotmap": null,
-          "momentum": null,
-          "average_positions": null
-        },
-        "created_at": "2026-04-19T06:20:13.940476+04:00",
-        "prob_home_win": 30.97134684393393,
-        "prob_draw": 27.97798949957211,
-        "prob_away_win": 41.05066365649396,
-        "predicted_result": "A",
-        "expected_home_goals": 1.0612300000000001,
-        "expected_away_goals": 1.2667699999999997,
-        "prob_over_15": 76.55486861942244,
-        "prob_over_25": 51.74588505380389,
-        "prob_over_35": 28.13550289445919,
-        "prob_btts_yes": 35.29501362373782,
-        "confidence": 41.05066365649396,
-        "model_version": "v5.0",
-        "most_likely_score": "1-1",
-        "favorite": "A",
-        "favorite_prob": 41.05066365649396,
-        "favorite_recommend": false,
-        "over_15_recommend": false,
-        "over_25_recommend": false,
-        "over_35_recommend": false,
-        "btts_recommend": false,
-        "winner_recommend": false
-      },
-      "source": "GitHub Actions cache"
-    },
-    {
-      "id": 203025,
-      "home": "CSKA Sofia",
-      "away": "Levski Sofia",
-      "league": "Parva Liga",
-      "date": "2026-04-25T17:00:00+04:00",
-      "prediction": {
-        "id": 3014,
-        "event": {
-          "id": 203025,
-          "league": {
-            "id": 22,
-            "name": "Parva Liga",
-            "country": "Bulgaria",
-            "is_women": false,
-            "current_season": {
-              "id": 321,
-              "name": "Parva Liga 25/26",
-              "year": 2025,
-              "start_date": "2025-07-01",
-              "end_date": "2026-06-30"
-            }
-          },
-          "season": null,
-          "home_team": "CSKA Sofia",
-          "away_team": "Levski Sofia",
-          "home_team_obj": {
-            "id": 345,
-            "name": "CSKA Sofia",
-            "short_name": "CSKA Sofia",
-            "country": "Bulgaria",
-            "coach": {
-              "name": "Hristo Yanev",
-              "shortName": "H. Yanev"
-            },
-            "venue": {
-              "id": 325,
-              "name": "Balgarska Armiya Stadium",
-              "city": "Sofia",
-              "country": "Bulgaria",
-              "capacity": 17376
-            }
-          },
-          "away_team_obj": {
-            "id": 348,
-            "name": "Levski Sofia",
-            "short_name": "Levski Sofia",
-            "country": "Bulgaria",
-            "coach": {
-              "name": "Julio Velazquez",
-              "shortName": "J. Velazquez"
-            },
-            "venue": {
-              "id": 328,
-              "name": "Georgi Asparuhov Stadium",
-              "city": "Sofia",
-              "country": "Bulgaria",
-              "capacity": 29200
-            }
-          },
-          "event_date": "2026-04-25T17:00:00+04:00",
-          "round_number": null,
-          "group_name": null,
-          "status": "notstarted",
-          "home_score": null,
-          "away_score": null,
-          "home_score_ht": null,
-          "away_score_ht": null,
-          "current_minute": null,
-          "period": "",
-          "odds_home": 2.57,
-          "odds_draw": 3.3,
-          "odds_away": 2.57,
-          "odds_over_15": 1.4,
-          "odds_over_25": 2.25,
-          "odds_over_35": 4.0,
-          "odds_under_15": 2.75,
-          "odds_under_25": 1.62,
-          "odds_under_35": 1.22,
-          "odds_btts_yes": 1.91,
-          "odds_btts_no": 1.8,
-          "odds_dc_12": null,
-          "actual_home_xg": null,
-          "actual_away_xg": null,
-          "home_xg_live": null,
-          "away_xg_live": null,
-          "penalty_shootout": null,
-          "referee": null,
-          "home_coach": {
-            "id": 292,
-            "name": "Hristo Yanev",
-            "short_name": "H. Yanev",
-            "country": "Bulgaria",
-            "profile": "defensive",
-            "preferred_formation": "4-1-4-1",
-            "pressing_intensity": 0.40349208516808494,
-            "defensive_line": "",
-            "top_styles": [
-              "no_midfield",
-              "heritage"
-            ]
-          },
-          "away_coach": {
-            "id": 392,
-            "name": "Julio Velazquez",
-            "short_name": "J. Velazquez",
-            "country": "Spain",
-            "profile": "attacking",
-            "preferred_formation": "4-2-3-1",
-            "pressing_intensity": 0.35266264832213934,
-            "defensive_line": "",
-            "top_styles": [
-              "chaos_football",
-              "total_football"
-            ]
-          },
-          "unavailable_players": null,
-          "venue": {
-            "id": 325,
-            "name": "Balgarska Armiya Stadium",
-            "city": "Sofia",
-            "country": "Bulgaria",
-            "capacity": 17376
-          },
-          "incidents": null,
-          "lineups": null,
-          "shotmap": null,
-          "momentum": null,
-          "average_positions": null
-        },
-        "created_at": "2026-04-19T06:20:13.674677+04:00",
-        "prob_home_win": 32.29397820761099,
-        "prob_draw": 35.99103383754165,
-        "prob_away_win": 31.714987954847345,
-        "predicted_result": "D",
-        "expected_home_goals": 0.7809999999999999,
-        "expected_away_goals": 0.7709999999999999,
-        "prob_over_15": 46.19828628060693,
-        "prob_over_25": 28.891625322775432,
-        "prob_over_35": 17.87401866138233,
-        "prob_btts_yes": 31.627417840198348,
-        "confidence": 35.99103383754165,
-        "model_version": "v5.0",
-        "most_likely_score": "0-0",
-        "favorite": "H",
-        "favorite_prob": 32.29397820761099,
-        "favorite_recommend": false,
-        "over_15_recommend": false,
-        "over_25_recommend": false,
-        "over_35_recommend": false,
-        "btts_recommend": false,
-        "winner_recommend": false
-      },
-      "source": "GitHub Actions cache"
-    },
-    {
       "id": 2038,
       "home": "Olympique Lyonnais",
       "away": "Auxerre",
@@ -15409,30 +16828,370 @@
       "source": "GitHub Actions cache"
     },
     {
-      "id": 1731,
-      "home": "FC Augsburg",
-      "away": "Eintracht Frankfurt",
-      "league": "Bundesliga",
-      "date": "2026-04-25T17:30:00+04:00",
-      "prediction": null,
+      "id": 203025,
+      "home": "CSKA Sofia",
+      "away": "Levski Sofia",
+      "league": "Parva Liga",
+      "date": "2026-04-25T17:00:00+04:00",
+      "prediction": {
+        "id": 3014,
+        "event": {
+          "id": 203025,
+          "league": {
+            "id": 22,
+            "name": "Parva Liga",
+            "country": "Bulgaria",
+            "is_women": false,
+            "current_season": {
+              "id": 321,
+              "name": "Parva Liga 25/26",
+              "year": 2025,
+              "start_date": "2025-07-01",
+              "end_date": "2026-06-30"
+            }
+          },
+          "season": null,
+          "home_team": "CSKA Sofia",
+          "away_team": "Levski Sofia",
+          "home_team_obj": {
+            "id": 345,
+            "name": "CSKA Sofia",
+            "short_name": "CSKA Sofia",
+            "country": "Bulgaria",
+            "coach": {
+              "name": "Hristo Yanev",
+              "shortName": "H. Yanev"
+            },
+            "venue": {
+              "id": 325,
+              "name": "Balgarska Armiya Stadium",
+              "city": "Sofia",
+              "country": "Bulgaria",
+              "capacity": 17376
+            }
+          },
+          "away_team_obj": {
+            "id": 348,
+            "name": "Levski Sofia",
+            "short_name": "Levski Sofia",
+            "country": "Bulgaria",
+            "coach": {
+              "name": "Julio Velazquez",
+              "shortName": "J. Velazquez"
+            },
+            "venue": {
+              "id": 328,
+              "name": "Georgi Asparuhov Stadium",
+              "city": "Sofia",
+              "country": "Bulgaria",
+              "capacity": 29200
+            }
+          },
+          "event_date": "2026-04-25T17:00:00+04:00",
+          "round_number": null,
+          "group_name": null,
+          "status": "notstarted",
+          "home_score": null,
+          "away_score": null,
+          "home_score_ht": null,
+          "away_score_ht": null,
+          "current_minute": null,
+          "period": "",
+          "odds_home": 2.57,
+          "odds_draw": 3.3,
+          "odds_away": 2.57,
+          "odds_over_15": 1.4,
+          "odds_over_25": 2.25,
+          "odds_over_35": 4.0,
+          "odds_under_15": 2.75,
+          "odds_under_25": 1.62,
+          "odds_under_35": 1.22,
+          "odds_btts_yes": 1.91,
+          "odds_btts_no": 1.8,
+          "odds_dc_12": null,
+          "actual_home_xg": null,
+          "actual_away_xg": null,
+          "home_xg_live": null,
+          "away_xg_live": null,
+          "penalty_shootout": null,
+          "referee": null,
+          "home_coach": {
+            "id": 292,
+            "name": "Hristo Yanev",
+            "short_name": "H. Yanev",
+            "country": "Bulgaria",
+            "profile": "defensive",
+            "preferred_formation": "4-1-4-1",
+            "pressing_intensity": 0.40349208516808494,
+            "defensive_line": "",
+            "top_styles": [
+              "no_midfield",
+              "heritage"
+            ]
+          },
+          "away_coach": {
+            "id": 392,
+            "name": "Julio Velazquez",
+            "short_name": "J. Velazquez",
+            "country": "Spain",
+            "profile": "attacking",
+            "preferred_formation": "4-2-3-1",
+            "pressing_intensity": 0.35266264832213934,
+            "defensive_line": "",
+            "top_styles": [
+              "chaos_football",
+              "total_football"
+            ]
+          },
+          "unavailable_players": null,
+          "venue": {
+            "id": 325,
+            "name": "Balgarska Armiya Stadium",
+            "city": "Sofia",
+            "country": "Bulgaria",
+            "capacity": 17376
+          },
+          "incidents": null,
+          "lineups": null,
+          "shotmap": null,
+          "momentum": null,
+          "average_positions": null
+        },
+        "created_at": "2026-04-19T06:20:13.674677+04:00",
+        "prob_home_win": 32.29397820761099,
+        "prob_draw": 35.99103383754165,
+        "prob_away_win": 31.714987954847345,
+        "predicted_result": "D",
+        "expected_home_goals": 0.7809999999999999,
+        "expected_away_goals": 0.7709999999999999,
+        "prob_over_15": 46.19828628060693,
+        "prob_over_25": 28.891625322775432,
+        "prob_over_35": 17.87401866138233,
+        "prob_btts_yes": 31.627417840198348,
+        "confidence": 35.99103383754165,
+        "model_version": "v5.0",
+        "most_likely_score": "0-0",
+        "favorite": "H",
+        "favorite_prob": 32.29397820761099,
+        "favorite_recommend": false,
+        "over_15_recommend": false,
+        "over_25_recommend": false,
+        "over_35_recommend": false,
+        "btts_recommend": false,
+        "winner_recommend": false
+      },
       "source": "GitHub Actions cache"
     },
     {
-      "id": 1729,
-      "home": "1. FSV Mainz 05",
-      "away": "FC Bayern München",
-      "league": "Bundesliga",
-      "date": "2026-04-25T17:30:00+04:00",
-      "prediction": null,
-      "source": "GitHub Actions cache"
-    },
-    {
-      "id": 1728,
-      "home": "1. FC Köln",
-      "away": "Bayer 04 Leverkusen",
-      "league": "Bundesliga",
-      "date": "2026-04-25T17:30:00+04:00",
-      "prediction": null,
+      "id": 1415,
+      "home": "Parma",
+      "away": "Pisa",
+      "league": "Serie A",
+      "date": "2026-04-25T17:00:00+04:00",
+      "prediction": {
+        "id": 3015,
+        "event": {
+          "id": 1415,
+          "league": {
+            "id": 4,
+            "name": "Serie A",
+            "country": "Italy",
+            "is_women": false,
+            "current_season": {
+              "id": 358,
+              "name": "Serie A 25/26",
+              "year": 2025,
+              "start_date": "2025-07-01",
+              "end_date": "2026-06-30"
+            }
+          },
+          "season": {
+            "id": 358,
+            "name": "Serie A 25/26",
+            "year": 2025
+          },
+          "home_team": "Parma",
+          "away_team": "Pisa",
+          "home_team_obj": {
+            "id": 74,
+            "name": "Parma",
+            "short_name": "Parma",
+            "country": "Italy",
+            "coach": {
+              "name": "Carlos Cuesta",
+              "shortName": "C. Cuesta"
+            },
+            "venue": {
+              "id": 73,
+              "name": "Ennio Tardini",
+              "city": "Parma",
+              "country": "Italy",
+              "capacity": 27906
+            }
+          },
+          "away_team_obj": {
+            "id": 72,
+            "name": "Pisa",
+            "short_name": "Pisa",
+            "country": "Italy",
+            "coach": {
+              "name": "Oscar Hiljemark",
+              "shortName": "O. Hiljemark"
+            },
+            "venue": {
+              "id": 71,
+              "name": "Arena Garibaldi-Romeo Anconetani",
+              "city": "Pisa",
+              "country": "Italy",
+              "capacity": 10442
+            }
+          },
+          "event_date": "2026-04-25T17:00:00+04:00",
+          "round_number": 34,
+          "group_name": null,
+          "status": "notstarted",
+          "home_score": null,
+          "away_score": null,
+          "home_score_ht": null,
+          "away_score_ht": null,
+          "current_minute": null,
+          "period": "",
+          "odds_home": 2.15,
+          "odds_draw": 3.25,
+          "odds_away": 3.85,
+          "odds_over_15": 1.4,
+          "odds_over_25": 2.24,
+          "odds_over_35": 4.0,
+          "odds_under_15": 3.0,
+          "odds_under_25": 1.66,
+          "odds_under_35": 1.25,
+          "odds_btts_yes": 1.95,
+          "odds_btts_no": 1.82,
+          "odds_dc_12": 1.37,
+          "actual_home_xg": null,
+          "actual_away_xg": null,
+          "home_xg_live": null,
+          "away_xg_live": null,
+          "penalty_shootout": null,
+          "referee": null,
+          "home_coach": {
+            "id": 314,
+            "name": "Carlos Cuesta",
+            "short_name": "C. Cuesta",
+            "country": "Spain",
+            "profile": "defensive",
+            "preferred_formation": "3-5-2",
+            "pressing_intensity": 0.2570379707196726,
+            "defensive_line": "low",
+            "top_styles": [
+              "set_piece",
+              "park_the_bus"
+            ]
+          },
+          "away_coach": {
+            "id": 418,
+            "name": "Oscar Hiljemark",
+            "short_name": "O. Hiljemark",
+            "country": "Sweden",
+            "profile": "defensive",
+            "preferred_formation": "3-5-2",
+            "pressing_intensity": 0.35642774748767225,
+            "defensive_line": "low",
+            "top_styles": [
+              "park_the_bus",
+              "terrorist_fb"
+            ]
+          },
+          "unavailable_players": {
+            "home": [
+              {
+                "name": "Benjamin Cremaschi",
+                "status": "injured",
+                "reason": "Meniscus Injury",
+                "expected_return": null
+              },
+              {
+                "name": "Botond Balogh",
+                "status": "injured",
+                "reason": "Hamstring",
+                "expected_return": null
+              },
+              {
+                "name": "Mateo Pellegrino",
+                "status": "doubtful",
+                "reason": "Head Injury",
+                "expected_return": "2026-05-08"
+              },
+              {
+                "name": "Matija Frigan",
+                "status": "injured",
+                "reason": "Cruciate Ligament Injury",
+                "expected_return": "2026-05-20"
+              },
+              {
+                "name": "Pontus Almqvist",
+                "status": "injured",
+                "reason": "Hamstring",
+                "expected_return": "2026-05-18"
+              }
+            ],
+            "away": [
+              {
+                "name": "Daniel Denoon",
+                "status": "doubtful",
+                "reason": "Muscle Injury",
+                "expected_return": "2026-04-30"
+              },
+              {
+                "name": "Marius Marin",
+                "status": "doubtful",
+                "reason": "Muscle Injury",
+                "expected_return": "2026-05-09"
+              },
+              {
+                "name": "Mehdi Léris",
+                "status": "injured",
+                "reason": "Thigh Injury",
+                "expected_return": "2026-05-10"
+              }
+            ]
+          },
+          "venue": {
+            "id": 73,
+            "name": "Ennio Tardini",
+            "city": "Parma",
+            "country": "Italy",
+            "capacity": 27906
+          },
+          "incidents": null,
+          "lineups": null,
+          "shotmap": null,
+          "momentum": null,
+          "average_positions": null
+        },
+        "created_at": "2026-04-19T06:20:13.940476+04:00",
+        "prob_home_win": 30.97134684393393,
+        "prob_draw": 27.97798949957211,
+        "prob_away_win": 41.05066365649396,
+        "predicted_result": "A",
+        "expected_home_goals": 1.0612300000000001,
+        "expected_away_goals": 1.2667699999999997,
+        "prob_over_15": 76.55486861942244,
+        "prob_over_25": 51.74588505380389,
+        "prob_over_35": 28.13550289445919,
+        "prob_btts_yes": 35.29501362373782,
+        "confidence": 41.05066365649396,
+        "model_version": "v5.0",
+        "most_likely_score": "1-1",
+        "favorite": "A",
+        "favorite_prob": 41.05066365649396,
+        "favorite_recommend": false,
+        "over_15_recommend": false,
+        "over_25_recommend": false,
+        "over_35_recommend": false,
+        "btts_recommend": false,
+        "winner_recommend": false
+      },
       "source": "GitHub Actions cache"
     },
     {
@@ -15693,19 +17452,46 @@
       "source": "GitHub Actions cache"
     },
     {
-      "id": 3905,
-      "home": "Birmingham City",
-      "away": "Bristol City",
-      "league": "Championship",
+      "id": 1731,
+      "home": "FC Augsburg",
+      "away": "Eintracht Frankfurt",
+      "league": "Bundesliga",
+      "date": "2026-04-25T17:30:00+04:00",
+      "prediction": null,
+      "source": "GitHub Actions cache"
+    },
+    {
+      "id": 1729,
+      "home": "1. FSV Mainz 05",
+      "away": "FC Bayern München",
+      "league": "Bundesliga",
+      "date": "2026-04-25T17:30:00+04:00",
+      "prediction": null,
+      "source": "GitHub Actions cache"
+    },
+    {
+      "id": 1728,
+      "home": "1. FC Köln",
+      "away": "Bayer 04 Leverkusen",
+      "league": "Bundesliga",
+      "date": "2026-04-25T17:30:00+04:00",
+      "prediction": null,
+      "source": "GitHub Actions cache"
+    },
+    {
+      "id": 9136,
+      "home": "Oud-Heverlee Leuven",
+      "away": "RC Sporting Charleroi",
+      "league": "Pro League",
       "date": "2026-04-25T18:00:00+04:00",
       "prediction": null,
       "source": "GitHub Actions cache"
     },
     {
-      "id": 343,
-      "home": "Wolverhampton",
-      "away": "Tottenham Hotspur",
-      "league": "Premier League",
+      "id": 3911,
+      "home": "Oxford United",
+      "away": "Sheffield Wednesday",
+      "league": "Championship",
       "date": "2026-04-25T18:00:00+04:00",
       "prediction": null,
       "source": "GitHub Actions cache"
