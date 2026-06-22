@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-22T19:52:11.799263+00:00",
+  "generated_at": "2026-06-22T21:54:36.478349+00:00",
   "date_from": "2026-06-22",
   "date_to": "2026-06-25",
   "matches": [
@@ -6193,13 +6193,13 @@
           "round_number": 2,
           "round_name": "",
           "group_name": "Group I",
-          "status": "notstarted",
-          "home_score": null,
-          "away_score": null,
-          "home_score_ht": null,
-          "away_score_ht": null,
-          "current_minute": null,
-          "period": "",
+          "status": "halftime",
+          "home_score": 1,
+          "away_score": 0,
+          "home_score_ht": 1,
+          "away_score_ht": 0,
+          "current_minute": 45,
+          "period": "HT",
           "odds_home": 1.1,
           "odds_draw": 9.04,
           "odds_away": 25.59,
@@ -6213,8 +6213,8 @@
           "odds_btts_no": 1.36,
           "actual_home_xg": null,
           "actual_away_xg": null,
-          "home_xg_live": null,
-          "away_xg_live": null,
+          "home_xg_live": 0.24,
+          "away_xg_live": 0.16,
           "penalty_shootout": null,
           "extra_time_score": null,
           "is_local_derby": false,
@@ -6275,8 +6275,201 @@
             "pitch_y": 68,
             "built_year": 2003
           },
-          "incidents": null,
-          "live_stats": null,
+          "incidents": [
+            {
+              "text": "HT",
+              "type": "period",
+              "minute": 45,
+              "is_live": false,
+              "added_time": 999,
+              "away_score": 0,
+              "home_score": 1
+            },
+            {
+              "type": "injuryTime",
+              "length": 3,
+              "minute": 45
+            },
+            {
+              "type": "substitution",
+              "minute": 26,
+              "is_home": false,
+              "player_in": "A. Al-Hamadi",
+              "added_time": null,
+              "player_out": "A. Hussein",
+              "player_in_id": 1010010,
+              "player_out_id": 812999
+            },
+            {
+              "type": "goal",
+              "assist": "M. Olise",
+              "minute": 14,
+              "player": "K. Mbappé",
+              "is_home": true,
+              "goal_type": "regular",
+              "player_id": 826643,
+              "added_time": null,
+              "away_score": 0,
+              "home_score": 1
+            },
+            {
+              "type": "card",
+              "minute": 6,
+              "player": "A. Al-Ammari",
+              "is_home": false,
+              "card_type": "yellow",
+              "player_id": 915325,
+              "added_time": null
+            }
+          ],
+          "live_stats": {
+            "away": {
+              "duels": 59,
+              "fouls": 2,
+              "passes": 233,
+              "crosses": "2/4 (50%)",
+              "punches": 2,
+              "tackles": 11,
+              "dribbles": "4/5 (80%)",
+              "throw_ins": 8,
+              "clearances": 19,
+              "free_kicks": 5,
+              "goal_kicks": 7,
+              "long_balls": "14/33 (42%)",
+              "recoveries": 26,
+              "tackles_won": 55,
+              "total_shots": 2,
+              "aerial_duels": "6/11 (55%)",
+              "corner_kicks": 1,
+              "dispossessed": 5,
+              "ground_duels": "20/33 (61%)",
+              "hit_woodwork": 0,
+              "yellow_cards": 1,
+              "blocked_shots": 1,
+              "interceptions": 8,
+              "total_tackles": 11,
+              "expected_goals": 0.16,
+              "accurate_passes": 190,
+              "ball_possession": 42,
+              "goals_prevented": -0.96,
+              "shots_on_target": 0,
+              "shots_inside_box": 1,
+              "shots_off_target": 1,
+              "final_third_phase": "17/30 (57%)",
+              "shots_outside_box": 1,
+              "final_third_entries": 18,
+              "fouled_in_final_third": 1,
+              "touches_in_penalty_area": 4
+            },
+            "home": {
+              "duels": 41,
+              "fouls": 5,
+              "passes": 316,
+              "crosses": "1/10 (0%)",
+              "punches": 0,
+              "tackles": 6,
+              "dribbles": "5/12 (42%)",
+              "throw_ins": 10,
+              "clearances": 6,
+              "free_kicks": 2,
+              "goal_kicks": 2,
+              "long_balls": "11/17 (65%)",
+              "recoveries": 30,
+              "tackles_won": 50,
+              "total_shots": 7,
+              "aerial_duels": "5/11 (45%)",
+              "corner_kicks": 1,
+              "dispossessed": 4,
+              "ground_duels": "13/33 (39%)",
+              "hit_woodwork": 0,
+              "yellow_cards": 0,
+              "blocked_shots": 3,
+              "interceptions": 4,
+              "total_tackles": 6,
+              "expected_goals": 0.24,
+              "accurate_passes": 284,
+              "ball_possession": 58,
+              "goals_prevented": 0.0,
+              "shots_on_target": 1,
+              "shots_inside_box": 1,
+              "shots_off_target": 3,
+              "final_third_phase": "109/135 (81%)",
+              "shots_outside_box": 6,
+              "final_third_entries": 45,
+              "fouled_in_final_third": 0,
+              "touches_in_penalty_area": 20
+            },
+            "first_half": {
+              "away": {
+                "duels": 59,
+                "fouls": 2,
+                "passes": 233,
+                "crosses": "2/4 (50%)",
+                "tackles": 11,
+                "dribbles": "4/5 (80%)",
+                "throw_ins": 8,
+                "clearances": 19,
+                "free_kicks": 5,
+                "goal_kicks": 7,
+                "long_balls": "14/33 (42%)",
+                "recoveries": 26,
+                "tackles_won": 55,
+                "total_shots": 2,
+                "aerial_duels": "6/11 (55%)",
+                "corner_kicks": 1,
+                "dispossessed": 5,
+                "ground_duels": "20/33 (61%)",
+                "hit_woodwork": 0,
+                "yellow_cards": 1,
+                "blocked_shots": 1,
+                "interceptions": 8,
+                "total_tackles": 11,
+                "expected_goals": 0.16,
+                "accurate_passes": 190,
+                "ball_possession": 42,
+                "shots_on_target": 0,
+                "shots_inside_box": 1,
+                "shots_off_target": 1,
+                "shots_outside_box": 1,
+                "final_third_entries": 18,
+                "fouled_in_final_third": 1
+              },
+              "home": {
+                "duels": 41,
+                "fouls": 5,
+                "passes": 316,
+                "crosses": "1/10 (0%)",
+                "tackles": 6,
+                "dribbles": "5/12 (42%)",
+                "throw_ins": 10,
+                "clearances": 6,
+                "free_kicks": 2,
+                "goal_kicks": 2,
+                "long_balls": "11/17 (65%)",
+                "recoveries": 30,
+                "tackles_won": 50,
+                "total_shots": 7,
+                "aerial_duels": "5/11 (45%)",
+                "corner_kicks": 1,
+                "dispossessed": 4,
+                "ground_duels": "13/33 (39%)",
+                "hit_woodwork": 0,
+                "yellow_cards": 0,
+                "blocked_shots": 3,
+                "interceptions": 4,
+                "total_tackles": 6,
+                "expected_goals": 0.24,
+                "accurate_passes": 284,
+                "ball_possession": 58,
+                "shots_on_target": 1,
+                "shots_inside_box": 1,
+                "shots_off_target": 3,
+                "shots_outside_box": 6,
+                "final_third_entries": 45,
+                "fouled_in_final_third": 0
+              }
+            }
+          },
           "lineups": {
             "away": {
               "players": [
@@ -6456,7 +6649,7 @@
                   "api_id": 812999,
                   "rating": null,
                   "sub_in": null,
-                  "sub_out": null,
+                  "sub_out": 26,
                   "position": "F",
                   "red_card": false,
                   "player_id": 54107,
@@ -6696,7 +6889,7 @@
                   "goals": 0,
                   "api_id": 1010010,
                   "rating": null,
-                  "sub_in": null,
+                  "sub_in": 26,
                   "sub_out": null,
                   "position": "F",
                   "red_card": false,
@@ -7221,9 +7414,448 @@
             },
             "confirmed": true
           },
-          "shotmap": null,
-          "momentum": null,
-          "xg_per_minute": null,
+          "shotmap": [
+            {
+              "gm": {
+                "x": 0,
+                "y": 42.9,
+                "z": 80.6
+              },
+              "xg": 0.0118,
+              "gml": "high-right",
+              "min": 40,
+              "pid": 826643,
+              "pos": {
+                "x": 40,
+                "y": 44,
+                "z": 0
+              },
+              "sit": "regular",
+              "body": "right-foot",
+              "home": true,
+              "type": "miss",
+              "xgot": null
+            },
+            {
+              "gm": {
+                "x": 0,
+                "y": 52.2,
+                "z": 19
+              },
+              "xg": 0.0301,
+              "gml": "low-left",
+              "min": 32,
+              "pid": 826643,
+              "pos": {
+                "x": 18.6,
+                "y": 37.3,
+                "z": 0
+              },
+              "sit": "assisted",
+              "body": "right-foot",
+              "home": true,
+              "type": "block",
+              "xgot": null,
+              "block": {
+                "x": 16.5,
+                "y": 38.5,
+                "z": 0
+              }
+            },
+            {
+              "gm": {
+                "x": 0,
+                "y": 34.6,
+                "z": 11.1
+              },
+              "xg": 0.1395,
+              "gml": "right",
+              "min": 27,
+              "pid": 1010010,
+              "pos": {
+                "x": 4.3,
+                "y": 56.9,
+                "z": 0
+              },
+              "sit": "assisted",
+              "body": "head",
+              "home": false,
+              "type": "miss",
+              "xgot": null
+            },
+            {
+              "gm": {
+                "x": 0,
+                "y": 50.2,
+                "z": 19
+              },
+              "xg": 0.0252,
+              "gml": "low-centre",
+              "min": 27,
+              "pid": 1010010,
+              "pos": {
+                "x": 19.1,
+                "y": 69.6,
+                "z": 0
+              },
+              "sit": "assisted",
+              "body": "left-foot",
+              "home": false,
+              "type": "block",
+              "xgot": null,
+              "block": {
+                "x": 17.4,
+                "y": 67.8,
+                "z": 0
+              }
+            },
+            {
+              "gm": {
+                "x": 0,
+                "y": 52.5,
+                "z": 19.6
+              },
+              "xg": 0.0424,
+              "gml": "low-left",
+              "min": 14,
+              "pid": 826643,
+              "pos": {
+                "x": 19.7,
+                "y": 69.2,
+                "z": 0
+              },
+              "sit": "assisted",
+              "body": "left-foot",
+              "home": true,
+              "type": "goal",
+              "xgot": 0.0362,
+              "gtype": "regular"
+            },
+            {
+              "gm": {
+                "x": 0,
+                "y": 49.1,
+                "z": 19
+              },
+              "xg": 0.0464,
+              "gml": "low-centre",
+              "min": 14,
+              "pid": 978838,
+              "pos": {
+                "x": 17.6,
+                "y": 63.4,
+                "z": 0
+              },
+              "sit": "assisted",
+              "body": "left-foot",
+              "home": true,
+              "type": "block",
+              "xgot": null,
+              "block": {
+                "x": 15,
+                "y": 61.6,
+                "z": 0
+              }
+            },
+            {
+              "gm": {
+                "x": 0,
+                "y": 40.7,
+                "z": 23.6
+              },
+              "xg": 0.0244,
+              "gml": "right",
+              "min": 8,
+              "pid": 826643,
+              "pos": {
+                "x": 10,
+                "y": 70.6,
+                "z": 0
+              },
+              "sit": "regular",
+              "body": "right-foot",
+              "home": true,
+              "type": "miss",
+              "xgot": null
+            },
+            {
+              "gm": {
+                "x": 0,
+                "y": 50.1,
+                "z": 19
+              },
+              "xg": 0.0498,
+              "gml": "low-centre",
+              "min": 8,
+              "pid": 978838,
+              "pos": {
+                "x": 18.3,
+                "y": 49.8,
+                "z": 0
+              },
+              "sit": "regular",
+              "body": "left-foot",
+              "home": true,
+              "type": "block",
+              "xgot": null,
+              "block": {
+                "x": 13.6,
+                "y": 49.8,
+                "z": 0
+              }
+            },
+            {
+              "gm": {
+                "x": 0,
+                "y": 40.5,
+                "z": 5.6
+              },
+              "xg": 0.0326,
+              "gml": "right",
+              "min": 1,
+              "pid": 974087,
+              "pos": {
+                "x": 19.7,
+                "y": 32.9,
+                "z": 0
+              },
+              "sit": "regular",
+              "body": "left-foot",
+              "home": true,
+              "type": "miss",
+              "xgot": null
+            }
+          ],
+          "momentum": [
+            {
+              "m": 1,
+              "v": -4
+            },
+            {
+              "m": 2,
+              "v": 27
+            },
+            {
+              "m": 3,
+              "v": 22
+            },
+            {
+              "m": 4,
+              "v": -15
+            },
+            {
+              "m": 5,
+              "v": -2
+            },
+            {
+              "m": 6,
+              "v": -16
+            },
+            {
+              "m": 7,
+              "v": 32
+            },
+            {
+              "m": 8,
+              "v": 57
+            },
+            {
+              "m": 9,
+              "v": 34
+            },
+            {
+              "m": 10,
+              "v": 14
+            },
+            {
+              "m": 11,
+              "v": 18
+            },
+            {
+              "m": 12,
+              "v": 17
+            },
+            {
+              "m": 13,
+              "v": 40
+            },
+            {
+              "m": 14,
+              "v": 31
+            },
+            {
+              "m": 15,
+              "v": 42
+            },
+            {
+              "m": 16,
+              "v": 43
+            },
+            {
+              "m": 17,
+              "v": 30
+            },
+            {
+              "m": 18,
+              "v": 42
+            },
+            {
+              "m": 19,
+              "v": 19
+            },
+            {
+              "m": 20,
+              "v": 16
+            },
+            {
+              "m": 21,
+              "v": 43
+            },
+            {
+              "m": 22,
+              "v": 32
+            },
+            {
+              "m": 23,
+              "v": 49
+            },
+            {
+              "m": 24,
+              "v": 35
+            },
+            {
+              "m": 25,
+              "v": 20
+            },
+            {
+              "m": 26,
+              "v": 9
+            },
+            {
+              "m": 27,
+              "v": 7
+            },
+            {
+              "m": 28,
+              "v": -42
+            },
+            {
+              "m": 29,
+              "v": -13
+            },
+            {
+              "m": 30,
+              "v": -8
+            },
+            {
+              "m": 31,
+              "v": -6
+            },
+            {
+              "m": 32,
+              "v": -17
+            },
+            {
+              "m": 33,
+              "v": 24
+            },
+            {
+              "m": 34,
+              "v": 10
+            },
+            {
+              "m": 35,
+              "v": 7
+            },
+            {
+              "m": 36,
+              "v": 5
+            },
+            {
+              "m": 37,
+              "v": 5
+            },
+            {
+              "m": 38,
+              "v": 2
+            },
+            {
+              "m": 39,
+              "v": 2
+            },
+            {
+              "m": 40,
+              "v": 50
+            },
+            {
+              "m": 41,
+              "v": 31
+            },
+            {
+              "m": 42,
+              "v": 16
+            },
+            {
+              "m": 43,
+              "v": 21
+            },
+            {
+              "m": 44,
+              "v": 10
+            },
+            {
+              "m": 45,
+              "v": -5
+            },
+            {
+              "m": 45.5,
+              "v": -16
+            }
+          ],
+          "xg_per_minute": [
+            {
+              "m": 1,
+              "xg_home": 0.0326,
+              "xg_away": 0.0,
+              "cum_home": 0.0326,
+              "cum_away": 0.0
+            },
+            {
+              "m": 8,
+              "xg_home": 0.0742,
+              "xg_away": 0.0,
+              "cum_home": 0.1068,
+              "cum_away": 0.0
+            },
+            {
+              "m": 14,
+              "xg_home": 0.0888,
+              "xg_away": 0.0,
+              "cum_home": 0.1956,
+              "cum_away": 0.0
+            },
+            {
+              "m": 27,
+              "xg_home": 0.0,
+              "xg_away": 0.1647,
+              "cum_home": 0.1956,
+              "cum_away": 0.1647
+            },
+            {
+              "m": 32,
+              "xg_home": 0.0301,
+              "xg_away": 0.0,
+              "cum_home": 0.2257,
+              "cum_away": 0.1647
+            },
+            {
+              "m": 40,
+              "xg_home": 0.0118,
+              "xg_away": 0.0,
+              "cum_home": 0.2375,
+              "cum_away": 0.1647
+            }
+          ],
           "average_positions": null,
           "jerseys": {
             "away": {
@@ -7261,7 +7893,32 @@
             }
           },
           "funfacts": null,
-          "sr_stats": null,
+          "sr_stats": {
+            "attack": {
+              "away": 28,
+              "home": 43
+            },
+            "ball_safe": {
+              "away": 38,
+              "home": 29
+            },
+            "attack_pct": {
+              "away": 11,
+              "home": 38
+            },
+            "ball_safe_pct": {
+              "away": 73,
+              "home": 24
+            },
+            "dangerous_attack": {
+              "away": 12,
+              "home": 35
+            },
+            "dangerous_attack_pct": {
+              "away": 16,
+              "home": 38
+            }
+          },
           "ai_preview": {
             "text": "**France rolls into round 2 looking sharp, Iraq desperate to avoid the exit door.** This is peak World Cup where the gulf in pedigree shows up real fast. 🌍\n\nFrance came through their opener with clinical wins, while Iraq scraped draws and got hammered — this feels like a mismatch on paper. The hosts will be hunting goals early and often.\n\nKey storylines:\n\n- **K. Mbappé and M. Olise** lead France's attack against an Iraq side already leaking chances in group play\n- Iraq missing **A. Yahya** (thigh injury) adds to defensive strain they can't afford\n- France's midfield depth — **A. Tchouaméni and M. Koné** controlling tempo — should dominate possession and transition\n\nExpected lineups:\n\n- **France**: M. Maignan, L. Digne, D. Upamecano, W. Saliba, M. Gusto, A. Tchouaméni, M. Koné, B. Barcola, R. Cherki, M. Olise, K. Mbappé\n- **Iraq**: J. Hassan, M. Doski, Z. Tahseen, H. Ali, A. Hashem, A. Al-Ammari, I. Bayesh, A. Jasim, M. Farji, A. Hussein, M. Ali\n\nBest picks:\n\n- **Total Goals 1.5**: Over 1.5 goals\n\nPrediction:\n\n**France 3–0 Iraq**\n\nFrance's attack is too potent and Iraq's injury-hit defense too stretched. Expect a comfortable, commanding performance.",
             "generated_at": "2026-06-22T02:45:24.829450+00:00"
@@ -9655,9 +10312,21 @@
               }
             }
           },
-          "funfacts": null,
+          "funfacts": [
+            {
+              "type_id": 1,
+              "sentence": "Ghana haven't won in their last 6 games."
+            },
+            {
+              "type_id": 1,
+              "sentence": "England have a winning streak of 3 matches."
+            }
+          ],
           "sr_stats": null,
-          "ai_preview": null,
+          "ai_preview": {
+            "text": "**England are heavy favorites against a Ghana side that's genuinely struggling — this should be a comfortable Three Lions victory.** 🏴󠁧󠁢󠁥󠁮󠁧󠁿\n\nEngland's last three matches have been clinical: three wins including a 4-2 thriller vs Croatia and a shutout of New Zealand. Ghana, meanwhile, are 1W-3L in their last five and got turned over 2-0 by Mexico. The form gap is real.\n\nKey storylines:\n\n- **H. Kane** leads the England attack against a Ghana backline that's been leaky; expect the captain to be among the goals\n\n- **T. Partey** will need to anchor Ghana's midfield against **J. Bellingham** and **E. Anderson**, who've been running England's tempo\n\n- **J. Ayew** and **A. Semenyo** are Ghana's main creative outlets, but they'll be chasing the game for large stretches\n\nExpected lineups:\n\n- **England**: J. Pickford, N. O'Reilly, E. Konsa, J. Stones, R. James, E. Anderson, J. Bellingham, A. Gordon, M. Rogers, N. Madueke, H. Kane\n\n- **Ghana**: B. Asare, J. A. Adjetey, A. Djiku, G. Mensah, J. Opoku, C. Yirenkyi, T. Partey, K. Sibo, A. Semenyo, J. Ayew, P. K. Adu\n\nBest picks:\n\n- **Total Goals 1.5**: Over 1.5 goals\n\nPrediction:\n\n**England 3–0 Ghana.** England's superior depth and form should dominate here, though Ghana won't roll over entirely.",
+            "generated_at": "2026-06-22T20:45:18.509532+00:00"
+          },
           "live_websocket": true
         },
         "created_at": "2026-06-02T14:53:17.884312+04:00",
