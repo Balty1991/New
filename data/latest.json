@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-03T19:00:03.792073+00:00",
+  "generated_at": "2026-07-03T20:16:25.098871+00:00",
   "date_from": "2026-07-03",
   "date_to": "2026-07-06",
   "matches": [
@@ -11983,11 +11983,11 @@
           "odds_over_15": 1.15,
           "odds_over_25": 1.5,
           "odds_over_35": 2.23,
-          "odds_under_15": 5.07,
+          "odds_under_15": 5.03,
           "odds_under_25": 2.48,
           "odds_under_35": 1.62,
           "odds_btts_yes": 1.51,
-          "odds_btts_no": 2.43,
+          "odds_btts_no": 2.42,
           "actual_home_xg": null,
           "actual_away_xg": null,
           "home_xg_live": null,
@@ -15521,15 +15521,15 @@
           "round_number": 6,
           "round_name": "Round of 32",
           "group_name": null,
-          "status": "halftime",
-          "home_score": 0,
+          "status": "extratime",
+          "home_score": 1,
           "away_score": 1,
           "home_score_ht": 0,
           "away_score_ht": 1,
-          "current_minute": 45,
-          "period": "HT",
-          "odds_home": 3.51,
-          "odds_draw": 2.84,
+          "current_minute": 102,
+          "period": "ET1",
+          "odds_home": 3.49,
+          "odds_draw": 2.83,
           "odds_away": 2.41,
           "odds_over_15": 1.55,
           "odds_over_25": 2.7,
@@ -15541,10 +15541,13 @@
           "odds_btts_no": 1.66,
           "actual_home_xg": null,
           "actual_away_xg": null,
-          "home_xg_live": 0.4,
-          "away_xg_live": 0.41,
+          "home_xg_live": 0.59,
+          "away_xg_live": 1.28,
           "penalty_shootout": null,
-          "extra_time_score": null,
+          "extra_time_score": {
+            "home": 0,
+            "away": 0
+          },
           "is_local_derby": false,
           "is_neutral_ground": null,
           "travel_distance_km": null,
@@ -15608,6 +15611,120 @@
           },
           "incidents": [
             {
+              "text": "Extra time",
+              "type": "period",
+              "minute": 120,
+              "is_live": true,
+              "added_time": 999,
+              "away_score": 1,
+              "home_score": 1
+            },
+            {
+              "type": "substitution",
+              "minute": 91,
+              "is_home": true,
+              "player_in": "A. Mabil",
+              "added_time": null,
+              "player_out": "C. Metcalfe",
+              "player_in_id": 307082,
+              "player_out_id": 888854
+            },
+            {
+              "type": "substitution",
+              "minute": 91,
+              "is_home": true,
+              "player_in": "P. Okon-Engstler",
+              "added_time": null,
+              "player_out": "A. O'Neill",
+              "player_in_id": 1411105,
+              "player_out_id": 847938
+            },
+            {
+              "text": "FT",
+              "type": "period",
+              "minute": 90,
+              "is_live": false,
+              "added_time": 999,
+              "away_score": 1,
+              "home_score": 1
+            },
+            {
+              "type": "injuryTime",
+              "length": 5,
+              "minute": 90
+            },
+            {
+              "type": "substitution",
+              "minute": 80,
+              "is_home": false,
+              "player_in": "M. Trézéguet",
+              "added_time": null,
+              "player_out": "K. Hafez",
+              "player_in_id": 295361,
+              "player_out_id": 577736
+            },
+            {
+              "type": "substitution",
+              "minute": 74,
+              "is_home": true,
+              "player_in": "M. Touré",
+              "added_time": null,
+              "player_out": "N. Irankunda",
+              "player_in_id": 1019061,
+              "player_out_id": 1144687
+            },
+            {
+              "type": "substitution",
+              "minute": 74,
+              "is_home": true,
+              "player_in": "A. Hrustić",
+              "added_time": null,
+              "player_out": "C. Volpato",
+              "player_in_id": 788284,
+              "player_out_id": 1155625
+            },
+            {
+              "type": "substitution",
+              "minute": 67,
+              "is_home": false,
+              "player_in": "H. Abdelmaguid",
+              "added_time": null,
+              "player_out": "H. Fathy",
+              "player_in_id": 1063327,
+              "player_out_id": 918913
+            },
+            {
+              "type": "substitution",
+              "minute": 67,
+              "is_home": false,
+              "player_in": "H. Hassan",
+              "added_time": null,
+              "player_out": "M. Ziko",
+              "player_in_id": 942836,
+              "player_out_id": 1418782
+            },
+            {
+              "type": "goal",
+              "minute": 55,
+              "player": "M. Hany",
+              "is_home": true,
+              "goal_type": "ownGoal",
+              "player_id": 826545,
+              "added_time": null,
+              "away_score": 1,
+              "home_score": 1
+            },
+            {
+              "type": "substitution",
+              "minute": 46,
+              "is_home": true,
+              "player_in": "K. Trewin",
+              "added_time": null,
+              "player_out": "J. Bos",
+              "player_in_id": 991364,
+              "player_out_id": 1144138
+            },
+            {
               "text": "HT",
               "type": "period",
               "minute": 45,
@@ -15636,115 +15753,119 @@
           ],
           "live_stats": {
             "away": {
-              "duels": 45,
-              "fouls": 3,
-              "passes": 272,
-              "crosses": "1/1 (100%)",
-              "tackles": 10,
-              "dribbles": "2/6 (33%)",
-              "offsides": 2,
-              "throw_ins": 9,
-              "clearances": 12,
-              "free_kicks": 4,
-              "goal_kicks": 6,
-              "long_balls": "16/35 (46%)",
-              "recoveries": 15,
-              "big_chances": 1,
-              "tackles_won": 50,
+              "duels": 46,
+              "fouls": 10,
+              "passes": 622,
+              "crosses": "5/16 (31%)",
+              "punches": 1,
+              "tackles": 13,
+              "dribbles": "4/11 (36%)",
+              "offsides": 3,
+              "throw_ins": 16,
+              "clearances": 36,
+              "free_kicks": 9,
+              "goal_kicks": 9,
+              "long_balls": "29/61 (48%)",
+              "recoveries": 35,
+              "big_chances": 3,
+              "tackles_won": 38,
               "total_saves": 1,
-              "total_shots": 3,
-              "aerial_duels": "8/20 (40%)",
-              "corner_kicks": 0,
+              "total_shots": 11,
+              "aerial_duels": "21/46 (46%)",
+              "corner_kicks": 3,
               "dispossessed": 2,
-              "ground_duels": "16/32 (50%)",
+              "ground_duels": "25/53 (47%)",
               "hit_woodwork": 0,
-              "blocked_shots": 2,
-              "interceptions": 3,
-              "total_tackles": 10,
-              "expected_goals": 0.41,
-              "accurate_passes": 233,
-              "ball_possession": 56,
-              "goals_prevented": 0.1,
-              "shots_on_target": 1,
+              "blocked_shots": 5,
+              "interceptions": 7,
+              "total_tackles": 13,
+              "expected_goals": 1.25,
+              "accurate_passes": 534,
+              "ball_possession": 57,
+              "goals_prevented": -0.9,
+              "shots_on_target": 3,
               "goalkeeper_saves": 1,
-              "shots_inside_box": 3,
-              "shots_off_target": 0,
-              "final_third_phase": "34/51 (67%)",
-              "shots_outside_box": 0,
+              "shots_inside_box": 8,
+              "shots_off_target": 3,
+              "final_third_phase": "112/151 (74%)",
+              "shots_outside_box": 3,
+              "big_chances_missed": 2,
               "big_chances_scored": 1,
-              "final_third_entries": 22,
+              "final_third_entries": 66,
               "fouled_in_final_third": 2,
-              "touches_in_penalty_area": 6
+              "touches_in_penalty_area": 22
             },
             "home": {
-              "duels": 55,
-              "fouls": 4,
-              "passes": 204,
-              "crosses": "4/8 (50%)",
-              "tackles": 6,
-              "dribbles": "8/10 (80%)",
+              "duels": 54,
+              "fouls": 9,
+              "passes": 459,
+              "crosses": "6/20 (30%)",
+              "punches": 1,
+              "tackles": 9,
+              "dribbles": "10/13 (77%)",
               "offsides": 0,
-              "throw_ins": 17,
-              "clearances": 2,
-              "free_kicks": 3,
-              "goal_kicks": 1,
-              "long_balls": "5/18 (28%)",
-              "recoveries": 16,
+              "throw_ins": 23,
+              "clearances": 21,
+              "free_kicks": 10,
+              "goal_kicks": 7,
+              "long_balls": "16/52 (31%)",
+              "recoveries": 37,
               "big_chances": 0,
-              "tackles_won": 83,
-              "total_saves": 0,
-              "total_shots": 6,
-              "aerial_duels": "12/20 (60%)",
-              "corner_kicks": 3,
-              "dispossessed": 8,
-              "ground_duels": "17/33 (52%)",
+              "tackles_won": 78,
+              "total_saves": 2,
+              "total_shots": 12,
+              "aerial_duels": "25/46 (54%)",
+              "corner_kicks": 4,
+              "dispossessed": 10,
+              "ground_duels": "28/53 (53%)",
               "hit_woodwork": 1,
-              "blocked_shots": 1,
-              "interceptions": 2,
-              "total_tackles": 6,
-              "expected_goals": 0.4,
-              "accurate_passes": 163,
-              "ball_possession": 44,
-              "goals_prevented": -0.19,
+              "blocked_shots": 7,
+              "interceptions": 7,
+              "total_tackles": 9,
+              "expected_goals": 0.59,
+              "accurate_passes": 367,
+              "ball_possession": 43,
+              "goals_prevented": 0.12,
               "shots_on_target": 1,
-              "goalkeeper_saves": 0,
-              "shots_inside_box": 4,
+              "goalkeeper_saves": 2,
+              "shots_inside_box": 7,
               "shots_off_target": 4,
-              "final_third_phase": "35/57 (61%)",
-              "shots_outside_box": 2,
+              "final_third_phase": "86/134 (64%)",
+              "shots_outside_box": 5,
+              "big_chances_missed": 0,
               "big_chances_scored": 0,
-              "final_third_entries": 32,
-              "fouled_in_final_third": 0,
-              "touches_in_penalty_area": 10
+              "final_third_entries": 69,
+              "fouled_in_final_third": 1,
+              "touches_in_penalty_area": 28
             },
             "first_half": {
               "away": {
-                "duels": 45,
+                "duels": 48,
                 "fouls": 3,
-                "passes": 272,
+                "passes": 274,
                 "crosses": "1/1 (100%)",
-                "tackles": 10,
-                "dribbles": "2/6 (33%)",
+                "tackles": 11,
+                "dribbles": "2/7 (29%)",
                 "offsides": 2,
                 "throw_ins": 9,
-                "clearances": 12,
+                "clearances": 11,
                 "free_kicks": 4,
                 "goal_kicks": 6,
-                "long_balls": "16/35 (46%)",
-                "recoveries": 15,
+                "long_balls": "16/36 (44%)",
+                "recoveries": 17,
                 "big_chances": 1,
-                "tackles_won": 50,
+                "tackles_won": 45,
                 "total_saves": 1,
                 "total_shots": 3,
                 "aerial_duels": "8/20 (40%)",
                 "corner_kicks": 0,
-                "dispossessed": 2,
-                "ground_duels": "16/32 (50%)",
+                "dispossessed": 1,
+                "ground_duels": "17/32 (53%)",
                 "hit_woodwork": 0,
                 "blocked_shots": 2,
                 "interceptions": 3,
-                "total_tackles": 10,
-                "expected_goals": 0.41,
+                "total_tackles": 11,
+                "expected_goals": 0.39,
                 "accurate_passes": 233,
                 "ball_possession": 56,
                 "shots_on_target": 1,
@@ -15752,17 +15873,18 @@
                 "shots_inside_box": 3,
                 "shots_off_target": 0,
                 "shots_outside_box": 0,
+                "big_chances_missed": 0,
                 "big_chances_scored": 1,
                 "final_third_entries": 22,
                 "fouled_in_final_third": 2
               },
               "home": {
-                "duels": 55,
+                "duels": 52,
                 "fouls": 4,
                 "passes": 204,
                 "crosses": "4/8 (50%)",
                 "tackles": 6,
-                "dribbles": "8/10 (80%)",
+                "dribbles": "6/8 (75%)",
                 "offsides": 0,
                 "throw_ins": 17,
                 "clearances": 2,
@@ -15776,8 +15898,8 @@
                 "total_shots": 6,
                 "aerial_duels": "12/20 (60%)",
                 "corner_kicks": 3,
-                "dispossessed": 8,
-                "ground_duels": "17/33 (52%)",
+                "dispossessed": 9,
+                "ground_duels": "15/32 (47%)",
                 "hit_woodwork": 1,
                 "blocked_shots": 1,
                 "interceptions": 2,
@@ -15790,9 +15912,90 @@
                 "shots_inside_box": 4,
                 "shots_off_target": 4,
                 "shots_outside_box": 2,
+                "big_chances_missed": 0,
                 "big_chances_scored": 0,
                 "final_third_entries": 32,
                 "fouled_in_final_third": 0
+              }
+            },
+            "second_half": {
+              "away": {
+                "duels": 43,
+                "fouls": 5,
+                "passes": 262,
+                "crosses": "3/12 (25%)",
+                "tackles": 1,
+                "dribbles": "2/4 (50%)",
+                "offsides": 1,
+                "throw_ins": 7,
+                "clearances": 23,
+                "free_kicks": 3,
+                "goal_kicks": 2,
+                "long_balls": "8/19 (42%)",
+                "recoveries": 14,
+                "big_chances": 2,
+                "tackles_won": 0,
+                "total_saves": 0,
+                "total_shots": 7,
+                "aerial_duels": "11/22 (50%)",
+                "corner_kicks": 3,
+                "dispossessed": 1,
+                "ground_duels": "5/15 (33%)",
+                "hit_woodwork": 0,
+                "blocked_shots": 3,
+                "interceptions": 3,
+                "total_tackles": 1,
+                "expected_goals": 0.76,
+                "accurate_passes": 224,
+                "ball_possession": 56,
+                "shots_on_target": 2,
+                "goalkeeper_saves": 0,
+                "shots_inside_box": 4,
+                "shots_off_target": 2,
+                "shots_outside_box": 3,
+                "big_chances_missed": 2,
+                "big_chances_scored": 0,
+                "final_third_entries": 34,
+                "fouled_in_final_third": 0
+              },
+              "home": {
+                "duels": 57,
+                "fouls": 3,
+                "passes": 207,
+                "crosses": "2/11 (18%)",
+                "tackles": 3,
+                "dribbles": "2/2 (100%)",
+                "offsides": 0,
+                "throw_ins": 4,
+                "clearances": 18,
+                "free_kicks": 5,
+                "goal_kicks": 4,
+                "long_balls": "9/27 (33%)",
+                "recoveries": 19,
+                "big_chances": 0,
+                "tackles_won": 67,
+                "total_saves": 2,
+                "total_shots": 6,
+                "aerial_duels": "11/22 (50%)",
+                "corner_kicks": 1,
+                "dispossessed": 1,
+                "ground_duels": "10/15 (67%)",
+                "hit_woodwork": 0,
+                "blocked_shots": 6,
+                "interceptions": 5,
+                "total_tackles": 3,
+                "expected_goals": 0.19,
+                "accurate_passes": 170,
+                "ball_possession": 44,
+                "shots_on_target": 0,
+                "goalkeeper_saves": 2,
+                "shots_inside_box": 3,
+                "shots_off_target": 0,
+                "shots_outside_box": 3,
+                "big_chances_missed": 0,
+                "big_chances_scored": 0,
+                "final_third_entries": 29,
+                "fouled_in_final_third": 1
               }
             }
           },
@@ -15873,7 +16076,7 @@
                   "api_id": 577736,
                   "rating": null,
                   "sub_in": null,
-                  "sub_out": null,
+                  "sub_out": 80,
                   "position": "D",
                   "red_card": false,
                   "player_id": 14728,
@@ -15890,7 +16093,7 @@
                   "api_id": 918913,
                   "rating": null,
                   "sub_in": null,
-                  "sub_out": null,
+                  "sub_out": 67,
                   "position": "M",
                   "red_card": false,
                   "player_id": 15354,
@@ -15958,7 +16161,7 @@
                   "api_id": 1418782,
                   "rating": null,
                   "sub_in": null,
-                  "sub_out": null,
+                  "sub_out": 67,
                   "position": "M",
                   "red_card": false,
                   "player_id": 14729,
@@ -16045,7 +16248,7 @@
                   "goals": 0,
                   "api_id": 1063327,
                   "rating": null,
-                  "sub_in": null,
+                  "sub_in": 67,
                   "sub_out": null,
                   "position": "D",
                   "red_card": false,
@@ -16096,7 +16299,7 @@
                   "goals": 0,
                   "api_id": 295361,
                   "rating": null,
-                  "sub_in": null,
+                  "sub_in": 80,
                   "sub_out": null,
                   "position": "F",
                   "red_card": false,
@@ -16130,7 +16333,7 @@
                   "goals": 0,
                   "api_id": 942836,
                   "rating": null,
-                  "sub_in": null,
+                  "sub_in": 67,
                   "sub_out": null,
                   "position": "F",
                   "red_card": false,
@@ -16271,7 +16474,7 @@
                   "api_id": 1144138,
                   "rating": null,
                   "sub_in": null,
-                  "sub_out": null,
+                  "sub_out": 46,
                   "position": "M",
                   "red_card": false,
                   "player_id": 4396,
@@ -16288,7 +16491,7 @@
                   "api_id": 847938,
                   "rating": null,
                   "sub_in": null,
-                  "sub_out": null,
+                  "sub_out": 91,
                   "position": "M",
                   "red_card": false,
                   "player_id": 9142,
@@ -16339,7 +16542,7 @@
                   "api_id": 1155625,
                   "rating": null,
                   "sub_in": null,
-                  "sub_out": null,
+                  "sub_out": 74,
                   "position": "F",
                   "red_card": false,
                   "player_id": 2854,
@@ -16356,7 +16559,7 @@
                   "api_id": 888854,
                   "rating": null,
                   "sub_in": null,
-                  "sub_out": null,
+                  "sub_out": 91,
                   "position": "F",
                   "red_card": false,
                   "player_id": 2490,
@@ -16373,7 +16576,7 @@
                   "api_id": 1144687,
                   "rating": null,
                   "sub_in": null,
-                  "sub_out": null,
+                  "sub_out": 74,
                   "position": "F",
                   "red_card": false,
                   "player_id": 6040,
@@ -16477,7 +16680,7 @@
                   "goals": 0,
                   "api_id": 991364,
                   "rating": null,
-                  "sub_in": null,
+                  "sub_in": 46,
                   "sub_out": null,
                   "position": "D",
                   "red_card": false,
@@ -16511,7 +16714,7 @@
                   "goals": 0,
                   "api_id": 1411105,
                   "rating": null,
-                  "sub_in": null,
+                  "sub_in": 91,
                   "sub_out": null,
                   "position": "M",
                   "red_card": false,
@@ -16528,7 +16731,7 @@
                   "goals": 0,
                   "api_id": 788284,
                   "rating": null,
-                  "sub_in": null,
+                  "sub_in": 74,
                   "sub_out": null,
                   "position": "M",
                   "red_card": false,
@@ -16545,7 +16748,7 @@
                   "goals": 0,
                   "api_id": 307082,
                   "rating": null,
-                  "sub_in": null,
+                  "sub_in": 91,
                   "sub_out": null,
                   "position": "M",
                   "red_card": false,
@@ -16579,7 +16782,7 @@
                   "goals": 0,
                   "api_id": 1019061,
                   "rating": null,
-                  "sub_in": null,
+                  "sub_in": 74,
                   "sub_out": null,
                   "position": "F",
                   "red_card": false,
@@ -16613,6 +16816,402 @@
             "confirmed": true
           },
           "shotmap": [
+            {
+              "gm": {
+                "x": 0,
+                "y": 80.3,
+                "z": 12.5
+              },
+              "xg": 0.0278,
+              "gml": "left",
+              "min": 103,
+              "pid": 967032,
+              "pos": {
+                "x": 27.2,
+                "y": 61.4,
+                "z": 0
+              },
+              "sit": "assisted",
+              "body": "left-foot",
+              "home": false,
+              "type": "miss",
+              "xgot": null
+            },
+            {
+              "gm": {
+                "x": 0,
+                "y": 51.6,
+                "z": 75
+              },
+              "xg": 0.0994,
+              "gml": "high",
+              "min": 93,
+              "pid": 159665,
+              "pos": {
+                "x": 10.1,
+                "y": 66.2,
+                "z": 0
+              },
+              "sit": "assisted",
+              "body": "right-foot",
+              "home": false,
+              "type": "miss",
+              "xgot": null
+            },
+            {
+              "gm": {
+                "x": 0,
+                "y": 51,
+                "z": 19
+              },
+              "xg": 0.0982,
+              "gml": "low-centre",
+              "min": 90,
+              "pid": 942836,
+              "pos": {
+                "x": 13,
+                "y": 60.3,
+                "z": 0
+              },
+              "sit": "assisted",
+              "body": "right-foot",
+              "home": false,
+              "type": "block",
+              "xgot": null,
+              "added": 6,
+              "block": {
+                "x": 6.6,
+                "y": 54.7,
+                "z": 0
+              }
+            },
+            {
+              "gm": {
+                "x": 0,
+                "y": 48.4,
+                "z": 19
+              },
+              "xg": 0.0275,
+              "gml": "low-centre",
+              "min": 90,
+              "pid": 1013699,
+              "pos": {
+                "x": 17,
+                "y": 63.6,
+                "z": 0
+              },
+              "sit": "assisted",
+              "body": "right-foot",
+              "home": false,
+              "type": "block",
+              "xgot": null,
+              "added": 5,
+              "block": {
+                "x": 14.6,
+                "y": 61.9,
+                "z": 0
+              }
+            },
+            {
+              "gm": {
+                "x": 0,
+                "y": 47.7,
+                "z": 22.8
+              },
+              "xg": 0.0377,
+              "gml": "high-right",
+              "min": 90,
+              "pid": 159665,
+              "pos": {
+                "x": 13.9,
+                "y": 64.8,
+                "z": 0
+              },
+              "sit": "corner",
+              "body": "left-foot",
+              "home": false,
+              "type": "save",
+              "xgot": 0.0883,
+              "added": 4,
+              "block": {
+                "x": 1.1,
+                "y": 52.2,
+                "z": 0
+              }
+            },
+            {
+              "gm": {
+                "x": 0,
+                "y": 49.4,
+                "z": 31.7
+              },
+              "xg": 0.1276,
+              "gml": "high-centre",
+              "min": 90,
+              "pid": 295339,
+              "pos": {
+                "x": 8.5,
+                "y": 51.7,
+                "z": 0
+              },
+              "sit": "corner",
+              "body": "head",
+              "home": false,
+              "type": "save",
+              "xgot": 0.2254,
+              "added": 3,
+              "block": {
+                "x": 1,
+                "y": 49.5,
+                "z": 0
+              }
+            },
+            {
+              "gm": {
+                "x": 0,
+                "y": 52.9,
+                "z": 19
+              },
+              "xg": 0.0081,
+              "gml": "low-left",
+              "min": 88,
+              "pid": 991364,
+              "pos": {
+                "x": 20.2,
+                "y": 67.6,
+                "z": 0
+              },
+              "sit": "corner",
+              "body": "right-foot",
+              "home": true,
+              "type": "block",
+              "xgot": null,
+              "block": {
+                "x": 18.5,
+                "y": 65.9,
+                "z": 0
+              }
+            },
+            {
+              "gm": {
+                "x": 0,
+                "y": 52.5,
+                "z": 19
+              },
+              "xg": 0.0757,
+              "gml": "low-left",
+              "min": 88,
+              "pid": 181581,
+              "pos": {
+                "x": 3.9,
+                "y": 60,
+                "z": 0
+              },
+              "sit": "corner",
+              "body": "head",
+              "home": true,
+              "type": "block",
+              "xgot": null,
+              "block": {
+                "x": 2,
+                "y": 54,
+                "z": 0
+              }
+            },
+            {
+              "gm": {
+                "x": 0,
+                "y": 48.8,
+                "z": 19
+              },
+              "xg": 0.0268,
+              "gml": "low-centre",
+              "min": 86,
+              "pid": 788284,
+              "pos": {
+                "x": 11.2,
+                "y": 71.5,
+                "z": 0
+              },
+              "sit": "fast-break",
+              "body": "left-foot",
+              "home": true,
+              "type": "block",
+              "xgot": null,
+              "block": {
+                "x": 9.8,
+                "y": 68.9,
+                "z": 0
+              }
+            },
+            {
+              "gm": {
+                "x": 0,
+                "y": 49.1,
+                "z": 19
+              },
+              "xg": 0.0179,
+              "gml": "low-centre",
+              "min": 86,
+              "pid": 1013699,
+              "pos": {
+                "x": 20.3,
+                "y": 66.1,
+                "z": 0
+              },
+              "sit": "regular",
+              "body": "right-foot",
+              "home": false,
+              "type": "block",
+              "xgot": null,
+              "block": {
+                "x": 18.1,
+                "y": 64.4,
+                "z": 0
+              }
+            },
+            {
+              "gm": {
+                "x": 0,
+                "y": 49.8,
+                "z": 19
+              },
+              "xg": 0.0246,
+              "gml": "low-centre",
+              "min": 81,
+              "pid": 888854,
+              "pos": {
+                "x": 18.4,
+                "y": 47.9,
+                "z": 0
+              },
+              "sit": "set-piece",
+              "body": "left-foot",
+              "home": true,
+              "type": "block",
+              "xgot": null,
+              "block": {
+                "x": 16,
+                "y": 48.2,
+                "z": 0
+              }
+            },
+            {
+              "gm": {
+                "x": 0,
+                "y": 48.6,
+                "z": 19
+              },
+              "xg": 0.0296,
+              "gml": "low-centre",
+              "min": 78,
+              "pid": 788284,
+              "pos": {
+                "x": 14.1,
+                "y": 74,
+                "z": 0
+              },
+              "sit": "assisted",
+              "body": "left-foot",
+              "home": true,
+              "type": "block",
+              "xgot": null,
+              "block": {
+                "x": 10.7,
+                "y": 68.6,
+                "z": 0
+              }
+            },
+            {
+              "gm": {
+                "x": 0,
+                "y": 88.9,
+                "z": 4.2
+              },
+              "xg": 0.0391,
+              "gml": "left",
+              "min": 73,
+              "pid": 967032,
+              "pos": {
+                "x": 19.5,
+                "y": 66.2,
+                "z": 0
+              },
+              "sit": "regular",
+              "body": "right-foot",
+              "home": false,
+              "type": "miss",
+              "xgot": null
+            },
+            {
+              "gm": {
+                "x": 0,
+                "y": 49.6,
+                "z": 19
+              },
+              "xg": 0.0254,
+              "gml": "low-centre",
+              "min": 61,
+              "pid": 1144687,
+              "pos": {
+                "x": 19.4,
+                "y": 37.5,
+                "z": 0
+              },
+              "sit": "regular",
+              "body": "right-foot",
+              "home": true,
+              "type": "block",
+              "xgot": null,
+              "block": {
+                "x": 17.9,
+                "y": 38.5,
+                "z": 0
+              }
+            },
+            {
+              "gm": {
+                "x": 0,
+                "y": 46.1,
+                "z": 20.3
+              },
+              "xg": null,
+              "gml": "high-right",
+              "min": 55,
+              "pid": 826545,
+              "pos": {
+                "x": 4.8,
+                "y": 50.3,
+                "z": 0
+              },
+              "sit": "set-piece",
+              "body": "head",
+              "home": true,
+              "type": "goal",
+              "xgot": null,
+              "gtype": "own"
+            },
+            {
+              "gm": {
+                "x": 0,
+                "y": 42.4,
+                "z": 1.4
+              },
+              "xg": 0.4089,
+              "gml": "close-right",
+              "min": 46,
+              "pid": 873554,
+              "pos": {
+                "x": 10.2,
+                "y": 43.6,
+                "z": 0
+              },
+              "sit": "assisted",
+              "body": "right-foot",
+              "home": false,
+              "type": "miss",
+              "xgot": null
+            },
             {
               "gm": {
                 "x": 0,
@@ -16694,7 +17293,7 @@
                 "y": 46.1,
                 "z": 20.8
               },
-              "xg": 0.1233,
+              "xg": 0.1092,
               "gml": "high-right",
               "min": 16,
               "pid": 873554,
@@ -17015,6 +17614,238 @@
             {
               "m": 45.5,
               "v": 63
+            },
+            {
+              "m": 46,
+              "v": -6
+            },
+            {
+              "m": 47,
+              "v": -44
+            },
+            {
+              "m": 48,
+              "v": -7
+            },
+            {
+              "m": 49,
+              "v": 6
+            },
+            {
+              "m": 50,
+              "v": 4
+            },
+            {
+              "m": 51,
+              "v": -4
+            },
+            {
+              "m": 52,
+              "v": 13
+            },
+            {
+              "m": 53,
+              "v": 16
+            },
+            {
+              "m": 54,
+              "v": 47
+            },
+            {
+              "m": 55,
+              "v": 33
+            },
+            {
+              "m": 56,
+              "v": 12
+            },
+            {
+              "m": 57,
+              "v": -9
+            },
+            {
+              "m": 58,
+              "v": -12
+            },
+            {
+              "m": 59,
+              "v": -19
+            },
+            {
+              "m": 60,
+              "v": -3
+            },
+            {
+              "m": 61,
+              "v": 46
+            },
+            {
+              "m": 62,
+              "v": 20
+            },
+            {
+              "m": 63,
+              "v": 6
+            },
+            {
+              "m": 64,
+              "v": 1
+            },
+            {
+              "m": 65,
+              "v": 2
+            },
+            {
+              "m": 66,
+              "v": -2
+            },
+            {
+              "m": 67,
+              "v": -49
+            },
+            {
+              "m": 68,
+              "v": -14
+            },
+            {
+              "m": 69,
+              "v": -9
+            },
+            {
+              "m": 70,
+              "v": -9
+            },
+            {
+              "m": 71,
+              "v": -10
+            },
+            {
+              "m": 72,
+              "v": 9
+            },
+            {
+              "m": 73,
+              "v": -34
+            },
+            {
+              "m": 74,
+              "v": -12
+            },
+            {
+              "m": 75,
+              "v": -1
+            },
+            {
+              "m": 76,
+              "v": 10
+            },
+            {
+              "m": 77,
+              "v": 15
+            },
+            {
+              "m": 78,
+              "v": 41
+            },
+            {
+              "m": 79,
+              "v": 71
+            },
+            {
+              "m": 80,
+              "v": 38
+            },
+            {
+              "m": 81,
+              "v": 18
+            },
+            {
+              "m": 82,
+              "v": 33
+            },
+            {
+              "m": 83,
+              "v": 9
+            },
+            {
+              "m": 84,
+              "v": -8
+            },
+            {
+              "m": 85,
+              "v": -21
+            },
+            {
+              "m": 86,
+              "v": -17
+            },
+            {
+              "m": 87,
+              "v": -31
+            },
+            {
+              "m": 88,
+              "v": 27
+            },
+            {
+              "m": 89,
+              "v": -19
+            },
+            {
+              "m": 90,
+              "v": -17
+            },
+            {
+              "m": 90.5,
+              "v": -79
+            },
+            {
+              "m": 91,
+              "v": -5
+            },
+            {
+              "m": 92,
+              "v": 13
+            },
+            {
+              "m": 93,
+              "v": -32
+            },
+            {
+              "m": 94,
+              "v": -21
+            },
+            {
+              "m": 95,
+              "v": -13
+            },
+            {
+              "m": 96,
+              "v": -3
+            },
+            {
+              "m": 97,
+              "v": 6
+            },
+            {
+              "m": 98,
+              "v": -6
+            },
+            {
+              "m": 99,
+              "v": -6
+            },
+            {
+              "m": 100,
+              "v": -9
+            },
+            {
+              "m": 101,
+              "v": -27
+            },
+            {
+              "m": 102,
+              "v": -28
             }
           ],
           "xg_per_minute": [
@@ -17042,23 +17873,93 @@
             {
               "m": 16,
               "xg_home": 0.0,
-              "xg_away": 0.1233,
+              "xg_away": 0.1092,
               "cum_home": 0.2109,
-              "cum_away": 0.4069
+              "cum_away": 0.3928
             },
             {
               "m": 35,
               "xg_home": 0.0466,
               "xg_away": 0.0,
               "cum_home": 0.2575,
-              "cum_away": 0.4069
+              "cum_away": 0.3928
             },
             {
               "m": 45,
               "xg_home": 0.147,
               "xg_away": 0.0,
               "cum_home": 0.4045,
-              "cum_away": 0.4069
+              "cum_away": 0.3928
+            },
+            {
+              "m": 46,
+              "xg_home": 0.0,
+              "xg_away": 0.4089,
+              "cum_home": 0.4045,
+              "cum_away": 0.8017
+            },
+            {
+              "m": 61,
+              "xg_home": 0.0254,
+              "xg_away": 0.0,
+              "cum_home": 0.4299,
+              "cum_away": 0.8017
+            },
+            {
+              "m": 73,
+              "xg_home": 0.0,
+              "xg_away": 0.0391,
+              "cum_home": 0.4299,
+              "cum_away": 0.8408
+            },
+            {
+              "m": 78,
+              "xg_home": 0.0296,
+              "xg_away": 0.0,
+              "cum_home": 0.4595,
+              "cum_away": 0.8408
+            },
+            {
+              "m": 81,
+              "xg_home": 0.0246,
+              "xg_away": 0.0,
+              "cum_home": 0.4841,
+              "cum_away": 0.8408
+            },
+            {
+              "m": 86,
+              "xg_home": 0.0268,
+              "xg_away": 0.0179,
+              "cum_home": 0.5109,
+              "cum_away": 0.8587
+            },
+            {
+              "m": 88,
+              "xg_home": 0.0838,
+              "xg_away": 0.0,
+              "cum_home": 0.5947,
+              "cum_away": 0.8587
+            },
+            {
+              "m": 90,
+              "xg_home": 0.0,
+              "xg_away": 0.291,
+              "cum_home": 0.5947,
+              "cum_away": 1.1497
+            },
+            {
+              "m": 93,
+              "xg_home": 0.0,
+              "xg_away": 0.0994,
+              "cum_home": 0.5947,
+              "cum_away": 1.2491
+            },
+            {
+              "m": 103,
+              "xg_home": 0.0,
+              "xg_away": 0.0278,
+              "cum_home": 0.5947,
+              "cum_away": 1.2769
             }
           ],
           "average_positions": null,
@@ -17101,28 +18002,28 @@
           "funfacts": null,
           "sr_stats": {
             "attack": {
-              "away": 39,
-              "home": 45
+              "away": 106,
+              "home": 99
             },
             "ball_safe": {
-              "away": 41,
-              "home": 33
+              "away": 83,
+              "home": 70
             },
             "attack_pct": {
-              "away": 16,
-              "home": 31
+              "away": 22,
+              "home": 30
             },
             "ball_safe_pct": {
-              "away": 57,
-              "home": 31
+              "away": 43,
+              "home": 37
             },
             "dangerous_attack": {
-              "away": 16,
-              "home": 26
+              "away": 59,
+              "home": 54
             },
             "dangerous_attack_pct": {
-              "away": 27,
-              "home": 38
+              "away": 35,
+              "home": 33
             }
           },
           "ai_preview": null,
@@ -17229,16 +18130,16 @@
           "current_minute": null,
           "period": "",
           "odds_home": 1.15,
-          "odds_draw": 8.03,
-          "odds_away": 19.21,
+          "odds_draw": 8.13,
+          "odds_away": 18.52,
           "odds_over_15": 1.18,
           "odds_over_25": 1.62,
-          "odds_over_35": 2.5,
-          "odds_under_15": 4.51,
-          "odds_under_25": 2.28,
-          "odds_under_35": 1.49,
+          "odds_over_35": 2.51,
+          "odds_under_15": 4.5,
+          "odds_under_25": 2.27,
+          "odds_under_35": 1.48,
           "odds_btts_yes": 2.94,
-          "odds_btts_no": 1.37,
+          "odds_btts_no": 1.38,
           "actual_home_xg": null,
           "actual_away_xg": null,
           "home_xg_live": null,
@@ -17615,16 +18516,16 @@
           "current_minute": null,
           "period": "",
           "odds_home": 1.44,
-          "odds_draw": 4.27,
-          "odds_away": 8.06,
+          "odds_draw": 4.29,
+          "odds_away": 8.07,
           "odds_over_15": 1.32,
-          "odds_over_25": 2.0,
-          "odds_over_35": 3.51,
-          "odds_under_15": 3.24,
+          "odds_over_25": 2.01,
+          "odds_over_35": 3.52,
+          "odds_under_15": 3.22,
           "odds_under_25": 1.78,
           "odds_under_35": 1.28,
-          "odds_btts_yes": 2.24,
-          "odds_btts_no": 1.6,
+          "odds_btts_yes": 2.27,
+          "odds_btts_no": 1.59,
           "actual_home_xg": null,
           "actual_away_xg": null,
           "home_xg_live": null,
@@ -17740,10 +18641,7 @@
             }
           ],
           "sr_stats": null,
-          "ai_preview": {
-            "text": "**Colombia looking sharp, Ghana needing a spark** — the Cafeteros roll in unbeaten through five games, while the Black Stars have won just once in their last stretch. This is where form meets desperation. 🔥\n\nColombia's defensive solidity (back-to-back clean sheets) versus Ghana's leaky backline (two losses in the last five) sets the tone. **L. Díaz** and **J. Rodríguez** will probe relentlessly, but Ghana's midfield anchor **T. Partey** has to keep things compact or this gets messy fast.\n\nKey storylines:\n\n- **Colombia's rhythm** — four wins in five means they're peaking at exactly the right moment, with **J. Lerma** and **J. Rodríguez** controlling tempo\n- **Ghana's injury woes** — missing **K. P. Oppong** further thins an already stretched squad, forcing **A. Djiku** and **G. Mensah** to carry the load\n- **Suárez and Córdoba up top** — **L. J. Suárez** needs early touches to settle; **J. Córdoba** offers physicality Ghana's center-backs must respect\n\nExpected lineups:\n\n- **Colombia**: K. Mier, Á. Angulo, D. Sánchez, J. Lucumí, J. Mojica, L. Díaz, J. Lerma, J. Rodríguez, L. J. Suárez, J. Córdoba, C. Hernández\n- **Ghana**: B. Asare, J. A. Adjetey, G. Mensah, A. Djiku, M. Senaya, T. Partey, C. Yirenkyi, K. Sibo, A. F. Issahaku, A. Semenyo, J. Ayew\n\nBest picks:\n\n- **Total Goals Under 3.5**: Under 3.5 goals\n\nPrediction:\n\n**Colombia 2–0 Ghana** — clinical, controlled, and Ghana's defending just doesn't hold up here. Lean Colombia all day. ✅",
-            "generated_at": "2026-07-03T18:45:28.340175+00:00"
-          },
+          "ai_preview": null,
           "live_websocket": true
         },
         "created_at": "2026-06-29T06:20:11.827224+04:00",
@@ -17824,17 +18722,17 @@
           "away_score_ht": null,
           "current_minute": null,
           "period": "",
-          "odds_home": 2.55,
-          "odds_draw": 3.76,
+          "odds_home": 2.54,
+          "odds_draw": 3.77,
           "odds_away": 2.23,
-          "odds_over_15": 1.06,
+          "odds_over_15": 1.05,
           "odds_over_25": 1.29,
-          "odds_over_35": 1.76,
-          "odds_under_15": 7.33,
-          "odds_under_25": 3.15,
-          "odds_under_35": 1.94,
+          "odds_over_35": 1.75,
+          "odds_under_15": 7.45,
+          "odds_under_25": 3.18,
+          "odds_under_35": 1.95,
           "odds_btts_yes": 1.29,
-          "odds_btts_no": 3.23,
+          "odds_btts_no": 3.24,
           "actual_home_xg": null,
           "actual_away_xg": null,
           "home_xg_live": null,
@@ -18124,14 +19022,14 @@
           "away_score_ht": null,
           "current_minute": null,
           "period": "",
-          "odds_home": 1.37,
-          "odds_draw": 4.9,
-          "odds_away": 5.67,
-          "odds_over_15": 1.04,
-          "odds_over_25": 1.27,
-          "odds_over_35": 1.71,
-          "odds_under_15": 6.9,
-          "odds_under_25": 3.24,
+          "odds_home": 1.38,
+          "odds_draw": 4.84,
+          "odds_away": 5.72,
+          "odds_over_15": 1.06,
+          "odds_over_25": 1.28,
+          "odds_over_35": 1.72,
+          "odds_under_15": 7.1,
+          "odds_under_25": 3.25,
           "odds_under_35": 1.97,
           "odds_btts_yes": 1.44,
           "odds_btts_no": 2.55,
@@ -18275,16 +19173,16 @@
           "current_minute": null,
           "period": "",
           "odds_home": 2.26,
-          "odds_draw": 3.02,
+          "odds_draw": 3.0,
           "odds_away": 3.3,
           "odds_over_15": 1.43,
           "odds_over_25": 2.34,
-          "odds_over_35": 4.38,
+          "odds_over_35": 4.37,
           "odds_under_15": 2.64,
           "odds_under_25": 1.55,
           "odds_under_35": 1.18,
           "odds_btts_yes": 1.98,
-          "odds_btts_no": 1.74,
+          "odds_btts_no": 1.75,
           "actual_home_xg": null,
           "actual_away_xg": null,
           "home_xg_live": null,
@@ -18687,13 +19585,13 @@
           "odds_draw": 2.97,
           "odds_away": 2.54,
           "odds_over_15": 1.45,
-          "odds_over_25": 2.42,
-          "odds_over_35": 4.62,
+          "odds_over_25": 2.41,
+          "odds_over_35": 4.6,
           "odds_under_15": 2.58,
           "odds_under_25": 1.52,
           "odds_under_35": 1.17,
           "odds_btts_yes": 2.01,
-          "odds_btts_no": 1.72,
+          "odds_btts_no": 1.73,
           "actual_home_xg": null,
           "actual_away_xg": null,
           "home_xg_live": null,
@@ -19110,7 +20008,7 @@
           "odds_over_15": 1.18,
           "odds_over_25": 1.62,
           "odds_over_35": 2.48,
-          "odds_under_15": 4.58,
+          "odds_under_15": 4.57,
           "odds_under_25": 2.23,
           "odds_under_35": 1.5,
           "odds_btts_yes": 1.52,
@@ -19321,17 +20219,17 @@
           "away_score_ht": null,
           "current_minute": null,
           "period": "",
-          "odds_home": 1.79,
-          "odds_draw": 3.98,
-          "odds_away": 3.75,
+          "odds_home": 1.78,
+          "odds_draw": 3.99,
+          "odds_away": 3.78,
           "odds_over_15": 1.1,
           "odds_over_25": 1.38,
           "odds_over_35": 1.93,
-          "odds_under_15": 6.77,
-          "odds_under_25": 2.9,
-          "odds_under_35": 1.8,
+          "odds_under_15": 6.67,
+          "odds_under_25": 2.89,
+          "odds_under_35": 1.79,
           "odds_btts_yes": 1.39,
-          "odds_btts_no": 2.81,
+          "odds_btts_no": 2.8,
           "actual_home_xg": null,
           "actual_away_xg": null,
           "home_xg_live": null,
@@ -19543,10 +20441,10 @@
           "odds_away": 4.55,
           "odds_over_15": 1.22,
           "odds_over_25": 1.72,
-          "odds_over_35": 2.76,
-          "odds_under_15": 4.04,
+          "odds_over_35": 2.74,
+          "odds_under_15": 4.03,
           "odds_under_25": 2.05,
-          "odds_under_35": 1.41,
+          "odds_under_35": 1.42,
           "odds_btts_yes": 1.69,
           "odds_btts_no": 2.05,
           "actual_home_xg": null,
@@ -19960,11 +20858,11 @@
           "period": "",
           "odds_home": 2.34,
           "odds_draw": 3.27,
-          "odds_away": 2.91,
+          "odds_away": 2.92,
           "odds_over_15": 1.24,
           "odds_over_25": 1.78,
           "odds_over_35": 2.87,
-          "odds_under_15": 3.78,
+          "odds_under_15": 3.77,
           "odds_under_25": 1.97,
           "odds_under_35": 1.38,
           "odds_btts_yes": 1.62,
@@ -20189,11 +21087,11 @@
           "current_minute": null,
           "period": "",
           "odds_home": 3.18,
-          "odds_draw": 3.33,
+          "odds_draw": 3.34,
           "odds_away": 2.19,
           "odds_over_15": 1.25,
           "odds_over_25": 1.81,
-          "odds_over_35": 2.94,
+          "odds_over_35": 2.93,
           "odds_under_15": 3.66,
           "odds_under_25": 1.93,
           "odds_under_35": 1.36,
@@ -20700,13 +21598,13 @@
           "odds_draw": 3.64,
           "odds_away": 2.02,
           "odds_over_15": 1.17,
-          "odds_over_25": 1.59,
-          "odds_over_35": 2.43,
-          "odds_under_15": 4.54,
-          "odds_under_25": 2.28,
+          "odds_over_25": 1.58,
+          "odds_over_35": 2.42,
+          "odds_under_15": 4.61,
+          "odds_under_25": 2.3,
           "odds_under_35": 1.51,
-          "odds_btts_yes": 1.52,
-          "odds_btts_no": 2.4,
+          "odds_btts_yes": 1.51,
+          "odds_btts_no": 2.41,
           "actual_home_xg": null,
           "actual_away_xg": null,
           "home_xg_live": null,
@@ -21066,14 +21964,14 @@
           "current_minute": null,
           "period": "",
           "odds_home": 1.3,
-          "odds_draw": 5.22,
-          "odds_away": 9.03,
+          "odds_draw": 5.21,
+          "odds_away": 9.04,
           "odds_over_15": 1.17,
           "odds_over_25": 1.59,
-          "odds_over_35": 2.44,
-          "odds_under_15": 4.53,
+          "odds_over_35": 2.45,
+          "odds_under_15": 4.52,
           "odds_under_25": 2.28,
-          "odds_under_35": 1.49,
+          "odds_under_35": 1.5,
           "odds_btts_yes": 1.95,
           "odds_btts_no": 1.77,
           "actual_home_xg": null,
@@ -21239,17 +22137,17 @@
           "away_score_ht": null,
           "current_minute": null,
           "period": "",
-          "odds_home": 5.0,
-          "odds_draw": 3.45,
-          "odds_away": 1.78,
-          "odds_over_15": 1.39,
-          "odds_over_25": 2.24,
-          "odds_over_35": 4.11,
+          "odds_home": 4.73,
+          "odds_draw": 3.4,
+          "odds_away": 1.83,
+          "odds_over_15": 1.4,
+          "odds_over_25": 2.25,
+          "odds_over_35": 4.15,
           "odds_under_15": 2.86,
           "odds_under_25": 1.63,
           "odds_under_35": 1.21,
-          "odds_btts_yes": 2.07,
-          "odds_btts_no": 1.71,
+          "odds_btts_yes": 2.04,
+          "odds_btts_no": 1.72,
           "actual_home_xg": null,
           "actual_away_xg": null,
           "home_xg_live": null,
@@ -21369,10 +22267,7 @@
             }
           ],
           "sr_stats": null,
-          "ai_preview": {
-            "text": "**Morocco come to Houston as heavy favorites**, and on paper it's easy to see why — they've been rock-solid defensively while Canada's leaky backline just got worse with injuries. 🇲🇦\n\nCanada scraped past Qatar but got spanked by Switzerland; Morocco have drawn three of their last five, which screams control but also suggests neither team runs away easily. The head-to-head tells the whole story: Morocco won their last meeting, and they'll fancy another one.\n\nKey storylines:\n\n- **Morocco's defense** (led by A. Hakimi and N. Mazraoui) vs Canada's injury-ravaged back line without I. Koné and R. Priso — major mismatch\n- **N. Saliba and T. Buchanan** need to stay disciplined or they'll be chasing shadows all afternoon\n- Morocco's midfield trio of N. El Aynaoui, I. Saibari, and S. Rahimi dictate tempo; if they control possession, Canada's in trouble\n\nExpected lineups:\n\n- **Canada**: M. Crépeau, R. Laryea, D. Cornelius, A. Johnston, L. Millar, T. Buchanan, J. David, J. Russell Rowe\n- **Morocco**: Bono, A. Hakimi, I. Diop, N. Mazraoui, N. El Aynaoui, I. Saibari, B. Díaz, A. E. Kaabi\n\nBest picks:\n\n- **Total Goals 1.5**: Over 1.5 goals\n\nPrediction:\n\n**Morocco 2-0 Canada.** Canada's injuries bite hard; Morocco's class shows. 🎯",
-            "generated_at": "2026-07-03T18:45:38.160606+00:00"
-          },
+          "ai_preview": null,
           "live_websocket": true
         },
         "created_at": "2026-07-01T06:20:22.233386+04:00",
@@ -21475,16 +22370,16 @@
           "away_score_ht": null,
           "current_minute": null,
           "period": "",
-          "odds_home": 1.99,
+          "odds_home": 2.0,
           "odds_draw": 3.15,
-          "odds_away": 3.87,
+          "odds_away": 3.86,
           "odds_over_15": 1.37,
           "odds_over_25": 2.16,
           "odds_over_35": 3.87,
           "odds_under_15": 2.88,
           "odds_under_25": 1.64,
           "odds_under_35": 1.22,
-          "odds_btts_yes": 1.92,
+          "odds_btts_yes": 1.91,
           "odds_btts_no": 1.8,
           "actual_home_xg": null,
           "actual_away_xg": null,
@@ -21583,9 +22478,25 @@
               }
             }
           },
-          "funfacts": null,
+          "funfacts": [
+            {
+              "type_id": 1,
+              "sentence": "Sport Recife haven't won in their last 4 games."
+            },
+            {
+              "type_id": 2,
+              "sentence": "When playing at home, Criciuma have not lost to Sport Recife in their last 5 encounters."
+            },
+            {
+              "type_id": 24,
+              "sentence": "Criciuma's home record this season: 4-3-0."
+            }
+          ],
           "sr_stats": null,
-          "ai_preview": null,
+          "ai_preview": {
+            "text": "**Criciúma's form is absolutely electric, but Sport Recife are masters of the grind** — this could be one of those classic upset specials where momentum collides with grit. 🔥\n\nCriciúma have rattled off four wins in five and look genuinely sharp at home, while Sport are treading water with just one W in their last five. That said, the visitors know how to frustrate, and defensive solidity might spoil the party here.\n\nKey storylines:\n\n- **Criciúma's attacking trio** of Waguininho, Diego Gonçalves, and J. Robert are firing on all cylinders and will test Sport's backline early and often\n- **Sport's midfield anchors** C. Barletta and Felipinho need to compress space and disrupt the hosts' rhythm to stay in the game\n- **Set pieces and transitions** could decide this one — both teams look vulnerable on the counter\n\nExpected lineups:\n\n- **Criciúma**: Airton, M. Hermes, Luciano Castan, C. Martins, R. Fagundes, F. Mateus, G. Lobo, R. Otero, Waguininho, Diego Gonçalves, J. Robert\n- **Sport Recife**: T. Couto, Marcelo, Madson, Habraão, Z. Marcos, C. Barletta, Felipinho, Perotti, B. Fonseca, I. Castilho, Micael\n\nBest picks:\n\n- **Total Goals 3.5**: Under 3.5 goals\n\nPrediction:\n\n**Criciúma 2–1 Sport Recife** — Criciúma edge it, but it's genuinely tight. 📍",
+            "generated_at": "2026-07-03T19:45:53.086488+00:00"
+          },
           "live_websocket": true
         },
         "created_at": "2026-06-02T14:53:44.129517+04:00",
@@ -21689,8 +22600,8 @@
           "current_minute": null,
           "period": "",
           "odds_home": 1.9,
-          "odds_draw": 3.33,
-          "odds_away": 3.96,
+          "odds_draw": 3.34,
+          "odds_away": 3.95,
           "odds_over_15": 1.32,
           "odds_over_25": 2.02,
           "odds_over_35": 3.5,
@@ -21806,9 +22717,25 @@
               }
             }
           },
-          "funfacts": null,
+          "funfacts": [
+            {
+              "type_id": 24,
+              "sentence": "AC Goianiense's away record this season: 2-3-2."
+            },
+            {
+              "type_id": 25,
+              "sentence": "Robson is Gremio Novorizontino's top scorer with 8 goals. Leo Jaco has scored 4 times for AC Goianiense."
+            },
+            {
+              "type_id": 25,
+              "sentence": "Nilson Castrillon has more yellow cards (4) than any other player at Gremio Novorizontino. Cristiano Claudinei Nogueira has collected 5 for AC Goianiense."
+            }
+          ],
           "sr_stats": null,
-          "ai_preview": null,
+          "ai_preview": {
+            "text": "**Novorizontino's form is absolutely clinical right now—three wins in their last five matches, and they're hosting a streaky Atlético Goianiense outfit.** This is the kind of Serie B clash where home advantage carries real weight. 🔥\n\nGrêmio Novorizontino has been sharp on their patch, grinding out victories with some draws mixed in. Atlético Goianiense, meanwhile, has been the definition of inconsistent—two wins but three draws suggest a team that can't quite find its rhythm away from home.\n\nKey storylines:\n\n- **Novorizontino's attack vs. Atlético's leaky defense**: Reidiney and Carlão leading the charge for the hosts against a visiting backline that's conceded in stretches.\n- **Rômulo and L. Naldi dictating tempo**: Novorizontino's midfield has looked composed; they'll need that control to neutralize Cristiano and G. Soares.\n- **Away-day jitters for Atlético**: Three draws in five is a red flag when you're traveling to a fortress.\n\nExpected lineups:\n\n- **Grêmio Novorizontino**: Jordi, Patrick, Carlinhos, Dantas, M. Jesus, Rômulo, L. Naldi, Robson, M. Bianqui, Carlão, Reidiney\n- **Atlético Goianiense**: P. Vítor, Ewerthon, Tito, G. Lopes, J. Barreto, G. Soares, Cristiano, Gustavo Coutinho, Guilherme Marques, I. Henrique, L. Jacó\n\nBest picks:\n\n- **Total Goals Under 3.5**: Under 3.5 goals\n\nPrediction: **2-0 Novorizontino**. Home form is clicking, and Atlético looks vulnerable on the road.",
+            "generated_at": "2026-07-03T19:45:48.184500+00:00"
+          },
           "live_websocket": true
         },
         "created_at": "2026-06-02T14:53:43.792669+04:00",
@@ -22022,9 +22949,25 @@
               }
             }
           },
-          "funfacts": null,
+          "funfacts": [
+            {
+              "type_id": 25,
+              "sentence": "Bruno Santos de Oliveira is Londrina's top scorer with 9 goals. Mikael has scored 10 times for CR Brasil."
+            },
+            {
+              "type_id": 25,
+              "sentence": "Iago Teles Da Silva has more yellow cards (5) than any other player at Londrina. Danielzinho has collected 6 for CR Brasil."
+            },
+            {
+              "type_id": 26,
+              "sentence": "A year ago, CR Brasil were number 10 in the table with 21 points. Now they are number 14 with 19 points."
+            }
+          ],
           "sr_stats": null,
-          "ai_preview": null,
+          "ai_preview": {
+            "text": "**Londrina host Brasil in a Serie B scrap where form and fixture momentum clash.** 🔥 Londrina's been sharper lately—two wins in their last five and three straight home bangers—but Brasil ground out a win last time and arrive steadier than the scoreline suggests.\n\nLondrina's riding the home crowd energy with recent attacking victories, while Brasil's defensive solidity (draws against Fortaleza and Atlético Goianiense) hints at a tighter, lower-scoring afternoon than the hosts might want.\n\nKey storylines:\n\n- **Londrina's** E. Rodriguez, B. Santos and C. Maia spearhead an in-form attack that's scored three or more in back-to-back home games\n- **Brasil's** midfield trio of P. Castro, Thiaguinho and Crystopher will need to control tempo and break up Londrina's rhythm\n- Expect a defensive battle—Brasil's recent form leans towards structure over fireworks\n\nExpected lineups:\n\n- **Londrina**: Kozlinski, G. Lacerda, Y. Lincoln, K. Leonardo, A. Dhominique, A. Luiz, L. Marques, B. Santos, Iago, E. Rodriguez, C. Maia\n- **Clube De Regatas Brasil**: Matheus Albino, V. Caetano, H. Santos, L. Lovat, F. Alemão, P. Castro, Thiaguinho, Crystopher, Mikael, D. Belmonte, D. Hereda\n\nBest picks:\n\n- **Total Goals 3.5**: Under 3.5 goals\n\nPrediction:\n\n**1-1 draw** leans into both sides' recent defensive discipline, though Londrina's home edge offers a slight coin flip.",
+            "generated_at": "2026-07-03T19:45:42.884710+00:00"
+          },
           "live_websocket": true
         },
         "created_at": "2026-06-02T14:53:44.477805+04:00",
@@ -22213,7 +23156,20 @@
               }
             }
           },
-          "funfacts": null,
+          "funfacts": [
+            {
+              "type_id": 2,
+              "sentence": "Indy Eleven haven't won any of their last 5 games against Charleston."
+            },
+            {
+              "type_id": 24,
+              "sentence": "Indy Eleven's home record this season: 5-1-0."
+            },
+            {
+              "type_id": 1,
+              "sentence": "Charleston haven't lost in their last 6 games."
+            }
+          ],
           "sr_stats": null,
           "ai_preview": null,
           "live_websocket": true
@@ -22318,16 +23274,16 @@
           "away_score_ht": null,
           "current_minute": null,
           "period": "",
-          "odds_home": 15.18,
-          "odds_draw": 6.65,
+          "odds_home": 15.47,
+          "odds_draw": 6.64,
           "odds_away": 1.2,
           "odds_over_15": 1.21,
           "odds_over_25": 1.69,
-          "odds_over_35": 2.75,
-          "odds_under_15": 4.14,
-          "odds_under_25": 2.11,
-          "odds_under_35": 1.43,
-          "odds_btts_yes": 2.6,
+          "odds_over_35": 2.73,
+          "odds_under_15": 4.16,
+          "odds_under_25": 2.12,
+          "odds_under_35": 1.44,
+          "odds_btts_yes": 2.59,
           "odds_btts_no": 1.45,
           "actual_home_xg": null,
           "actual_away_xg": null,
@@ -22711,17 +23667,17 @@
           "away_score_ht": null,
           "current_minute": null,
           "period": "",
-          "odds_home": 1.53,
-          "odds_draw": 3.95,
+          "odds_home": 1.52,
+          "odds_draw": 3.97,
           "odds_away": 5.32,
           "odds_over_15": 1.24,
-          "odds_over_25": 1.79,
-          "odds_over_35": 2.93,
-          "odds_under_15": 3.6,
-          "odds_under_25": 1.93,
-          "odds_under_35": 1.35,
+          "odds_over_25": 1.77,
+          "odds_over_35": 2.89,
+          "odds_under_15": 3.62,
+          "odds_under_25": 1.95,
+          "odds_under_35": 1.36,
           "odds_btts_yes": 1.85,
-          "odds_btts_no": 1.84,
+          "odds_btts_no": 1.86,
           "actual_home_xg": null,
           "actual_away_xg": null,
           "home_xg_live": null,
@@ -23135,8 +24091,8 @@
           "away_score_ht": null,
           "current_minute": null,
           "period": "",
-          "odds_home": 1.57,
-          "odds_draw": 3.87,
+          "odds_home": 1.58,
+          "odds_draw": 3.86,
           "odds_away": 4.91,
           "odds_over_15": 1.23,
           "odds_over_25": 1.76,
@@ -23909,7 +24865,7 @@
           "odds_under_25": 2.14,
           "odds_under_35": 1.44,
           "odds_btts_yes": 1.63,
-          "odds_btts_no": 2.14,
+          "odds_btts_no": 2.13,
           "actual_home_xg": null,
           "actual_away_xg": null,
           "home_xg_live": null,
@@ -24735,8 +25691,8 @@
           "away_score_ht": null,
           "current_minute": null,
           "period": "",
-          "odds_home": 2.37,
-          "odds_draw": 3.25,
+          "odds_home": 2.38,
+          "odds_draw": 3.26,
           "odds_away": 2.86,
           "odds_over_15": 1.33,
           "odds_over_25": 2.04,
@@ -24924,11 +25880,11 @@
           "current_minute": null,
           "period": "",
           "odds_home": 1.9,
-          "odds_draw": 3.36,
+          "odds_draw": 3.37,
           "odds_away": 3.96,
           "odds_over_15": 1.33,
           "odds_over_25": 2.05,
-          "odds_over_35": 3.58,
+          "odds_over_35": 3.57,
           "odds_under_15": 3.07,
           "odds_under_25": 1.72,
           "odds_under_35": 1.25,
@@ -25116,7 +26072,7 @@
           "away_score_ht": null,
           "current_minute": null,
           "period": "",
-          "odds_home": 6.58,
+          "odds_home": 6.56,
           "odds_draw": 4.11,
           "odds_away": 1.47,
           "odds_over_15": 1.28,
@@ -25126,7 +26082,7 @@
           "odds_under_25": 1.83,
           "odds_under_35": 1.3,
           "odds_btts_yes": 2.04,
-          "odds_btts_no": 1.7,
+          "odds_btts_no": 1.71,
           "actual_home_xg": null,
           "actual_away_xg": null,
           "home_xg_live": null,
