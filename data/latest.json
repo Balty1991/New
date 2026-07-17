@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-17T16:58:18.498859+00:00",
+  "generated_at": "2026-07-17T18:03:56.465109+00:00",
   "date_from": "2026-07-17",
   "date_to": "2026-07-20",
   "matches": [
@@ -22017,18 +22017,27 @@
       "source": "GitHub Actions cache"
     },
     {
-      "id": 218949,
-      "home": "Leyton Orient",
-      "away": "Lincoln City",
+      "id": 218950,
+      "home": "Annecy FC",
+      "away": "FC Sion",
       "league": "Club Friendlies",
       "date": "2026-07-17T19:00:00+04:00",
       "prediction": null,
       "source": "GitHub Actions cache"
     },
     {
-      "id": 218950,
-      "home": "Annecy FC",
-      "away": "FC Sion",
+      "id": 218948,
+      "home": "Montpellier",
+      "away": "Le Puy-en-Velay",
+      "league": "Club Friendlies",
+      "date": "2026-07-17T19:00:00+04:00",
+      "prediction": null,
+      "source": "GitHub Actions cache"
+    },
+    {
+      "id": 218952,
+      "home": "Wolfsberger AC",
+      "away": "Kapfenberger SV",
       "league": "Club Friendlies",
       "date": "2026-07-17T19:00:00+04:00",
       "prediction": null,
@@ -22053,18 +22062,9 @@
       "source": "GitHub Actions cache"
     },
     {
-      "id": 218952,
-      "home": "Wolfsberger AC",
-      "away": "Kapfenberger SV",
-      "league": "Club Friendlies",
-      "date": "2026-07-17T19:00:00+04:00",
-      "prediction": null,
-      "source": "GitHub Actions cache"
-    },
-    {
-      "id": 218948,
-      "home": "Montpellier",
-      "away": "Le Puy-en-Velay",
+      "id": 218949,
+      "home": "Leyton Orient",
+      "away": "Lincoln City",
       "league": "Club Friendlies",
       "date": "2026-07-17T19:00:00+04:00",
       "prediction": null,
@@ -22141,13 +22141,13 @@
           "round_number": 1,
           "round_name": "",
           "group_name": null,
-          "status": "2nd_half",
-          "home_score": 1,
+          "status": "finished",
+          "home_score": 2,
           "away_score": 2,
           "home_score_ht": 0,
           "away_score_ht": 2,
-          "current_minute": 65,
-          "period": "2T",
+          "current_minute": 90,
+          "period": "FT",
           "odds_home": 2.34,
           "odds_draw": 3.02,
           "odds_away": 3.1,
@@ -22168,10 +22168,10 @@
           "is_local_derby": false,
           "is_neutral_ground": null,
           "travel_distance_km": 364,
-          "weather_code": 0,
+          "weather_code": 1,
           "wind_speed": 2.2,
           "temperature_c": 32,
-          "pitch_condition": null,
+          "pitch_condition": 1,
           "attendance": null,
           "referee": null,
           "home_coach": {
@@ -22214,13 +22214,129 @@
           },
           "incidents": [
             {
-              "text": "Second half",
+              "text": "FT",
               "type": "period",
               "minute": 90,
-              "is_live": true,
+              "is_live": false,
               "added_time": 999,
               "away_score": 2,
-              "home_score": 1
+              "home_score": 2
+            },
+            {
+              "type": "injuryTime",
+              "length": 6,
+              "minute": 90
+            },
+            {
+              "type": "goal",
+              "minute": 88,
+              "player": "C. Merloi",
+              "is_home": true,
+              "sequence": [
+                {
+                  "gk": {
+                    "x": 99.7,
+                    "y": 48
+                  },
+                  "gm": {
+                    "x": 55.38,
+                    "y": 43
+                  },
+                  "pid": 921376,
+                  "pos": {
+                    "x": 97.3,
+                    "y": 45.3
+                  },
+                  "body": "left-foot",
+                  "event": "goal",
+                  "player": "C. Merloi"
+                }
+              ],
+              "goal_type": "regular",
+              "player_id": 921376,
+              "added_time": null,
+              "away_score": 2,
+              "home_score": 2
+            },
+            {
+              "type": "substitution",
+              "minute": 86,
+              "is_home": true,
+              "player_in": "D. Toma",
+              "added_time": null,
+              "player_out": "L. Cvek",
+              "player_in_id": 965947,
+              "player_out_id": 576634
+            },
+            {
+              "type": "substitution",
+              "minute": 86,
+              "is_home": true,
+              "player_in": "M. Onișa",
+              "added_time": null,
+              "player_out": "I. Gheorghe",
+              "player_in_id": 970900,
+              "player_out_id": 887857
+            },
+            {
+              "type": "substitution",
+              "minute": 86,
+              "is_home": true,
+              "player_in": "F. Haită",
+              "added_time": null,
+              "player_out": "R. Guțea",
+              "player_in_id": 1034951,
+              "player_out_id": 1444434
+            },
+            {
+              "type": "substitution",
+              "minute": 86,
+              "is_home": false,
+              "player_in": "D. Diaw",
+              "added_time": null,
+              "player_out": "E. Papa",
+              "player_in_id": 831185,
+              "player_out_id": 888276
+            },
+            {
+              "type": "substitution",
+              "minute": 86,
+              "is_home": false,
+              "player_in": "J. Marković",
+              "added_time": null,
+              "player_out": "A. Dumiter",
+              "player_in_id": 867494,
+              "player_out_id": 994193
+            },
+            {
+              "type": "substitution",
+              "minute": 75,
+              "is_home": false,
+              "player_in": "Ş. Bodişteanu",
+              "added_time": null,
+              "player_out": "Z. Mitrov",
+              "player_in_id": 999025,
+              "player_out_id": 1067388
+            },
+            {
+              "type": "substitution",
+              "minute": 75,
+              "is_home": true,
+              "player_in": "C. Merloi",
+              "added_time": null,
+              "player_out": "M. Schieb",
+              "player_in_id": 921376,
+              "player_out_id": 812819
+            },
+            {
+              "type": "substitution",
+              "minute": 68,
+              "is_home": false,
+              "player_in": "C. Petro",
+              "added_time": null,
+              "player_out": "H. Ongenda",
+              "player_in_id": 1006041,
+              "player_out_id": 191174
             },
             {
               "type": "substitution",
@@ -22415,88 +22531,94 @@
           ],
           "live_stats": {
             "away": {
-              "duels": 49,
-              "fouls": 7,
-              "passes": 304,
-              "crosses": "1/4 (25%)",
-              "tackles": 15,
-              "dribbles": "1/6 (17%)",
-              "offsides": 1,
-              "throw_ins": 18,
-              "clearances": 17,
-              "free_kicks": 6,
-              "goal_kicks": 8,
-              "long_balls": "20/58 (34%)",
-              "recoveries": 39,
-              "big_chances": 3,
-              "tackles_won": 67,
-              "total_saves": 1,
-              "total_shots": 6,
-              "aerial_duels": "8/18 (44%)",
+              "duels": 47,
+              "fouls": 12,
+              "passes": 398,
+              "crosses": "2/5 (40%)",
+              "tackles": 23,
+              "dribbles": "2/10 (20%)",
+              "offsides": 3,
+              "big_saves": 1,
+              "throw_ins": 20,
+              "clearances": 31,
+              "free_kicks": 8,
+              "goal_kicks": 13,
+              "long_balls": "25/73 (34%)",
+              "recoveries": 59,
+              "big_chances": 4,
+              "high_claims": 1,
+              "tackles_won": 70,
+              "total_saves": 5,
+              "total_shots": 11,
+              "aerial_duels": "14/29 (48%)",
               "corner_kicks": 1,
-              "dispossessed": 6,
-              "ground_duels": "22/43 (51%)",
+              "dispossessed": 9,
+              "ground_duels": "33/71 (46%)",
               "hit_woodwork": 0,
-              "blocked_shots": 2,
-              "interceptions": 8,
-              "total_tackles": 15,
-              "accurate_passes": 222,
-              "ball_possession": 52,
+              "blocked_shots": 5,
+              "interceptions": 9,
+              "through_balls": 1,
+              "total_tackles": 23,
+              "accurate_passes": 295,
+              "ball_possession": 50,
               "shots_on_target": 2,
-              "goalkeeper_saves": 1,
-              "shots_inside_box": 6,
-              "shots_off_target": 2,
-              "final_third_phase": "34/64 (53%)",
-              "shots_outside_box": 0,
-              "big_chances_missed": 1,
+              "goalkeeper_saves": 5,
+              "shots_inside_box": 8,
+              "shots_off_target": 4,
+              "final_third_phase": "52/89 (58%)",
+              "shots_outside_box": 3,
+              "big_chances_missed": 2,
               "big_chances_scored": 2,
-              "final_third_entries": 38,
+              "final_third_entries": 51,
               "errors_lead_to_a_goal": 0,
-              "errors_lead_to_a_shot": 2,
+              "errors_lead_to_a_shot": 3,
               "fouled_in_final_third": 1,
-              "touches_in_penalty_area": 10
+              "touches_in_penalty_area": 13
             },
             "home": {
-              "duels": 51,
-              "fouls": 6,
-              "passes": 271,
-              "crosses": "1/15 (7%)",
-              "tackles": 11,
-              "dribbles": "3/11 (27%)",
+              "duels": 52,
+              "fouls": 8,
+              "passes": 386,
+              "crosses": "5/25 (20%)",
+              "tackles": 17,
+              "dribbles": "8/21 (38%)",
               "offsides": 2,
-              "throw_ins": 17,
-              "clearances": 12,
-              "free_kicks": 7,
-              "goal_kicks": 4,
-              "long_balls": "27/45 (60%)",
-              "recoveries": 48,
-              "big_chances": 1,
-              "tackles_won": 36,
+              "big_saves": 0,
+              "throw_ins": 27,
+              "clearances": 15,
+              "free_kicks": 12,
+              "goal_kicks": 6,
+              "long_balls": "32/61 (52%)",
+              "recoveries": 62,
+              "big_chances": 5,
+              "high_claims": 0,
+              "tackles_won": 41,
               "total_saves": 0,
-              "total_shots": 10,
-              "aerial_duels": "10/18 (56%)",
-              "corner_kicks": 1,
-              "dispossessed": 7,
-              "ground_duels": "21/43 (49%)",
+              "total_shots": 20,
+              "aerial_duels": "15/30 (50%)",
+              "corner_kicks": 5,
+              "dispossessed": 10,
+              "ground_duels": "37/70 (53%)",
               "hit_woodwork": 0,
-              "blocked_shots": 2,
+              "blocked_shots": 4,
               "interceptions": 10,
-              "total_tackles": 11,
-              "accurate_passes": 211,
-              "ball_possession": 48,
-              "shots_on_target": 1,
+              "through_balls": 0,
+              "total_tackles": 17,
+              "accurate_passes": 296,
+              "ball_possession": 50,
+              "shots_on_target": 6,
               "goalkeeper_saves": 0,
-              "shots_inside_box": 7,
-              "shots_off_target": 7,
-              "final_third_phase": "51/77 (66%)",
-              "shots_outside_box": 3,
-              "big_chances_missed": 1,
-              "big_chances_scored": 0,
-              "final_third_entries": 43,
+              "shots_inside_box": 13,
+              "shots_off_target": 10,
+              "final_third_phase": "72/115 (63%)",
+              "shots_outside_box": 7,
+              "big_chances_missed": 4,
+              "big_chances_scored": 1,
+              "final_third_entries": 62,
               "errors_lead_to_a_goal": 1,
               "errors_lead_to_a_shot": 1,
-              "fouled_in_final_third": 1,
-              "touches_in_penalty_area": 18
+              "fouled_in_final_third": 2,
+              "touches_in_penalty_area": 31
             },
             "first_half": {
               "away": {
@@ -22524,6 +22646,7 @@
                 "hit_woodwork": 0,
                 "blocked_shots": 2,
                 "interceptions": 8,
+                "through_balls": 0,
                 "total_tackles": 9,
                 "accurate_passes": 176,
                 "ball_possession": 57,
@@ -22562,6 +22685,7 @@
                 "hit_woodwork": 0,
                 "blocked_shots": 2,
                 "interceptions": 8,
+                "through_balls": 0,
                 "total_tackles": 11,
                 "accurate_passes": 127,
                 "ball_possession": 43,
@@ -22578,80 +22702,82 @@
             },
             "second_half": {
               "away": {
-                "duels": 58,
-                "fouls": 2,
-                "passes": 83,
-                "crosses": "0/0 (0%)",
-                "tackles": 6,
-                "dribbles": "1/1 (100%)",
-                "offsides": 1,
-                "throw_ins": 3,
-                "clearances": 5,
-                "free_kicks": 1,
-                "goal_kicks": 6,
-                "long_balls": "4/24 (17%)",
-                "recoveries": 11,
-                "big_chances": 1,
-                "tackles_won": 67,
-                "total_saves": 1,
-                "total_shots": 1,
-                "aerial_duels": "3/9 (33%)",
+                "duels": 48,
+                "fouls": 7,
+                "passes": 177,
+                "crosses": "1/1 (100%)",
+                "tackles": 14,
+                "dribbles": "2/5 (40%)",
+                "offsides": 3,
+                "throw_ins": 5,
+                "clearances": 19,
+                "free_kicks": 3,
+                "goal_kicks": 11,
+                "long_balls": "9/39 (23%)",
+                "recoveries": 31,
+                "big_chances": 2,
+                "tackles_won": 71,
+                "total_saves": 5,
+                "total_shots": 6,
+                "aerial_duels": "9/20 (45%)",
                 "corner_kicks": 0,
-                "dispossessed": 0,
-                "ground_duels": "8/10 (80%)",
+                "dispossessed": 3,
+                "ground_duels": "19/38 (50%)",
                 "hit_woodwork": 0,
-                "blocked_shots": 0,
-                "interceptions": 0,
-                "total_tackles": 6,
-                "accurate_passes": 46,
+                "blocked_shots": 3,
+                "interceptions": 1,
+                "through_balls": 1,
+                "total_tackles": 14,
+                "accurate_passes": 119,
                 "ball_possession": 43,
                 "shots_on_target": 1,
-                "goalkeeper_saves": 1,
-                "shots_inside_box": 1,
-                "shots_off_target": 0,
-                "shots_outside_box": 0,
-                "big_chances_missed": 0,
+                "goalkeeper_saves": 5,
+                "shots_inside_box": 3,
+                "shots_off_target": 2,
+                "shots_outside_box": 3,
+                "big_chances_missed": 1,
                 "big_chances_scored": 1,
-                "final_third_entries": 7,
+                "final_third_entries": 20,
                 "fouled_in_final_third": 0
               },
               "home": {
-                "duels": 42,
-                "fouls": 1,
-                "passes": 104,
-                "crosses": "1/7 (14%)",
-                "tackles": 0,
-                "dribbles": "0/5 (0%)",
+                "duels": 50,
+                "fouls": 3,
+                "passes": 219,
+                "crosses": "5/17 (29%)",
+                "tackles": 6,
+                "dribbles": "5/15 (33%)",
                 "offsides": 1,
-                "throw_ins": 4,
-                "clearances": 1,
-                "free_kicks": 2,
-                "goal_kicks": 0,
-                "long_balls": "9/14 (64%)",
-                "recoveries": 16,
-                "big_chances": 1,
-                "tackles_won": 0,
+                "throw_ins": 14,
+                "clearances": 4,
+                "free_kicks": 7,
+                "goal_kicks": 2,
+                "long_balls": "14/30 (47%)",
+                "recoveries": 30,
+                "big_chances": 5,
+                "tackles_won": 50,
                 "total_saves": 0,
-                "total_shots": 5,
-                "aerial_duels": "6/9 (67%)",
-                "corner_kicks": 0,
-                "dispossessed": 1,
-                "ground_duels": "2/10 (20%)",
+                "total_shots": 15,
+                "aerial_duels": "11/21 (52%)",
+                "corner_kicks": 4,
+                "dispossessed": 4,
+                "ground_duels": "18/37 (49%)",
                 "hit_woodwork": 0,
-                "blocked_shots": 0,
+                "blocked_shots": 2,
                 "interceptions": 2,
-                "total_tackles": 0,
-                "accurate_passes": 84,
+                "through_balls": 0,
+                "total_tackles": 6,
+                "accurate_passes": 169,
                 "ball_possession": 57,
-                "shots_on_target": 1,
+                "shots_on_target": 6,
                 "goalkeeper_saves": 0,
-                "shots_inside_box": 4,
-                "shots_off_target": 4,
-                "shots_outside_box": 1,
-                "big_chances_missed": 1,
-                "big_chances_scored": 0,
-                "final_third_entries": 15,
-                "fouled_in_final_third": 1
+                "shots_inside_box": 10,
+                "shots_off_target": 7,
+                "shots_outside_box": 5,
+                "big_chances_missed": 4,
+                "big_chances_scored": 1,
+                "final_third_entries": 34,
+                "fouled_in_final_third": 2
               }
             }
           },
@@ -22662,7 +22788,7 @@
                   "name": "I. Anestis",
                   "goals": 0,
                   "api_id": 212832,
-                  "rating": null,
+                  "rating": 8.3,
                   "sub_in": null,
                   "sub_out": null,
                   "position": "G",
@@ -22673,15 +22799,13 @@
                   "replaces_player_id": null,
                   "replaced_by_player_id": null,
                   "specific_position": "GK",
-                  "positions_detailed": [
-                    "GK"
-                  ]
+                  "positions_detailed": []
                 },
                 {
                   "name": "N. Ilaș",
                   "goals": 0,
                   "api_id": 1494820,
-                  "rating": null,
+                  "rating": 6.7,
                   "sub_in": null,
                   "sub_out": null,
                   "position": "D",
@@ -22691,16 +22815,14 @@
                   "jersey_number": "73",
                   "replaces_player_id": null,
                   "replaced_by_player_id": null,
-                  "specific_position": "RB",
-                  "positions_detailed": [
-                    "RB"
-                  ]
+                  "specific_position": "DEF",
+                  "positions_detailed": []
                 },
                 {
                   "name": "G. Miron",
                   "goals": 0,
                   "api_id": 557342,
-                  "rating": null,
+                  "rating": 6.5,
                   "sub_in": null,
                   "sub_out": null,
                   "position": "D",
@@ -22710,16 +22832,14 @@
                   "jersey_number": "4",
                   "replaces_player_id": null,
                   "replaced_by_player_id": null,
-                  "specific_position": "CB",
-                  "positions_detailed": [
-                    "CB"
-                  ]
+                  "specific_position": "DEF",
+                  "positions_detailed": []
                 },
                 {
                   "name": "M. Diarra",
                   "goals": 0,
                   "api_id": 1461563,
-                  "rating": null,
+                  "rating": 6.5,
                   "sub_in": null,
                   "sub_out": null,
                   "position": "D",
@@ -22729,16 +22849,14 @@
                   "jersey_number": "94",
                   "replaces_player_id": null,
                   "replaced_by_player_id": null,
-                  "specific_position": "CB",
-                  "positions_detailed": [
-                    "CB"
-                  ]
+                  "specific_position": "DEF",
+                  "positions_detailed": []
                 },
                 {
                   "name": "R. Creț",
                   "goals": 0,
                   "api_id": 1404328,
-                  "rating": null,
+                  "rating": 6.1,
                   "sub_in": null,
                   "sub_out": null,
                   "position": "D",
@@ -22748,36 +22866,31 @@
                   "jersey_number": "5",
                   "replaces_player_id": null,
                   "replaced_by_player_id": null,
-                  "specific_position": "LB",
-                  "positions_detailed": [
-                    "LB"
-                  ]
+                  "specific_position": "DEF",
+                  "positions_detailed": []
                 },
                 {
                   "name": "E. Papa",
                   "goals": 0,
                   "api_id": 888276,
-                  "rating": null,
+                  "rating": 6.3,
                   "sub_in": null,
-                  "sub_out": null,
+                  "sub_out": 86,
                   "position": "M",
                   "red_card": false,
                   "player_id": 11214,
                   "yellow_card": false,
                   "jersey_number": "67",
                   "replaces_player_id": null,
-                  "replaced_by_player_id": null,
-                  "specific_position": "CM",
-                  "positions_detailed": [
-                    "CM",
-                    "DM"
-                  ]
+                  "replaced_by_player_id": 11774,
+                  "specific_position": "MID",
+                  "positions_detailed": []
                 },
                 {
                   "name": "M. Bordeianu",
                   "goals": 0,
                   "api_id": 82889,
-                  "rating": null,
+                  "rating": 5.5,
                   "sub_in": null,
                   "sub_out": null,
                   "position": "M",
@@ -22787,76 +22900,65 @@
                   "jersey_number": "37",
                   "replaces_player_id": null,
                   "replaced_by_player_id": null,
-                  "specific_position": "CM",
-                  "positions_detailed": [
-                    "CM",
-                    "DM"
-                  ]
+                  "specific_position": "MID",
+                  "positions_detailed": []
                 },
                 {
                   "name": "H. Ongenda",
                   "goals": 0,
                   "api_id": 191174,
-                  "rating": null,
+                  "rating": 6.9,
                   "sub_in": null,
-                  "sub_out": null,
+                  "sub_out": 68,
                   "position": "M",
                   "red_card": false,
                   "player_id": 11217,
                   "yellow_card": false,
                   "jersey_number": "26",
                   "replaces_player_id": null,
-                  "replaced_by_player_id": null,
-                  "specific_position": "AM",
-                  "positions_detailed": [
-                    "AM",
-                    "CM"
-                  ]
+                  "replaced_by_player_id": 11215,
+                  "specific_position": "MID",
+                  "positions_detailed": []
                 },
                 {
                   "name": "Z. Mitrov",
-                  "goals": 0,
+                  "goals": 1,
                   "api_id": 1067388,
-                  "rating": null,
+                  "rating": 7.9,
                   "sub_in": null,
-                  "sub_out": null,
+                  "sub_out": 75,
                   "position": "F",
                   "red_card": false,
                   "player_id": 11227,
                   "yellow_card": false,
                   "jersey_number": "11",
                   "replaces_player_id": null,
-                  "replaced_by_player_id": null,
-                  "specific_position": "LW",
-                  "positions_detailed": [
-                    "LW",
-                    "RW"
-                  ]
+                  "replaced_by_player_id": 11228,
+                  "specific_position": "FWD",
+                  "positions_detailed": []
                 },
                 {
                   "name": "A. Dumiter",
-                  "goals": 0,
+                  "goals": 1,
                   "api_id": 994193,
-                  "rating": null,
+                  "rating": 6.4,
                   "sub_in": null,
-                  "sub_out": null,
+                  "sub_out": 86,
                   "position": "F",
                   "red_card": false,
                   "player_id": 11224,
                   "yellow_card": false,
                   "jersey_number": "41",
                   "replaces_player_id": null,
-                  "replaced_by_player_id": null,
-                  "specific_position": "ST",
-                  "positions_detailed": [
-                    "ST"
-                  ]
+                  "replaced_by_player_id": 11727,
+                  "specific_position": "FWD",
+                  "positions_detailed": []
                 },
                 {
                   "name": "S. Mailat",
                   "goals": 0,
                   "api_id": 822240,
-                  "rating": null,
+                  "rating": 6.8,
                   "sub_in": null,
                   "sub_out": null,
                   "position": "F",
@@ -22866,14 +22968,80 @@
                   "jersey_number": "7",
                   "replaces_player_id": null,
                   "replaced_by_player_id": null,
-                  "specific_position": "LW",
-                  "positions_detailed": [
-                    "LW"
-                  ]
+                  "specific_position": "FWD",
+                  "positions_detailed": []
                 }
               ],
               "formation": "4-3-3",
               "substitutes": [
+                {
+                  "name": "C. Petro",
+                  "goals": 0,
+                  "api_id": 1006041,
+                  "rating": 6.7,
+                  "sub_in": 68,
+                  "sub_out": null,
+                  "position": "D",
+                  "red_card": false,
+                  "player_id": 11215,
+                  "yellow_card": false,
+                  "jersey_number": "3",
+                  "replaces_player_id": 11217,
+                  "replaced_by_player_id": null,
+                  "specific_position": "DEF",
+                  "positions_detailed": []
+                },
+                {
+                  "name": "Ş. Bodişteanu",
+                  "goals": 0,
+                  "api_id": 999025,
+                  "rating": 6.5,
+                  "sub_in": 75,
+                  "sub_out": null,
+                  "position": "M",
+                  "red_card": false,
+                  "player_id": 11228,
+                  "yellow_card": false,
+                  "jersey_number": "10",
+                  "replaces_player_id": 11227,
+                  "replaced_by_player_id": null,
+                  "specific_position": "MID",
+                  "positions_detailed": []
+                },
+                {
+                  "name": "D. Diaw",
+                  "goals": 0,
+                  "api_id": 831185,
+                  "rating": 6.2,
+                  "sub_in": 86,
+                  "sub_out": null,
+                  "position": "D",
+                  "red_card": false,
+                  "player_id": 11774,
+                  "yellow_card": false,
+                  "jersey_number": "23",
+                  "replaces_player_id": 11214,
+                  "replaced_by_player_id": null,
+                  "specific_position": "DEF",
+                  "positions_detailed": []
+                },
+                {
+                  "name": "J. Marković",
+                  "goals": 0,
+                  "api_id": 867494,
+                  "rating": 6.9,
+                  "sub_in": 86,
+                  "sub_out": null,
+                  "position": "F",
+                  "red_card": false,
+                  "player_id": 11727,
+                  "yellow_card": false,
+                  "jersey_number": "9",
+                  "replaces_player_id": 11224,
+                  "replaced_by_player_id": null,
+                  "specific_position": "FWD",
+                  "positions_detailed": []
+                },
                 {
                   "name": "I. Gurău",
                   "goals": 0,
@@ -22889,9 +23057,7 @@
                   "replaces_player_id": null,
                   "replaced_by_player_id": null,
                   "specific_position": "GK",
-                  "positions_detailed": [
-                    "GK"
-                  ]
+                  "positions_detailed": []
                 },
                 {
                   "name": "A. Țigănașu",
@@ -22907,10 +23073,8 @@
                   "jersey_number": "30",
                   "replaces_player_id": null,
                   "replaced_by_player_id": null,
-                  "specific_position": "LB",
-                  "positions_detailed": [
-                    "LB"
-                  ]
+                  "specific_position": "DEF",
+                  "positions_detailed": []
                 },
                 {
                   "name": "R. Sadiku",
@@ -22926,29 +23090,8 @@
                   "jersey_number": "44",
                   "replaces_player_id": null,
                   "replaced_by_player_id": null,
-                  "specific_position": "CB",
-                  "positions_detailed": [
-                    "CB"
-                  ]
-                },
-                {
-                  "name": "D. Diaw",
-                  "goals": 0,
-                  "api_id": 831185,
-                  "rating": null,
-                  "sub_in": null,
-                  "sub_out": null,
-                  "position": "D",
-                  "red_card": false,
-                  "player_id": 11774,
-                  "yellow_card": false,
-                  "jersey_number": "23",
-                  "replaces_player_id": null,
-                  "replaced_by_player_id": null,
-                  "specific_position": "CB",
-                  "positions_detailed": [
-                    "CB"
-                  ]
+                  "specific_position": "DEF",
+                  "positions_detailed": []
                 },
                 {
                   "name": "L. d. Vega",
@@ -22964,29 +23107,8 @@
                   "jersey_number": "21",
                   "replaces_player_id": null,
                   "replaced_by_player_id": null,
-                  "specific_position": "CM",
-                  "positions_detailed": [
-                    "CM"
-                  ]
-                },
-                {
-                  "name": "Ş. Bodişteanu",
-                  "goals": 0,
-                  "api_id": 999025,
-                  "rating": null,
-                  "sub_in": null,
-                  "sub_out": null,
-                  "position": "M",
-                  "red_card": false,
-                  "player_id": 11228,
-                  "yellow_card": false,
-                  "jersey_number": "10",
-                  "replaces_player_id": null,
-                  "replaced_by_player_id": null,
-                  "specific_position": "LW",
-                  "positions_detailed": [
-                    "LW"
-                  ]
+                  "specific_position": "MID",
+                  "positions_detailed": []
                 },
                 {
                   "name": "G. Sorodoc",
@@ -23004,47 +23126,6 @@
                   "replaced_by_player_id": null,
                   "specific_position": "MID",
                   "positions_detailed": []
-                },
-                {
-                  "name": "C. Petro",
-                  "goals": 0,
-                  "api_id": 1006041,
-                  "rating": null,
-                  "sub_in": null,
-                  "sub_out": null,
-                  "position": "D",
-                  "red_card": false,
-                  "player_id": 11215,
-                  "yellow_card": false,
-                  "jersey_number": "3",
-                  "replaces_player_id": null,
-                  "replaced_by_player_id": null,
-                  "specific_position": "CM",
-                  "positions_detailed": [
-                    "CM",
-                    "DM",
-                    "CB",
-                    "RB"
-                  ]
-                },
-                {
-                  "name": "J. Marković",
-                  "goals": 0,
-                  "api_id": 867494,
-                  "rating": null,
-                  "sub_in": null,
-                  "sub_out": null,
-                  "position": "F",
-                  "red_card": false,
-                  "player_id": 11727,
-                  "yellow_card": false,
-                  "jersey_number": "9",
-                  "replaces_player_id": null,
-                  "replaced_by_player_id": null,
-                  "specific_position": "ST",
-                  "positions_detailed": [
-                    "ST"
-                  ]
                 },
                 {
                   "name": "D. Ștefan",
@@ -23071,7 +23152,7 @@
                   "name": "M. Jurhar",
                   "goals": 0,
                   "api_id": 780258,
-                  "rating": null,
+                  "rating": 6.3,
                   "sub_in": null,
                   "sub_out": null,
                   "position": "G",
@@ -23082,35 +23163,30 @@
                   "replaces_player_id": null,
                   "replaced_by_player_id": null,
                   "specific_position": "GK",
-                  "positions_detailed": [
-                    "GK"
-                  ]
+                  "positions_detailed": []
                 },
                 {
                   "name": "M. Schieb",
                   "goals": 0,
                   "api_id": 812819,
-                  "rating": null,
+                  "rating": 6.2,
                   "sub_in": null,
-                  "sub_out": null,
+                  "sub_out": 75,
                   "position": "D",
                   "red_card": false,
                   "player_id": 52587,
                   "yellow_card": false,
                   "jersey_number": "19",
                   "replaces_player_id": null,
-                  "replaced_by_player_id": null,
-                  "specific_position": "RW",
-                  "positions_detailed": [
-                    "RW",
-                    "LW"
-                  ]
+                  "replaced_by_player_id": 52582,
+                  "specific_position": "DEF",
+                  "positions_detailed": []
                 },
                 {
                   "name": "R. Crişan",
                   "goals": 0,
                   "api_id": 810861,
-                  "rating": null,
+                  "rating": 6,
                   "sub_in": null,
                   "sub_out": null,
                   "position": "D",
@@ -23120,16 +23196,14 @@
                   "jersey_number": "27",
                   "replaces_player_id": null,
                   "replaced_by_player_id": null,
-                  "specific_position": "CB",
-                  "positions_detailed": [
-                    "CB"
-                  ]
+                  "specific_position": "DEF",
+                  "positions_detailed": []
                 },
                 {
                   "name": "D. Dumbrăvanu",
                   "goals": 0,
                   "api_id": 939306,
-                  "rating": null,
+                  "rating": 6.9,
                   "sub_in": null,
                   "sub_out": null,
                   "position": "D",
@@ -23139,16 +23213,14 @@
                   "jersey_number": "4",
                   "replaces_player_id": null,
                   "replaced_by_player_id": null,
-                  "specific_position": "CB",
-                  "positions_detailed": [
-                    "CB"
-                  ]
+                  "specific_position": "DEF",
+                  "positions_detailed": []
                 },
                 {
                   "name": "A. Suteu",
                   "goals": 0,
                   "api_id": 1142278,
-                  "rating": null,
+                  "rating": 8.2,
                   "sub_in": null,
                   "sub_out": null,
                   "position": "D",
@@ -23158,16 +23230,14 @@
                   "jersey_number": "30",
                   "replaces_player_id": null,
                   "replaced_by_player_id": null,
-                  "specific_position": "LB",
-                  "positions_detailed": [
-                    "LB"
-                  ]
+                  "specific_position": "DEF",
+                  "positions_detailed": []
                 },
                 {
                   "name": "M. Mamić",
                   "goals": 0,
                   "api_id": 1090028,
-                  "rating": null,
+                  "rating": 6.7,
                   "sub_in": null,
                   "sub_out": 57,
                   "position": "M",
@@ -23176,95 +23246,66 @@
                   "yellow_card": false,
                   "jersey_number": "23",
                   "replaces_player_id": null,
-                  "replaced_by_player_id": null,
-                  "specific_position": "RB",
-                  "positions_detailed": [
-                    "RB"
-                  ]
-                },
-                {
-                  "name": "L. Cvek",
-                  "goals": 0,
-                  "api_id": 576634,
-                  "rating": null,
-                  "sub_in": null,
-                  "sub_out": null,
-                  "position": "M",
-                  "red_card": false,
-                  "player_id": 52580,
-                  "yellow_card": false,
-                  "jersey_number": "40",
-                  "replaces_player_id": null,
-                  "replaced_by_player_id": null,
-                  "specific_position": "CM",
-                  "positions_detailed": [
-                    "CM",
-                    "DM"
-                  ]
+                  "replaced_by_player_id": 63987,
+                  "specific_position": "MID",
+                  "positions_detailed": []
                 },
                 {
                   "name": "I. Gheorghe",
                   "goals": 0,
                   "api_id": 887857,
-                  "rating": null,
+                  "rating": 7,
                   "sub_in": null,
-                  "sub_out": null,
+                  "sub_out": 86,
                   "position": "M",
                   "red_card": false,
                   "player_id": 52583,
                   "yellow_card": false,
                   "jersey_number": "8",
                   "replaces_player_id": null,
-                  "replaced_by_player_id": null,
-                  "specific_position": "LW",
-                  "positions_detailed": [
-                    "LW",
-                    "CM"
-                  ]
+                  "replaced_by_player_id": 52586,
+                  "specific_position": "MID",
+                  "positions_detailed": []
+                },
+                {
+                  "name": "L. Cvek",
+                  "goals": 0,
+                  "api_id": 576634,
+                  "rating": 6.4,
+                  "sub_in": null,
+                  "sub_out": 86,
+                  "position": "M",
+                  "red_card": false,
+                  "player_id": 52580,
+                  "yellow_card": false,
+                  "jersey_number": "40",
+                  "replaces_player_id": null,
+                  "replaced_by_player_id": 52589,
+                  "specific_position": "MID",
+                  "positions_detailed": []
                 },
                 {
                   "name": "R. Guțea",
                   "goals": 0,
                   "api_id": 1444434,
-                  "rating": null,
+                  "rating": 6.9,
                   "sub_in": null,
-                  "sub_out": null,
+                  "sub_out": 86,
                   "position": "M",
                   "red_card": false,
                   "player_id": 52579,
                   "yellow_card": false,
                   "jersey_number": "11",
                   "replaces_player_id": null,
-                  "replaced_by_player_id": null,
-                  "specific_position": "LM",
-                  "positions_detailed": [
-                    "LM"
-                  ]
-                },
-                {
-                  "name": "M. Babić",
-                  "goals": 0,
-                  "api_id": 795008,
-                  "rating": null,
-                  "sub_in": null,
-                  "sub_out": null,
-                  "position": "F",
-                  "red_card": false,
-                  "player_id": 52574,
-                  "yellow_card": false,
-                  "jersey_number": "9",
-                  "replaces_player_id": null,
-                  "replaced_by_player_id": null,
-                  "specific_position": "ST",
-                  "positions_detailed": [
-                    "ST"
-                  ]
+                  "replaced_by_player_id": 52585,
+                  "specific_position": "MID",
+                  "positions_detailed": []
                 },
                 {
                   "name": "M. Roman II",
                   "goals": 0,
                   "api_id": 71393,
-                  "rating": null,
+                  "rating": 6.8,
                   "sub_in": null,
                   "sub_out": null,
                   "position": "F",
@@ -23274,14 +23315,114 @@
                   "jersey_number": "90",
                   "replaces_player_id": null,
                   "replaced_by_player_id": null,
-                  "specific_position": "ST",
-                  "positions_detailed": [
-                    "ST"
-                  ]
+                  "specific_position": "FWD",
+                  "positions_detailed": []
+                },
+                {
+                  "name": "M. Babić",
+                  "goals": 0,
+                  "api_id": 795008,
+                  "rating": 6.6,
+                  "sub_in": null,
+                  "sub_out": null,
+                  "position": "F",
+                  "red_card": false,
+                  "player_id": 52574,
+                  "yellow_card": false,
+                  "jersey_number": "9",
+                  "replaces_player_id": null,
+                  "replaced_by_player_id": null,
+                  "specific_position": "FWD",
+                  "positions_detailed": []
                 }
               ],
               "formation": "4-4-2",
               "substitutes": [
+                {
+                  "name": "D. Haruț",
+                  "goals": 0,
+                  "api_id": 844579,
+                  "rating": 7,
+                  "sub_in": 57,
+                  "sub_out": null,
+                  "position": "D",
+                  "red_card": false,
+                  "player_id": 63987,
+                  "yellow_card": false,
+                  "jersey_number": "5",
+                  "replaces_player_id": 63986,
+                  "replaced_by_player_id": null,
+                  "specific_position": "DEF",
+                  "positions_detailed": []
+                },
+                {
+                  "name": "C. Merloi",
+                  "goals": 1,
+                  "api_id": 921376,
+                  "rating": 7.6,
+                  "sub_in": 75,
+                  "sub_out": null,
+                  "position": "F",
+                  "red_card": false,
+                  "player_id": 52582,
+                  "yellow_card": false,
+                  "jersey_number": "10",
+                  "replaces_player_id": 52587,
+                  "replaced_by_player_id": null,
+                  "specific_position": "FWD",
+                  "positions_detailed": []
+                },
+                {
+                  "name": "D. Toma",
+                  "goals": 0,
+                  "api_id": 965947,
+                  "rating": 6.6,
+                  "sub_in": 86,
+                  "sub_out": null,
+                  "position": "M",
+                  "red_card": false,
+                  "player_id": 52589,
+                  "yellow_card": false,
+                  "jersey_number": "7",
+                  "replaces_player_id": 52580,
+                  "replaced_by_player_id": null,
+                  "specific_position": "MID",
+                  "positions_detailed": []
+                },
+                {
+                  "name": "M. Onișa",
+                  "goals": 0,
+                  "api_id": 970900,
+                  "rating": 6.7,
+                  "sub_in": 86,
+                  "sub_out": null,
+                  "position": "M",
+                  "red_card": false,
+                  "player_id": 52586,
+                  "yellow_card": false,
+                  "jersey_number": "44",
+                  "replaces_player_id": 52583,
+                  "replaced_by_player_id": null,
+                  "specific_position": "MID",
+                  "positions_detailed": []
+                },
+                {
+                  "name": "F. Haită",
+                  "goals": 0,
+                  "api_id": 1034951,
+                  "rating": 6.6,
+                  "sub_in": 86,
+                  "sub_out": null,
+                  "position": "M",
+                  "red_card": false,
+                  "player_id": 52585,
+                  "yellow_card": false,
+                  "jersey_number": "80",
+                  "replaces_player_id": 52579,
+                  "replaced_by_player_id": null,
+                  "specific_position": "MID",
+                  "positions_detailed": []
+                },
                 {
                   "name": "E. Chioveanu",
                   "goals": 0,
@@ -23297,29 +23438,7 @@
                   "replaces_player_id": null,
                   "replaced_by_player_id": null,
                   "specific_position": "GK",
-                  "positions_detailed": [
-                    "GK"
-                  ]
-                },
-                {
-                  "name": "D. Haruț",
-                  "goals": 0,
-                  "api_id": 844579,
-                  "rating": null,
-                  "sub_in": 57,
-                  "sub_out": null,
-                  "position": "D",
-                  "red_card": false,
-                  "player_id": 63987,
-                  "yellow_card": false,
-                  "jersey_number": "5",
-                  "replaces_player_id": null,
-                  "replaced_by_player_id": null,
-                  "specific_position": "CB",
-                  "positions_detailed": [
-                    "CB",
-                    "RB"
-                  ]
+                  "positions_detailed": []
                 },
                 {
                   "name": "D. Kiki",
@@ -23335,29 +23454,8 @@
                   "jersey_number": "25",
                   "replaces_player_id": null,
                   "replaced_by_player_id": null,
-                  "specific_position": "LB",
-                  "positions_detailed": [
-                    "LB"
-                  ]
-                },
-                {
-                  "name": "D. Toma",
-                  "goals": 0,
-                  "api_id": 965947,
-                  "rating": null,
-                  "sub_in": null,
-                  "sub_out": null,
-                  "position": "M",
-                  "red_card": false,
-                  "player_id": 52589,
-                  "yellow_card": false,
-                  "jersey_number": "7",
-                  "replaces_player_id": null,
-                  "replaced_by_player_id": null,
-                  "specific_position": "CM",
-                  "positions_detailed": [
-                    "CM"
-                  ]
+                  "specific_position": "DEF",
+                  "positions_detailed": []
                 },
                 {
                   "name": "R. Petculescu",
@@ -23373,29 +23471,8 @@
                   "jersey_number": "21",
                   "replaces_player_id": null,
                   "replaced_by_player_id": null,
-                  "specific_position": "ST",
-                  "positions_detailed": [
-                    "ST"
-                  ]
-                },
-                {
-                  "name": "M. Onișa",
-                  "goals": 0,
-                  "api_id": 970900,
-                  "rating": null,
-                  "sub_in": null,
-                  "sub_out": null,
-                  "position": "M",
-                  "red_card": false,
-                  "player_id": 52586,
-                  "yellow_card": false,
-                  "jersey_number": "44",
-                  "replaces_player_id": null,
-                  "replaced_by_player_id": null,
-                  "specific_position": "CM",
-                  "positions_detailed": [
-                    "CM"
-                  ]
+                  "specific_position": "FWD",
+                  "positions_detailed": []
                 },
                 {
                   "name": "M. Ștefan",
@@ -23415,44 +23492,6 @@
                   "positions_detailed": []
                 },
                 {
-                  "name": "C. Merloi",
-                  "goals": 0,
-                  "api_id": 921376,
-                  "rating": null,
-                  "sub_in": null,
-                  "sub_out": null,
-                  "position": "F",
-                  "red_card": false,
-                  "player_id": 52582,
-                  "yellow_card": false,
-                  "jersey_number": "10",
-                  "replaces_player_id": null,
-                  "replaced_by_player_id": null,
-                  "specific_position": "RW",
-                  "positions_detailed": [
-                    "RW"
-                  ]
-                },
-                {
-                  "name": "F. Haită",
-                  "goals": 0,
-                  "api_id": 1034951,
-                  "rating": null,
-                  "sub_in": null,
-                  "sub_out": null,
-                  "position": "M",
-                  "red_card": false,
-                  "player_id": 52585,
-                  "yellow_card": false,
-                  "jersey_number": "80",
-                  "replaces_player_id": null,
-                  "replaced_by_player_id": null,
-                  "specific_position": "RW",
-                  "positions_detailed": [
-                    "RW"
-                  ]
-                },
-                {
                   "name": "I. Vencu",
                   "goals": 0,
                   "api_id": 1906920,
@@ -23466,16 +23505,384 @@
                   "jersey_number": "99",
                   "replaces_player_id": null,
                   "replaced_by_player_id": null,
-                  "specific_position": "ST",
-                  "positions_detailed": [
-                    "ST"
-                  ]
+                  "specific_position": "MID",
+                  "positions_detailed": []
                 }
               ]
             },
             "confirmed": true
           },
           "shotmap": [
+            {
+              "gm": {
+                "x": 0,
+                "y": 46.1,
+                "z": 19
+              },
+              "xg": null,
+              "gml": "low-right",
+              "min": 90,
+              "pid": 867494,
+              "pos": {
+                "x": 7.6,
+                "y": 42.9,
+                "z": 0
+              },
+              "sit": "fast-break",
+              "body": "left-foot",
+              "home": false,
+              "type": "block",
+              "xgot": null,
+              "added": 7,
+              "block": {
+                "x": 0.7,
+                "y": 52.9,
+                "z": 0
+              }
+            },
+            {
+              "gm": {
+                "x": 0,
+                "y": 41.5,
+                "z": 66.7
+              },
+              "xg": null,
+              "gml": "high-right",
+              "min": 90,
+              "pid": 82889,
+              "pos": {
+                "x": 21.6,
+                "y": 36.6,
+                "z": 0
+              },
+              "sit": "regular",
+              "body": "right-foot",
+              "home": false,
+              "type": "miss",
+              "xgot": null,
+              "added": 4
+            },
+            {
+              "gm": {
+                "x": 0,
+                "y": 47.4,
+                "z": 19
+              },
+              "xg": null,
+              "gml": "low-right",
+              "min": 90,
+              "pid": 1006041,
+              "pos": {
+                "x": 12.9,
+                "y": 52.3,
+                "z": 0
+              },
+              "sit": "assisted",
+              "body": "right-foot",
+              "home": false,
+              "type": "block",
+              "xgot": null,
+              "added": 4,
+              "block": {
+                "x": 10.6,
+                "y": 52.4,
+                "z": 0
+              }
+            },
+            {
+              "gm": {
+                "x": 0,
+                "y": 51.3,
+                "z": 2.5
+              },
+              "xg": null,
+              "gml": "low-centre",
+              "min": 90,
+              "pid": 795008,
+              "pos": {
+                "x": 10,
+                "y": 56.2,
+                "z": 0
+              },
+              "sit": "regular",
+              "body": "right-foot",
+              "home": true,
+              "type": "save",
+              "xgot": null,
+              "added": 3,
+              "block": {
+                "x": 6,
+                "y": 53.6,
+                "z": 0
+              }
+            },
+            {
+              "gm": {
+                "x": 0,
+                "y": 49,
+                "z": 34.2
+              },
+              "xg": null,
+              "gml": "high-centre",
+              "min": 88,
+              "pid": 921376,
+              "pos": {
+                "x": 2.7,
+                "y": 54.7,
+                "z": 0
+              },
+              "sit": "regular",
+              "body": "left-foot",
+              "home": true,
+              "type": "goal",
+              "xgot": null,
+              "gtype": "regular"
+            },
+            {
+              "gm": {
+                "x": 0,
+                "y": 49.2,
+                "z": 19
+              },
+              "xg": null,
+              "gml": "low-centre",
+              "min": 88,
+              "pid": 795008,
+              "pos": {
+                "x": 7.7,
+                "y": 49.7,
+                "z": 0
+              },
+              "sit": "assisted",
+              "body": "left-foot",
+              "home": true,
+              "type": "block",
+              "xgot": null,
+              "block": {
+                "x": 3.7,
+                "y": 49.8,
+                "z": 0
+              }
+            },
+            {
+              "gm": {
+                "x": 0,
+                "y": 48,
+                "z": 9.5
+              },
+              "xg": null,
+              "gml": "low-right",
+              "min": 87,
+              "pid": 921376,
+              "pos": {
+                "x": 28,
+                "y": 42.6,
+                "z": 0
+              },
+              "sit": "regular",
+              "body": "left-foot",
+              "home": true,
+              "type": "save",
+              "xgot": null,
+              "block": {
+                "x": 1.9,
+                "y": 48.4,
+                "z": 0
+              }
+            },
+            {
+              "gm": {
+                "x": 0,
+                "y": 53.6,
+                "z": 69.4
+              },
+              "xg": null,
+              "gml": "high",
+              "min": 85,
+              "pid": 1444434,
+              "pos": {
+                "x": 25.5,
+                "y": 39.7,
+                "z": 0
+              },
+              "sit": "corner",
+              "body": "right-foot",
+              "home": true,
+              "type": "miss",
+              "xgot": null
+            },
+            {
+              "gm": {
+                "x": 0,
+                "y": 53.6,
+                "z": 61.1
+              },
+              "xg": null,
+              "gml": "high",
+              "min": 77,
+              "pid": 939306,
+              "pos": {
+                "x": 2.7,
+                "y": 46.6,
+                "z": 0
+              },
+              "sit": "corner",
+              "body": "head",
+              "home": true,
+              "type": "miss",
+              "xgot": null
+            },
+            {
+              "gm": {
+                "x": 0,
+                "y": 54,
+                "z": 29.8
+              },
+              "xg": null,
+              "gml": "high-left",
+              "min": 76,
+              "pid": 1142278,
+              "pos": {
+                "x": 31.8,
+                "y": 46.8,
+                "z": 0
+              },
+              "sit": "regular",
+              "body": "right-foot",
+              "home": true,
+              "type": "save",
+              "xgot": null,
+              "block": {
+                "x": 2.8,
+                "y": 49.6,
+                "z": 0
+              }
+            },
+            {
+              "gm": {
+                "x": 0,
+                "y": 48.2,
+                "z": 80.6
+              },
+              "xg": null,
+              "gml": "high",
+              "min": 69,
+              "pid": 82889,
+              "pos": {
+                "x": 27.1,
+                "y": 49.8,
+                "z": 0
+              },
+              "sit": "assisted",
+              "body": "right-foot",
+              "home": false,
+              "type": "miss",
+              "xgot": null
+            },
+            {
+              "gm": {
+                "x": 0,
+                "y": 52.9,
+                "z": 19
+              },
+              "xg": null,
+              "gml": "low-left",
+              "min": 67,
+              "pid": 994193,
+              "pos": {
+                "x": 18.8,
+                "y": 49.9,
+                "z": 0
+              },
+              "sit": "assisted",
+              "body": "left-foot",
+              "home": false,
+              "type": "block",
+              "xgot": null,
+              "block": {
+                "x": 14.6,
+                "y": 49.3,
+                "z": 0
+              }
+            },
+            {
+              "gm": {
+                "x": 0,
+                "y": 51.3,
+                "z": 15.8
+              },
+              "xg": null,
+              "gml": "low-centre",
+              "min": 66,
+              "pid": 71393,
+              "pos": {
+                "x": 3.9,
+                "y": 46.1,
+                "z": 0
+              },
+              "sit": "assisted",
+              "body": "left-foot",
+              "home": true,
+              "type": "save",
+              "xgot": null,
+              "block": {
+                "x": 1.5,
+                "y": 47.8,
+                "z": 0
+              }
+            },
+            {
+              "gm": {
+                "x": 0,
+                "y": 67.7,
+                "z": 2.8
+              },
+              "xg": null,
+              "gml": "left",
+              "min": 66,
+              "pid": 812819,
+              "pos": {
+                "x": 10.9,
+                "y": 63,
+                "z": 0
+              },
+              "sit": "assisted",
+              "body": "head",
+              "home": true,
+              "type": "miss",
+              "xgot": null,
+              "block": {
+                "x": 4.1,
+                "y": 46,
+                "z": 0
+              }
+            },
+            {
+              "gm": {
+                "x": 0,
+                "y": 51.8,
+                "z": 19
+              },
+              "xg": null,
+              "gml": "low-left",
+              "min": 64,
+              "pid": 71393,
+              "pos": {
+                "x": 15.2,
+                "y": 17.7,
+                "z": 0
+              },
+              "sit": "assisted",
+              "body": "left-foot",
+              "home": true,
+              "type": "block",
+              "xgot": null,
+              "block": {
+                "x": 12.2,
+                "y": 23.8,
+                "z": 0
+              }
+            },
             {
               "gm": {
                 "x": 0,
@@ -24139,11 +24546,364 @@
             },
             {
               "m": 66,
-              "v": 37
+              "v": 40
+            },
+            {
+              "m": 67,
+              "v": 25
+            },
+            {
+              "m": 68,
+              "v": 52
+            },
+            {
+              "m": 69,
+              "v": -29
+            },
+            {
+              "m": 70,
+              "v": 2
+            },
+            {
+              "m": 71,
+              "v": -1
+            },
+            {
+              "m": 72,
+              "v": 2
+            },
+            {
+              "m": 73,
+              "v": 17
+            },
+            {
+              "m": 74,
+              "v": 11
+            },
+            {
+              "m": 75,
+              "v": 18
+            },
+            {
+              "m": 76,
+              "v": 17
+            },
+            {
+              "m": 77,
+              "v": 54
+            },
+            {
+              "m": 78,
+              "v": 87
+            },
+            {
+              "m": 79,
+              "v": 66
+            },
+            {
+              "m": 80,
+              "v": 40
+            },
+            {
+              "m": 81,
+              "v": 16
+            },
+            {
+              "m": 82,
+              "v": 23
+            },
+            {
+              "m": 83,
+              "v": 11
+            },
+            {
+              "m": 84,
+              "v": 7
+            },
+            {
+              "m": 85,
+              "v": 11
+            },
+            {
+              "m": 86,
+              "v": 50
+            },
+            {
+              "m": 87,
+              "v": 34
+            },
+            {
+              "m": 88,
+              "v": 21
+            },
+            {
+              "m": 89,
+              "v": 51
+            },
+            {
+              "m": 90,
+              "v": 17
+            },
+            {
+              "m": 90.5,
+              "v": 21
             }
           ],
           "xg_per_minute": [],
-          "average_positions": null,
+          "average_positions": {
+            "away": [
+              {
+                "n": 41,
+                "x": 60.3,
+                "y": 49.2,
+                "pid": 994193,
+                "pos": "F",
+                "name": "A. Dumiter"
+              },
+              {
+                "n": 40,
+                "x": 56.7,
+                "y": 21.4,
+                "pid": 1067388,
+                "pos": "M",
+                "name": "Z. Mitrov"
+              },
+              {
+                "n": 54,
+                "x": 62.2,
+                "y": 76.4,
+                "pid": 822240,
+                "pos": "M",
+                "name": "S. Mailat"
+              },
+              {
+                "n": 50,
+                "x": 55.1,
+                "y": 61.7,
+                "pid": 191174,
+                "pos": "M",
+                "name": "H. Ongenda"
+              },
+              {
+                "n": 11,
+                "x": 61.9,
+                "y": 44.4,
+                "pid": 867494,
+                "pos": "F",
+                "name": "J. Marković"
+              },
+              {
+                "n": 19,
+                "x": 47.0,
+                "y": 28.5,
+                "pid": 999025,
+                "pos": "M",
+                "name": "Ş. Bodişteanu"
+              },
+              {
+                "n": 30,
+                "x": 48.9,
+                "y": 50.5,
+                "pid": 1006041,
+                "pos": "M",
+                "name": "C. Petro"
+              },
+              {
+                "n": 40,
+                "x": 48.2,
+                "y": 37.3,
+                "pid": 888276,
+                "pos": "M",
+                "name": "E. Papa"
+              },
+              {
+                "n": 8,
+                "x": 18,
+                "y": 61.5,
+                "pid": 831185,
+                "pos": "D",
+                "name": "D. Diaw"
+              },
+              {
+                "n": 74,
+                "x": 30.1,
+                "y": 65.9,
+                "pid": 1461563,
+                "pos": "D",
+                "name": "M. Diarra"
+              },
+              {
+                "n": 66,
+                "x": 6.0,
+                "y": 48.8,
+                "pid": 212832,
+                "pos": "G",
+                "name": "I. Anestis"
+              },
+              {
+                "n": 66,
+                "x": 46.4,
+                "y": 86.4,
+                "pid": 1404328,
+                "pos": "D",
+                "name": "R. Creț"
+              },
+              {
+                "n": 67,
+                "x": 32.5,
+                "y": 36.4,
+                "pid": 557342,
+                "pos": "D",
+                "name": "G. Miron"
+              },
+              {
+                "n": 96,
+                "x": 37.7,
+                "y": 47.2,
+                "pid": 82889,
+                "pos": "M",
+                "name": "M. Bordeianu"
+              },
+              {
+                "n": 68,
+                "x": 35.4,
+                "y": 13.1,
+                "pid": 1494820,
+                "pos": "D",
+                "name": "N. Ilaș"
+              }
+            ],
+            "home": [
+              {
+                "n": 30,
+                "x": 11.9,
+                "y": 51.8,
+                "pid": 780258,
+                "pos": "G",
+                "name": "M. Jurhar"
+              },
+              {
+                "n": 49,
+                "x": 64.7,
+                "y": 50.6,
+                "pid": 795008,
+                "pos": "F",
+                "name": "M. Babić"
+              },
+              {
+                "n": 30,
+                "x": 56.3,
+                "y": 19.8,
+                "pid": 1090028,
+                "pos": "D",
+                "name": "M. Mamić"
+              },
+              {
+                "n": 32,
+                "x": 45.1,
+                "y": 15.2,
+                "pid": 844579,
+                "pos": "D",
+                "name": "D. Haruț"
+              },
+              {
+                "n": 12,
+                "x": 59.0,
+                "y": 47.6,
+                "pid": 921376,
+                "pos": "M",
+                "name": "C. Merloi"
+              },
+              {
+                "n": 54,
+                "x": 48.0,
+                "y": 60.2,
+                "pid": 576634,
+                "pos": "M",
+                "name": "L. Cvek"
+              },
+              {
+                "n": 11,
+                "x": 62.4,
+                "y": 69.6,
+                "pid": 1034951,
+                "pos": "M",
+                "name": "F. Haită"
+              },
+              {
+                "n": 14,
+                "x": 44.5,
+                "y": 43.2,
+                "pid": 965947,
+                "pos": "M",
+                "name": "D. Toma"
+              },
+              {
+                "n": 11,
+                "x": 50.3,
+                "y": 65.8,
+                "pid": 970900,
+                "pos": "M",
+                "name": "M. Onișa"
+              },
+              {
+                "n": 70,
+                "x": 63.9,
+                "y": 83.9,
+                "pid": 1444434,
+                "pos": "M",
+                "name": "R. Guțea"
+              },
+              {
+                "n": 80,
+                "x": 35.6,
+                "y": 69.7,
+                "pid": 939306,
+                "pos": "D",
+                "name": "D. Dumbrăvanu"
+              },
+              {
+                "n": 52,
+                "x": 48.4,
+                "y": 16.3,
+                "pid": 812819,
+                "pos": "M",
+                "name": "M. Schieb"
+              },
+              {
+                "n": 55,
+                "x": 53.9,
+                "y": 37.3,
+                "pid": 887857,
+                "pos": "M",
+                "name": "I. Gheorghe"
+              },
+              {
+                "n": 52,
+                "x": 67.7,
+                "y": 54.1,
+                "pid": 71393,
+                "pos": "F",
+                "name": "M. Roman II"
+              },
+              {
+                "n": 71,
+                "x": 50.2,
+                "y": 85.3,
+                "pid": 1142278,
+                "pos": "D",
+                "name": "A. Suteu"
+              },
+              {
+                "n": 91,
+                "x": 36.3,
+                "y": 39.0,
+                "pid": 810861,
+                "pos": "D",
+                "name": "R. Crişan"
+              }
+            ]
+          },
           "jerseys": {
             "away": {
               "GK": {
@@ -24194,28 +24954,28 @@
           ],
           "sr_stats": {
             "attack": {
-              "away": 49,
-              "home": 51
+              "away": 71,
+              "home": 76
             },
             "ball_safe": {
-              "away": 54,
-              "home": 37
+              "away": 75,
+              "home": 51
             },
             "attack_pct": {
-              "away": 18,
-              "home": 31
+              "away": 19,
+              "home": 33
             },
             "ball_safe_pct": {
-              "away": 57,
-              "home": 35
+              "away": 59,
+              "home": 30
             },
             "dangerous_attack": {
-              "away": 28,
-              "home": 39
+              "away": 41,
+              "home": 54
             },
             "dangerous_attack_pct": {
-              "away": 25,
-              "home": 34
+              "away": 22,
+              "home": 37
             }
           },
           "ai_preview": {
@@ -24250,15 +25010,6 @@
       "source": "GitHub Actions cache"
     },
     {
-      "id": 218958,
-      "home": "Berliner FC Dynamo",
-      "away": "Berliner AK 07",
-      "league": "Club Friendlies",
-      "date": "2026-07-17T20:00:00+04:00",
-      "prediction": null,
-      "source": "GitHub Actions cache"
-    },
-    {
       "id": 218954,
       "home": "SC Paderborn 07",
       "away": "Fagiano Okayama",
@@ -24268,9 +25019,9 @@
       "source": "GitHub Actions cache"
     },
     {
-      "id": 218957,
-      "home": "SpVgg Bayreuth",
-      "away": "FC Carl Zeiss Jena",
+      "id": 218958,
+      "home": "Berliner FC Dynamo",
+      "away": "Berliner AK 07",
       "league": "Club Friendlies",
       "date": "2026-07-17T20:00:00+04:00",
       "prediction": null,
@@ -24344,24 +25095,24 @@
           "round_number": 1,
           "round_name": "",
           "group_name": null,
-          "status": "halftime",
+          "status": "finished",
           "home_score": 2,
-          "away_score": 0,
+          "away_score": 2,
           "home_score_ht": 2,
           "away_score_ht": 0,
-          "current_minute": 45,
-          "period": "HT",
+          "current_minute": 90,
+          "period": "FT",
           "odds_home": 5.07,
           "odds_draw": 3.85,
           "odds_away": 1.58,
           "odds_over_15": 1.27,
-          "odds_over_25": 1.85,
+          "odds_over_25": 1.86,
           "odds_over_35": 3.09,
-          "odds_under_15": 3.46,
-          "odds_under_25": 1.86,
+          "odds_under_15": 3.44,
+          "odds_under_25": 1.87,
           "odds_under_35": 1.32,
           "odds_btts_yes": 1.9,
-          "odds_btts_no": 1.81,
+          "odds_btts_no": 1.82,
           "actual_home_xg": null,
           "actual_away_xg": null,
           "home_xg_live": null,
@@ -24374,7 +25125,7 @@
           "weather_code": 1,
           "wind_speed": 16.8,
           "temperature_c": 30,
-          "pitch_condition": null,
+          "pitch_condition": 1,
           "attendance": null,
           "referee": null,
           "home_coach": {
@@ -24419,6 +25170,160 @@
             "built_year": null
           },
           "incidents": [
+            {
+              "text": "FT",
+              "type": "period",
+              "minute": 90,
+              "is_live": false,
+              "added_time": 999,
+              "away_score": 2,
+              "home_score": 2
+            },
+            {
+              "type": "substitution",
+              "minute": 90,
+              "is_home": true,
+              "player_in": "",
+              "added_time": 8,
+              "player_out": "G. Stojanovski",
+              "player_in_id": null,
+              "player_out_id": 1605040
+            },
+            {
+              "type": "card",
+              "minute": 90,
+              "player": "T. Chunchukov",
+              "is_home": true,
+              "card_type": "yellow",
+              "player_id": 336407,
+              "added_time": 1
+            },
+            {
+              "type": "injuryTime",
+              "length": 7,
+              "minute": 90
+            },
+            {
+              "type": "substitution",
+              "minute": 85,
+              "is_home": false,
+              "player_in": "B. Dimitrov",
+              "added_time": null,
+              "player_out": "J. Martínez",
+              "player_in_id": 993851,
+              "player_out_id": 1017482
+            },
+            {
+              "type": "substitution",
+              "minute": 79,
+              "is_home": true,
+              "player_in": "T. Chunchukov",
+              "added_time": null,
+              "player_out": "A. Ahmedov",
+              "player_in_id": 336407,
+              "player_out_id": 362662
+            },
+            {
+              "type": "substitution",
+              "minute": 79,
+              "is_home": true,
+              "player_in": "B. Hanne",
+              "added_time": null,
+              "player_out": "D. Yordanov",
+              "player_in_id": 920580,
+              "player_out_id": 1391090
+            },
+            {
+              "type": "goal",
+              "minute": 77,
+              "player": "F. Maciel",
+              "is_home": false,
+              "goal_type": "regular",
+              "player_id": 138898,
+              "added_time": null,
+              "away_score": 2,
+              "home_score": 2
+            },
+            {
+              "type": "substitution",
+              "minute": 70,
+              "is_home": true,
+              "player_in": "R. Sousa",
+              "added_time": null,
+              "player_out": "J. Lopes",
+              "player_in_id": 945099,
+              "player_out_id": 2456633
+            },
+            {
+              "type": "substitution",
+              "minute": 70,
+              "is_home": true,
+              "player_in": "D. V. Juan",
+              "added_time": null,
+              "player_out": "Tomás",
+              "player_in_id": 2456629,
+              "player_out_id": 1176102
+            },
+            {
+              "type": "card",
+              "minute": 52,
+              "player": "T. Marinov",
+              "is_home": true,
+              "card_type": "yellow",
+              "player_id": 1892157,
+              "added_time": null
+            },
+            {
+              "type": "goal",
+              "minute": 51,
+              "player": "M. Diallo",
+              "is_home": false,
+              "goal_type": "penalty",
+              "player_id": 1936028,
+              "added_time": null,
+              "away_score": 1,
+              "home_score": 2
+            },
+            {
+              "type": "substitution",
+              "minute": 46,
+              "is_home": false,
+              "player_in": "F. Maciel",
+              "added_time": null,
+              "player_out": "M. Boychev",
+              "player_in_id": 138898,
+              "player_out_id": 1587291
+            },
+            {
+              "type": "substitution",
+              "minute": 46,
+              "is_home": false,
+              "player_in": "A. Hoffmann",
+              "added_time": null,
+              "player_out": "E. Parkhomenko",
+              "player_in_id": 97935,
+              "player_out_id": 1046583
+            },
+            {
+              "type": "substitution",
+              "minute": 46,
+              "is_home": false,
+              "player_in": "M. Zemzemi",
+              "added_time": null,
+              "player_out": "H. Cuellar",
+              "player_in_id": 919054,
+              "player_out_id": 1495631
+            },
+            {
+              "type": "substitution",
+              "minute": 46,
+              "is_home": false,
+              "player_in": "B. Tsonev",
+              "added_time": null,
+              "player_out": "F. Krebs",
+              "player_in_id": 153147,
+              "player_out_id": 939706
+            },
             {
               "text": "HT",
               "type": "period",
@@ -24485,9 +25390,7 @@
                   "replaces_player_id": null,
                   "replaced_by_player_id": null,
                   "specific_position": "GK",
-                  "positions_detailed": [
-                    "GK"
-                  ]
+                  "positions_detailed": []
                 },
                 {
                   "name": "D. Medina",
@@ -24503,10 +25406,8 @@
                   "jersey_number": "2",
                   "replaces_player_id": null,
                   "replaced_by_player_id": null,
-                  "specific_position": "RB",
-                  "positions_detailed": [
-                    "RB"
-                  ]
+                  "specific_position": "DEF",
+                  "positions_detailed": []
                 },
                 {
                   "name": "L. Dvali",
@@ -24522,10 +25423,8 @@
                   "jersey_number": "3",
                   "replaces_player_id": null,
                   "replaced_by_player_id": null,
-                  "specific_position": "CB",
-                  "positions_detailed": [
-                    "CB"
-                  ]
+                  "specific_position": "DEF",
+                  "positions_detailed": []
                 },
                 {
                   "name": "E. Parkhomenko",
@@ -24533,18 +25432,16 @@
                   "api_id": 1046583,
                   "rating": null,
                   "sub_in": null,
-                  "sub_out": null,
+                  "sub_out": 46,
                   "position": "D",
                   "red_card": false,
                   "player_id": 11597,
                   "yellow_card": false,
                   "jersey_number": "6",
                   "replaces_player_id": null,
-                  "replaced_by_player_id": null,
-                  "specific_position": "CB",
-                  "positions_detailed": [
-                    "CB"
-                  ]
+                  "replaced_by_player_id": 10728,
+                  "specific_position": "DEF",
+                  "positions_detailed": []
                 },
                 {
                   "name": "O. Gašević",
@@ -24560,10 +25457,8 @@
                   "jersey_number": "22",
                   "replaces_player_id": null,
                   "replaced_by_player_id": null,
-                  "specific_position": "LB",
-                  "positions_detailed": [
-                    "LB"
-                  ]
+                  "specific_position": "DEF",
+                  "positions_detailed": []
                 },
                 {
                   "name": "H. Cuellar",
@@ -24571,19 +25466,16 @@
                   "api_id": 1495631,
                   "rating": null,
                   "sub_in": null,
-                  "sub_out": null,
+                  "sub_out": 46,
                   "position": "M",
                   "red_card": false,
                   "player_id": 16537,
                   "yellow_card": false,
                   "jersey_number": "33",
                   "replaces_player_id": null,
-                  "replaced_by_player_id": null,
-                  "specific_position": "CM",
-                  "positions_detailed": [
-                    "CM",
-                    "DM"
-                  ]
+                  "replaced_by_player_id": 42363,
+                  "specific_position": "MID",
+                  "positions_detailed": []
                 },
                 {
                   "name": "J. Martínez",
@@ -24591,18 +25483,16 @@
                   "api_id": 1017482,
                   "rating": null,
                   "sub_in": null,
-                  "sub_out": null,
+                  "sub_out": 85,
                   "position": "F",
                   "red_card": false,
                   "player_id": 10756,
                   "yellow_card": false,
                   "jersey_number": "17",
                   "replaces_player_id": null,
-                  "replaced_by_player_id": null,
-                  "specific_position": "RW",
-                  "positions_detailed": [
-                    "RW"
-                  ]
+                  "replaced_by_player_id": 11387,
+                  "specific_position": "FWD",
+                  "positions_detailed": []
                 },
                 {
                   "name": "F. Krebs",
@@ -24610,19 +25500,16 @@
                   "api_id": 939706,
                   "rating": null,
                   "sub_in": null,
-                  "sub_out": null,
+                  "sub_out": 46,
                   "position": "M",
                   "red_card": false,
                   "player_id": 10736,
                   "yellow_card": false,
                   "jersey_number": "23",
                   "replaces_player_id": null,
-                  "replaced_by_player_id": null,
-                  "specific_position": "CM",
-                  "positions_detailed": [
-                    "CM",
-                    "DM"
-                  ]
+                  "replaced_by_player_id": 10744,
+                  "specific_position": "MID",
+                  "positions_detailed": []
                 },
                 {
                   "name": "M. Boychev",
@@ -24630,18 +25517,16 @@
                   "api_id": 1587291,
                   "rating": null,
                   "sub_in": null,
-                  "sub_out": null,
+                  "sub_out": 46,
                   "position": "M",
                   "red_card": false,
                   "player_id": 10769,
-                  "yellow_card": false,
+                  "yellow_card": true,
                   "jersey_number": "19",
                   "replaces_player_id": null,
-                  "replaced_by_player_id": null,
-                  "specific_position": "CM",
-                  "positions_detailed": [
-                    "CM"
-                  ]
+                  "replaced_by_player_id": 10751,
+                  "specific_position": "MID",
+                  "positions_detailed": []
                 },
                 {
                   "name": "G. Rusev",
@@ -24657,15 +25542,12 @@
                   "jersey_number": "11",
                   "replaces_player_id": null,
                   "replaced_by_player_id": null,
-                  "specific_position": "RW",
-                  "positions_detailed": [
-                    "RW",
-                    "LW"
-                  ]
+                  "specific_position": "MID",
+                  "positions_detailed": []
                 },
                 {
                   "name": "M. Diallo",
-                  "goals": 0,
+                  "goals": 1,
                   "api_id": 1936028,
                   "rating": null,
                   "sub_in": null,
@@ -24677,14 +25559,97 @@
                   "jersey_number": "93",
                   "replaces_player_id": null,
                   "replaced_by_player_id": null,
-                  "specific_position": "ST",
-                  "positions_detailed": [
-                    "ST"
-                  ]
+                  "specific_position": "FWD",
+                  "positions_detailed": []
                 }
               ],
               "formation": "4-1-4-1",
               "substitutes": [
+                {
+                  "name": "A. Hoffmann",
+                  "goals": 0,
+                  "api_id": 97935,
+                  "rating": null,
+                  "sub_in": 46,
+                  "sub_out": null,
+                  "position": "D",
+                  "red_card": false,
+                  "player_id": 10728,
+                  "yellow_card": false,
+                  "jersey_number": "4",
+                  "replaces_player_id": 11597,
+                  "replaced_by_player_id": null,
+                  "specific_position": "DEF",
+                  "positions_detailed": []
+                },
+                {
+                  "name": "F. Maciel",
+                  "goals": 1,
+                  "api_id": 138898,
+                  "rating": null,
+                  "sub_in": 46,
+                  "sub_out": null,
+                  "position": "M",
+                  "red_card": false,
+                  "player_id": 10751,
+                  "yellow_card": false,
+                  "jersey_number": "67",
+                  "replaces_player_id": 10769,
+                  "replaced_by_player_id": null,
+                  "specific_position": "MID",
+                  "positions_detailed": []
+                },
+                {
+                  "name": "M. Zemzemi",
+                  "goals": 0,
+                  "api_id": 919054,
+                  "rating": null,
+                  "sub_in": 46,
+                  "sub_out": null,
+                  "position": "M",
+                  "red_card": false,
+                  "player_id": 42363,
+                  "yellow_card": false,
+                  "jersey_number": "11",
+                  "replaces_player_id": 16537,
+                  "replaced_by_player_id": null,
+                  "specific_position": "MID",
+                  "positions_detailed": []
+                },
+                {
+                  "name": "B. Tsonev",
+                  "goals": 0,
+                  "api_id": 153147,
+                  "rating": null,
+                  "sub_in": 46,
+                  "sub_out": null,
+                  "position": "M",
+                  "red_card": false,
+                  "player_id": 10744,
+                  "yellow_card": false,
+                  "jersey_number": "10",
+                  "replaces_player_id": 10736,
+                  "replaced_by_player_id": null,
+                  "specific_position": "MID",
+                  "positions_detailed": []
+                },
+                {
+                  "name": "B. Dimitrov",
+                  "goals": 0,
+                  "api_id": 993851,
+                  "rating": null,
+                  "sub_in": 85,
+                  "sub_out": null,
+                  "position": "F",
+                  "red_card": false,
+                  "player_id": 11387,
+                  "yellow_card": false,
+                  "jersey_number": "18",
+                  "replaces_player_id": 10756,
+                  "replaced_by_player_id": null,
+                  "specific_position": "FWD",
+                  "positions_detailed": []
+                },
                 {
                   "name": "D. Sheytanov",
                   "goals": 0,
@@ -24700,28 +25665,7 @@
                   "replaces_player_id": null,
                   "replaced_by_player_id": null,
                   "specific_position": "GK",
-                  "positions_detailed": [
-                    "GK"
-                  ]
-                },
-                {
-                  "name": "A. Hoffmann",
-                  "goals": 0,
-                  "api_id": 97935,
-                  "rating": null,
-                  "sub_in": null,
-                  "sub_out": null,
-                  "position": "D",
-                  "red_card": false,
-                  "player_id": 10728,
-                  "yellow_card": false,
-                  "jersey_number": "4",
-                  "replaces_player_id": null,
-                  "replaced_by_player_id": null,
-                  "specific_position": "CB",
-                  "positions_detailed": [
-                    "CB"
-                  ]
+                  "positions_detailed": []
                 },
                 {
                   "name": "K. Iliev",
@@ -24737,10 +25681,8 @@
                   "jersey_number": "70",
                   "replaces_player_id": null,
                   "replaced_by_player_id": null,
-                  "specific_position": "CB",
-                  "positions_detailed": [
-                    "CB"
-                  ]
+                  "specific_position": "DEF",
+                  "positions_detailed": []
                 },
                 {
                   "name": "K. Strinski",
@@ -24773,10 +25715,8 @@
                   "jersey_number": "77",
                   "replaces_player_id": null,
                   "replaced_by_player_id": null,
-                  "specific_position": "LW",
-                  "positions_detailed": [
-                    "LW"
-                  ]
+                  "specific_position": "MID",
+                  "positions_detailed": []
                 },
                 {
                   "name": "P. Vitanov",
@@ -24792,30 +25732,8 @@
                   "jersey_number": "34",
                   "replaces_player_id": null,
                   "replaced_by_player_id": null,
-                  "specific_position": "CM",
-                  "positions_detailed": [
-                    "CM",
-                    "DM"
-                  ]
-                },
-                {
-                  "name": "B. Dimitrov",
-                  "goals": 0,
-                  "api_id": 993851,
-                  "rating": null,
-                  "sub_in": null,
-                  "sub_out": null,
-                  "position": "F",
-                  "red_card": false,
-                  "player_id": 11387,
-                  "yellow_card": false,
-                  "jersey_number": "18",
-                  "replaces_player_id": null,
-                  "replaced_by_player_id": null,
-                  "specific_position": "ST",
-                  "positions_detailed": [
-                    "ST"
-                  ]
+                  "specific_position": "MID",
+                  "positions_detailed": []
                 }
               ]
             },
@@ -24836,9 +25754,7 @@
                   "replaces_player_id": null,
                   "replaced_by_player_id": null,
                   "specific_position": "GK",
-                  "positions_detailed": [
-                    "GK"
-                  ]
+                  "positions_detailed": []
                 },
                 {
                   "name": "D. Lozev",
@@ -24854,14 +25770,12 @@
                   "jersey_number": "20",
                   "replaces_player_id": null,
                   "replaced_by_player_id": null,
-                  "specific_position": "RB",
-                  "positions_detailed": [
-                    "RB"
-                  ]
+                  "specific_position": "DEF",
+                  "positions_detailed": []
                 },
                 {
                   "name": "J. Tshitoku",
-                  "goals": 0,
+                  "goals": 1,
                   "api_id": 1901961,
                   "rating": null,
                   "sub_in": null,
@@ -24890,10 +25804,8 @@
                   "jersey_number": "44",
                   "replaces_player_id": null,
                   "replaced_by_player_id": null,
-                  "specific_position": "CB",
-                  "positions_detailed": [
-                    "CB"
-                  ]
+                  "specific_position": "DEF",
+                  "positions_detailed": []
                 },
                 {
                   "name": "B. Ivanov",
@@ -24909,10 +25821,8 @@
                   "jersey_number": "4",
                   "replaces_player_id": null,
                   "replaced_by_player_id": null,
-                  "specific_position": "LB",
-                  "positions_detailed": [
-                    "LB"
-                  ]
+                  "specific_position": "DEF",
+                  "positions_detailed": []
                 },
                 {
                   "name": "Tomás",
@@ -24920,18 +25830,16 @@
                   "api_id": 1176102,
                   "rating": null,
                   "sub_in": null,
-                  "sub_out": null,
+                  "sub_out": 70,
                   "position": "M",
                   "red_card": false,
                   "player_id": 11031,
                   "yellow_card": false,
                   "jersey_number": "82",
                   "replaces_player_id": null,
-                  "replaced_by_player_id": null,
-                  "specific_position": "RB",
-                  "positions_detailed": [
-                    "RB"
-                  ]
+                  "replaced_by_player_id": 10937,
+                  "specific_position": "MID",
+                  "positions_detailed": []
                 },
                 {
                   "name": "D. Yordanov",
@@ -24939,18 +25847,16 @@
                   "api_id": 1391090,
                   "rating": null,
                   "sub_in": null,
-                  "sub_out": null,
+                  "sub_out": 79,
                   "position": "M",
                   "red_card": false,
                   "player_id": 10816,
                   "yellow_card": false,
                   "jersey_number": "8",
                   "replaces_player_id": null,
-                  "replaced_by_player_id": null,
-                  "specific_position": "CM",
-                  "positions_detailed": [
-                    "CM"
-                  ]
+                  "replaced_by_player_id": 12072,
+                  "specific_position": "MID",
+                  "positions_detailed": []
                 },
                 {
                   "name": "T. Marinov",
@@ -24962,14 +25868,12 @@
                   "position": "M",
                   "red_card": false,
                   "player_id": 11459,
-                  "yellow_card": false,
+                  "yellow_card": true,
                   "jersey_number": "17",
                   "replaces_player_id": null,
                   "replaced_by_player_id": null,
-                  "specific_position": "CM",
-                  "positions_detailed": [
-                    "CM"
-                  ]
+                  "specific_position": "MID",
+                  "positions_detailed": []
                 },
                 {
                   "name": "J. Lopes",
@@ -24977,18 +25881,16 @@
                   "api_id": 2456633,
                   "rating": null,
                   "sub_in": null,
-                  "sub_out": null,
+                  "sub_out": 70,
                   "position": "M",
                   "red_card": false,
                   "player_id": 13499,
                   "yellow_card": false,
                   "jersey_number": "10",
                   "replaces_player_id": null,
-                  "replaced_by_player_id": null,
-                  "specific_position": "RW",
-                  "positions_detailed": [
-                    "RW"
-                  ]
+                  "replaced_by_player_id": 28928,
+                  "specific_position": "MID",
+                  "positions_detailed": []
                 },
                 {
                   "name": "A. Ahmedov",
@@ -24996,26 +25898,24 @@
                   "api_id": 362662,
                   "rating": null,
                   "sub_in": null,
-                  "sub_out": null,
+                  "sub_out": 79,
                   "position": "F",
                   "red_card": false,
                   "player_id": 45494,
                   "yellow_card": false,
                   "jersey_number": "70",
                   "replaces_player_id": null,
-                  "replaced_by_player_id": null,
-                  "specific_position": "ST",
-                  "positions_detailed": [
-                    "ST"
-                  ]
+                  "replaced_by_player_id": 10826,
+                  "specific_position": "FWD",
+                  "positions_detailed": []
                 },
                 {
                   "name": "G. Stojanovski",
-                  "goals": 0,
+                  "goals": 1,
                   "api_id": 1605040,
                   "rating": null,
                   "sub_in": null,
-                  "sub_out": null,
+                  "sub_out": 90,
                   "position": "F",
                   "red_card": false,
                   "player_id": 11460,
@@ -25023,14 +25923,80 @@
                   "jersey_number": "90",
                   "replaces_player_id": null,
                   "replaced_by_player_id": null,
-                  "specific_position": "ST",
-                  "positions_detailed": [
-                    "ST"
-                  ]
+                  "specific_position": "FWD",
+                  "positions_detailed": []
                 }
               ],
               "formation": "4-4-2",
               "substitutes": [
+                {
+                  "name": "D. V. Juan",
+                  "goals": 0,
+                  "api_id": 2456629,
+                  "rating": null,
+                  "sub_in": 70,
+                  "sub_out": null,
+                  "position": "D",
+                  "red_card": false,
+                  "player_id": 10937,
+                  "yellow_card": false,
+                  "jersey_number": "76",
+                  "replaces_player_id": 11031,
+                  "replaced_by_player_id": null,
+                  "specific_position": "DEF",
+                  "positions_detailed": []
+                },
+                {
+                  "name": "R. Sousa",
+                  "goals": 0,
+                  "api_id": 945099,
+                  "rating": null,
+                  "sub_in": 70,
+                  "sub_out": null,
+                  "position": "M",
+                  "red_card": false,
+                  "player_id": 28928,
+                  "yellow_card": false,
+                  "jersey_number": "6",
+                  "replaces_player_id": 13499,
+                  "replaced_by_player_id": null,
+                  "specific_position": "MID",
+                  "positions_detailed": []
+                },
+                {
+                  "name": "T. Chunchukov",
+                  "goals": 0,
+                  "api_id": 336407,
+                  "rating": null,
+                  "sub_in": 79,
+                  "sub_out": null,
+                  "position": "F",
+                  "red_card": false,
+                  "player_id": 10826,
+                  "yellow_card": true,
+                  "jersey_number": "9",
+                  "replaces_player_id": 45494,
+                  "replaced_by_player_id": null,
+                  "specific_position": "FWD",
+                  "positions_detailed": []
+                },
+                {
+                  "name": "B. Hanne",
+                  "goals": 0,
+                  "api_id": 920580,
+                  "rating": null,
+                  "sub_in": 79,
+                  "sub_out": null,
+                  "position": "F",
+                  "red_card": false,
+                  "player_id": 12072,
+                  "yellow_card": false,
+                  "jersey_number": "11",
+                  "replaces_player_id": 10816,
+                  "replaced_by_player_id": null,
+                  "specific_position": "FWD",
+                  "positions_detailed": []
+                },
                 {
                   "name": "P. Victor",
                   "goals": 0,
@@ -25046,47 +26012,7 @@
                   "replaces_player_id": null,
                   "replaced_by_player_id": null,
                   "specific_position": "GK",
-                  "positions_detailed": [
-                    "GK"
-                  ]
-                },
-                {
-                  "name": "D. V. Juan",
-                  "goals": 0,
-                  "api_id": 2456629,
-                  "rating": null,
-                  "sub_in": null,
-                  "sub_out": null,
-                  "position": "D",
-                  "red_card": false,
-                  "player_id": 10937,
-                  "yellow_card": false,
-                  "jersey_number": "76",
-                  "replaces_player_id": null,
-                  "replaced_by_player_id": null,
-                  "specific_position": "RB",
-                  "positions_detailed": [
-                    "RB"
-                  ]
-                },
-                {
-                  "name": "R. Sousa",
-                  "goals": 0,
-                  "api_id": 945099,
-                  "rating": null,
-                  "sub_in": null,
-                  "sub_out": null,
-                  "position": "M",
-                  "red_card": false,
-                  "player_id": 28928,
-                  "yellow_card": false,
-                  "jersey_number": "6",
-                  "replaces_player_id": null,
-                  "replaced_by_player_id": null,
-                  "specific_position": "CM",
-                  "positions_detailed": [
-                    "CM"
-                  ]
+                  "positions_detailed": []
                 },
                 {
                   "name": "G. Trifonov",
@@ -25119,50 +26045,8 @@
                   "jersey_number": "80",
                   "replaces_player_id": null,
                   "replaced_by_player_id": null,
-                  "specific_position": "ST",
-                  "positions_detailed": [
-                    "ST"
-                  ]
-                },
-                {
-                  "name": "T. Chunchukov",
-                  "goals": 0,
-                  "api_id": 336407,
-                  "rating": null,
-                  "sub_in": null,
-                  "sub_out": null,
-                  "position": "F",
-                  "red_card": false,
-                  "player_id": 10826,
-                  "yellow_card": false,
-                  "jersey_number": "9",
-                  "replaces_player_id": null,
-                  "replaced_by_player_id": null,
-                  "specific_position": "ST",
-                  "positions_detailed": [
-                    "ST"
-                  ]
-                },
-                {
-                  "name": "B. Hanne",
-                  "goals": 0,
-                  "api_id": 920580,
-                  "rating": null,
-                  "sub_in": null,
-                  "sub_out": null,
-                  "position": "F",
-                  "red_card": false,
-                  "player_id": 12072,
-                  "yellow_card": false,
-                  "jersey_number": "11",
-                  "replaces_player_id": null,
-                  "replaced_by_player_id": null,
-                  "specific_position": "ST",
-                  "positions_detailed": [
-                    "ST",
-                    "RW",
-                    "LW"
-                  ]
+                  "specific_position": "FWD",
+                  "positions_detailed": []
                 }
               ]
             },
@@ -25218,28 +26102,28 @@
           ],
           "sr_stats": {
             "attack": {
-              "away": 44,
-              "home": 33
+              "away": 92,
+              "home": 73
             },
             "ball_safe": {
-              "away": 37,
-              "home": 23
+              "away": 74,
+              "home": 58
             },
             "attack_pct": {
-              "away": 21,
-              "home": 24
+              "away": 19,
+              "home": 27
             },
             "ball_safe_pct": {
-              "away": 47,
-              "home": 38
+              "away": 41,
+              "home": 42
             },
             "dangerous_attack": {
-              "away": 25,
-              "home": 21
+              "away": 48,
+              "home": 36
             },
             "dangerous_attack_pct": {
-              "away": 32,
-              "home": 38
+              "away": 40,
+              "home": 31
             }
           },
           "ai_preview": {
@@ -25274,6 +26158,15 @@
       "source": "GitHub Actions cache"
     },
     {
+      "id": 218956,
+      "home": "Rodez AF",
+      "away": "AS Cannes",
+      "league": "Club Friendlies",
+      "date": "2026-07-17T20:00:00+04:00",
+      "prediction": null,
+      "source": "GitHub Actions cache"
+    },
+    {
       "id": 218955,
       "home": "FC-Astoria Walldorf",
       "away": "Darmstadt 98",
@@ -25283,9 +26176,9 @@
       "source": "GitHub Actions cache"
     },
     {
-      "id": 218956,
-      "home": "Rodez AF",
-      "away": "AS Cannes",
+      "id": 218957,
+      "home": "SpVgg Bayreuth",
+      "away": "FC Carl Zeiss Jena",
       "league": "Club Friendlies",
       "date": "2026-07-17T20:00:00+04:00",
       "prediction": null,
