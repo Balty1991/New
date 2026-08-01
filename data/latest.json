@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-01T14:21:54.158664+00:00",
+  "generated_at": "2026-08-01T15:33:57.438854+00:00",
   "date_from": "2026-08-01",
   "date_to": "2026-08-04",
   "matches": [
@@ -24451,7 +24451,7 @@
           "period": "FT",
           "odds_home": 1.47,
           "odds_draw": 4.63,
-          "odds_away": 5.21,
+          "odds_away": 5.53,
           "odds_over_15": 1.1,
           "odds_over_25": 1.35,
           "odds_over_35": 1.88,
@@ -34639,37 +34639,37 @@
           "round_number": 2,
           "round_name": "",
           "group_name": null,
-          "status": "2nd_half",
-          "home_score": 3,
-          "away_score": 2,
+          "status": "finished",
+          "home_score": 4,
+          "away_score": 3,
           "home_score_ht": 2,
           "away_score_ht": 1,
-          "current_minute": 67,
-          "period": "2T",
-          "odds_home": 1.0,
-          "odds_draw": 1.0,
-          "odds_away": 1.0,
-          "odds_over_15": 1.0,
-          "odds_over_25": 1.0,
-          "odds_over_35": 1.0,
-          "odds_under_15": 1.0,
-          "odds_under_25": 1.0,
-          "odds_under_35": 1.0,
-          "odds_btts_yes": 1.0,
-          "odds_btts_no": 1.0,
-          "actual_home_xg": null,
-          "actual_away_xg": null,
-          "home_xg_live": 1.61,
-          "away_xg_live": 2.64,
+          "current_minute": 90,
+          "period": "FT",
+          "odds_home": 2.27,
+          "odds_draw": 3.2,
+          "odds_away": 2.76,
+          "odds_over_15": 1.26,
+          "odds_over_25": 1.84,
+          "odds_over_35": 3.02,
+          "odds_under_15": 3.53,
+          "odds_under_25": 1.89,
+          "odds_under_35": 1.34,
+          "odds_btts_yes": 1.65,
+          "odds_btts_no": 2.13,
+          "actual_home_xg": 1.79,
+          "actual_away_xg": 3.77,
+          "home_xg_live": 1.79,
+          "away_xg_live": 3.77,
           "penalty_shootout": null,
           "extra_time_score": null,
           "is_local_derby": false,
           "is_neutral_ground": null,
           "travel_distance_km": 91,
-          "weather_code": 0,
+          "weather_code": 1,
           "wind_speed": 11.3,
           "temperature_c": 27,
-          "pitch_condition": null,
+          "pitch_condition": 1,
           "attendance": null,
           "referee": null,
           "home_coach": {
@@ -34715,12 +34715,188 @@
           },
           "incidents": [
             {
-              "text": "Second half",
+              "text": "FT",
               "type": "period",
               "minute": 90,
-              "is_live": true,
+              "is_live": false,
               "added_time": 999,
-              "away_score": 2,
+              "away_score": 3,
+              "home_score": 4
+            },
+            {
+              "type": "injuryTime",
+              "length": 6,
+              "minute": 90
+            },
+            {
+              "type": "goal",
+              "assist": "E. Twumasi",
+              "minute": 88,
+              "player": "L. Sanca",
+              "is_home": true,
+              "sequence": [
+                {
+                  "end": {
+                    "x": 63.2,
+                    "y": 88.4
+                  },
+                  "pid": 891675,
+                  "pos": {
+                    "x": 40.7,
+                    "y": 49.7
+                  },
+                  "event": "pass",
+                  "player": "J. Łabojko"
+                },
+                {
+                  "end": {
+                    "x": 79.9,
+                    "y": 29.1
+                  },
+                  "pid": 1141665,
+                  "pos": {
+                    "x": 63.2,
+                    "y": 88.4
+                  },
+                  "event": "ball-movement",
+                  "player": "L. Sanca"
+                },
+                {
+                  "end": {
+                    "x": 79.9,
+                    "y": 29.1
+                  },
+                  "pid": 1141665,
+                  "pos": {
+                    "x": 70.6,
+                    "y": 70.9
+                  },
+                  "event": "pass",
+                  "player": "L. Sanca"
+                },
+                {
+                  "end": {
+                    "x": 80.9,
+                    "y": 44
+                  },
+                  "pid": 931738,
+                  "pos": {
+                    "x": 82.5,
+                    "y": 29.7
+                  },
+                  "event": "pass",
+                  "assist": true,
+                  "player": "E. Twumasi"
+                },
+                {
+                  "gk": {
+                    "x": 97.8,
+                    "y": 47.3
+                  },
+                  "gm": {
+                    "x": 74.19,
+                    "y": 82
+                  },
+                  "pid": 1141665,
+                  "pos": {
+                    "x": 80.9,
+                    "y": 44
+                  },
+                  "body": "right-foot",
+                  "event": "goal",
+                  "player": "L. Sanca"
+                }
+              ],
+              "goal_type": "regular",
+              "player_id": 1141665,
+              "added_time": null,
+              "away_score": 3,
+              "home_score": 4
+            },
+            {
+              "type": "substitution",
+              "minute": 86,
+              "is_home": false,
+              "player_in": "M. Carbo",
+              "added_time": null,
+              "player_out": "K. Duda",
+              "player_in_id": 858946,
+              "player_out_id": 1031256
+            },
+            {
+              "type": "card",
+              "minute": 81,
+              "player": "O. Lesniak",
+              "reason": "Foul",
+              "is_home": true,
+              "card_type": "yellow",
+              "player_id": 1388230,
+              "added_time": null
+            },
+            {
+              "type": "substitution",
+              "minute": 74,
+              "is_home": true,
+              "player_in": "L. Sanca",
+              "added_time": null,
+              "player_out": "H. Vallejo",
+              "player_in_id": 1141665,
+              "player_out_id": 972451
+            },
+            {
+              "type": "substitution",
+              "minute": 73,
+              "is_home": false,
+              "player_in": "E. Youan",
+              "added_time": null,
+              "player_out": "M. Božić",
+              "player_in_id": 921362,
+              "player_out_id": 869880
+            },
+            {
+              "type": "goal",
+              "assist": "Á. Rodado",
+              "minute": 69,
+              "player": "J. Sánchez",
+              "is_home": false,
+              "sequence": [
+                {
+                  "end": {
+                    "x": 6.1,
+                    "y": 46.8
+                  },
+                  "pid": 966446,
+                  "pos": {
+                    "x": 1.6,
+                    "y": 59.5
+                  },
+                  "event": "pass",
+                  "assist": true,
+                  "player": "Á. Rodado"
+                },
+                {
+                  "gk": {
+                    "x": 0.6,
+                    "y": 56.5
+                  },
+                  "gm": {
+                    "x": 30.11,
+                    "y": 52.5
+                  },
+                  "pid": 914771,
+                  "pos": {
+                    "x": 6.1,
+                    "y": 46.8
+                  },
+                  "body": "head",
+                  "event": "goal",
+                  "player": "J. Sánchez"
+                }
+              ],
+              "goal_type": "regular",
+              "player_id": 914771,
+              "added_time": null,
+              "away_score": 3,
               "home_score": 3
             },
             {
@@ -35117,94 +35293,98 @@
           ],
           "live_stats": {
             "away": {
-              "duels": 60,
-              "fouls": 5,
-              "passes": 229,
-              "crosses": "2/13 (15%)",
-              "tackles": 18,
+              "duels": 59,
+              "fouls": 6,
+              "passes": 368,
+              "crosses": "3/25 (12%)",
+              "tackles": 22,
               "dribbles": "7/12 (58%)",
-              "throw_ins": 8,
-              "clearances": 13,
-              "free_kicks": 5,
-              "goal_kicks": 10,
-              "long_balls": "18/37 (49%)",
-              "recoveries": 37,
-              "big_chances": 5,
+              "offsides": 1,
+              "throw_ins": 17,
+              "clearances": 16,
+              "free_kicks": 9,
+              "goal_kicks": 11,
+              "long_balls": "28/57 (49%)",
+              "recoveries": 54,
+              "big_chances": 7,
+              "high_claims": 0,
               "tackles_won": 50,
-              "total_saves": 3,
-              "total_shots": 17,
-              "aerial_duels": "8/13 (62%)",
-              "corner_kicks": 7,
-              "dispossessed": 5,
-              "ground_duels": "30/50 (60%)",
+              "total_saves": 4,
+              "total_shots": 27,
+              "aerial_duels": "10/17 (59%)",
+              "corner_kicks": 11,
+              "dispossessed": 6,
+              "ground_duels": "38/64 (59%)",
               "hit_woodwork": 0,
               "yellow_cards": 0,
-              "blocked_shots": 6,
-              "interceptions": 3,
+              "blocked_shots": 9,
+              "interceptions": 6,
               "penalty_saves": 0,
-              "total_tackles": 18,
-              "average_rating": 6.58,
-              "expected_goals": 2.47,
-              "accurate_passes": 184,
-              "ball_possession": 47,
-              "goals_prevented": 0.59,
-              "shots_on_target": 9,
-              "goalkeeper_saves": 3,
-              "shots_inside_box": 13,
-              "shots_off_target": 2,
-              "final_third_phase": "46/73 (63%)",
-              "shots_outside_box": 4,
-              "big_chances_missed": 4,
-              "big_chances_scored": 1,
-              "final_third_entries": 38,
+              "total_tackles": 22,
+              "average_rating": 6.57,
+              "expected_goals": 3.61,
+              "accurate_passes": 298,
+              "ball_possession": 53,
+              "goals_prevented": -1.11,
+              "shots_on_target": 12,
+              "goalkeeper_saves": 4,
+              "shots_inside_box": 17,
+              "shots_off_target": 6,
+              "final_third_phase": "92/134 (69%)",
+              "shots_outside_box": 10,
+              "big_chances_missed": 5,
+              "big_chances_scored": 2,
+              "final_third_entries": 63,
               "errors_lead_to_a_goal": 0,
               "fouled_in_final_third": 1,
-              "touches_in_penalty_area": 25
+              "touches_in_penalty_area": 37
             },
             "home": {
-              "duels": 40,
-              "fouls": 6,
-              "passes": 259,
-              "crosses": "2/10 (20%)",
-              "tackles": 10,
-              "dribbles": "6/16 (38%)",
-              "throw_ins": 19,
-              "clearances": 25,
-              "free_kicks": 4,
-              "goal_kicks": 2,
-              "long_balls": "19/33 (58%)",
-              "recoveries": 39,
+              "duels": 41,
+              "fouls": 10,
+              "passes": 330,
+              "crosses": "3/13 (23%)",
+              "tackles": 11,
+              "dribbles": "10/23 (43%)",
+              "offsides": 0,
+              "throw_ins": 22,
+              "clearances": 42,
+              "free_kicks": 5,
+              "goal_kicks": 7,
+              "long_balls": "23/53 (43%)",
+              "recoveries": 53,
               "big_chances": 5,
-              "tackles_won": 70,
-              "total_saves": 7,
-              "total_shots": 13,
-              "aerial_duels": "5/13 (38%)",
+              "high_claims": 1,
+              "tackles_won": 55,
+              "total_saves": 9,
+              "total_shots": 15,
+              "aerial_duels": "7/17 (41%)",
               "corner_kicks": 4,
-              "dispossessed": 8,
-              "ground_duels": "20/50 (40%)",
+              "dispossessed": 9,
+              "ground_duels": "26/64 (41%)",
               "hit_woodwork": 0,
-              "yellow_cards": 1,
+              "yellow_cards": 2,
               "blocked_shots": 2,
-              "interceptions": 3,
+              "interceptions": 7,
               "penalty_saves": 1,
-              "total_tackles": 10,
-              "average_rating": 7.1,
-              "expected_goals": 1.61,
-              "accurate_passes": 216,
-              "ball_possession": 53,
-              "goals_prevented": -0.23,
-              "shots_on_target": 6,
-              "goalkeeper_saves": 7,
+              "total_tackles": 11,
+              "average_rating": 7.36,
+              "expected_goals": 1.79,
+              "accurate_passes": 262,
+              "ball_possession": 47,
+              "goals_prevented": 0.37,
+              "shots_on_target": 8,
+              "goalkeeper_saves": 9,
               "shots_inside_box": 10,
               "shots_off_target": 5,
-              "final_third_phase": "56/82 (68%)",
-              "shots_outside_box": 3,
+              "final_third_phase": "61/95 (64%)",
+              "shots_outside_box": 5,
               "big_chances_missed": 3,
               "big_chances_scored": 2,
-              "final_third_entries": 41,
+              "final_third_entries": 50,
               "errors_lead_to_a_goal": 1,
               "fouled_in_final_third": 1,
-              "touches_in_penalty_area": 19
+              "touches_in_penalty_area": 21
             },
             "first_half": {
               "away": {
@@ -35214,6 +35394,7 @@
                 "crosses": "2/8 (25%)",
                 "tackles": 12,
                 "dribbles": "6/9 (67%)",
+                "offsides": 0,
                 "throw_ins": 6,
                 "clearances": 9,
                 "free_kicks": 4,
@@ -35253,6 +35434,7 @@
                 "crosses": "2/8 (25%)",
                 "tackles": 8,
                 "dribbles": "4/11 (36%)",
+                "offsides": 0,
                 "throw_ins": 16,
                 "clearances": 15,
                 "free_kicks": 2,
@@ -35288,81 +35470,83 @@
             },
             "second_half": {
               "away": {
-                "duels": 58,
-                "fouls": 3,
-                "passes": 112,
-                "crosses": "0/5 (0%)",
-                "tackles": 6,
+                "duels": 57,
+                "fouls": 4,
+                "passes": 251,
+                "crosses": "1/17 (6%)",
+                "tackles": 10,
                 "dribbles": "1/3 (33%)",
-                "throw_ins": 2,
-                "clearances": 4,
-                "free_kicks": 1,
-                "goal_kicks": 1,
-                "long_balls": "8/12 (67%)",
-                "recoveries": 12,
-                "big_chances": 0,
+                "offsides": 1,
+                "throw_ins": 11,
+                "clearances": 7,
+                "free_kicks": 5,
+                "goal_kicks": 2,
+                "long_balls": "18/32 (56%)",
+                "recoveries": 29,
+                "big_chances": 2,
                 "tackles_won": 50,
-                "total_saves": 1,
-                "total_shots": 5,
-                "aerial_duels": "3/5 (60%)",
-                "corner_kicks": 2,
-                "dispossessed": 0,
-                "ground_duels": "8/14 (57%)",
+                "total_saves": 2,
+                "total_shots": 15,
+                "aerial_duels": "5/9 (56%)",
+                "corner_kicks": 6,
+                "dispossessed": 1,
+                "ground_duels": "16/28 (57%)",
                 "hit_woodwork": 0,
                 "yellow_cards": 0,
-                "blocked_shots": 2,
-                "interceptions": 0,
-                "total_tackles": 6,
-                "expected_goals": 0.8,
-                "accurate_passes": 99,
-                "ball_possession": 75,
-                "shots_on_target": 2,
-                "goalkeeper_saves": 1,
-                "shots_inside_box": 3,
-                "shots_off_target": 1,
-                "shots_outside_box": 2,
-                "big_chances_missed": 0,
-                "big_chances_scored": 0,
-                "final_third_entries": 14,
+                "blocked_shots": 5,
+                "interceptions": 3,
+                "total_tackles": 10,
+                "expected_goals": 1.93,
+                "accurate_passes": 213,
+                "ball_possession": 70,
+                "shots_on_target": 5,
+                "goalkeeper_saves": 2,
+                "shots_inside_box": 7,
+                "shots_off_target": 5,
+                "shots_outside_box": 8,
+                "big_chances_missed": 1,
+                "big_chances_scored": 1,
+                "final_third_entries": 39,
                 "fouled_in_final_third": 0
               },
               "home": {
-                "duels": 42,
-                "fouls": 1,
-                "passes": 36,
-                "crosses": "0/2 (0%)",
-                "tackles": 2,
-                "dribbles": "2/5 (40%)",
-                "throw_ins": 3,
-                "clearances": 10,
-                "free_kicks": 2,
-                "goal_kicks": 1,
-                "long_balls": "4/6 (67%)",
-                "recoveries": 11,
+                "duels": 43,
+                "fouls": 5,
+                "passes": 107,
+                "crosses": "1/5 (20%)",
+                "tackles": 3,
+                "dribbles": "6/12 (50%)",
+                "offsides": 0,
+                "throw_ins": 6,
+                "clearances": 27,
+                "free_kicks": 3,
+                "goal_kicks": 6,
+                "long_balls": "8/26 (31%)",
+                "recoveries": 25,
                 "big_chances": 2,
-                "tackles_won": 50,
-                "total_saves": 1,
-                "total_shots": 3,
-                "aerial_duels": "2/5 (40%)",
+                "tackles_won": 0,
+                "total_saves": 3,
+                "total_shots": 5,
+                "aerial_duels": "4/9 (44%)",
                 "corner_kicks": 1,
-                "dispossessed": 3,
-                "ground_duels": "6/14 (43%)",
+                "dispossessed": 4,
+                "ground_duels": "12/28 (43%)",
                 "hit_woodwork": 0,
-                "yellow_cards": 0,
+                "yellow_cards": 1,
                 "blocked_shots": 1,
-                "interceptions": 1,
-                "total_tackles": 2,
-                "expected_goals": 0.98,
-                "accurate_passes": 26,
-                "ball_possession": 25,
-                "shots_on_target": 2,
-                "goalkeeper_saves": 1,
+                "interceptions": 5,
+                "total_tackles": 3,
+                "expected_goals": 1.16,
+                "accurate_passes": 72,
+                "ball_possession": 30,
+                "shots_on_target": 4,
+                "goalkeeper_saves": 3,
                 "shots_inside_box": 2,
                 "shots_off_target": 0,
-                "shots_outside_box": 1,
+                "shots_outside_box": 3,
                 "big_chances_missed": 1,
                 "big_chances_scored": 1,
-                "final_third_entries": 7,
+                "final_third_entries": 16,
                 "fouled_in_final_third": 1
               }
             }
@@ -35374,7 +35558,7 @@
                   "name": "M. Łubik",
                   "goals": 0,
                   "api_id": 1390683,
-                  "rating": null,
+                  "rating": 6.2,
                   "sub_in": null,
                   "sub_out": null,
                   "position": "G",
@@ -35391,7 +35575,7 @@
                   "name": "R. Giger",
                   "goals": 0,
                   "api_id": 839430,
-                  "rating": null,
+                  "rating": 6,
                   "sub_in": null,
                   "sub_out": 34,
                   "position": "D",
@@ -35400,24 +35584,7 @@
                   "yellow_card": false,
                   "jersey_number": "34",
                   "replaces_player_id": null,
-                  "replaced_by_player_id": null,
-                  "specific_position": "DEF",
-                  "positions_detailed": []
-                },
-                {
-                  "name": "M. Maisonneuve",
-                  "goals": 0,
-                  "api_id": 1396487,
-                  "rating": null,
-                  "sub_in": null,
-                  "sub_out": null,
-                  "position": "D",
-                  "red_card": false,
-                  "player_id": 7576,
-                  "yellow_card": false,
-                  "jersey_number": "13",
-                  "replaces_player_id": null,
-                  "replaced_by_player_id": null,
+                  "replaced_by_player_id": 38525,
                   "specific_position": "DEF",
                   "positions_detailed": []
                 },
@@ -35425,7 +35592,7 @@
                   "name": "A. Uryga",
                   "goals": 0,
                   "api_id": 138601,
-                  "rating": null,
+                  "rating": 6.6,
                   "sub_in": null,
                   "sub_out": null,
                   "position": "D",
@@ -35439,10 +35606,27 @@
                   "positions_detailed": []
                 },
                 {
+                  "name": "M. Maisonneuve",
+                  "goals": 0,
+                  "api_id": 1396487,
+                  "rating": 6.3,
+                  "sub_in": null,
+                  "sub_out": null,
+                  "position": "D",
+                  "red_card": false,
+                  "player_id": 7576,
+                  "yellow_card": false,
+                  "jersey_number": "13",
+                  "replaces_player_id": null,
+                  "replaced_by_player_id": null,
+                  "specific_position": "DEF",
+                  "positions_detailed": []
+                },
+                {
                   "name": "J. Krzyzanowski",
                   "goals": 0,
                   "api_id": 1423456,
-                  "rating": null,
+                  "rating": 6.2,
                   "sub_in": null,
                   "sub_out": null,
                   "position": "D",
@@ -35456,19 +35640,19 @@
                   "positions_detailed": []
                 },
                 {
-                  "name": "M. Kuziemka",
+                  "name": "K. Duda",
                   "goals": 0,
-                  "api_id": 1979705,
-                  "rating": null,
+                  "api_id": 1031256,
+                  "rating": 7,
                   "sub_in": null,
-                  "sub_out": 46,
+                  "sub_out": 86,
                   "position": "M",
                   "red_card": false,
-                  "player_id": 38517,
+                  "player_id": 38523,
                   "yellow_card": false,
-                  "jersey_number": "51",
+                  "jersey_number": "41",
                   "replaces_player_id": null,
-                  "replaced_by_player_id": null,
+                  "replaced_by_player_id": 38515,
                   "specific_position": "MID",
                   "positions_detailed": []
                 },
@@ -35476,7 +35660,7 @@
                   "name": "J. Igbekeme",
                   "goals": 0,
                   "api_id": 939851,
-                  "rating": null,
+                  "rating": 6.4,
                   "sub_in": null,
                   "sub_out": 46,
                   "position": "M",
@@ -35485,41 +35669,24 @@
                   "yellow_card": false,
                   "jersey_number": "12",
                   "replaces_player_id": null,
-                  "replaced_by_player_id": null,
+                  "replaced_by_player_id": 38518,
                   "specific_position": "MID",
                   "positions_detailed": []
                 },
                 {
-                  "name": "M. Božić",
+                  "name": "M. Kuziemka",
                   "goals": 0,
-                  "api_id": 869880,
-                  "rating": null,
+                  "api_id": 1979705,
+                  "rating": 6.6,
                   "sub_in": null,
-                  "sub_out": null,
+                  "sub_out": 46,
                   "position": "M",
                   "red_card": false,
-                  "player_id": 38522,
+                  "player_id": 38517,
                   "yellow_card": false,
-                  "jersey_number": "17",
+                  "jersey_number": "51",
                   "replaces_player_id": null,
-                  "replaced_by_player_id": null,
-                  "specific_position": "MID",
-                  "positions_detailed": []
-                },
-                {
-                  "name": "K. Duda",
-                  "goals": 0,
-                  "api_id": 1031256,
-                  "rating": null,
-                  "sub_in": null,
-                  "sub_out": null,
-                  "position": "M",
-                  "red_card": false,
-                  "player_id": 38523,
-                  "yellow_card": false,
-                  "jersey_number": "41",
-                  "replaces_player_id": null,
-                  "replaced_by_player_id": null,
+                  "replaced_by_player_id": 38524,
                   "specific_position": "MID",
                   "positions_detailed": []
                 },
@@ -35527,7 +35694,7 @@
                   "name": "F. Duarte",
                   "goals": 0,
                   "api_id": 980992,
-                  "rating": null,
+                  "rating": 6.2,
                   "sub_in": null,
                   "sub_out": null,
                   "position": "M",
@@ -35541,10 +35708,27 @@
                   "positions_detailed": []
                 },
                 {
+                  "name": "M. Božić",
+                  "goals": 1,
+                  "api_id": 869880,
+                  "rating": 7.5,
+                  "sub_in": null,
+                  "sub_out": 73,
+                  "position": "M",
+                  "red_card": false,
+                  "player_id": 38522,
+                  "yellow_card": false,
+                  "jersey_number": "17",
+                  "replaces_player_id": null,
+                  "replaced_by_player_id": 5901,
+                  "specific_position": "MID",
+                  "positions_detailed": []
+                },
+                {
                   "name": "J. Sánchez",
-                  "goals": 0,
+                  "goals": 2,
                   "api_id": 914771,
-                  "rating": null,
+                  "rating": 8.9,
                   "sub_in": null,
                   "sub_out": null,
                   "position": "F",
@@ -35561,6 +35745,91 @@
               "formation": "4-2-3-1",
               "substitutes": [
                 {
+                  "name": "J. Lelieveld",
+                  "goals": 0,
+                  "api_id": 798179,
+                  "rating": 6.2,
+                  "sub_in": 34,
+                  "sub_out": null,
+                  "position": "D",
+                  "red_card": false,
+                  "player_id": 38525,
+                  "yellow_card": false,
+                  "jersey_number": "2",
+                  "replaces_player_id": 38527,
+                  "replaced_by_player_id": null,
+                  "specific_position": "DEF",
+                  "positions_detailed": []
+                },
+                {
+                  "name": "J. Ertlthaler",
+                  "goals": 0,
+                  "api_id": 769123,
+                  "rating": 6.6,
+                  "sub_in": 46,
+                  "sub_out": null,
+                  "position": "M",
+                  "red_card": false,
+                  "player_id": 38518,
+                  "yellow_card": false,
+                  "jersey_number": "7",
+                  "replaces_player_id": 38528,
+                  "replaced_by_player_id": null,
+                  "specific_position": "MID",
+                  "positions_detailed": []
+                },
+                {
+                  "name": "Á. Rodado",
+                  "goals": 0,
+                  "api_id": 966446,
+                  "rating": 6.7,
+                  "sub_in": 46,
+                  "sub_out": null,
+                  "position": "F",
+                  "red_card": false,
+                  "player_id": 38524,
+                  "yellow_card": false,
+                  "jersey_number": "9",
+                  "replaces_player_id": 38517,
+                  "replaced_by_player_id": null,
+                  "specific_position": "FWD",
+                  "positions_detailed": []
+                },
+                {
+                  "name": "E. Youan",
+                  "goals": 0,
+                  "api_id": 921362,
+                  "rating": 6.5,
+                  "sub_in": 73,
+                  "sub_out": null,
+                  "position": "F",
+                  "red_card": false,
+                  "player_id": 5901,
+                  "yellow_card": false,
+                  "jersey_number": "27",
+                  "replaces_player_id": 38522,
+                  "replaced_by_player_id": null,
+                  "specific_position": "FWD",
+                  "positions_detailed": []
+                },
+                {
+                  "name": "M. Carbo",
+                  "goals": 0,
+                  "api_id": 858946,
+                  "rating": 6.3,
+                  "sub_in": 86,
+                  "sub_out": null,
+                  "position": "M",
+                  "red_card": false,
+                  "player_id": 38515,
+                  "yellow_card": false,
+                  "jersey_number": "8",
+                  "replaces_player_id": 38523,
+                  "replaced_by_player_id": null,
+                  "specific_position": "MID",
+                  "positions_detailed": []
+                },
+                {
                   "name": "P. Letkiewicz",
                   "goals": 0,
                   "api_id": 1513105,
@@ -35575,23 +35844,6 @@
                   "replaces_player_id": null,
                   "replaced_by_player_id": null,
                   "specific_position": "GK",
-                  "positions_detailed": []
-                },
-                {
-                  "name": "J. Lelieveld",
-                  "goals": 0,
-                  "api_id": 798179,
-                  "rating": null,
-                  "sub_in": 34,
-                  "sub_out": null,
-                  "position": "D",
-                  "red_card": false,
-                  "player_id": 38525,
-                  "yellow_card": false,
-                  "jersey_number": "2",
-                  "replaces_player_id": null,
-                  "replaced_by_player_id": null,
-                  "specific_position": "DEF",
                   "positions_detailed": []
                 },
                 {
@@ -35629,40 +35881,6 @@
                   "positions_detailed": []
                 },
                 {
-                  "name": "M. Carbo",
-                  "goals": 0,
-                  "api_id": 858946,
-                  "rating": null,
-                  "sub_in": null,
-                  "sub_out": null,
-                  "position": "M",
-                  "red_card": false,
-                  "player_id": 38515,
-                  "yellow_card": false,
-                  "jersey_number": "8",
-                  "replaces_player_id": null,
-                  "replaced_by_player_id": null,
-                  "specific_position": "MID",
-                  "positions_detailed": []
-                },
-                {
-                  "name": "J. Ertlthaler",
-                  "goals": 0,
-                  "api_id": 769123,
-                  "rating": null,
-                  "sub_in": 46,
-                  "sub_out": null,
-                  "position": "M",
-                  "red_card": false,
-                  "player_id": 38518,
-                  "yellow_card": false,
-                  "jersey_number": "7",
-                  "replaces_player_id": null,
-                  "replaced_by_player_id": null,
-                  "specific_position": "MID",
-                  "positions_detailed": []
-                },
-                {
                   "name": "E. Omić",
                   "goals": 0,
                   "api_id": 1021033,
@@ -35678,40 +35896,6 @@
                   "replaced_by_player_id": null,
                   "specific_position": "MID",
                   "positions_detailed": []
-                },
-                {
-                  "name": "E. Youan",
-                  "goals": 0,
-                  "api_id": 921362,
-                  "rating": null,
-                  "sub_in": null,
-                  "sub_out": null,
-                  "position": "F",
-                  "red_card": false,
-                  "player_id": 5901,
-                  "yellow_card": false,
-                  "jersey_number": "27",
-                  "replaces_player_id": null,
-                  "replaced_by_player_id": null,
-                  "specific_position": "FWD",
-                  "positions_detailed": []
-                },
-                {
-                  "name": "Á. Rodado",
-                  "goals": 0,
-                  "api_id": 966446,
-                  "rating": null,
-                  "sub_in": 46,
-                  "sub_out": null,
-                  "position": "F",
-                  "red_card": false,
-                  "player_id": 38524,
-                  "yellow_card": false,
-                  "jersey_number": "9",
-                  "replaces_player_id": null,
-                  "replaced_by_player_id": null,
-                  "specific_position": "FWD",
-                  "positions_detailed": []
                 }
               ]
             },
@@ -35721,7 +35905,7 @@
                   "name": "D. Gril",
                   "goals": 0,
                   "api_id": 958903,
-                  "rating": null,
+                  "rating": 8.1,
                   "sub_in": null,
                   "sub_out": null,
                   "position": "G",
@@ -35738,7 +35922,7 @@
                   "name": "F. Borowski",
                   "goals": 0,
                   "api_id": 1021809,
-                  "rating": null,
+                  "rating": 6.5,
                   "sub_in": null,
                   "sub_out": 58,
                   "position": "D",
@@ -35747,7 +35931,7 @@
                   "yellow_card": false,
                   "jersey_number": "28",
                   "replaces_player_id": null,
-                  "replaced_by_player_id": null,
+                  "replaced_by_player_id": 13923,
                   "specific_position": "DEF",
                   "positions_detailed": []
                 },
@@ -35755,7 +35939,7 @@
                   "name": "J. Rivas",
                   "goals": 0,
                   "api_id": 966573,
-                  "rating": null,
+                  "rating": 6.5,
                   "sub_in": null,
                   "sub_out": null,
                   "position": "D",
@@ -35772,13 +35956,13 @@
                   "name": "I. Drapiński",
                   "goals": 0,
                   "api_id": 1161838,
-                  "rating": null,
+                  "rating": 6.5,
                   "sub_in": null,
                   "sub_out": null,
                   "position": "D",
                   "red_card": false,
                   "player_id": 13925,
-                  "yellow_card": false,
+                  "yellow_card": true,
                   "jersey_number": "29",
                   "replaces_player_id": null,
                   "replaced_by_player_id": null,
@@ -35789,7 +35973,7 @@
                   "name": "J. Lewicki",
                   "goals": 0,
                   "api_id": 1210837,
-                  "rating": null,
+                  "rating": 6,
                   "sub_in": null,
                   "sub_out": null,
                   "position": "D",
@@ -35803,16 +35987,33 @@
                   "positions_detailed": []
                 },
                 {
+                  "name": "I. Lima",
+                  "goals": 0,
+                  "api_id": 1158181,
+                  "rating": 6.9,
+                  "sub_in": null,
+                  "sub_out": 46,
+                  "position": "M",
+                  "red_card": false,
+                  "player_id": 4361,
+                  "yellow_card": false,
+                  "jersey_number": "90",
+                  "replaces_player_id": null,
+                  "replaced_by_player_id": 14113,
+                  "specific_position": "MID",
+                  "positions_detailed": []
+                },
+                {
                   "name": "O. Lesniak",
                   "goals": 0,
                   "api_id": 1388230,
-                  "rating": null,
+                  "rating": 7.4,
                   "sub_in": null,
                   "sub_out": null,
                   "position": "M",
                   "red_card": false,
                   "player_id": 13931,
-                  "yellow_card": false,
+                  "yellow_card": true,
                   "jersey_number": "31",
                   "replaces_player_id": null,
                   "replaced_by_player_id": null,
@@ -35820,27 +36021,10 @@
                   "positions_detailed": []
                 },
                 {
-                  "name": "Q. Boisgard",
-                  "goals": 0,
-                  "api_id": 827386,
-                  "rating": null,
-                  "sub_in": null,
-                  "sub_out": 58,
-                  "position": "M",
-                  "red_card": false,
-                  "player_id": 14100,
-                  "yellow_card": false,
-                  "jersey_number": "17",
-                  "replaces_player_id": null,
-                  "replaced_by_player_id": null,
-                  "specific_position": "MID",
-                  "positions_detailed": []
-                },
-                {
                   "name": "J. Łabojko",
-                  "goals": 0,
+                  "goals": 1,
                   "api_id": 891675,
-                  "rating": null,
+                  "rating": 7.3,
                   "sub_in": null,
                   "sub_out": null,
                   "position": "M",
@@ -35855,26 +36039,26 @@
                 },
                 {
                   "name": "H. Vallejo",
-                  "goals": 0,
+                  "goals": 1,
                   "api_id": 972451,
-                  "rating": null,
+                  "rating": 7.4,
                   "sub_in": null,
-                  "sub_out": null,
+                  "sub_out": 74,
                   "position": "M",
                   "red_card": false,
                   "player_id": 13929,
                   "yellow_card": false,
                   "jersey_number": "80",
                   "replaces_player_id": null,
-                  "replaced_by_player_id": null,
+                  "replaced_by_player_id": 13932,
                   "specific_position": "MID",
                   "positions_detailed": []
                 },
                 {
                   "name": "S. N. Ndimba",
-                  "goals": 0,
+                  "goals": 1,
                   "api_id": 1129368,
-                  "rating": null,
+                  "rating": 7.3,
                   "sub_in": null,
                   "sub_out": 46,
                   "position": "F",
@@ -35883,30 +36067,115 @@
                   "yellow_card": false,
                   "jersey_number": "19",
                   "replaces_player_id": null,
-                  "replaced_by_player_id": null,
+                  "replaced_by_player_id": 13937,
                   "specific_position": "FWD",
                   "positions_detailed": []
                 },
                 {
-                  "name": "I. Lima",
+                  "name": "Q. Boisgard",
                   "goals": 0,
-                  "api_id": 1158181,
-                  "rating": null,
+                  "api_id": 827386,
+                  "rating": 6.3,
                   "sub_in": null,
-                  "sub_out": 46,
+                  "sub_out": 58,
                   "position": "F",
                   "red_card": false,
-                  "player_id": 4361,
+                  "player_id": 14100,
                   "yellow_card": false,
-                  "jersey_number": "90",
+                  "jersey_number": "17",
                   "replaces_player_id": null,
-                  "replaced_by_player_id": null,
+                  "replaced_by_player_id": 13928,
                   "specific_position": "FWD",
                   "positions_detailed": []
                 }
               ],
               "formation": "4-4-2",
               "substitutes": [
+                {
+                  "name": "S. Mucha",
+                  "goals": 0,
+                  "api_id": 1408992,
+                  "rating": 6.4,
+                  "sub_in": 46,
+                  "sub_out": null,
+                  "position": "M",
+                  "red_card": false,
+                  "player_id": 14113,
+                  "yellow_card": false,
+                  "jersey_number": "77",
+                  "replaces_player_id": 4361,
+                  "replaced_by_player_id": null,
+                  "specific_position": "MID",
+                  "positions_detailed": []
+                },
+                {
+                  "name": "A. Katsantonis",
+                  "goals": 0,
+                  "api_id": 879123,
+                  "rating": 6.3,
+                  "sub_in": 46,
+                  "sub_out": null,
+                  "position": "F",
+                  "red_card": false,
+                  "player_id": 13937,
+                  "yellow_card": false,
+                  "jersey_number": "10",
+                  "replaces_player_id": 26534,
+                  "replaced_by_player_id": null,
+                  "specific_position": "FWD",
+                  "positions_detailed": []
+                },
+                {
+                  "name": "E. Twumasi",
+                  "goals": 0,
+                  "api_id": 931738,
+                  "rating": 6.6,
+                  "sub_in": 58,
+                  "sub_out": null,
+                  "position": "D",
+                  "red_card": false,
+                  "player_id": 13923,
+                  "yellow_card": false,
+                  "jersey_number": "99",
+                  "replaces_player_id": 13933,
+                  "replaced_by_player_id": null,
+                  "specific_position": "DEF",
+                  "positions_detailed": []
+                },
+                {
+                  "name": "J. Félix",
+                  "goals": 0,
+                  "api_id": 811324,
+                  "rating": 6.4,
+                  "sub_in": 58,
+                  "sub_out": null,
+                  "position": "F",
+                  "red_card": false,
+                  "player_id": 13928,
+                  "yellow_card": false,
+                  "jersey_number": "7",
+                  "replaces_player_id": 14100,
+                  "replaced_by_player_id": null,
+                  "specific_position": "FWD",
+                  "positions_detailed": []
+                },
+                {
+                  "name": "L. Sanca",
+                  "goals": 1,
+                  "api_id": 1141665,
+                  "rating": 7.8,
+                  "sub_in": 74,
+                  "sub_out": null,
+                  "position": "M",
+                  "red_card": false,
+                  "player_id": 13932,
+                  "yellow_card": false,
+                  "jersey_number": "11",
+                  "replaces_player_id": 13929,
+                  "replaced_by_player_id": null,
+                  "specific_position": "MID",
+                  "positions_detailed": []
+                },
                 {
                   "name": "M. Mendes-Dudzinski",
                   "goals": 0,
@@ -35976,74 +36245,6 @@
                   "positions_detailed": []
                 },
                 {
-                  "name": "E. Twumasi",
-                  "goals": 0,
-                  "api_id": 931738,
-                  "rating": null,
-                  "sub_in": 58,
-                  "sub_out": null,
-                  "position": "D",
-                  "red_card": false,
-                  "player_id": 13923,
-                  "yellow_card": false,
-                  "jersey_number": "99",
-                  "replaces_player_id": null,
-                  "replaced_by_player_id": null,
-                  "specific_position": "DEF",
-                  "positions_detailed": []
-                },
-                {
-                  "name": "S. Mucha",
-                  "goals": 0,
-                  "api_id": 1408992,
-                  "rating": null,
-                  "sub_in": 46,
-                  "sub_out": null,
-                  "position": "M",
-                  "red_card": false,
-                  "player_id": 14113,
-                  "yellow_card": false,
-                  "jersey_number": "77",
-                  "replaces_player_id": null,
-                  "replaced_by_player_id": null,
-                  "specific_position": "MID",
-                  "positions_detailed": []
-                },
-                {
-                  "name": "L. Sanca",
-                  "goals": 0,
-                  "api_id": 1141665,
-                  "rating": null,
-                  "sub_in": null,
-                  "sub_out": null,
-                  "position": "M",
-                  "red_card": false,
-                  "player_id": 13932,
-                  "yellow_card": false,
-                  "jersey_number": "11",
-                  "replaces_player_id": null,
-                  "replaced_by_player_id": null,
-                  "specific_position": "MID",
-                  "positions_detailed": []
-                },
-                {
-                  "name": "J. Félix",
-                  "goals": 0,
-                  "api_id": 811324,
-                  "rating": null,
-                  "sub_in": 58,
-                  "sub_out": null,
-                  "position": "F",
-                  "red_card": false,
-                  "player_id": 13928,
-                  "yellow_card": false,
-                  "jersey_number": "7",
-                  "replaces_player_id": null,
-                  "replaced_by_player_id": null,
-                  "specific_position": "FWD",
-                  "positions_detailed": []
-                },
-                {
                   "name": "O. Maziarz",
                   "goals": 0,
                   "api_id": 2439667,
@@ -36058,23 +36259,6 @@
                   "replaces_player_id": null,
                   "replaced_by_player_id": null,
                   "specific_position": "MID",
-                  "positions_detailed": []
-                },
-                {
-                  "name": "A. Katsantonis",
-                  "goals": 0,
-                  "api_id": 879123,
-                  "rating": null,
-                  "sub_in": 46,
-                  "sub_out": null,
-                  "position": "F",
-                  "red_card": false,
-                  "player_id": 13937,
-                  "yellow_card": false,
-                  "jersey_number": "10",
-                  "replaces_player_id": null,
-                  "replaced_by_player_id": null,
-                  "specific_position": "FWD",
                   "positions_detailed": []
                 },
                 {
@@ -36099,6 +36283,294 @@
             "confirmed": true
           },
           "shotmap": [
+            {
+              "gm": {
+                "x": 0,
+                "y": 42.5,
+                "z": 8.3
+              },
+              "xg": 0.0157,
+              "gml": "close-right",
+              "min": 90,
+              "pid": 966446,
+              "pos": {
+                "x": 20.4,
+                "y": 33.3,
+                "z": 0
+              },
+              "sit": "regular",
+              "body": "right-foot",
+              "home": false,
+              "type": "miss",
+              "xgot": null,
+              "added": 7
+            },
+            {
+              "gm": {
+                "x": 0,
+                "y": 42.2,
+                "z": 19.4
+              },
+              "xg": 0.024,
+              "gml": "close-right",
+              "min": 90,
+              "pid": 914771,
+              "pos": {
+                "x": 27.8,
+                "y": 51.6,
+                "z": 0
+              },
+              "sit": "regular",
+              "body": "right-foot",
+              "home": false,
+              "type": "miss",
+              "xgot": null,
+              "added": 6
+            },
+            {
+              "gm": {
+                "x": 0,
+                "y": 54.5,
+                "z": 83.3
+              },
+              "xg": 0.0066,
+              "gml": "high",
+              "min": 90,
+              "pid": 966446,
+              "pos": {
+                "x": 25.6,
+                "y": 59.5,
+                "z": 0
+              },
+              "sit": "corner",
+              "body": "left-foot",
+              "home": false,
+              "type": "miss",
+              "xgot": null,
+              "added": 3
+            },
+            {
+              "gm": {
+                "x": 0,
+                "y": 50.4,
+                "z": 10.8
+              },
+              "xg": 0.0339,
+              "gml": "low-centre",
+              "min": 90,
+              "pid": 1423456,
+              "pos": {
+                "x": 25.2,
+                "y": 38.5,
+                "z": 0
+              },
+              "sit": "corner",
+              "body": "right-foot",
+              "home": false,
+              "type": "save",
+              "xgot": 0.0152,
+              "added": 2,
+              "block": {
+                "x": 1.1,
+                "y": 47.8,
+                "z": 0
+              }
+            },
+            {
+              "gm": {
+                "x": 0,
+                "y": 45.5,
+                "z": 10.8
+              },
+              "xg": 0.104,
+              "gml": "low-right",
+              "min": 88,
+              "pid": 1141665,
+              "pos": {
+                "x": 19.1,
+                "y": 56,
+                "z": 0
+              },
+              "sit": "assisted",
+              "body": "right-foot",
+              "home": true,
+              "type": "goal",
+              "xgot": 0.2354,
+              "gtype": "regular"
+            },
+            {
+              "gm": {
+                "x": 0,
+                "y": 49.4,
+                "z": 8.2
+              },
+              "xg": 0.0241,
+              "gml": "low-centre",
+              "min": 87,
+              "pid": 1141665,
+              "pos": {
+                "x": 26.5,
+                "y": 48.2,
+                "z": 0
+              },
+              "sit": "assisted",
+              "body": "right-foot",
+              "home": true,
+              "type": "save",
+              "xgot": 0.0106,
+              "block": {
+                "x": 3.4,
+                "y": 50.5,
+                "z": 0
+              }
+            },
+            {
+              "gm": {
+                "x": 0,
+                "y": 62,
+                "z": 9.7
+              },
+              "xg": 0.0304,
+              "gml": "left",
+              "min": 85,
+              "pid": 1031256,
+              "pos": {
+                "x": 23.6,
+                "y": 57.2,
+                "z": 0
+              },
+              "sit": "assisted",
+              "body": "right-foot",
+              "home": false,
+              "type": "miss",
+              "xgot": null
+            },
+            {
+              "gm": {
+                "x": 0,
+                "y": 53.7,
+                "z": 28.5
+              },
+              "xg": 0.2357,
+              "gml": "high-left",
+              "min": 69,
+              "pid": 914771,
+              "pos": {
+                "x": 6.1,
+                "y": 46.8,
+                "z": 0
+              },
+              "sit": "assisted",
+              "body": "head",
+              "home": false,
+              "type": "goal",
+              "xgot": 0.9549,
+              "gtype": "regular"
+            },
+            {
+              "gm": {
+                "x": 0,
+                "y": 49.6,
+                "z": 19
+              },
+              "xg": 0.0758,
+              "gml": "low-centre",
+              "min": 69,
+              "pid": 769123,
+              "pos": {
+                "x": 18.5,
+                "y": 50.3,
+                "z": 0
+              },
+              "sit": "regular",
+              "body": "left-foot",
+              "home": false,
+              "type": "block",
+              "xgot": null,
+              "block": {
+                "x": 11.1,
+                "y": 50.4,
+                "z": 0
+              }
+            },
+            {
+              "gm": {
+                "x": 0,
+                "y": 51.1,
+                "z": 4.4
+              },
+              "xg": 0.5185,
+              "gml": "low-centre",
+              "min": 68,
+              "pid": 966446,
+              "pos": {
+                "x": 7.6,
+                "y": 54.4,
+                "z": 0
+              },
+              "sit": "regular",
+              "body": "left-foot",
+              "home": false,
+              "type": "save",
+              "xgot": 0.6283,
+              "block": {
+                "x": 1.4,
+                "y": 52.2,
+                "z": 0
+              }
+            },
+            {
+              "gm": {
+                "x": 0,
+                "y": 50.1,
+                "z": 19
+              },
+              "xg": 0.1007,
+              "gml": "low-centre",
+              "min": 68,
+              "pid": 966446,
+              "pos": {
+                "x": 9.4,
+                "y": 55.2,
+                "z": 0
+              },
+              "sit": "regular",
+              "body": "right-foot",
+              "home": false,
+              "type": "block",
+              "xgot": null,
+              "block": {
+                "x": 7.9,
+                "y": 54.3,
+                "z": 0
+              }
+            },
+            {
+              "gm": {
+                "x": 0,
+                "y": 50.8,
+                "z": 19
+              },
+              "xg": 0.0909,
+              "gml": "low-centre",
+              "min": 68,
+              "pid": 966446,
+              "pos": {
+                "x": 11.1,
+                "y": 56.8,
+                "z": 0
+              },
+              "sit": "assisted",
+              "body": "left-foot",
+              "home": false,
+              "type": "block",
+              "xgot": null,
+              "block": {
+                "x": 7.2,
+                "y": 54.1,
+                "z": 0
+              }
+            },
             {
               "gm": {
                 "x": 0,
@@ -36227,7 +36699,7 @@
                 "y": 49.9,
                 "z": 10.8
               },
-              "xg": 0.123,
+              "xg": 0.1754,
               "gml": "low-centre",
               "min": 54,
               "pid": 1408992,
@@ -36240,7 +36712,7 @@
               "body": "right-foot",
               "home": true,
               "type": "save",
-              "xgot": 0.0888,
+              "xgot": 0.1474,
               "block": {
                 "x": 4.4,
                 "y": 57.9,
@@ -37111,6 +37583,102 @@
             {
               "m": 67,
               "v": -7
+            },
+            {
+              "m": 68,
+              "v": -8
+            },
+            {
+              "m": 69,
+              "v": -26
+            },
+            {
+              "m": 70,
+              "v": -25
+            },
+            {
+              "m": 71,
+              "v": -16
+            },
+            {
+              "m": 72,
+              "v": -26
+            },
+            {
+              "m": 73,
+              "v": -69
+            },
+            {
+              "m": 74,
+              "v": -41
+            },
+            {
+              "m": 75,
+              "v": -31
+            },
+            {
+              "m": 76,
+              "v": -45
+            },
+            {
+              "m": 77,
+              "v": -40
+            },
+            {
+              "m": 78,
+              "v": -12
+            },
+            {
+              "m": 79,
+              "v": 23
+            },
+            {
+              "m": 80,
+              "v": 4
+            },
+            {
+              "m": 81,
+              "v": -6
+            },
+            {
+              "m": 82,
+              "v": -9
+            },
+            {
+              "m": 83,
+              "v": -20
+            },
+            {
+              "m": 84,
+              "v": -35
+            },
+            {
+              "m": 85,
+              "v": -41
+            },
+            {
+              "m": 86,
+              "v": -27
+            },
+            {
+              "m": 87,
+              "v": -19
+            },
+            {
+              "m": 88,
+              "v": 31
+            },
+            {
+              "m": 89,
+              "v": 36
+            },
+            {
+              "m": 90,
+              "v": 21
+            },
+            {
+              "m": 90.5,
+              "v": -67
             }
           ],
           "xg_per_minute": [
@@ -37242,41 +37810,344 @@
             },
             {
               "m": 54,
-              "xg_home": 0.123,
+              "xg_home": 0.1754,
               "xg_away": 0.0,
-              "cum_home": 0.7473,
+              "cum_home": 0.7997,
               "cum_away": 1.9644
             },
             {
               "m": 55,
               "xg_home": 0.0,
               "xg_away": 0.019,
-              "cum_home": 0.7473,
+              "cum_home": 0.7997,
               "cum_away": 1.9834
             },
             {
               "m": 60,
               "xg_home": 0.0,
               "xg_away": 0.6556,
-              "cum_home": 0.7473,
+              "cum_home": 0.7997,
               "cum_away": 2.639
             },
             {
               "m": 62,
               "xg_home": 0.0723,
               "xg_away": 0.0,
-              "cum_home": 0.8196,
+              "cum_home": 0.872,
               "cum_away": 2.639
             },
             {
               "m": 65,
               "xg_home": 0.7884,
               "xg_away": 0.0,
-              "cum_home": 1.608,
+              "cum_home": 1.6604,
               "cum_away": 2.639
+            },
+            {
+              "m": 68,
+              "xg_home": 0.0,
+              "xg_away": 0.7101,
+              "cum_home": 1.6604,
+              "cum_away": 3.3491
+            },
+            {
+              "m": 69,
+              "xg_home": 0.0,
+              "xg_away": 0.3115,
+              "cum_home": 1.6604,
+              "cum_away": 3.6606
+            },
+            {
+              "m": 85,
+              "xg_home": 0.0,
+              "xg_away": 0.0304,
+              "cum_home": 1.6604,
+              "cum_away": 3.691
+            },
+            {
+              "m": 87,
+              "xg_home": 0.0241,
+              "xg_away": 0.0,
+              "cum_home": 1.6845,
+              "cum_away": 3.691
+            },
+            {
+              "m": 88,
+              "xg_home": 0.104,
+              "xg_away": 0.0,
+              "cum_home": 1.7885,
+              "cum_away": 3.691
+            },
+            {
+              "m": 90,
+              "xg_home": 0.0,
+              "xg_away": 0.0802,
+              "cum_home": 1.7885,
+              "cum_away": 3.7712
             }
           ],
-          "average_positions": null,
+          "average_positions": {
+            "away": [
+              {
+                "n": 21,
+                "x": 38.9,
+                "y": 59.7,
+                "pid": 939851,
+                "pos": "M",
+                "name": "J. Igbekeme"
+              },
+              {
+                "n": 36,
+                "x": 67.4,
+                "y": 77.2,
+                "pid": 869880,
+                "pos": "M",
+                "name": "M. Božić"
+              },
+              {
+                "n": 10,
+                "x": 23.3,
+                "y": 20.1,
+                "pid": 839430,
+                "pos": "D",
+                "name": "R. Giger"
+              },
+              {
+                "n": 36,
+                "x": 66.7,
+                "y": 54.7,
+                "pid": 914771,
+                "pos": "F",
+                "name": "J. Sánchez"
+              },
+              {
+                "n": 22,
+                "x": 57.7,
+                "y": 26.3,
+                "pid": 1979705,
+                "pos": "M",
+                "name": "M. Kuziemka"
+              },
+              {
+                "n": 24,
+                "x": 72.1,
+                "y": 54.2,
+                "pid": 966446,
+                "pos": "F",
+                "name": "Á. Rodado"
+              },
+              {
+                "n": 12,
+                "x": 76.6,
+                "y": 18.1,
+                "pid": 921362,
+                "pos": "F",
+                "name": "E. Youan"
+              },
+              {
+                "n": 7,
+                "x": 50.3,
+                "y": 36.5,
+                "pid": 858946,
+                "pos": "M",
+                "name": "M. Carbo"
+              },
+              {
+                "n": 57,
+                "x": 47.8,
+                "y": 25.6,
+                "pid": 798179,
+                "pos": "D",
+                "name": "J. Lelieveld"
+              },
+              {
+                "n": 54,
+                "x": 34.2,
+                "y": 42.3,
+                "pid": 138601,
+                "pos": "D",
+                "name": "A. Uryga"
+              },
+              {
+                "n": 66,
+                "x": 59.7,
+                "y": 46.2,
+                "pid": 980992,
+                "pos": "M",
+                "name": "F. Duarte"
+              },
+              {
+                "n": 60,
+                "x": 46.5,
+                "y": 82.4,
+                "pid": 1423456,
+                "pos": "D",
+                "name": "J. Krzyzanowski"
+              },
+              {
+                "n": 79,
+                "x": 10.8,
+                "y": 52.1,
+                "pid": 1390683,
+                "pos": "G",
+                "name": "M. Łubik"
+              },
+              {
+                "n": 62,
+                "x": 64.7,
+                "y": 44.7,
+                "pid": 769123,
+                "pos": "M",
+                "name": "J. Ertlthaler"
+              },
+              {
+                "n": 68,
+                "x": 35.9,
+                "y": 65.4,
+                "pid": 1396487,
+                "pos": "D",
+                "name": "M. Maisonneuve"
+              },
+              {
+                "n": 66,
+                "x": 59.1,
+                "y": 51.0,
+                "pid": 1031256,
+                "pos": "M",
+                "name": "K. Duda"
+              }
+            ],
+            "home": [
+              {
+                "n": 24,
+                "x": 58.7,
+                "y": 57.1,
+                "pid": 827386,
+                "pos": "M",
+                "name": "Q. Boisgard"
+              },
+              {
+                "n": 37,
+                "x": 63.7,
+                "y": 82.4,
+                "pid": 972451,
+                "pos": "M",
+                "name": "H. Vallejo"
+              },
+              {
+                "n": 26,
+                "x": 37.4,
+                "y": 22.7,
+                "pid": 931738,
+                "pos": "D",
+                "name": "E. Twumasi"
+              },
+              {
+                "n": 40,
+                "x": 51.1,
+                "y": 15.2,
+                "pid": 1021809,
+                "pos": "D",
+                "name": "F. Borowski"
+              },
+              {
+                "n": 36,
+                "x": 68.1,
+                "y": 18.7,
+                "pid": 1158181,
+                "pos": "F",
+                "name": "I. Lima"
+              },
+              {
+                "n": 7,
+                "x": 54.0,
+                "y": 62.8,
+                "pid": 811324,
+                "pos": "F",
+                "name": "J. Félix"
+              },
+              {
+                "n": 11,
+                "x": 55.6,
+                "y": 47.9,
+                "pid": 879123,
+                "pos": "F",
+                "name": "A. Katsantonis"
+              },
+              {
+                "n": 19,
+                "x": 69.7,
+                "y": 22.4,
+                "pid": 1129368,
+                "pos": "F",
+                "name": "S. N. Ndimba"
+              },
+              {
+                "n": 23,
+                "x": 47.7,
+                "y": 23.8,
+                "pid": 1408992,
+                "pos": "M",
+                "name": "S. Mucha"
+              },
+              {
+                "n": 21,
+                "x": 44.8,
+                "y": 61.4,
+                "pid": 1141665,
+                "pos": "M",
+                "name": "L. Sanca"
+              },
+              {
+                "n": 77,
+                "x": 35.4,
+                "y": 66.3,
+                "pid": 1161838,
+                "pos": "D",
+                "name": "I. Drapiński"
+              },
+              {
+                "n": 76,
+                "x": 47.6,
+                "y": 51.1,
+                "pid": 891675,
+                "pos": "M",
+                "name": "J. Łabojko"
+              },
+              {
+                "n": 61,
+                "x": 42.9,
+                "y": 79.6,
+                "pid": 1210837,
+                "pos": "D",
+                "name": "J. Lewicki"
+              },
+              {
+                "n": 80,
+                "x": 47.1,
+                "y": 43.7,
+                "pid": 1388230,
+                "pos": "M",
+                "name": "O. Lesniak"
+              },
+              {
+                "n": 63,
+                "x": 26.4,
+                "y": 36.8,
+                "pid": 966573,
+                "pos": "D",
+                "name": "J. Rivas"
+              },
+              {
+                "n": 70,
+                "x": 8.7,
+                "y": 51.3,
+                "pid": 958903,
+                "pos": "G",
+                "name": "D. Gril"
+              }
+            ]
+          },
           "jerseys": {
             "away": {
               "GK": {
@@ -37324,28 +38195,28 @@
           ],
           "sr_stats": {
             "attack": {
-              "away": 58,
-              "home": 67
+              "away": 86,
+              "home": 89
             },
             "ball_safe": {
-              "away": 53,
-              "home": 53
+              "away": 74,
+              "home": 77
             },
             "attack_pct": {
               "away": 16,
-              "home": 19
+              "home": 21
             },
             "ball_safe_pct": {
-              "away": 43,
-              "home": 38
+              "away": 40,
+              "home": 40
             },
             "dangerous_attack": {
-              "away": 34,
-              "home": 37
+              "away": 57,
+              "home": 47
             },
             "dangerous_attack_pct": {
-              "away": 41,
-              "home": 43
+              "away": 44,
+              "home": 39
             }
           },
           "ai_preview": null,
@@ -37377,6 +38248,15 @@
       "source": "GitHub Actions cache"
     },
     {
+      "id": 219541,
+      "home": "Energie Cottbus",
+      "away": "SV Werder Bremen",
+      "league": "Club Friendlies",
+      "date": "2026-08-01T17:00:00+04:00",
+      "prediction": null,
+      "source": "GitHub Actions cache"
+    },
+    {
       "id": 223357,
       "home": "K. Beerschot V.A.",
       "away": "SV Zulte Waregem",
@@ -37395,36 +38275,9 @@
       "source": "GitHub Actions cache"
     },
     {
-      "id": 219542,
-      "home": "Plymouth Argyle",
-      "away": "Bristol City",
-      "league": "Club Friendlies",
-      "date": "2026-08-01T17:00:00+04:00",
-      "prediction": null,
-      "source": "GitHub Actions cache"
-    },
-    {
-      "id": 223359,
-      "home": "KSC Lokeren",
-      "away": "FCV Dender",
-      "league": "Club Friendlies",
-      "date": "2026-08-01T17:00:00+04:00",
-      "prediction": null,
-      "source": "GitHub Actions cache"
-    },
-    {
-      "id": 219540,
-      "home": "Preußen Münster",
-      "away": "Southampton",
-      "league": "Club Friendlies",
-      "date": "2026-08-01T17:00:00+04:00",
-      "prediction": null,
-      "source": "GitHub Actions cache"
-    },
-    {
-      "id": 223358,
-      "home": "K. Beerschot V.A.",
-      "away": "SV Zulte Waregem",
+      "id": 223360,
+      "home": "MVV Maastricht",
+      "away": "Patro Eisden Maasmechelen",
       "league": "Club Friendlies",
       "date": "2026-08-01T17:00:00+04:00",
       "prediction": null,
@@ -37434,24 +38287,6 @@
       "id": 219538,
       "home": "Manchester United",
       "away": "Atlético Madrid",
-      "league": "Club Friendlies",
-      "date": "2026-08-01T17:00:00+04:00",
-      "prediction": null,
-      "source": "GitHub Actions cache"
-    },
-    {
-      "id": 223284,
-      "home": "SC Heerenveen",
-      "away": "NPS Volos",
-      "league": "Club Friendlies",
-      "date": "2026-08-01T17:00:00+04:00",
-      "prediction": null,
-      "source": "GitHub Actions cache"
-    },
-    {
-      "id": 223360,
-      "home": "MVV Maastricht",
-      "away": "Patro Eisden Maasmechelen",
       "league": "Club Friendlies",
       "date": "2026-08-01T17:00:00+04:00",
       "prediction": null,
@@ -37525,37 +38360,37 @@
           "round_number": 15,
           "round_name": "",
           "group_name": null,
-          "status": "2nd_half",
+          "status": "finished",
           "home_score": 1,
           "away_score": 1,
           "home_score_ht": 1,
           "away_score_ht": 1,
-          "current_minute": 64,
-          "period": "2T",
-          "odds_home": 1.0,
-          "odds_draw": 1.0,
-          "odds_away": 1.0,
-          "odds_over_15": 1.0,
-          "odds_over_25": 1.0,
-          "odds_over_35": 1.0,
-          "odds_under_15": 1.0,
-          "odds_under_25": 1.0,
-          "odds_under_35": 1.0,
-          "odds_btts_yes": 1.0,
-          "odds_btts_no": 1.0,
+          "current_minute": 90,
+          "period": "FT",
+          "odds_home": 1.69,
+          "odds_draw": 3.96,
+          "odds_away": 3.89,
+          "odds_over_15": 1.16,
+          "odds_over_25": 1.54,
+          "odds_over_35": 2.34,
+          "odds_under_15": 4.88,
+          "odds_under_25": 2.38,
+          "odds_under_35": 1.56,
+          "odds_btts_yes": 1.53,
+          "odds_btts_no": 2.37,
           "actual_home_xg": null,
           "actual_away_xg": null,
-          "home_xg_live": 0.57,
-          "away_xg_live": 2.13,
+          "home_xg_live": 0.79,
+          "away_xg_live": 2.48,
           "penalty_shootout": null,
           "extra_time_score": null,
           "is_local_derby": false,
           "is_neutral_ground": null,
           "travel_distance_km": 288,
-          "weather_code": null,
+          "weather_code": 1,
           "wind_speed": 9.4,
           "temperature_c": 22,
-          "pitch_condition": null,
+          "pitch_condition": 1,
           "attendance": null,
           "referee": {
             "id": 1969,
@@ -37647,13 +38482,68 @@
           },
           "incidents": [
             {
-              "text": "Second half",
+              "text": "FT",
               "type": "period",
               "minute": 90,
-              "is_live": true,
+              "is_live": false,
               "added_time": 999,
               "away_score": 1,
               "home_score": 1
+            },
+            {
+              "type": "substitution",
+              "minute": 90,
+              "is_home": true,
+              "player_in": "B. Sadiku",
+              "added_time": null,
+              "player_out": "M. Rygaard",
+              "player_in_id": 1868082,
+              "player_out_id": 801073
+            },
+            {
+              "type": "injuryTime",
+              "length": 5,
+              "minute": 90
+            },
+            {
+              "type": "substitution",
+              "minute": 85,
+              "is_home": false,
+              "player_in": "N. Chourak",
+              "added_time": null,
+              "player_out": "R. Gojani",
+              "player_in_id": 1156699,
+              "player_out_id": 152427
+            },
+            {
+              "type": "substitution",
+              "minute": 83,
+              "is_home": true,
+              "player_in": "F. Helander",
+              "added_time": null,
+              "player_out": "H. Ibrahim",
+              "player_in_id": 168749,
+              "player_out_id": 1104203
+            },
+            {
+              "type": "substitution",
+              "minute": 77,
+              "is_home": true,
+              "player_in": "S. Ngabo",
+              "added_time": null,
+              "player_out": "G. Lindgren",
+              "player_in_id": 1126860,
+              "player_out_id": 1175710
+            },
+            {
+              "type": "card",
+              "minute": 71,
+              "player": "M. Rygaard",
+              "reason": "Foul",
+              "is_home": true,
+              "card_type": "yellow",
+              "player_id": 801073,
+              "added_time": null
             },
             {
               "type": "substitution",
@@ -37784,94 +38674,96 @@
           ],
           "live_stats": {
             "away": {
-              "duels": 54,
-              "fouls": 7,
-              "passes": 299,
-              "crosses": "5/15 (33%)",
+              "duels": 53,
+              "fouls": 14,
+              "passes": 436,
+              "crosses": "5/21 (24%)",
               "punches": 0,
-              "tackles": 13,
-              "dribbles": "3/14 (21%)",
-              "offsides": 1,
+              "tackles": 19,
+              "dribbles": "3/18 (17%)",
+              "offsides": 2,
               "big_saves": 0,
-              "throw_ins": 12,
-              "clearances": 7,
-              "free_kicks": 11,
-              "goal_kicks": 4,
-              "long_balls": "18/36 (50%)",
-              "recoveries": 34,
-              "big_chances": 2,
-              "tackles_won": 77,
+              "throw_ins": 18,
+              "clearances": 14,
+              "free_kicks": 17,
+              "goal_kicks": 5,
+              "long_balls": "30/58 (52%)",
+              "recoveries": 50,
+              "big_chances": 3,
+              "high_claims": 2,
+              "tackles_won": 79,
               "total_saves": 0,
-              "total_shots": 8,
-              "aerial_duels": "4/7 (57%)",
+              "total_shots": 12,
+              "aerial_duels": "9/15 (60%)",
               "corner_kicks": 6,
-              "dispossessed": 3,
-              "ground_duels": "27/50 (54%)",
+              "dispossessed": 4,
+              "ground_duels": "38/73 (52%)",
               "hit_woodwork": 1,
               "yellow_cards": 0,
-              "blocked_shots": 0,
-              "interceptions": 10,
-              "total_tackles": 13,
-              "average_rating": 6.77,
-              "accurate_passes": 253,
-              "ball_possession": 50,
-              "shots_on_target": 5,
+              "blocked_shots": 1,
+              "interceptions": 12,
+              "total_tackles": 19,
+              "average_rating": 7.1,
+              "accurate_passes": 363,
+              "ball_possession": 48,
+              "shots_on_target": 6,
               "goalkeeper_saves": 0,
-              "shots_inside_box": 6,
-              "shots_off_target": 3,
-              "final_third_phase": "74/103 (72%)",
-              "shots_outside_box": 2,
-              "big_chances_missed": 1,
+              "shots_inside_box": 8,
+              "shots_off_target": 5,
+              "final_third_phase": "117/157 (75%)",
+              "shots_outside_box": 4,
+              "big_chances_missed": 2,
               "big_chances_scored": 1,
-              "final_third_entries": 34,
+              "final_third_entries": 55,
               "errors_lead_to_a_shot": 0,
               "fouled_in_final_third": 4,
-              "touches_in_penalty_area": 15
+              "touches_in_penalty_area": 25
             },
             "home": {
               "duels": 46,
-              "fouls": 11,
-              "passes": 303,
-              "crosses": "3/9 (33%)",
+              "fouls": 17,
+              "passes": 473,
+              "crosses": "4/17 (24%)",
               "punches": 1,
-              "tackles": 14,
-              "dribbles": "3/8 (38%)",
+              "tackles": 20,
+              "dribbles": "3/11 (27%)",
               "offsides": 0,
               "big_saves": 3,
-              "throw_ins": 13,
-              "clearances": 15,
-              "free_kicks": 7,
-              "goal_kicks": 6,
-              "long_balls": "17/30 (57%)",
-              "recoveries": 28,
+              "throw_ins": 17,
+              "clearances": 27,
+              "free_kicks": 14,
+              "goal_kicks": 10,
+              "long_balls": "29/55 (53%)",
+              "recoveries": 44,
               "big_chances": 0,
-              "tackles_won": 43,
-              "total_saves": 4,
-              "total_shots": 5,
-              "aerial_duels": "3/7 (43%)",
-              "corner_kicks": 3,
-              "dispossessed": 8,
-              "ground_duels": "23/50 (46%)",
+              "high_claims": 0,
+              "tackles_won": 50,
+              "total_saves": 5,
+              "total_shots": 10,
+              "aerial_duels": "6/15 (40%)",
+              "corner_kicks": 5,
+              "dispossessed": 11,
+              "ground_duels": "35/74 (47%)",
               "hit_woodwork": 1,
-              "yellow_cards": 2,
-              "blocked_shots": 1,
-              "interceptions": 8,
-              "total_tackles": 14,
-              "average_rating": 6.78,
-              "accurate_passes": 249,
-              "ball_possession": 50,
+              "yellow_cards": 3,
+              "blocked_shots": 3,
+              "interceptions": 10,
+              "total_tackles": 20,
+              "average_rating": 7.38,
+              "accurate_passes": 390,
+              "ball_possession": 52,
               "shots_on_target": 1,
-              "goalkeeper_saves": 4,
-              "shots_inside_box": 5,
-              "shots_off_target": 3,
-              "final_third_phase": "62/89 (70%)",
-              "shots_outside_box": 0,
+              "goalkeeper_saves": 5,
+              "shots_inside_box": 7,
+              "shots_off_target": 6,
+              "final_third_phase": "103/138 (75%)",
+              "shots_outside_box": 3,
               "big_chances_missed": 0,
               "big_chances_scored": 0,
-              "final_third_entries": 25,
+              "final_third_entries": 39,
               "errors_lead_to_a_shot": 1,
-              "fouled_in_final_third": 1,
-              "touches_in_penalty_area": 15
+              "fouled_in_final_third": 4,
+              "touches_in_penalty_area": 21
             },
             "first_half": {
               "away": {
@@ -37955,80 +38847,82 @@
             },
             "second_half": {
               "away": {
-                "duels": 50,
-                "fouls": 2,
-                "passes": 71,
-                "crosses": "3/6 (50%)",
-                "tackles": 1,
-                "dribbles": "1/4 (25%)",
-                "offsides": 0,
-                "throw_ins": 1,
-                "clearances": 2,
-                "free_kicks": 3,
-                "goal_kicks": 1,
-                "long_balls": "4/7 (57%)",
-                "recoveries": 9,
-                "big_chances": 0,
-                "tackles_won": 0,
+                "duels": 51,
+                "fouls": 9,
+                "passes": 208,
+                "crosses": "3/12 (25%)",
+                "tackles": 7,
+                "dribbles": "1/8 (13%)",
+                "offsides": 1,
+                "throw_ins": 7,
+                "clearances": 9,
+                "free_kicks": 9,
+                "goal_kicks": 2,
+                "long_balls": "16/29 (55%)",
+                "recoveries": 25,
+                "big_chances": 1,
+                "tackles_won": 71,
                 "total_saves": 0,
-                "total_shots": 3,
+                "total_shots": 7,
+                "aerial_duels": "5/8 (63%)",
                 "corner_kicks": 3,
-                "dispossessed": 0,
-                "ground_duels": "5/10 (50%)",
+                "dispossessed": 1,
+                "ground_duels": "16/33 (48%)",
                 "hit_woodwork": 1,
                 "yellow_cards": 0,
-                "blocked_shots": 0,
-                "interceptions": 3,
-                "total_tackles": 1,
-                "accurate_passes": 64,
-                "ball_possession": 51,
-                "shots_on_target": 1,
+                "blocked_shots": 1,
+                "interceptions": 5,
+                "total_tackles": 7,
+                "accurate_passes": 174,
+                "ball_possession": 46,
+                "shots_on_target": 2,
                 "goalkeeper_saves": 0,
-                "shots_inside_box": 2,
-                "shots_off_target": 2,
-                "shots_outside_box": 1,
-                "big_chances_missed": 0,
+                "shots_inside_box": 4,
+                "shots_off_target": 4,
+                "shots_outside_box": 3,
+                "big_chances_missed": 1,
                 "big_chances_scored": 0,
-                "final_third_entries": 12,
+                "final_third_entries": 33,
                 "fouled_in_final_third": 1
               },
               "home": {
-                "duels": 50,
-                "fouls": 3,
-                "passes": 74,
-                "crosses": "0/1 (0%)",
-                "tackles": 3,
-                "dribbles": "0/0 (0%)",
+                "duels": 48,
+                "fouls": 9,
+                "passes": 244,
+                "crosses": "1/9 (11%)",
+                "tackles": 9,
+                "dribbles": "0/3 (0%)",
                 "offsides": 0,
-                "throw_ins": 1,
-                "clearances": 4,
-                "free_kicks": 2,
-                "goal_kicks": 3,
-                "long_balls": "4/9 (44%)",
-                "recoveries": 8,
+                "throw_ins": 5,
+                "clearances": 16,
+                "free_kicks": 9,
+                "goal_kicks": 7,
+                "long_balls": "16/34 (47%)",
+                "recoveries": 24,
                 "big_chances": 0,
-                "tackles_won": 33,
-                "total_saves": 1,
-                "total_shots": 0,
-                "corner_kicks": 0,
-                "dispossessed": 1,
-                "ground_duels": "5/10 (50%)",
+                "tackles_won": 56,
+                "total_saves": 2,
+                "total_shots": 5,
+                "aerial_duels": "3/8 (38%)",
+                "corner_kicks": 2,
+                "dispossessed": 4,
+                "ground_duels": "17/34 (50%)",
                 "hit_woodwork": 0,
-                "yellow_cards": 2,
-                "blocked_shots": 0,
-                "interceptions": 0,
-                "total_tackles": 3,
-                "accurate_passes": 59,
-                "ball_possession": 49,
+                "yellow_cards": 3,
+                "blocked_shots": 2,
+                "interceptions": 2,
+                "total_tackles": 9,
+                "accurate_passes": 200,
+                "ball_possession": 54,
                 "shots_on_target": 0,
-                "goalkeeper_saves": 1,
-                "shots_inside_box": 0,
-                "shots_off_target": 0,
-                "shots_outside_box": 0,
+                "goalkeeper_saves": 2,
+                "shots_inside_box": 2,
+                "shots_off_target": 3,
+                "shots_outside_box": 3,
                 "big_chances_missed": 0,
                 "big_chances_scored": 0,
-                "final_third_entries": 6,
-                "fouled_in_final_third": 0
+                "final_third_entries": 20,
+                "fouled_in_final_third": 3
               }
             }
           },
@@ -38039,7 +38933,7 @@
                   "name": "S. Brolin",
                   "goals": 0,
                   "api_id": 856792,
-                  "rating": null,
+                  "rating": 6.5,
                   "sub_in": null,
                   "sub_out": null,
                   "position": "G",
@@ -38056,7 +38950,7 @@
                   "name": "F. Björklund",
                   "goals": 0,
                   "api_id": 2643303,
-                  "rating": null,
+                  "rating": 6.7,
                   "sub_in": null,
                   "sub_out": null,
                   "position": "D",
@@ -38073,7 +38967,7 @@
                   "name": "L. Saetra",
                   "goals": 0,
                   "api_id": 81451,
-                  "rating": null,
+                  "rating": 7.4,
                   "sub_in": null,
                   "sub_out": null,
                   "position": "D",
@@ -38088,9 +38982,9 @@
                 },
                 {
                   "name": "A. Keita",
-                  "goals": 0,
+                  "goals": 1,
                   "api_id": 974125,
-                  "rating": null,
+                  "rating": 7.7,
                   "sub_in": null,
                   "sub_out": null,
                   "position": "D",
@@ -38107,7 +39001,7 @@
                   "name": "S. E. Overby",
                   "goals": 0,
                   "api_id": 1121443,
-                  "rating": null,
+                  "rating": 6.8,
                   "sub_in": null,
                   "sub_out": null,
                   "position": "D",
@@ -38124,7 +39018,7 @@
                   "name": "C. Gustafsson",
                   "goals": 0,
                   "api_id": 988740,
-                  "rating": null,
+                  "rating": 7,
                   "sub_in": null,
                   "sub_out": null,
                   "position": "M",
@@ -38141,16 +39035,16 @@
                   "name": "R. Gojani",
                   "goals": 0,
                   "api_id": 152427,
-                  "rating": null,
+                  "rating": 7.1,
                   "sub_in": null,
-                  "sub_out": null,
+                  "sub_out": 85,
                   "position": "M",
                   "red_card": false,
                   "player_id": 26248,
                   "yellow_card": false,
                   "jersey_number": "23",
                   "replaces_player_id": null,
-                  "replaced_by_player_id": null,
+                  "replaced_by_player_id": 26249,
                   "specific_position": "MID",
                   "positions_detailed": []
                 },
@@ -38158,7 +39052,7 @@
                   "name": "M. Söderbäck",
                   "goals": 0,
                   "api_id": 1200811,
-                  "rating": null,
+                  "rating": 6.5,
                   "sub_in": null,
                   "sub_out": null,
                   "position": "M",
@@ -38175,7 +39069,7 @@
                   "name": "A. Magashy",
                   "goals": 0,
                   "api_id": 1114134,
-                  "rating": null,
+                  "rating": 6,
                   "sub_in": null,
                   "sub_out": 63,
                   "position": "M",
@@ -38184,7 +39078,7 @@
                   "yellow_card": false,
                   "jersey_number": "21",
                   "replaces_player_id": null,
-                  "replaced_by_player_id": null,
+                  "replaced_by_player_id": 26247,
                   "specific_position": "MID",
                   "positions_detailed": []
                 },
@@ -38192,7 +39086,7 @@
                   "name": "C. Sagoe Jr.",
                   "goals": 0,
                   "api_id": 1119436,
-                  "rating": null,
+                  "rating": 6.4,
                   "sub_in": null,
                   "sub_out": null,
                   "position": "M",
@@ -38209,7 +39103,7 @@
                   "name": "C. Rosenqvist",
                   "goals": 0,
                   "api_id": 2149239,
-                  "rating": null,
+                  "rating": 6.6,
                   "sub_in": null,
                   "sub_out": null,
                   "position": "F",
@@ -38225,6 +39119,40 @@
               ],
               "formation": "4-2-3-1",
               "substitutes": [
+                {
+                  "name": "M. Hallberg",
+                  "goals": 0,
+                  "api_id": 181615,
+                  "rating": 6.6,
+                  "sub_in": 63,
+                  "sub_out": null,
+                  "position": "M",
+                  "red_card": false,
+                  "player_id": 26247,
+                  "yellow_card": false,
+                  "jersey_number": "5",
+                  "replaces_player_id": 34296,
+                  "replaced_by_player_id": null,
+                  "specific_position": "MID",
+                  "positions_detailed": []
+                },
+                {
+                  "name": "N. Chourak",
+                  "goals": 0,
+                  "api_id": 1156699,
+                  "rating": 6.6,
+                  "sub_in": 85,
+                  "sub_out": null,
+                  "position": "M",
+                  "red_card": false,
+                  "player_id": 26249,
+                  "yellow_card": false,
+                  "jersey_number": "7",
+                  "replaces_player_id": 26248,
+                  "replaced_by_player_id": null,
+                  "specific_position": "MID",
+                  "positions_detailed": []
+                },
                 {
                   "name": "J. Kindberg",
                   "goals": 0,
@@ -38260,23 +39188,6 @@
                   "positions_detailed": []
                 },
                 {
-                  "name": "N. Chourak",
-                  "goals": 0,
-                  "api_id": 1156699,
-                  "rating": null,
-                  "sub_in": null,
-                  "sub_out": null,
-                  "position": "M",
-                  "red_card": false,
-                  "player_id": 26249,
-                  "yellow_card": false,
-                  "jersey_number": "7",
-                  "replaces_player_id": null,
-                  "replaced_by_player_id": null,
-                  "specific_position": "MID",
-                  "positions_detailed": []
-                },
-                {
                   "name": "S. Lawal",
                   "goals": 0,
                   "api_id": 1910984,
@@ -38290,26 +39201,7 @@
                   "jersey_number": "18",
                   "replaces_player_id": null,
                   "replaced_by_player_id": null,
-                  "specific_position": "LB",
-                  "positions_detailed": [
-                    "LB"
-                  ]
-                },
-                {
-                  "name": "M. Hallberg",
-                  "goals": 0,
-                  "api_id": 181615,
-                  "rating": null,
-                  "sub_in": 63,
-                  "sub_out": null,
-                  "position": "M",
-                  "red_card": false,
-                  "player_id": 26247,
-                  "yellow_card": false,
-                  "jersey_number": "5",
-                  "replaces_player_id": null,
-                  "replaced_by_player_id": null,
-                  "specific_position": "MID",
+                  "specific_position": "DEF",
                   "positions_detailed": []
                 },
                 {
@@ -38360,10 +39252,8 @@
                   "jersey_number": "9",
                   "replaces_player_id": null,
                   "replaced_by_player_id": null,
-                  "specific_position": "ST",
-                  "positions_detailed": [
-                    "ST"
-                  ]
+                  "specific_position": "FWD",
+                  "positions_detailed": []
                 }
               ]
             },
@@ -38373,7 +39263,7 @@
                   "name": "A. Linde",
                   "goals": 0,
                   "api_id": 184679,
-                  "rating": null,
+                  "rating": 6.7,
                   "sub_in": null,
                   "sub_out": null,
                   "position": "G",
@@ -38390,7 +39280,7 @@
                   "name": "B. Wembangomo",
                   "goals": 0,
                   "api_id": 577266,
-                  "rating": null,
+                  "rating": 6.1,
                   "sub_in": null,
                   "sub_out": 46,
                   "position": "D",
@@ -38399,15 +39289,15 @@
                   "yellow_card": false,
                   "jersey_number": "5",
                   "replaces_player_id": null,
-                  "replaced_by_player_id": null,
+                  "replaced_by_player_id": 12750,
                   "specific_position": "DEF",
                   "positions_detailed": []
                 },
                 {
                   "name": "H. Hilvenius",
-                  "goals": 0,
+                  "goals": 1,
                   "api_id": 1548919,
-                  "rating": null,
+                  "rating": 7.5,
                   "sub_in": null,
                   "sub_out": null,
                   "position": "D",
@@ -38424,7 +39314,7 @@
                   "name": "O. Samuelsson",
                   "goals": 0,
                   "api_id": 1187130,
-                  "rating": null,
+                  "rating": 6.7,
                   "sub_in": null,
                   "sub_out": null,
                   "position": "D",
@@ -38441,7 +39331,7 @@
                   "name": "A. Lundqvist",
                   "goals": 0,
                   "api_id": 283219,
-                  "rating": null,
+                  "rating": 7.3,
                   "sub_in": null,
                   "sub_out": null,
                   "position": "D",
@@ -38458,13 +39348,13 @@
                   "name": "A. Doumbia",
                   "goals": 0,
                   "api_id": 2011233,
-                  "rating": null,
+                  "rating": 6.6,
                   "sub_in": null,
                   "sub_out": null,
                   "position": "M",
                   "red_card": false,
                   "player_id": 21995,
-                  "yellow_card": false,
+                  "yellow_card": true,
                   "jersey_number": "6",
                   "replaces_player_id": null,
                   "replaced_by_player_id": null,
@@ -38475,7 +39365,7 @@
                   "name": "S. Hestnes",
                   "goals": 0,
                   "api_id": 794369,
-                  "rating": null,
+                  "rating": 6.7,
                   "sub_in": null,
                   "sub_out": null,
                   "position": "M",
@@ -38492,16 +39382,16 @@
                   "name": "H. Ibrahim",
                   "goals": 0,
                   "api_id": 1104203,
-                  "rating": null,
+                  "rating": 7.2,
                   "sub_in": null,
-                  "sub_out": null,
+                  "sub_out": 83,
                   "position": "M",
                   "red_card": false,
                   "player_id": 16292,
                   "yellow_card": false,
                   "jersey_number": "32",
                   "replaces_player_id": null,
-                  "replaced_by_player_id": null,
+                  "replaced_by_player_id": 16091,
                   "specific_position": "MID",
                   "positions_detailed": []
                 },
@@ -38509,16 +39399,16 @@
                   "name": "M. Rygaard",
                   "goals": 0,
                   "api_id": 801073,
-                  "rating": null,
+                  "rating": 7.1,
                   "sub_in": null,
-                  "sub_out": null,
+                  "sub_out": 90,
                   "position": "M",
                   "red_card": false,
                   "player_id": 12736,
-                  "yellow_card": false,
+                  "yellow_card": true,
                   "jersey_number": "10",
                   "replaces_player_id": null,
-                  "replaced_by_player_id": null,
+                  "replaced_by_player_id": 64636,
                   "specific_position": "MID",
                   "positions_detailed": []
                 },
@@ -38526,7 +39416,7 @@
                   "name": "A. Svanbäck",
                   "goals": 0,
                   "api_id": 1382909,
-                  "rating": null,
+                  "rating": 6.4,
                   "sub_in": null,
                   "sub_out": null,
                   "position": "M",
@@ -38543,22 +39433,90 @@
                   "name": "G. Lindgren",
                   "goals": 0,
                   "api_id": 1175710,
-                  "rating": null,
+                  "rating": 6.7,
                   "sub_in": null,
-                  "sub_out": null,
+                  "sub_out": 77,
                   "position": "F",
                   "red_card": false,
                   "player_id": 21994,
                   "yellow_card": false,
                   "jersey_number": "9",
                   "replaces_player_id": null,
-                  "replaced_by_player_id": null,
+                  "replaced_by_player_id": 12749,
                   "specific_position": "FWD",
                   "positions_detailed": []
                 }
               ],
               "formation": "4-2-3-1",
               "substitutes": [
+                {
+                  "name": "P. Dahbo",
+                  "goals": 0,
+                  "api_id": 1162592,
+                  "rating": 6.6,
+                  "sub_in": 46,
+                  "sub_out": null,
+                  "position": "M",
+                  "red_card": false,
+                  "player_id": 12750,
+                  "yellow_card": true,
+                  "jersey_number": "16",
+                  "replaces_player_id": 16090,
+                  "replaced_by_player_id": null,
+                  "specific_position": "MID",
+                  "positions_detailed": []
+                },
+                {
+                  "name": "S. Ngabo",
+                  "goals": 0,
+                  "api_id": 1126860,
+                  "rating": 6.8,
+                  "sub_in": 77,
+                  "sub_out": null,
+                  "position": "M",
+                  "red_card": false,
+                  "player_id": 12749,
+                  "yellow_card": false,
+                  "jersey_number": "7",
+                  "replaces_player_id": 21994,
+                  "replaced_by_player_id": null,
+                  "specific_position": "MID",
+                  "positions_detailed": []
+                },
+                {
+                  "name": "F. Helander",
+                  "goals": 0,
+                  "api_id": 168749,
+                  "rating": 6.8,
+                  "sub_in": 83,
+                  "sub_out": null,
+                  "position": "D",
+                  "red_card": false,
+                  "player_id": 16091,
+                  "yellow_card": false,
+                  "jersey_number": "22",
+                  "replaces_player_id": 16292,
+                  "replaced_by_player_id": null,
+                  "specific_position": "DEF",
+                  "positions_detailed": []
+                },
+                {
+                  "name": "B. Sadiku",
+                  "goals": 0,
+                  "api_id": 1868082,
+                  "rating": null,
+                  "sub_in": 90,
+                  "sub_out": null,
+                  "position": "F",
+                  "red_card": false,
+                  "player_id": 64636,
+                  "yellow_card": false,
+                  "jersey_number": "24",
+                  "replaces_player_id": 12736,
+                  "replaced_by_player_id": null,
+                  "specific_position": "FWD",
+                  "positions_detailed": []
+                },
                 {
                   "name": "A. David",
                   "goals": 0,
@@ -38594,23 +39552,6 @@
                   "positions_detailed": []
                 },
                 {
-                  "name": "F. Helander",
-                  "goals": 0,
-                  "api_id": 168749,
-                  "rating": null,
-                  "sub_in": null,
-                  "sub_out": null,
-                  "position": "D",
-                  "red_card": false,
-                  "player_id": 16091,
-                  "yellow_card": false,
-                  "jersey_number": "22",
-                  "replaces_player_id": null,
-                  "replaced_by_player_id": null,
-                  "specific_position": "DEF",
-                  "positions_detailed": []
-                },
-                {
                   "name": "D. Seger",
                   "goals": 0,
                   "api_id": 1017138,
@@ -38628,40 +39569,6 @@
                   "positions_detailed": []
                 },
                 {
-                  "name": "P. Dahbo",
-                  "goals": 0,
-                  "api_id": 1162592,
-                  "rating": null,
-                  "sub_in": 46,
-                  "sub_out": null,
-                  "position": "M",
-                  "red_card": false,
-                  "player_id": 12750,
-                  "yellow_card": false,
-                  "jersey_number": "16",
-                  "replaces_player_id": null,
-                  "replaced_by_player_id": null,
-                  "specific_position": "MID",
-                  "positions_detailed": []
-                },
-                {
-                  "name": "S. Ngabo",
-                  "goals": 0,
-                  "api_id": 1126860,
-                  "rating": null,
-                  "sub_in": null,
-                  "sub_out": null,
-                  "position": "M",
-                  "red_card": false,
-                  "player_id": 12749,
-                  "yellow_card": false,
-                  "jersey_number": "7",
-                  "replaces_player_id": null,
-                  "replaced_by_player_id": null,
-                  "specific_position": "MID",
-                  "positions_detailed": []
-                },
-                {
                   "name": "C. Wawa",
                   "goals": 0,
                   "api_id": 1869982,
@@ -38673,23 +39580,6 @@
                   "player_id": 16092,
                   "yellow_card": false,
                   "jersey_number": "27",
-                  "replaces_player_id": null,
-                  "replaced_by_player_id": null,
-                  "specific_position": "FWD",
-                  "positions_detailed": []
-                },
-                {
-                  "name": "B. Sadiku",
-                  "goals": 0,
-                  "api_id": 1868082,
-                  "rating": null,
-                  "sub_in": null,
-                  "sub_out": null,
-                  "position": "F",
-                  "red_card": false,
-                  "player_id": 64636,
-                  "yellow_card": false,
-                  "jersey_number": "24",
                   "replaces_player_id": null,
                   "replaced_by_player_id": null,
                   "specific_position": "FWD",
@@ -38717,6 +39607,251 @@
             "confirmed": true
           },
           "shotmap": [
+            {
+              "gm": {
+                "x": 0,
+                "y": 63.4,
+                "z": 20.8
+              },
+              "xg": null,
+              "gml": "left",
+              "min": 84,
+              "pid": 1162592,
+              "pos": {
+                "x": 14.6,
+                "y": 53.8,
+                "z": 0
+              },
+              "sit": "assisted",
+              "body": "head",
+              "home": true,
+              "type": "miss",
+              "xgot": null,
+              "block": {
+                "x": 2.2,
+                "y": 41.3,
+                "z": 0
+              }
+            },
+            {
+              "gm": {
+                "x": 0,
+                "y": 48.9,
+                "z": 61.1
+              },
+              "xg": null,
+              "gml": "high",
+              "min": 82,
+              "pid": 801073,
+              "pos": {
+                "x": 19.4,
+                "y": 68.5,
+                "z": 0
+              },
+              "sit": "assisted",
+              "body": "left-foot",
+              "home": true,
+              "type": "miss",
+              "xgot": null
+            },
+            {
+              "gm": {
+                "x": 0,
+                "y": 50.9,
+                "z": 17.1
+              },
+              "xg": null,
+              "gml": "low-centre",
+              "min": 78,
+              "pid": 2149239,
+              "pos": {
+                "x": 14.4,
+                "y": 40,
+                "z": 0
+              },
+              "sit": "fast-break",
+              "body": "right-foot",
+              "home": false,
+              "type": "save",
+              "xgot": null,
+              "block": {
+                "x": 4.5,
+                "y": 47.3,
+                "z": 0
+              }
+            },
+            {
+              "gm": {
+                "x": 0,
+                "y": 47,
+                "z": 19
+              },
+              "xg": null,
+              "gml": "low-right",
+              "min": 75,
+              "pid": 1382909,
+              "pos": {
+                "x": 12.1,
+                "y": 64.9,
+                "z": 0
+              },
+              "sit": "assisted",
+              "body": "right-foot",
+              "home": true,
+              "type": "block",
+              "xgot": null,
+              "block": {
+                "x": 7.6,
+                "y": 60.5,
+                "z": 0
+              }
+            },
+            {
+              "gm": {
+                "x": 0,
+                "y": 19.8,
+                "z": 9.7
+              },
+              "xg": null,
+              "gml": "right",
+              "min": 75,
+              "pid": 2011233,
+              "pos": {
+                "x": 18.2,
+                "y": 31.9,
+                "z": 0
+              },
+              "sit": "assisted",
+              "body": "right-foot",
+              "home": true,
+              "type": "miss",
+              "xgot": null,
+              "block": {
+                "x": 7.4,
+                "y": 56.5,
+                "z": 0
+              }
+            },
+            {
+              "gm": {
+                "x": 0,
+                "y": 48.9,
+                "z": 19
+              },
+              "xg": null,
+              "gml": "low-centre",
+              "min": 72,
+              "pid": 974125,
+              "pos": {
+                "x": 9.4,
+                "y": 53.8,
+                "z": 0
+              },
+              "sit": "set-piece",
+              "body": "left-foot",
+              "home": false,
+              "type": "block",
+              "xgot": null,
+              "block": {
+                "x": 7.5,
+                "y": 53.2,
+                "z": 0
+              }
+            },
+            {
+              "gm": {
+                "x": 0,
+                "y": 69.4,
+                "z": 20.8
+              },
+              "xg": null,
+              "gml": "left",
+              "min": 72,
+              "pid": 1200811,
+              "pos": {
+                "x": 23.7,
+                "y": 59.7,
+                "z": 0
+              },
+              "sit": "set-piece",
+              "body": "right-foot",
+              "home": false,
+              "type": "miss",
+              "xgot": null,
+              "block": {
+                "x": 11.4,
+                "y": 45.8,
+                "z": 0
+              }
+            },
+            {
+              "gm": {
+                "x": 0,
+                "y": 48.2,
+                "z": 19
+              },
+              "xg": null,
+              "gml": "low-centre",
+              "min": 69,
+              "pid": 1162592,
+              "pos": {
+                "x": 23.5,
+                "y": 66,
+                "z": 0
+              },
+              "sit": "regular",
+              "body": "left-foot",
+              "home": true,
+              "type": "block",
+              "xgot": null,
+              "block": {
+                "x": 16.2,
+                "y": 61.6,
+                "z": 0
+              }
+            },
+            {
+              "gm": {
+                "x": 0,
+                "y": 56,
+                "z": 79.2
+              },
+              "xg": null,
+              "gml": "high-left",
+              "min": 65,
+              "pid": 152427,
+              "pos": {
+                "x": 20.1,
+                "y": 31.3,
+                "z": 0
+              },
+              "sit": "regular",
+              "body": "left-foot",
+              "home": false,
+              "type": "miss",
+              "xgot": null
+            },
+            {
+              "gm": {
+                "x": 0,
+                "y": 33.8,
+                "z": 6.9
+              },
+              "xg": null,
+              "gml": "right",
+              "min": 63,
+              "pid": 974125,
+              "pos": {
+                "x": 12.8,
+                "y": 54,
+                "z": 0
+              },
+              "sit": "corner",
+              "body": "head",
+              "home": false,
+              "type": "miss",
+              "xgot": null
+            },
             {
               "gm": {
                 "x": 0,
@@ -39267,10 +40402,339 @@
             {
               "m": 64,
               "v": -71
+            },
+            {
+              "m": 65,
+              "v": -74
+            },
+            {
+              "m": 66,
+              "v": -40
+            },
+            {
+              "m": 67,
+              "v": -17
+            },
+            {
+              "m": 68,
+              "v": -6
+            },
+            {
+              "m": 69,
+              "v": -8
+            },
+            {
+              "m": 70,
+              "v": 11
+            },
+            {
+              "m": 71,
+              "v": 1
+            },
+            {
+              "m": 72,
+              "v": -28
+            },
+            {
+              "m": 73,
+              "v": -44
+            },
+            {
+              "m": 74,
+              "v": -30
+            },
+            {
+              "m": 75,
+              "v": 21
+            },
+            {
+              "m": 76,
+              "v": 10
+            },
+            {
+              "m": 77,
+              "v": -9
+            },
+            {
+              "m": 78,
+              "v": -23
+            },
+            {
+              "m": 79,
+              "v": -5
+            },
+            {
+              "m": 80,
+              "v": 17
+            },
+            {
+              "m": 81,
+              "v": 50
+            },
+            {
+              "m": 82,
+              "v": 44
+            },
+            {
+              "m": 83,
+              "v": 43
+            },
+            {
+              "m": 84,
+              "v": 63
+            },
+            {
+              "m": 85,
+              "v": 35
+            },
+            {
+              "m": 86,
+              "v": -31
+            },
+            {
+              "m": 87,
+              "v": -4
+            },
+            {
+              "m": 88,
+              "v": -5
+            },
+            {
+              "m": 89,
+              "v": -8
+            },
+            {
+              "m": 90,
+              "v": -26
+            },
+            {
+              "m": 90.5,
+              "v": 8
             }
           ],
           "xg_per_minute": [],
-          "average_positions": null,
+          "average_positions": {
+            "away": [
+              {
+                "n": 38,
+                "x": 10.0,
+                "y": 47.3,
+                "pid": 856792,
+                "pos": "G",
+                "name": "S. Brolin"
+              },
+              {
+                "n": 51,
+                "x": 56.5,
+                "y": 27.9,
+                "pid": 1200811,
+                "pos": "M",
+                "name": "M. Söderbäck"
+              },
+              {
+                "n": 34,
+                "x": 61.4,
+                "y": 63.0,
+                "pid": 1114134,
+                "pos": "M",
+                "name": "A. Magashy"
+              },
+              {
+                "n": 13,
+                "x": 67.5,
+                "y": 51.1,
+                "pid": 181615,
+                "pos": "M",
+                "name": "M. Hallberg"
+              },
+              {
+                "n": 100,
+                "x": 51.4,
+                "y": 59.7,
+                "pid": 988740,
+                "pos": "M",
+                "name": "C. Gustafsson"
+              },
+              {
+                "n": 63,
+                "x": 52.8,
+                "y": 53.8,
+                "pid": 152427,
+                "pos": "M",
+                "name": "R. Gojani"
+              },
+              {
+                "n": 7,
+                "x": 61.3,
+                "y": 76.7,
+                "pid": 1156699,
+                "pos": "M",
+                "name": "N. Chourak"
+              },
+              {
+                "n": 43,
+                "x": 68.4,
+                "y": 56.1,
+                "pid": 2149239,
+                "pos": "M",
+                "name": "C. Rosenqvist"
+              },
+              {
+                "n": 66,
+                "x": 64.9,
+                "y": 78.9,
+                "pid": 1119436,
+                "pos": "F",
+                "name": "C. Sagoe Jr."
+              },
+              {
+                "n": 101,
+                "x": 50.3,
+                "y": 82.2,
+                "pid": 1121443,
+                "pos": "D",
+                "name": "S. E. Overby"
+              },
+              {
+                "n": 61,
+                "x": 33.2,
+                "y": 35.2,
+                "pid": 81451,
+                "pos": "D",
+                "name": "L. Saetra"
+              },
+              {
+                "n": 59,
+                "x": 45.1,
+                "y": 20.2,
+                "pid": 2643303,
+                "pos": "M",
+                "name": "F. Björklund"
+              },
+              {
+                "n": 98,
+                "x": 30.8,
+                "y": 67.3,
+                "pid": 974125,
+                "pos": "D",
+                "name": "A. Keita"
+              }
+            ],
+            "home": [
+              {
+                "n": 18,
+                "x": 60.9,
+                "y": 57.7,
+                "pid": 1175710,
+                "pos": "F",
+                "name": "G. Lindgren"
+              },
+              {
+                "n": 62,
+                "x": 58.6,
+                "y": 45.2,
+                "pid": 801073,
+                "pos": "M",
+                "name": "M. Rygaard"
+              },
+              {
+                "n": 33,
+                "x": 41.6,
+                "y": 15.5,
+                "pid": 577266,
+                "pos": "D",
+                "name": "B. Wembangomo"
+              },
+              {
+                "n": 37,
+                "x": 47.3,
+                "y": 21.1,
+                "pid": 1162592,
+                "pos": "M",
+                "name": "P. Dahbo"
+              },
+              {
+                "n": 52,
+                "x": 7.1,
+                "y": 48.5,
+                "pid": 184679,
+                "pos": "G",
+                "name": "A. Linde"
+              },
+              {
+                "n": 62,
+                "x": 29.6,
+                "y": 66.6,
+                "pid": 1187130,
+                "pos": "D",
+                "name": "O. Samuelsson"
+              },
+              {
+                "n": 16,
+                "x": 70.1,
+                "y": 74.4,
+                "pid": 1126860,
+                "pos": "M",
+                "name": "S. Ngabo"
+              },
+              {
+                "n": 90,
+                "x": 30.5,
+                "y": 30.3,
+                "pid": 1548919,
+                "pos": "D",
+                "name": "H. Hilvenius"
+              },
+              {
+                "n": 10,
+                "x": 23.3,
+                "y": 59.3,
+                "pid": 168749,
+                "pos": "D",
+                "name": "F. Helander"
+              },
+              {
+                "n": 70,
+                "x": 49.9,
+                "y": 48.9,
+                "pid": 794369,
+                "pos": "M",
+                "name": "S. Hestnes"
+              },
+              {
+                "n": 77,
+                "x": 55.5,
+                "y": 30.1,
+                "pid": 1104203,
+                "pos": "M",
+                "name": "H. Ibrahim"
+              },
+              {
+                "n": 81,
+                "x": 48.4,
+                "y": 53.3,
+                "pid": 2011233,
+                "pos": "M",
+                "name": "A. Doumbia"
+              },
+              {
+                "n": 55,
+                "x": 69.1,
+                "y": 63.7,
+                "pid": 1382909,
+                "pos": "F",
+                "name": "A. Svanbäck"
+              },
+              {
+                "n": 85,
+                "x": 51.2,
+                "y": 85.8,
+                "pid": 283219,
+                "pos": "D",
+                "name": "A. Lundqvist"
+              }
+            ]
+          },
           "jerseys": {
             "away": {
               "GK": {
@@ -39324,27 +40788,27 @@
           ],
           "sr_stats": {
             "attack": {
-              "away": 43,
-              "home": 46
+              "away": 75,
+              "home": 74
             },
             "ball_safe": {
-              "away": 45,
-              "home": 47
+              "away": 74,
+              "home": 73
             },
             "attack_pct": {
-              "away": 22,
-              "home": 22
+              "away": 27,
+              "home": 24
             },
             "ball_safe_pct": {
-              "away": 47,
-              "home": 53
+              "away": 44,
+              "home": 51
             },
             "dangerous_attack": {
-              "away": 30,
-              "home": 25
+              "away": 50,
+              "home": 43
             },
             "dangerous_attack_pct": {
-              "away": 31,
+              "away": 29,
               "home": 25
             }
           },
@@ -39377,18 +40841,54 @@
       "source": "GitHub Actions cache"
     },
     {
-      "id": 219541,
-      "home": "Energie Cottbus",
-      "away": "SV Werder Bremen",
+      "id": 219540,
+      "home": "Preußen Münster",
+      "away": "Southampton",
       "league": "Club Friendlies",
       "date": "2026-08-01T17:00:00+04:00",
       "prediction": null,
       "source": "GitHub Actions cache"
     },
     {
-      "id": 219543,
-      "home": "TSG Hoffenheim",
-      "away": "Karlsruher SC",
+      "id": 223284,
+      "home": "SC Heerenveen",
+      "away": "NPS Volos",
+      "league": "Club Friendlies",
+      "date": "2026-08-01T17:00:00+04:00",
+      "prediction": null,
+      "source": "GitHub Actions cache"
+    },
+    {
+      "id": 223359,
+      "home": "KSC Lokeren",
+      "away": "FCV Dender",
+      "league": "Club Friendlies",
+      "date": "2026-08-01T17:00:00+04:00",
+      "prediction": null,
+      "source": "GitHub Actions cache"
+    },
+    {
+      "id": 219542,
+      "home": "Plymouth Argyle",
+      "away": "Bristol City",
+      "league": "Club Friendlies",
+      "date": "2026-08-01T17:00:00+04:00",
+      "prediction": null,
+      "source": "GitHub Actions cache"
+    },
+    {
+      "id": 223358,
+      "home": "K. Beerschot V.A.",
+      "away": "SV Zulte Waregem",
+      "league": "Club Friendlies",
+      "date": "2026-08-01T17:00:00+04:00",
+      "prediction": null,
+      "source": "GitHub Actions cache"
+    },
+    {
+      "id": 223362,
+      "home": "1. FC Heidenheim",
+      "away": "FC Ingolstadt 04",
       "league": "Club Friendlies",
       "date": "2026-08-01T17:30:00+04:00",
       "prediction": null,
