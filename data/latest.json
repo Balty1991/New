@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-12T18:12:53.419397+00:00",
+  "generated_at": "2026-08-12T19:32:52.303529+00:00",
   "date_from": "2026-08-12",
   "date_to": "2026-08-15",
   "matches": [
@@ -10043,15 +10043,6 @@
       "source": "GitHub Actions cache"
     },
     {
-      "id": 587675,
-      "home": "APS Atromitos Athinon",
-      "away": "APO Levadiakos",
-      "league": "Club Friendlies",
-      "date": "2026-08-12T16:00:00Z",
-      "prediction": null,
-      "source": "GitHub Actions cache"
-    },
-    {
       "id": 587674,
       "home": "Valencia",
       "away": "CD Teruel",
@@ -17695,6 +17686,15 @@
       "source": "GitHub Actions cache"
     },
     {
+      "id": 587675,
+      "home": "APS Atromitos Athinon",
+      "away": "APO Levadiakos",
+      "league": "Club Friendlies",
+      "date": "2026-08-12T16:00:00Z",
+      "prediction": null,
+      "source": "GitHub Actions cache"
+    },
+    {
       "id": 219691,
       "home": "Everton",
       "away": "Newcastle United",
@@ -17745,15 +17745,6 @@
       "away": "Bayer 04 Leverkusen",
       "league": "Club Friendlies",
       "date": "2026-08-12T18:45:00Z",
-      "prediction": null,
-      "source": "GitHub Actions cache"
-    },
-    {
-      "id": 223223,
-      "home": "SSC Napoli",
-      "away": "Aris Thessaloniki",
-      "league": "Club Friendlies",
-      "date": "2026-08-12T19:00:00Z",
       "prediction": null,
       "source": "GitHub Actions cache"
     },
@@ -17825,28 +17816,28 @@
           "round_number": 29,
           "round_name": "Final",
           "group_name": null,
-          "status": "notstarted",
-          "home_score": null,
-          "away_score": null,
+          "status": "1st_half",
+          "home_score": 1,
+          "away_score": 0,
           "home_score_ht": null,
           "away_score_ht": null,
-          "current_minute": null,
-          "period": "",
-          "odds_home": 1.73,
-          "odds_draw": 3.71,
-          "odds_away": 4.58,
-          "odds_over_15": 1.21,
-          "odds_over_25": 1.69,
-          "odds_over_35": 2.67,
-          "odds_under_15": 4.2,
-          "odds_under_25": 2.15,
-          "odds_under_35": 1.44,
+          "current_minute": 31,
+          "period": "1T",
+          "odds_home": 1.61,
+          "odds_draw": 3.87,
+          "odds_away": 5.3,
+          "odds_over_15": 1.19,
+          "odds_over_25": 1.62,
+          "odds_over_35": 2.52,
+          "odds_under_15": 4.5,
+          "odds_under_25": 2.25,
+          "odds_under_35": 1.49,
           "odds_btts_yes": 1.66,
-          "odds_btts_no": 2.12,
+          "odds_btts_no": 2.14,
           "actual_home_xg": null,
           "actual_away_xg": null,
-          "home_xg_live": null,
-          "away_xg_live": null,
+          "home_xg_live": 0.38,
+          "away_xg_live": 0.14,
           "penalty_shootout": null,
           "extra_time_score": null,
           "is_local_derby": null,
@@ -17926,8 +17917,249 @@
             "pitch_y": 68,
             "built_year": 2003
           },
-          "incidents": null,
-          "live_stats": null,
+          "incidents": [
+            {
+              "text": "First half",
+              "type": "period",
+              "minute": 45,
+              "is_live": true,
+              "added_time": 999,
+              "away_score": 0,
+              "home_score": 1
+            },
+            {
+              "type": "goal",
+              "assist": "D. Doué",
+              "minute": 20,
+              "player": "K. Kvaratskhelia",
+              "is_home": true,
+              "sequence": [
+                {
+                  "pid": 1190933,
+                  "pos": {
+                    "x": 71.8,
+                    "y": 52.4
+                  },
+                  "event": "tackle",
+                  "player": "J. Neves"
+                },
+                {
+                  "end": {
+                    "x": 74.6,
+                    "y": 63.6
+                  },
+                  "pid": 902029,
+                  "pos": {
+                    "x": 64,
+                    "y": 57
+                  },
+                  "event": "pass",
+                  "player": "Vitinha"
+                },
+                {
+                  "end": {
+                    "x": 86.2,
+                    "y": 72.3
+                  },
+                  "pid": 1154605,
+                  "pos": {
+                    "x": 74.6,
+                    "y": 63.6
+                  },
+                  "event": "pass",
+                  "assist": true,
+                  "player": "D. Doué"
+                },
+                {
+                  "gk": {
+                    "x": 98.9,
+                    "y": 50.9
+                  },
+                  "gm": {
+                    "x": 43.01,
+                    "y": 58.83
+                  },
+                  "pid": 889259,
+                  "pos": {
+                    "x": 86.4,
+                    "y": 65.8
+                  },
+                  "body": "right-foot",
+                  "event": "goal",
+                  "player": "K. Kvaratskhelia"
+                }
+              ],
+              "goal_type": "regular",
+              "player_id": 889259,
+              "added_time": null,
+              "away_score": 0,
+              "home_score": 1
+            }
+          ],
+          "live_stats": {
+            "away": {
+              "duels": 43,
+              "fouls": 3,
+              "passes": 92,
+              "crosses": "1/4 (25%)",
+              "tackles": 3,
+              "dribbles": "2/3 (67%)",
+              "throw_ins": 13,
+              "clearances": 2,
+              "free_kicks": 4,
+              "goal_kicks": 2,
+              "long_balls": "9/12 (75%)",
+              "recoveries": 14,
+              "big_chances": 1,
+              "tackles_won": 67,
+              "total_saves": 1,
+              "total_shots": 2,
+              "aerial_duels": "1/3 (33%)",
+              "corner_kicks": 1,
+              "dispossessed": 5,
+              "ground_duels": "9/20 (45%)",
+              "hit_woodwork": 0,
+              "blocked_shots": 0,
+              "interceptions": 2,
+              "total_tackles": 3,
+              "average_rating": 6.17,
+              "expected_goals": 0.0,
+              "accurate_passes": 73,
+              "ball_possession": 32,
+              "shots_on_target": 0,
+              "goalkeeper_saves": 1,
+              "shots_inside_box": 1,
+              "shots_off_target": 2,
+              "final_third_phase": "9/15 (60%)",
+              "shots_outside_box": 1,
+              "big_chances_missed": 1,
+              "final_third_entries": 8,
+              "errors_lead_to_a_goal": 1,
+              "fouled_in_final_third": 0,
+              "touches_in_penalty_area": 4,
+              "expected_goals_on_target": 0.0
+            },
+            "home": {
+              "duels": 57,
+              "fouls": 4,
+              "passes": 197,
+              "crosses": "1/6 (17%)",
+              "tackles": 6,
+              "dribbles": "2/5 (40%)",
+              "throw_ins": 2,
+              "clearances": 4,
+              "free_kicks": 3,
+              "goal_kicks": 3,
+              "long_balls": "12/16 (75%)",
+              "recoveries": 15,
+              "big_chances": 0,
+              "tackles_won": 67,
+              "total_saves": 0,
+              "total_shots": 6,
+              "aerial_duels": "2/3 (67%)",
+              "corner_kicks": 0,
+              "dispossessed": 1,
+              "ground_duels": "11/20 (55%)",
+              "hit_woodwork": 0,
+              "blocked_shots": 0,
+              "interceptions": 4,
+              "total_tackles": 6,
+              "average_rating": 7.1,
+              "expected_goals": 0.0,
+              "accurate_passes": 183,
+              "ball_possession": 68,
+              "shots_on_target": 2,
+              "goalkeeper_saves": 0,
+              "shots_inside_box": 4,
+              "shots_off_target": 4,
+              "final_third_phase": "30/34 (88%)",
+              "shots_outside_box": 2,
+              "big_chances_missed": 0,
+              "final_third_entries": 14,
+              "errors_lead_to_a_goal": 0,
+              "fouled_in_final_third": 2,
+              "touches_in_penalty_area": 11,
+              "expected_goals_on_target": 0.0
+            },
+            "first_half": {
+              "away": {
+                "duels": 43,
+                "fouls": 3,
+                "passes": 92,
+                "crosses": "1/4 (25%)",
+                "tackles": 3,
+                "dribbles": "2/3 (67%)",
+                "throw_ins": 13,
+                "clearances": 2,
+                "free_kicks": 4,
+                "goal_kicks": 2,
+                "long_balls": "9/12 (75%)",
+                "recoveries": 14,
+                "big_chances": 1,
+                "tackles_won": 67,
+                "total_saves": 1,
+                "total_shots": 2,
+                "aerial_duels": "1/3 (33%)",
+                "corner_kicks": 1,
+                "dispossessed": 5,
+                "ground_duels": "9/20 (45%)",
+                "hit_woodwork": 0,
+                "blocked_shots": 0,
+                "interceptions": 2,
+                "total_tackles": 3,
+                "expected_goals": 0.0,
+                "accurate_passes": 73,
+                "ball_possession": 32,
+                "shots_on_target": 0,
+                "goalkeeper_saves": 1,
+                "shots_inside_box": 1,
+                "shots_off_target": 2,
+                "shots_outside_box": 1,
+                "big_chances_missed": 1,
+                "final_third_entries": 8,
+                "fouled_in_final_third": 0,
+                "expected_goals_on_target": 0.0
+              },
+              "home": {
+                "duels": 57,
+                "fouls": 4,
+                "passes": 197,
+                "crosses": "1/6 (17%)",
+                "tackles": 6,
+                "dribbles": "2/5 (40%)",
+                "throw_ins": 2,
+                "clearances": 4,
+                "free_kicks": 3,
+                "goal_kicks": 3,
+                "long_balls": "12/16 (75%)",
+                "recoveries": 15,
+                "big_chances": 0,
+                "tackles_won": 67,
+                "total_saves": 0,
+                "total_shots": 6,
+                "aerial_duels": "2/3 (67%)",
+                "corner_kicks": 0,
+                "dispossessed": 1,
+                "ground_duels": "11/20 (55%)",
+                "hit_woodwork": 0,
+                "blocked_shots": 0,
+                "interceptions": 4,
+                "total_tackles": 6,
+                "expected_goals": 0.0,
+                "accurate_passes": 183,
+                "ball_possession": 68,
+                "shots_on_target": 2,
+                "goalkeeper_saves": 0,
+                "shots_inside_box": 4,
+                "shots_off_target": 4,
+                "shots_outside_box": 2,
+                "big_chances_missed": 0,
+                "final_third_entries": 14,
+                "fouled_in_final_third": 2,
+                "expected_goals_on_target": 0.0
+              }
+            }
+          },
           "lineups": {
             "away": {
               "players": [
@@ -18819,9 +19051,319 @@
             },
             "confirmed": true
           },
-          "shotmap": null,
-          "momentum": null,
-          "xg_per_minute": null,
+          "shotmap": [
+            {
+              "gm": {
+                "x": 0,
+                "y": 58.5,
+                "z": 18.1
+              },
+              "xg": null,
+              "gml": "close-left",
+              "min": 28,
+              "pid": 2070311,
+              "pos": {
+                "x": 8.8,
+                "y": 49.5,
+                "z": 0
+              },
+              "sit": "assisted",
+              "body": "head",
+              "home": false,
+              "type": "miss",
+              "xgot": null
+            },
+            {
+              "gm": {
+                "x": 0,
+                "y": 34.6,
+                "z": 4.2
+              },
+              "xg": null,
+              "gml": "right",
+              "min": 23,
+              "pid": 989768,
+              "pos": {
+                "x": 28.4,
+                "y": 43.2,
+                "z": 0
+              },
+              "sit": "set-piece",
+              "body": "left-foot",
+              "home": true,
+              "type": "miss",
+              "xgot": null
+            },
+            {
+              "gm": {
+                "x": 0,
+                "y": 51.3,
+                "z": 24.7
+              },
+              "xg": null,
+              "gml": "high-centre",
+              "min": 20,
+              "pid": 889259,
+              "pos": {
+                "x": 13.6,
+                "y": 34.2,
+                "z": 0
+              },
+              "sit": "assisted",
+              "body": "right-foot",
+              "home": true,
+              "type": "goal",
+              "xgot": null,
+              "gtype": "regular"
+            },
+            {
+              "gm": {
+                "x": 0,
+                "y": 49.9,
+                "z": 12
+              },
+              "xg": null,
+              "gml": "low-centre",
+              "min": 20,
+              "pid": 1154605,
+              "pos": {
+                "x": 13.2,
+                "y": 43.2,
+                "z": 0
+              },
+              "sit": "assisted",
+              "body": "right-foot",
+              "home": true,
+              "type": "save",
+              "xgot": null,
+              "block": {
+                "x": 1.6,
+                "y": 49.3,
+                "z": 0
+              }
+            },
+            {
+              "gm": {
+                "x": 0,
+                "y": 95.5,
+                "z": 29.2
+              },
+              "xg": null,
+              "gml": "left",
+              "min": 20,
+              "pid": 1130939,
+              "pos": {
+                "x": 9,
+                "y": 52.9,
+                "z": 0
+              },
+              "sit": "assisted",
+              "body": "head",
+              "home": true,
+              "type": "miss",
+              "xgot": null,
+              "block": {
+                "x": 9.6,
+                "y": 26.7,
+                "z": 0
+              }
+            },
+            {
+              "gm": {
+                "x": 0,
+                "y": 57.1,
+                "z": 1.4
+              },
+              "xg": null,
+              "gml": "close-left",
+              "min": 13,
+              "pid": 826204,
+              "pos": {
+                "x": 27.7,
+                "y": 45.4,
+                "z": 0
+              },
+              "sit": "assisted",
+              "body": "right-foot",
+              "home": false,
+              "type": "miss",
+              "xgot": null
+            },
+            {
+              "gm": {
+                "x": 0,
+                "y": 43.5,
+                "z": 80.6
+              },
+              "xg": null,
+              "gml": "high-right",
+              "min": 11,
+              "pid": 902029,
+              "pos": {
+                "x": 29.9,
+                "y": 45.2,
+                "z": 0
+              },
+              "sit": "assisted",
+              "body": "right-foot",
+              "home": true,
+              "type": "miss",
+              "xgot": null
+            },
+            {
+              "gm": {
+                "x": 0,
+                "y": 62.7,
+                "z": 9.7
+              },
+              "xg": null,
+              "gml": "left",
+              "min": 9,
+              "pid": 814594,
+              "pos": {
+                "x": 6.8,
+                "y": 70.3,
+                "z": 0
+              },
+              "sit": "assisted",
+              "body": "right-foot",
+              "home": true,
+              "type": "miss",
+              "xgot": null,
+              "block": {
+                "x": 4.8,
+                "y": 63.7,
+                "z": 0
+              }
+            }
+          ],
+          "momentum": [
+            {
+              "m": 1,
+              "v": 8
+            },
+            {
+              "m": 2,
+              "v": 10
+            },
+            {
+              "m": 3,
+              "v": 12
+            },
+            {
+              "m": 4,
+              "v": -14
+            },
+            {
+              "m": 5,
+              "v": -20
+            },
+            {
+              "m": 6,
+              "v": -19
+            },
+            {
+              "m": 7,
+              "v": -5
+            },
+            {
+              "m": 8,
+              "v": 7
+            },
+            {
+              "m": 9,
+              "v": 10
+            },
+            {
+              "m": 10,
+              "v": 14
+            },
+            {
+              "m": 11,
+              "v": 41
+            },
+            {
+              "m": 12,
+              "v": 50
+            },
+            {
+              "m": 13,
+              "v": 31
+            },
+            {
+              "m": 14,
+              "v": 5
+            },
+            {
+              "m": 15,
+              "v": 6
+            },
+            {
+              "m": 16,
+              "v": 5
+            },
+            {
+              "m": 17,
+              "v": 5
+            },
+            {
+              "m": 18,
+              "v": -19
+            },
+            {
+              "m": 19,
+              "v": 15
+            },
+            {
+              "m": 20,
+              "v": 27
+            },
+            {
+              "m": 21,
+              "v": 64
+            },
+            {
+              "m": 22,
+              "v": 49
+            },
+            {
+              "m": 23,
+              "v": 97
+            },
+            {
+              "m": 24,
+              "v": 100
+            },
+            {
+              "m": 25,
+              "v": 72
+            },
+            {
+              "m": 26,
+              "v": 38
+            },
+            {
+              "m": 27,
+              "v": 30
+            },
+            {
+              "m": 28,
+              "v": 17
+            },
+            {
+              "m": 29,
+              "v": -44
+            },
+            {
+              "m": 30,
+              "v": -16
+            },
+            {
+              "m": 31,
+              "v": -19
+            }
+          ],
+          "xg_per_minute": [],
           "average_positions": null,
           "jerseys": null,
           "funfacts": null,
@@ -18861,6 +19403,15 @@
       "id": 219694,
       "home": "Deportivo de A Coruña",
       "away": "Real Madrid",
+      "league": "Club Friendlies",
+      "date": "2026-08-12T19:00:00Z",
+      "prediction": null,
+      "source": "GitHub Actions cache"
+    },
+    {
+      "id": 223223,
+      "home": "SSC Napoli",
+      "away": "Aris Thessaloniki",
       "league": "Club Friendlies",
       "date": "2026-08-12T19:00:00Z",
       "prediction": null,
@@ -18950,16 +19501,16 @@
           "away_score_ht": null,
           "current_minute": null,
           "period": "",
-          "odds_home": 1.85,
-          "odds_draw": 3.08,
-          "odds_away": 4.81,
+          "odds_home": 1.84,
+          "odds_draw": 3.09,
+          "odds_away": 4.83,
           "odds_over_15": 1.54,
-          "odds_over_25": 2.65,
-          "odds_over_35": 5.32,
+          "odds_over_25": 2.64,
+          "odds_over_35": 5.25,
           "odds_under_15": 2.38,
-          "odds_under_25": 1.44,
+          "odds_under_25": 1.45,
           "odds_under_35": 1.14,
-          "odds_btts_yes": 2.35,
+          "odds_btts_yes": 2.34,
           "odds_btts_no": 1.54,
           "actual_home_xg": null,
           "actual_away_xg": null,
@@ -19189,16 +19740,16 @@
           "away_score_ht": null,
           "current_minute": null,
           "period": "",
-          "odds_home": 2.11,
-          "odds_draw": 3.04,
-          "odds_away": 3.74,
-          "odds_over_15": 1.47,
-          "odds_over_25": 2.47,
-          "odds_over_35": 4.68,
-          "odds_under_15": 2.54,
-          "odds_under_25": 1.51,
-          "odds_under_35": 1.17,
-          "odds_btts_yes": 2.08,
+          "odds_home": 2.12,
+          "odds_draw": 3.02,
+          "odds_away": 3.75,
+          "odds_over_15": 1.48,
+          "odds_over_25": 2.5,
+          "odds_over_35": 4.78,
+          "odds_under_15": 2.5,
+          "odds_under_25": 1.5,
+          "odds_under_35": 1.16,
+          "odds_btts_yes": 2.09,
           "odds_btts_no": 1.68,
           "actual_home_xg": null,
           "actual_away_xg": null,
@@ -19468,16 +20019,16 @@
           "away_score_ht": null,
           "current_minute": null,
           "period": "",
-          "odds_home": 1.36,
-          "odds_draw": 4.47,
-          "odds_away": 9.53,
+          "odds_home": 1.35,
+          "odds_draw": 4.48,
+          "odds_away": 9.79,
           "odds_over_15": 1.38,
-          "odds_over_25": 2.18,
-          "odds_over_35": 4.0,
+          "odds_over_25": 2.19,
+          "odds_over_35": 4.04,
           "odds_under_15": 2.86,
           "odds_under_25": 1.65,
           "odds_under_35": 1.22,
-          "odds_btts_yes": 2.66,
+          "odds_btts_yes": 2.7,
           "odds_btts_no": 1.42,
           "actual_home_xg": null,
           "actual_away_xg": null,
@@ -19732,16 +20283,16 @@
           "away_score_ht": null,
           "current_minute": null,
           "period": "",
-          "odds_home": 2.08,
+          "odds_home": 2.09,
           "odds_draw": 2.78,
-          "odds_away": 4.14,
-          "odds_over_15": 1.6,
-          "odds_over_25": 2.85,
-          "odds_over_35": 5.76,
-          "odds_under_15": 2.25,
-          "odds_under_25": 1.4,
+          "odds_away": 4.13,
+          "odds_over_15": 1.61,
+          "odds_over_25": 2.86,
+          "odds_over_35": 5.77,
+          "odds_under_15": 2.24,
+          "odds_under_25": 1.39,
           "odds_under_35": 1.12,
-          "odds_btts_yes": 2.35,
+          "odds_btts_yes": 2.34,
           "odds_btts_no": 1.54,
           "actual_home_xg": null,
           "actual_away_xg": null,
@@ -19968,17 +20519,17 @@
           "away_score_ht": null,
           "current_minute": null,
           "period": "",
-          "odds_home": 2.94,
-          "odds_draw": 2.94,
+          "odds_home": 2.93,
+          "odds_draw": 2.96,
           "odds_away": 2.6,
-          "odds_over_15": 1.44,
-          "odds_over_25": 2.37,
-          "odds_over_35": 4.37,
-          "odds_under_15": 2.66,
-          "odds_under_25": 1.56,
-          "odds_under_35": 1.19,
-          "odds_btts_yes": 1.95,
-          "odds_btts_no": 1.77,
+          "odds_over_15": 1.42,
+          "odds_over_25": 2.33,
+          "odds_over_35": 4.28,
+          "odds_under_15": 2.68,
+          "odds_under_25": 1.57,
+          "odds_under_35": 1.2,
+          "odds_btts_yes": 1.93,
+          "odds_btts_no": 1.79,
           "actual_home_xg": null,
           "actual_away_xg": null,
           "home_xg_live": null,
@@ -20956,15 +21507,15 @@
           "current_minute": null,
           "period": "",
           "odds_home": 1.82,
-          "odds_draw": 3.38,
-          "odds_away": 3.89,
+          "odds_draw": 3.39,
+          "odds_away": 3.9,
           "odds_over_15": 1.26,
           "odds_over_25": 1.84,
           "odds_over_35": 3.05,
           "odds_under_15": 3.53,
           "odds_under_25": 1.9,
           "odds_under_35": 1.33,
-          "odds_btts_yes": 1.74,
+          "odds_btts_yes": 1.75,
           "odds_btts_no": 1.98,
           "actual_home_xg": null,
           "actual_away_xg": null,
@@ -21230,7 +21781,7 @@
           "period": "",
           "odds_home": 1.8,
           "odds_draw": 3.45,
-          "odds_away": 3.68,
+          "odds_away": 3.67,
           "odds_over_15": 1.29,
           "odds_over_25": 1.94,
           "odds_over_35": 3.32,
@@ -21460,12 +22011,12 @@
           "away_score_ht": null,
           "current_minute": null,
           "period": "",
-          "odds_home": 4.26,
+          "odds_home": 4.25,
           "odds_draw": 3.45,
           "odds_away": 1.7,
-          "odds_over_15": 1.33,
-          "odds_over_25": 2.04,
-          "odds_over_35": 3.55,
+          "odds_over_15": 1.32,
+          "odds_over_25": 2.03,
+          "odds_over_35": 3.54,
           "odds_under_15": 3.12,
           "odds_under_25": 1.73,
           "odds_under_35": 1.26,
@@ -21932,16 +22483,16 @@
           "current_minute": null,
           "period": "",
           "odds_home": 2.01,
-          "odds_draw": 3.45,
+          "odds_draw": 3.46,
           "odds_away": 3.39,
           "odds_over_15": 1.35,
-          "odds_over_25": 2.1,
+          "odds_over_25": 2.09,
           "odds_over_35": 3.78,
           "odds_under_15": 2.95,
           "odds_under_25": 1.69,
           "odds_under_35": 1.23,
           "odds_btts_yes": 1.9,
-          "odds_btts_no": 1.82,
+          "odds_btts_no": 1.81,
           "actual_home_xg": null,
           "actual_away_xg": null,
           "home_xg_live": null,
@@ -22359,14 +22910,14 @@
           "current_minute": null,
           "period": "",
           "odds_home": 1.3,
-          "odds_draw": 5.19,
-          "odds_away": 8.78,
-          "odds_over_15": 1.19,
-          "odds_over_25": 1.61,
-          "odds_over_35": 2.49,
-          "odds_under_15": 4.4,
-          "odds_under_25": 2.25,
-          "odds_under_35": 1.48,
+          "odds_draw": 5.2,
+          "odds_away": 8.82,
+          "odds_over_15": 1.18,
+          "odds_over_25": 1.6,
+          "odds_over_35": 2.48,
+          "odds_under_15": 4.42,
+          "odds_under_25": 2.26,
+          "odds_under_35": 1.49,
           "odds_btts_yes": 1.98,
           "odds_btts_no": 1.74,
           "actual_home_xg": null,
@@ -22603,16 +23154,16 @@
           "away_score_ht": null,
           "current_minute": null,
           "period": "",
-          "odds_home": 2.81,
-          "odds_draw": 3.48,
+          "odds_home": 2.8,
+          "odds_draw": 3.49,
           "odds_away": 2.24,
-          "odds_over_15": 1.23,
+          "odds_over_15": 1.22,
           "odds_over_25": 1.74,
-          "odds_over_35": 2.82,
-          "odds_under_15": 3.89,
-          "odds_under_25": 2.03,
-          "odds_under_35": 1.39,
-          "odds_btts_yes": 1.61,
+          "odds_over_35": 2.8,
+          "odds_under_15": 3.91,
+          "odds_under_25": 2.04,
+          "odds_under_35": 1.4,
+          "odds_btts_yes": 1.6,
           "odds_btts_no": 2.21,
           "actual_home_xg": null,
           "actual_away_xg": null,
@@ -23117,7 +23668,7 @@
           "period": "",
           "odds_home": 1.12,
           "odds_draw": 8.37,
-          "odds_away": 18.81,
+          "odds_away": 18.84,
           "odds_over_15": 1.14,
           "odds_over_25": 1.47,
           "odds_over_35": 2.2,
@@ -23351,17 +23902,17 @@
           "away_score_ht": null,
           "current_minute": null,
           "period": "",
-          "odds_home": 2.29,
-          "odds_draw": 3.34,
-          "odds_away": 2.96,
+          "odds_home": 2.28,
+          "odds_draw": 3.35,
+          "odds_away": 2.95,
           "odds_over_15": 1.29,
-          "odds_over_25": 1.91,
+          "odds_over_25": 1.9,
           "odds_over_35": 3.22,
           "odds_under_15": 3.38,
           "odds_under_25": 1.85,
           "odds_under_35": 1.31,
           "odds_btts_yes": 1.7,
-          "odds_btts_no": 2.04,
+          "odds_btts_no": 2.05,
           "actual_home_xg": null,
           "actual_away_xg": null,
           "home_xg_live": null,
@@ -23596,7 +24147,7 @@
           "odds_home": 7.41,
           "odds_draw": 4.76,
           "odds_away": 1.35,
-          "odds_over_15": 1.21,
+          "odds_over_15": 1.2,
           "odds_over_25": 1.69,
           "odds_over_35": 2.67,
           "odds_under_15": 4.05,
@@ -23835,17 +24386,17 @@
           "away_score_ht": null,
           "current_minute": null,
           "period": "",
-          "odds_home": 1.44,
-          "odds_draw": 4.4,
-          "odds_away": 6.22,
+          "odds_home": 1.42,
+          "odds_draw": 4.53,
+          "odds_away": 6.35,
           "odds_over_15": 1.19,
-          "odds_over_25": 1.63,
-          "odds_over_35": 2.53,
-          "odds_under_15": 4.28,
-          "odds_under_25": 2.18,
-          "odds_under_35": 1.46,
-          "odds_btts_yes": 1.8,
-          "odds_btts_no": 1.92,
+          "odds_over_25": 1.62,
+          "odds_over_35": 2.51,
+          "odds_under_15": 4.33,
+          "odds_under_25": 2.21,
+          "odds_under_35": 1.47,
+          "odds_btts_yes": 1.81,
+          "odds_btts_no": 1.9,
           "actual_home_xg": null,
           "actual_away_xg": null,
           "home_xg_live": null,
@@ -24313,16 +24864,16 @@
           "away_score_ht": null,
           "current_minute": null,
           "period": "",
-          "odds_home": 1.21,
-          "odds_draw": 6.48,
-          "odds_away": 10.4,
+          "odds_home": 1.2,
+          "odds_draw": 6.5,
+          "odds_away": 10.36,
           "odds_over_15": 1.11,
           "odds_over_25": 1.38,
           "odds_over_35": 1.99,
           "odds_under_15": 5.98,
           "odds_under_25": 2.83,
           "odds_under_35": 1.76,
-          "odds_btts_yes": 1.9,
+          "odds_btts_yes": 1.91,
           "odds_btts_no": 1.82,
           "actual_home_xg": null,
           "actual_away_xg": null,
@@ -24795,16 +25346,16 @@
           "away_score_ht": null,
           "current_minute": null,
           "period": "",
-          "odds_home": 1.72,
-          "odds_draw": 3.63,
-          "odds_away": 4.46,
+          "odds_home": 1.77,
+          "odds_draw": 3.53,
+          "odds_away": 4.31,
           "odds_over_15": 1.22,
           "odds_over_25": 1.74,
-          "odds_over_35": 2.76,
-          "odds_under_15": 3.9,
+          "odds_over_35": 2.77,
+          "odds_under_15": 3.88,
           "odds_under_25": 2.02,
           "odds_under_35": 1.4,
-          "odds_btts_yes": 1.69,
+          "odds_btts_yes": 1.68,
           "odds_btts_no": 2.07,
           "actual_home_xg": null,
           "actual_away_xg": null,
@@ -25040,7 +25591,7 @@
           "current_minute": null,
           "period": "",
           "odds_home": 2.34,
-          "odds_draw": 3.56,
+          "odds_draw": 3.55,
           "odds_away": 2.62,
           "odds_over_15": 1.13,
           "odds_over_25": 1.46,
@@ -25292,17 +25843,17 @@
           "away_score_ht": null,
           "current_minute": null,
           "period": "",
-          "odds_home": 5.16,
-          "odds_draw": 4.3,
-          "odds_away": 1.54,
+          "odds_home": 5.06,
+          "odds_draw": 4.28,
+          "odds_away": 1.55,
           "odds_over_15": 1.17,
           "odds_over_25": 1.58,
-          "odds_over_35": 2.43,
-          "odds_under_15": 4.56,
-          "odds_under_25": 2.3,
+          "odds_over_35": 2.44,
+          "odds_under_15": 4.55,
+          "odds_under_25": 2.29,
           "odds_under_35": 1.52,
-          "odds_btts_yes": 1.66,
-          "odds_btts_no": 2.1,
+          "odds_btts_yes": 1.65,
+          "odds_btts_no": 2.11,
           "actual_home_xg": null,
           "actual_away_xg": null,
           "home_xg_live": null,
@@ -25551,17 +26102,17 @@
           "away_score_ht": null,
           "current_minute": null,
           "period": "",
-          "odds_home": 8.56,
-          "odds_draw": 5.33,
-          "odds_away": 1.27,
+          "odds_home": 8.47,
+          "odds_draw": 5.3,
+          "odds_away": 1.3,
           "odds_over_15": 1.15,
           "odds_over_25": 1.52,
           "odds_over_35": 2.31,
-          "odds_under_15": 4.79,
+          "odds_under_15": 4.78,
           "odds_under_25": 2.38,
           "odds_under_35": 1.56,
-          "odds_btts_yes": 1.9,
-          "odds_btts_no": 1.81,
+          "odds_btts_yes": 1.89,
+          "odds_btts_no": 1.82,
           "actual_home_xg": null,
           "actual_away_xg": null,
           "home_xg_live": null,
@@ -25794,8 +26345,8 @@
           "current_minute": null,
           "period": "",
           "odds_home": 1.75,
-          "odds_draw": 3.74,
-          "odds_away": 4.11,
+          "odds_draw": 3.73,
+          "odds_away": 4.12,
           "odds_over_15": 1.22,
           "odds_over_25": 1.71,
           "odds_over_35": 2.71,
@@ -25990,217 +26541,6 @@
       "source": "GitHub Actions cache"
     },
     {
-      "id": 222609,
-      "home": "Al Diriyah",
-      "away": "Al-Ahli",
-      "league": "Saudi Pro League",
-      "date": "2026-08-13T18:00:00Z",
-      "prediction": {
-        "id": 1123,
-        "event": {
-          "id": 222609,
-          "league": {
-            "id": 17,
-            "name": "Saudi Pro League",
-            "country": "Saudi Arabia",
-            "is_women": false,
-            "current_season": {
-              "id": 1631,
-              "name": "Saudi Pro League 26/27",
-              "year": 2026,
-              "start_date": "2026-07-01",
-              "end_date": "2027-06-30"
-            }
-          },
-          "season": {
-            "id": 1631,
-            "name": "Saudi Pro League 26/27",
-            "year": 2026
-          },
-          "home_team": "Al Diriyah",
-          "away_team": "Al-Ahli",
-          "home_team_obj": {
-            "id": 3256,
-            "name": "Al Diriyah",
-            "short_name": "Al Diriyah",
-            "country": "Saudi Arabia",
-            "coach": {
-              "name": "Bruno Lage",
-              "shortName": "B. Lage"
-            },
-            "venue": null
-          },
-          "away_team_obj": {
-            "id": 258,
-            "name": "Al-Ahli",
-            "short_name": "Al-Ahli",
-            "country": "Saudi Arabia",
-            "coach": {
-              "name": "Marino Pušić",
-              "shortName": "M. Pušić"
-            },
-            "venue": {
-              "id": 248,
-              "name": "Alinma Stadium",
-              "city": "Jeddah",
-              "country": "Saudi Arabia",
-              "capacity": 64200
-            }
-          },
-          "event_date": "2026-08-13T18:00:00Z",
-          "round_number": 1,
-          "round_name": "",
-          "group_name": null,
-          "status": "notstarted",
-          "home_score": null,
-          "away_score": null,
-          "home_score_ht": null,
-          "away_score_ht": null,
-          "current_minute": null,
-          "period": "",
-          "odds_home": 10.2,
-          "odds_draw": 4.89,
-          "odds_away": 1.19,
-          "odds_over_15": 1.06,
-          "odds_over_25": 1.28,
-          "odds_over_35": 1.71,
-          "odds_under_15": 6.3,
-          "odds_under_25": 3.25,
-          "odds_under_35": 2.03,
-          "odds_btts_yes": 1.66,
-          "odds_btts_no": 2.07,
-          "actual_home_xg": null,
-          "actual_away_xg": null,
-          "home_xg_live": null,
-          "away_xg_live": null,
-          "penalty_shootout": null,
-          "extra_time_score": null,
-          "is_local_derby": false,
-          "is_neutral_ground": null,
-          "travel_distance_km": null,
-          "weather_code": 1,
-          "wind_speed": 10.3,
-          "temperature_c": 35,
-          "pitch_condition": null,
-          "attendance": null,
-          "referee": null,
-          "home_coach": {
-            "id": 3037,
-            "name": "Bruno Lage",
-            "short_name": "B. Lage",
-            "country": "Portugal",
-            "profile": "attacking",
-            "preferred_formation": "",
-            "pressing_intensity": null,
-            "defensive_line": "",
-            "top_styles": []
-          },
-          "away_coach": {
-            "id": 3360,
-            "name": "Marino Pušić",
-            "short_name": "M. Pušić",
-            "country": "Netherlands",
-            "profile": "balanced",
-            "preferred_formation": "4-3-3",
-            "pressing_intensity": null,
-            "defensive_line": "",
-            "top_styles": []
-          },
-          "unavailable_players": null,
-          "venue": {
-            "id": 1305,
-            "name": "Prince Faisal bin Fahd Stadium",
-            "city": "Riyadh",
-            "country": "Saudi Arabia",
-            "capacity": 22500,
-            "latitude": 24.662599,
-            "longitude": 46.739745,
-            "pitch_x": null,
-            "pitch_y": null,
-            "built_year": 1971
-          },
-          "incidents": null,
-          "live_stats": null,
-          "lineups": null,
-          "shotmap": null,
-          "momentum": null,
-          "xg_per_minute": null,
-          "average_positions": null,
-          "jerseys": {
-            "away": {
-              "GK": {
-                "base": "c8c8ff",
-                "real": true,
-                "type": "long_sleeves",
-                "number": "ffffff",
-                "sleeve": "9696ff"
-              },
-              "player": {
-                "base": "144846",
-                "real": true,
-                "type": "short_sleeves",
-                "number": "ffffff",
-                "sleeve": "1f7673",
-                "sleevelong": "144846"
-              }
-            },
-            "home": {
-              "GK": {
-                "base": "efc131",
-                "real": false,
-                "type": "short_sleeves",
-                "number": "000000",
-                "sleeve": "333333"
-              },
-              "player": {
-                "base": "D8D8D8",
-                "real": false,
-                "type": "short_sleeves",
-                "number": "000000",
-                "sleeve": "D8D8D8"
-              }
-            }
-          },
-          "funfacts": [
-            {
-              "type_id": 1,
-              "sentence": "Diriyah Club haven't lost in their last 4 games."
-            },
-            {
-              "type_id": 1,
-              "sentence": "Diriyah Club have won 4 home matches in a row."
-            }
-          ],
-          "sr_stats": null,
-          "ai_preview": null,
-          "live_websocket": true
-        },
-        "created_at": "2026-08-10T18:05:09.392206+00:00",
-        "prob_home_win": 7.6,
-        "prob_draw": 15.0,
-        "prob_away_win": 77.5,
-        "predicted_result": "A",
-        "expected_home_goals": null,
-        "expected_away_goals": null,
-        "prob_over_15": 75.0,
-        "prob_over_25": 50.0,
-        "prob_over_35": 27.0,
-        "prob_btts_yes": 50.0,
-        "confidence": 0.7745,
-        "model_version": "dc-blend-v1",
-        "most_likely_score": null,
-        "favorite": "A",
-        "favorite_prob": 77.5,
-        "favorite_recommend": false,
-        "over_15_recommend": false,
-        "over_25_recommend": false,
-        "over_35_recommend": false,
-        "btts_recommend": false,
-        "winner_recommend": false
-      },
-      "source": "GitHub Actions cache"
-    },
-    {
       "id": 587660,
       "home": "Gimnàstic de Tarragona",
       "away": "Huesca",
@@ -26284,17 +26624,17 @@
           "away_score_ht": null,
           "current_minute": null,
           "period": "",
-          "odds_home": 2.55,
-          "odds_draw": 3.41,
-          "odds_away": 2.53,
-          "odds_over_15": 1.25,
-          "odds_over_25": 1.81,
-          "odds_over_35": 2.95,
-          "odds_under_15": 3.59,
-          "odds_under_25": 1.93,
-          "odds_under_35": 1.35,
-          "odds_btts_yes": 1.65,
-          "odds_btts_no": 2.12,
+          "odds_home": 2.42,
+          "odds_draw": 3.54,
+          "odds_away": 2.58,
+          "odds_over_15": 1.2,
+          "odds_over_25": 1.66,
+          "odds_over_35": 2.59,
+          "odds_under_15": 4.14,
+          "odds_under_25": 2.14,
+          "odds_under_35": 1.45,
+          "odds_btts_yes": 1.56,
+          "odds_btts_no": 2.29,
           "actual_home_xg": null,
           "actual_away_xg": null,
           "home_xg_live": null,
@@ -26440,7 +26780,10 @@
             }
           ],
           "sr_stats": null,
-          "ai_preview": null,
+          "ai_preview": {
+            "text": "**Shkëndija host the return leg with vengeance on their minds** — Hibernian won the away tie 2-1, and now the Macedonian side get their shot at home turf in what should be a proper scrap. 🔥\n\nBoth teams are locked in identical form (3W-2L over five), so this is genuinely anyone's game. Shkëndija will fancy their chances in front of their own crowd after that first-leg defeat, while Hibernian's injury woes are starting to stack up.\n\nKey storylines:\n\n- **Shkëndija chasing redemption**: Down 2-1 from the first leg, the hosts need a win and will lean heavily on **V. Krstevski** and **A. Zejnullai** to unlock things in attack.\n\n- **Hibernian's backline under strain**: Missing **J. Iredale**, **J. McGrath**, **N. Cadden**, and **R. Bushiri**, the defensive shape looks stretched; **G. Hanley** and **W. O'Hora** have to be rock-solid.\n\n- **Midfield battle decides it**: **D. Islami** and **S. Spahiu** for Shkëndija versus **F. Passlack** and **M. C. Chaiwa** will determine tempo and transition play.\n\nExpected lineups:\n\n- **KF Shkëndija**: B. Gaye, A. Meljichi, I. Fetai, A. Trumci, M. Murati, D. Islami, S. Spahiu, F. Ndzengue, A. Zejnullai, F. Tamba, V. Krstevski\n\n- **Hibernian**: R. Sallinger, J. Obita, W. O'Hora, J. Kerr, G. Hanley, M. C. Chaiwa, F. Passlack, J. Mulligan, M. Boyle, O. Elding, A. Šuto\n\nPrediction:\n\n**Shkëndija 2–1 Hibernian**. Home advantage, fresh legs, and a point to prove give the hosts a slight edge. 💪",
+            "generated_at": "2026-08-12T18:41:29.518211+00:00"
+          },
           "live_websocket": true
         },
         "created_at": "2026-08-07T02:15:20.724026+00:00",
@@ -26538,15 +26881,15 @@
           "current_minute": null,
           "period": "",
           "odds_home": 1.1,
-          "odds_draw": 8.83,
-          "odds_away": 19.93,
+          "odds_draw": 8.87,
+          "odds_away": 21.23,
           "odds_over_15": 1.1,
           "odds_over_25": 1.38,
           "odds_over_35": 1.97,
-          "odds_under_15": 5.93,
-          "odds_under_25": 2.81,
+          "odds_under_15": 5.96,
+          "odds_under_25": 2.84,
           "odds_under_35": 1.77,
-          "odds_btts_yes": 2.5,
+          "odds_btts_yes": 2.52,
           "odds_btts_no": 1.47,
           "actual_home_xg": null,
           "actual_away_xg": null,
@@ -26668,7 +27011,10 @@
             }
           ],
           "sr_stats": null,
-          "ai_preview": null,
+          "ai_preview": {
+            "text": "**Drita are rolling, and Tre Fiori are in freefall** — this Conference League qualifier looks like a coronation waiting to happen. 🔴\n\nDrita landed a devastating **4-1 away win** over the same opponent just weeks ago, and they've barely looked back since. Tre Fiori, meanwhile, have dropped five straight with no wins in sight — they're limping into this one with zero momentum and nowhere to hide.\n\nKey storylines:\n\n- **FC Drita's ruthless efficiency**: Two wins and two draws in their last five means they know how to grind out results, but that 4-1 shellacking of Tre Fiori suggests they can also turn it up when needed.\n- **Tre Fiori's defensive crisis**: Five consecutive losses tell the whole story — this team's leaking goals and confidence alike.\n- **Home advantage counts**: Drita playing at Fadil Vokrri with the wind at their back should only widen the gap.\n\nExpected lineups:\n\n- **FC Drita**: F. Maloku, B. Krasniqi, R. Ovouka, P. Jorgo, V. Limaj, A. Dabiqaj, O. Grezda\n- **SP Tre Fiori**: A. Castagnoli, M. Ferri, A. Sirri, E. Grani, S. Rea, F. Dolcini, F. Benedettini\n\nPrediction:\n\n**Drita 3–0 Tre Fiori** — the visitors have no answer for this level right now. 🎯",
+            "generated_at": "2026-08-12T18:41:35.193197+00:00"
+          },
           "live_websocket": true
         },
         "created_at": "2026-08-07T02:15:20.751547+00:00",
@@ -26687,6 +27033,245 @@
         "most_likely_score": "2-0",
         "favorite": "H",
         "favorite_prob": 84.8,
+        "favorite_recommend": false,
+        "over_15_recommend": false,
+        "over_25_recommend": false,
+        "over_35_recommend": false,
+        "btts_recommend": false,
+        "winner_recommend": false
+      },
+      "source": "GitHub Actions cache"
+    },
+    {
+      "id": 222610,
+      "home": "Al-Shabab",
+      "away": "Al-Qadsiah",
+      "league": "Saudi Pro League",
+      "date": "2026-08-13T18:00:00Z",
+      "prediction": {
+        "id": 821,
+        "event": {
+          "id": 222610,
+          "league": {
+            "id": 17,
+            "name": "Saudi Pro League",
+            "country": "Saudi Arabia",
+            "is_women": false,
+            "current_season": {
+              "id": 1631,
+              "name": "Saudi Pro League 26/27",
+              "year": 2026,
+              "start_date": "2026-07-01",
+              "end_date": "2027-06-30"
+            }
+          },
+          "season": {
+            "id": 1631,
+            "name": "Saudi Pro League 26/27",
+            "year": 2026
+          },
+          "home_team": "Al-Shabab",
+          "away_team": "Al-Qadsiah",
+          "home_team_obj": {
+            "id": 264,
+            "name": "Al-Shabab",
+            "short_name": "Al-Shabab",
+            "country": "Saudi Arabia",
+            "coach": {
+              "name": "Thomas Letsch",
+              "shortName": "T. Letsch"
+            },
+            "venue": {
+              "id": 253,
+              "name": "SHG Arena",
+              "city": "Riyadh",
+              "country": "Saudi Arabia",
+              "capacity": 13536
+            }
+          },
+          "away_team_obj": {
+            "id": 272,
+            "name": "Al-Qadsiah",
+            "short_name": "Al-Qadsiah",
+            "country": "Saudi Arabia",
+            "coach": {
+              "name": "Brendan Rodgers",
+              "shortName": "B. Rodgers"
+            },
+            "venue": {
+              "id": 260,
+              "name": "Prince Saud bin Jalawi Stadium",
+              "city": "Khobar",
+              "country": "Saudi Arabia",
+              "capacity": 15000
+            }
+          },
+          "event_date": "2026-08-13T18:00:00Z",
+          "round_number": 1,
+          "round_name": "",
+          "group_name": null,
+          "status": "notstarted",
+          "home_score": null,
+          "away_score": null,
+          "home_score_ht": null,
+          "away_score_ht": null,
+          "current_minute": null,
+          "period": "",
+          "odds_home": 4.79,
+          "odds_draw": 4.12,
+          "odds_away": 1.53,
+          "odds_over_15": 1.14,
+          "odds_over_25": 1.47,
+          "odds_over_35": 2.17,
+          "odds_under_15": 5.14,
+          "odds_under_25": 2.52,
+          "odds_under_35": 1.63,
+          "odds_btts_yes": 1.56,
+          "odds_btts_no": 2.28,
+          "actual_home_xg": null,
+          "actual_away_xg": null,
+          "home_xg_live": null,
+          "away_xg_live": null,
+          "penalty_shootout": null,
+          "extra_time_score": null,
+          "is_local_derby": false,
+          "is_neutral_ground": null,
+          "travel_distance_km": 378,
+          "weather_code": 0,
+          "wind_speed": 19.2,
+          "temperature_c": 37,
+          "pitch_condition": null,
+          "attendance": null,
+          "referee": null,
+          "home_coach": {
+            "id": 2046,
+            "name": "Thomas Letsch",
+            "short_name": "T. Letsch",
+            "country": "Germany",
+            "profile": "attacking",
+            "preferred_formation": "4-1-4-1",
+            "pressing_intensity": null,
+            "defensive_line": "",
+            "top_styles": []
+          },
+          "away_coach": {
+            "id": 434,
+            "name": "Brendan Rodgers",
+            "short_name": "B. Rodgers",
+            "country": "Northern Ireland",
+            "profile": "attacking",
+            "preferred_formation": "4-4-2",
+            "pressing_intensity": 0.6256656385469737,
+            "defensive_line": "high",
+            "top_styles": [
+              "ball_dominant",
+              "tiki_taka"
+            ]
+          },
+          "unavailable_players": {
+            "home": [],
+            "away": [
+              {
+                "name": "Mateo Retegui",
+                "status": "injured",
+                "reason": "Broken Foot",
+                "expected_return": "2026-08-20"
+              }
+            ]
+          },
+          "venue": {
+            "id": 437,
+            "name": "Al-Shabab Club Stadium",
+            "city": "Riyadh",
+            "country": "Saudi Arabia",
+            "capacity": 15000,
+            "latitude": 24.804274,
+            "longitude": 46.628067,
+            "pitch_x": null,
+            "pitch_y": null,
+            "built_year": null
+          },
+          "incidents": null,
+          "live_stats": null,
+          "lineups": null,
+          "shotmap": null,
+          "momentum": null,
+          "xg_per_minute": null,
+          "average_positions": null,
+          "jerseys": {
+            "away": {
+              "GK": {
+                "base": "18e24a",
+                "real": true,
+                "type": "short_sleeves",
+                "number": "ffffff",
+                "sleeve": "999999"
+              },
+              "player": {
+                "base": "f72d39",
+                "real": true,
+                "type": "short_sleeves",
+                "number": "ffffff",
+                "sleeve": "f72d39",
+                "sleevelong": "f72d39"
+              }
+            },
+            "home": {
+              "GK": {
+                "base": "6a6a6a",
+                "real": true,
+                "type": "short_sleeves",
+                "number": "ffffff",
+                "sleeve": "00ffb3"
+              },
+              "player": {
+                "base": "000000",
+                "real": true,
+                "type": "short_sleeves",
+                "number": "ffffff",
+                "sleeve": "ffffff",
+                "stripes": "000000",
+                "sleevelong": "000000"
+              }
+            }
+          },
+          "funfacts": [
+            {
+              "type_id": 1,
+              "sentence": "Al-Shabab have won 3 home matches in a row."
+            },
+            {
+              "type_id": 22,
+              "sentence": "Al-Shabab's last home win against Al Qadsiah was in 2018."
+            },
+            {
+              "type_id": 6,
+              "sentence": "During the last 8 meetings with Al-Shabab playing at home, Al-Shabab have won 3 times, there have been 2 draws while Al Qadsiah have won 3 times. The goal difference is 12-11 in favour of Al-Shabab."
+            }
+          ],
+          "sr_stats": null,
+          "ai_preview": {
+            "text": "**Al-Shabab's home opener screams statement vibes** — they're on a three-game winning streak and have the historical edge in this rivalry. Al-Qadsiah, though, just dropped 5 on Al-Ittihad and won't roll over. 🔥\n\nBoth teams are rolling with 3 wins in their last five, so expect intensity. Al-Shabab owns the H2H record (5 wins to 3), but Al-Qadsiah's offensive form is genuinely dangerous.\n\nKey storylines:\n\n- **Al-Shabab's** midfield fulcrum **J. Brownhill** will need to control tempo against **Al-Qadsiah's** press-happy setup\n- **Al-Qadsiah** missing striker **M. Retegui** means **G. Carvalho** carries even more offensive load up front\n- Home advantage at **Al-Shabab Club Stadium** has been a fortress — 2 of their last 3 wins came there\n\nExpected lineups:\n\n- **Al-Shabab**: M. Al-Mahasneh, A. Al-Bulaihi, M. Al-Thani, J. Brownhill, Y. Adli, Y. Carrasco, H. Al-Hammami\n- **Al-Qadsiah**: K. Casteels, N. Fernández, G. Álvarez, C. Baah, N. Nandez, G. Carvalho, A. Al-Salem\n\nPrediction:\n\n**Al-Shabab 2–1 Al-Qadsiah**\n\nHome form and the H2H give Al-Shabab the lean, but this is tighter than their recent wins suggest.",
+            "generated_at": "2026-08-12T18:41:45.022336+00:00"
+          },
+          "live_websocket": true
+        },
+        "created_at": "2026-08-07T02:15:20.761277+00:00",
+        "prob_home_win": 17.1,
+        "prob_draw": 25.6,
+        "prob_away_win": 57.3,
+        "predicted_result": "A",
+        "expected_home_goals": 1.228,
+        "expected_away_goals": 1.985,
+        "prob_over_15": 76.4,
+        "prob_over_25": 54.6,
+        "prob_over_35": 34.9,
+        "prob_btts_yes": 54.0,
+        "confidence": 0.5726,
+        "model_version": "dc-blend-v1",
+        "most_likely_score": "1-1",
+        "favorite": "A",
+        "favorite_prob": 57.3,
         "favorite_recommend": false,
         "over_15_recommend": false,
         "over_25_recommend": false,
